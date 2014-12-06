@@ -1,0 +1,87 @@
+@navigation-bg-color: #7BD4DB;
+@navigation-text-color: #fff;
+@navigation-height: 44px;
+
+.navigation {
+  background-color: @navigation-bg-color;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+  height: @navigation-height;
+  left: 0;
+  overflow: visible;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10000;
+
+  ul {
+    list-style-type: none;
+    li {
+      float: left;
+      margin: 0;
+      a {
+        color: @navigation-text-color;
+        display: inline-block;
+        font-size: 1.5em;
+        margin: 0;
+        min-width: 40px;
+        padding: 7px 10px;
+        text-align: center;
+        transition: all 0.25s ease 0s;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: fadeIn;
+        animation-delay: 0.6s;
+      }
+    }
+  }
+
+  .twitter:hover {
+    /* fa-twitter fa-twitter-square */
+    background-color: #00aced;
+  }
+
+  .linkedin:hover {
+    /* fa-linkedin fa-linkedin-square */
+    background-color: #007bb6;
+  }
+
+  .git:hover {
+    /* fa-git fa-git-square fa-github fa-github-square fa-github-alt */
+    background-color: #151515;
+  }
+
+  .stackoverflow:hover {
+    /* fa-stack-overflow */
+    background-color: #FF9900;
+  }
+
+  .behance:hover {
+    /* fa-behance fa-behance-square */
+    background-color: #131418;
+  }
+
+  .steam:hover {
+    /* fa-steam fa-steam-square */
+    background-color: #144578;
+  }
+
+  .dribbble:hover {
+    /* fa-dribbble */
+    background-color: #f26798;
+  }
+
+  .flickr:hover {
+    /* fa-flickr */
+    background-color: #ff0084;
+  }
+
+  .youtube:hover {
+    /* fa-youtube fa-youtube-square fa-youtube-play */
+    background-color: #bb0000;
+  }
+
+  .facebook:hover {
+    /* fa-facebook fa-facebook-square */
+    background-color: #3b5998;
+  }
+}
