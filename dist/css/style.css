@@ -1,8 +1,25 @@
 body {
   background-color: #f5f5f5;
+  color: #333333;
+  font-family: 'Open Sans', sans-serif;
+}
+a,
+a:link,
+a:visited,
+a:hover {
+  color: #5acbc0;
+}
+h1,
+h2 {
+  color: #333333;
+}
+h2 {
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .navigation {
-  background-color: #7bd4db;
+  background-color: #5acbc0;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
   height: 44px;
   left: 0;
@@ -43,7 +60,8 @@ body {
 }
 .navigation .git:hover {
   /* fa-git fa-git-square fa-github fa-github-square fa-github-alt */
-  background-color: #151515;
+  background-color: #44A79B;
+  /* #151515 */
 }
 .navigation .stackoverflow:hover {
   /* fa-stack-overflow */
@@ -51,7 +69,8 @@ body {
 }
 .navigation .behance:hover {
   /* fa-behance fa-behance-square */
-  background-color: #131418;
+  background-color: #CF9586;
+  /*#131418;*/
 }
 .navigation .steam:hover {
   /* fa-steam fa-steam-square */
@@ -73,7 +92,55 @@ body {
   /* fa-facebook fa-facebook-square */
   background-color: #3b5998;
 }
+.logo a {
+  font-family: 'Montserrat', sans-serif;
+}
+.logo a {
+  color: #ffffff;
+  font-size: 2em;
+  text-decoration: none;
+}
 .content {
-  background-color: #ffffff;
   margin-top: 88px;
+}
+.menu {
+  margin-top: 40px;
+}
+.menu ul li {
+  display: inline-block;
+}
+.menu ul li a {
+  color: #4d4e53;
+  padding: 4px 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.category {
+  background-color: #ffffff;
+  margin: 3em 0;
+}
+.category ul {
+  list-style-type: none;
+  padding-left: 2em;
+}
+.category ul li {
+  margin-bottom: .5em;
+  text-indent: -2em;
+  padding-top: 10px;
+  padding-bottom: 6px;
+}
+.category ul li .taggedlink {
+  display: block;
+}
+.category ul li .bday,
+.category ul li .dtstart,
+.category ul li .separator,
+.category ul li sup {
+  color: #bbbbbb;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.category ul li .location {
+  color: #333333;
 }
