@@ -18,19 +18,25 @@
 }
 
 .content {
-  margin-top: 2*@navigation-height;
+  margin-top: @navigation-height;
 }
 
 .menu {
-  margin-top: 40px;
   ul {
+    padding: 0;
     li {
       display: inline-block;
       a {
-        color: #4d4e53;
+        color: @logo-text-color;
         padding: 4px 1em;
+        font-size: 1em;
         font-weight: 500;
+        line-height: 2.5em;
         text-transform: uppercase;
+        &:hover {
+          background-color: darken(@link-text-color, 20%);
+          text-decoration: none;
+        }
       }
     }
   }

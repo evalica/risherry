@@ -101,19 +101,25 @@ h2 {
   text-decoration: none;
 }
 .content {
-  margin-top: 88px;
+  margin-top: 44px;
 }
-.menu {
-  margin-top: 40px;
+.menu ul {
+  padding: 0;
 }
 .menu ul li {
   display: inline-block;
 }
 .menu ul li a {
-  color: #4d4e53;
+  color: #ffffff;
   padding: 4px 1em;
+  font-size: 1em;
   font-weight: 500;
+  line-height: 2.5em;
   text-transform: uppercase;
+}
+.menu ul li a:hover {
+  background-color: #2e9188;
+  text-decoration: none;
 }
 .category {
   background-color: #ffffff;
