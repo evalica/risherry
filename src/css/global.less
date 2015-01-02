@@ -1,6 +1,7 @@
-@body-bg-color: #f5f5f5;
+@body-bg-color: #0c293c;
 @heading-text-color: @content-text-color;
 @link-text-color: #5ACBC0;
+@link-text-hover-color: #f3ff77;
 
 body {
   background-color: @body-bg-color;
@@ -8,8 +9,13 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-a, a:link, a:visited, a:hover {
+a, a:link, a:visited {
   color: @link-text-color;
+  &:hover {
+  	color: @link-text-hover-color;
+  	transition: color .3s ease-in-out;
+  	text-decoration: none;
+  }
 }
 
 h1, h2 {

@@ -1,17 +1,23 @@
 body {
-  background-color: #f5f5f5;
-  color: #333333;
+  background-color: #0c293c;
+  color: #ffffff;
   font-family: 'Open Sans', sans-serif;
 }
 a,
 a:link,
-a:visited,
-a:hover {
+a:visited {
   color: #5acbc0;
+}
+a:hover,
+a:link:hover,
+a:visited:hover {
+  color: #f3ff77;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
 }
 h1,
 h2 {
-  color: #333333;
+  color: #ffffff;
 }
 h2 {
   font-weight: 500;
@@ -19,7 +25,7 @@ h2 {
   text-transform: uppercase;
 }
 .navigation {
-  background-color: #5acbc0;
+  background-color: #0e1d26;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
   height: 44px;
   left: 0;
@@ -122,7 +128,7 @@ h2 {
   text-decoration: none;
 }
 .category {
-  background-color: #ffffff;
+  background-color: transparent;
   margin: 3em 0;
 }
 .category ul {
@@ -148,5 +154,5 @@ h2 {
   font-weight: 400;
 }
 .category ul li .location {
-  color: #333333;
+  color: #ffffff;
 }
