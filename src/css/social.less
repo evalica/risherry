@@ -85,3 +85,33 @@
     background-color: #3b5998;
   }
 }
+
+.menu {
+  ul {
+    margin: 0 -1em;
+    padding: 0;
+    li {
+      display: inline-block;
+      a {
+        color: @logo-text-color;
+        padding: 4px 1em;
+        font-size: 1em;
+        font-weight: 500;
+        line-height: 2.55em;
+        text-transform: uppercase;
+        &:hover {
+          background-color: darken(@link-text-color, 20%);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.external {
+  ul {
+    li {
+      float: right;
+    }
+  }
+}

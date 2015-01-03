@@ -96,10 +96,8 @@ h2 {
   /* fa-facebook fa-facebook-square */
   background-color: #3b5998;
 }
-.content {
-  margin-top: 44px;
-}
 .menu ul {
+  margin: 0 -1em;
   padding: 0;
 }
 .menu ul li {
@@ -110,12 +108,18 @@ h2 {
   padding: 4px 1em;
   font-size: 1em;
   font-weight: 500;
-  line-height: 2.5em;
+  line-height: 2.55em;
   text-transform: uppercase;
 }
 .menu ul li a:hover {
   background-color: #2e9188;
   text-decoration: none;
+}
+.external ul li {
+  float: right;
+}
+.content {
+  margin-top: 44px;
 }
 .category {
   background-color: transparent;
@@ -154,5 +158,6 @@ h2 {
 .footer {
   border-top: 1px dashed #405765;
   font-size: .8em;
-  padding: 1em 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
