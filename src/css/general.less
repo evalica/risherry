@@ -29,7 +29,27 @@
         }
       }
     }
-  } 
+  }
+  .more {
+    color: @content-text-color;
+    text-transform: uppercase;
+    font-size: .9em;
+    font-weight: 800;
+    text-align: right;
+    margin-top: -2.7em;
+    float: right;
+    &:focus, &:active, &:hover {
+      text-decoration: none;
+    }
+    &:after {
+      content: 'Less \00BB';
+      position: relative;
+      display: block;
+    }
+    &[aria-expanded=false]:after {
+      content: 'More \00BB';
+    }
+  }
 }
 
 .aside {

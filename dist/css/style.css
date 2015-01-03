@@ -153,6 +153,28 @@ h2 {
 .category ul li .location:hover {
   text-decoration: underline;
 }
+.category .more {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: .9em;
+  font-weight: 800;
+  text-align: right;
+  margin-top: -2.7em;
+  float: right;
+}
+.category .more:focus,
+.category .more:active,
+.category .more:hover {
+  text-decoration: none;
+}
+.category .more:after {
+  content: 'Less \00BB';
+  position: relative;
+  display: block;
+}
+.category .more[aria-expanded=false]:after {
+  content: 'More \00BB';
+}
 .aside {
   color: #bbbbbb;
   font-family: Verdana, sans-serif;
