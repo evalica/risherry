@@ -9,8 +9,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-a, a:link, a:visited {
-  color: @link-text-color;
+a {
+  &, &:link, &:visited {
+    color: @link-text-color;
+  }
   &:hover {
   	color: @link-text-hover-color;
   	transition: color .3s ease-in-out;

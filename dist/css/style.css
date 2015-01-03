@@ -8,9 +8,7 @@ a:link,
 a:visited {
   color: #5acbc0;
 }
-a:hover,
-a:link:hover,
-a:visited:hover {
+a:hover {
   color: #f3ff77;
   transition: color 0.3s ease-in-out;
   text-decoration: none;
