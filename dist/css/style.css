@@ -150,6 +150,9 @@ h2 {
 .category ul li .location {
   color: #ffffff;
 }
+.category ul li .location:hover {
+  text-decoration: underline;
+}
 .aside {
   color: #bbbbbb;
   font-family: Verdana, sans-serif;
