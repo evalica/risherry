@@ -140,7 +140,7 @@ h2 {
   padding-bottom: 6px;
 }
 .category ul li .taggedlink {
-  display: block;
+  display: table-row;
 }
 .category ul li .bday,
 .category ul li .dtstart,
