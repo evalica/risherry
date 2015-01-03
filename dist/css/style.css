@@ -96,14 +96,6 @@ h2 {
   /* fa-facebook fa-facebook-square */
   background-color: #3b5998;
 }
-.logo a {
-  font-family: 'Montserrat', sans-serif;
-}
-.logo a {
-  color: #ffffff;
-  font-size: 2em;
-  text-decoration: none;
-}
 .content {
   margin-top: 44px;
 }
@@ -154,11 +146,13 @@ h2 {
 .category ul li .location {
   color: #ffffff;
 }
+.aside {
+  color: #bbbbbb;
+  font-family: Verdana, sans-serif;
+  font-size: .8em;
+}
 .footer {
   border-top: 1px dashed #405765;
   font-size: .8em;
   padding: 1em 0;
-}
-.footer .dtstart {
-  margin-left: 1em;
 }
