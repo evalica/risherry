@@ -115,6 +115,9 @@ h2 {
   background-color: #2e9188;
   text-decoration: none;
 }
+.menu ul li.active a {
+  background-color: #2e9188;
+}
 .external ul li {
   float: right;
 }
