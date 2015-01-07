@@ -7,8 +7,6 @@
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans"/>
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700"/>
     <link type="text/css" rel="stylesheet" href="dist/css/style.min.css" />
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <title>risherry.ro</title>
   </head>
   <body data-spy="scroll" data-target=".menu">
@@ -89,6 +87,43 @@
           <div class="category col-xs-9">
             <div class="col-xs-12">
               <h2>Work</h2>
+            </div>
+            <div class="col-xs-12">
+              <div id="portfolio" class="portfolio-area">      
+                <script id="portfolio-template" type="text/x-handlebars-template">
+                  <ul class="portfolio-list">
+                    {{#each projects}}
+                    <li class="portfolio-item clearfix">
+                      <div class="portfolio-content">
+                        <figure class="portfolio-cover" title="{{this.name}}">
+                          <a href="{{this.url}}">
+                            {{#if this.covers.[404]}}
+                              <img class="portfolio-image" src="{{this.covers.[404]}}" alt="{{this.name}}"/>
+                            {{else}}
+                              {{#if this.covers.[230]}}
+                              <img class="portfolio-image" src="{{this.covers.[230]}}" alt="{{this.name}}"/>
+                              {{else}}
+                              <img class="portfolio-image" src="{{this.covers.[202]}}" alt="{{this.name}}"/>
+                              {{/if}}
+                            {{/if}}
+                          </a>
+                        </figure>
+                        <div class="portfolio-title">
+                          <a href="{{this.url}}">{{this.name}}</a>
+                        </div>
+                        <div class="portfolio-fields">
+                          <ul class="field-list">
+                          {{#each this.fields}}
+                            <li class="field-item">{{this}}</li>
+                          {{/each}}
+                          </ul>
+                        </div>
+                      </div> 
+                    </li>
+                    {{/each}}
+                  </ul>
+                </script>
+              </div>
             </div>
           </div>
         </div>
@@ -202,5 +237,9 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+    <script type="text/javascript" src="src/js/portfolio.js"></script>
   </body>
 </html>

@@ -22,6 +22,76 @@ h2 {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+.content {
+  margin-top: 44px;
+}
+.category {
+  background-color: transparent;
+}
+.category ul {
+  list-style-type: none;
+  padding-left: 2em;
+}
+.category ul li {
+  margin-bottom: .5em;
+  padding-top: 10px;
+  padding-bottom: 6px;
+}
+.category ul li .taggedlink {
+  display: table-row;
+}
+.category ul li .bday,
+.category ul li .dtstart,
+.category ul li .separator,
+.category ul li sup {
+  color: #bbbbbb;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.category ul li .location {
+  color: #ffffff;
+}
+.category ul li .location:hover {
+  text-decoration: underline;
+}
+.category .more {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: .9em;
+  font-weight: 800;
+  text-align: right;
+  margin-top: -2.7em;
+  float: right;
+}
+.category .more:focus,
+.category .more:active,
+.category .more:hover {
+  text-decoration: none;
+}
+.category .more:after {
+  content: 'Less \00BB';
+  position: relative;
+  display: block;
+}
+.category .more[aria-expanded=false]:after {
+  content: 'More \00BB';
+}
+.aside {
+  color: #bbbbbb;
+  font-family: Verdana, sans-serif;
+  font-size: .8em;
+}
+.footer {
+  border-top: 1px dashed #405765;
+  font-size: .8em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 3em;
+}
+.xfolkentry {
+  text-indent: -2em;
+}
 .navigation {
   background-color: #0e1d26;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
@@ -121,71 +191,37 @@ h2 {
 .external ul li {
   float: right;
 }
-.content {
-  margin-top: 44px;
+.portfolio-area .portfolio-list {
+  padding: 0;
 }
-.category {
-  background-color: transparent;
-  margin: 3em 0;
+.portfolio-area .portfolio-item {
+  height: 220px;
+  padding: 0 1.5em 0 0;
+  float: left;
+  width: 25%;
 }
-.category ul {
-  list-style-type: none;
-  padding-left: 2em;
+.portfolio-area .portfolio-image {
+  border: 8px solid #fff;
+  max-width: 100%;
 }
-.category ul li {
-  margin-bottom: .5em;
-  text-indent: -2em;
-  padding-top: 10px;
-  padding-bottom: 6px;
+.portfolio-area .portfolio-title {
+  margin: .5em 0;
 }
-.category ul li .taggedlink {
-  display: table-row;
-}
-.category ul li .bday,
-.category ul li .dtstart,
-.category ul li .separator,
-.category ul li sup {
-  color: #bbbbbb;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: italic;
-  font-weight: 400;
-}
-.category ul li .location {
-  color: #ffffff;
-}
-.category ul li .location:hover {
-  text-decoration: underline;
-}
-.category .more {
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: .9em;
-  font-weight: 800;
-  text-align: right;
-  margin-top: -2.7em;
-  float: right;
-}
-.category .more:focus,
-.category .more:active,
-.category .more:hover {
-  text-decoration: none;
-}
-.category .more:after {
-  content: 'Less \00BB';
-  position: relative;
-  display: block;
-}
-.category .more[aria-expanded=false]:after {
-  content: 'More \00BB';
-}
-.aside {
-  color: #bbbbbb;
-  font-family: Verdana, sans-serif;
+.portfolio-area .portfolio-fields {
   font-size: .8em;
+  color: #bbbbbb;
 }
-.footer {
-  border-top: 1px dashed #405765;
-  font-size: .8em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+.portfolio-area .portfolio-fields .field-list {
+  padding: 0;
+}
+.portfolio-area .portfolio-fields .field-item {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.portfolio-area .portfolio-fields .field-item:after {
+  content: ', ';
+}
+.portfolio-area .portfolio-fields .field-item:last-child:after {
+  content: '';
 }

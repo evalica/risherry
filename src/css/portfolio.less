@@ -1,0 +1,40 @@
+.portfolio-area {
+  .portfolio-list {
+    padding: 0;
+  }
+
+  .portfolio-item {
+    height: 220px;
+    padding: 0 1.5em 0 0;
+    float: left;
+    width: 25%;
+  }
+
+  .portfolio-image {
+    border: 8px solid #fff;
+    max-width: 100%;
+  }
+
+  .portfolio-title {
+    margin: .5em 0;
+  }
+
+  .portfolio-fields {
+    font-size: .8em;
+    color: @content-secondary-text-color;
+    .field-list {
+      padding: 0;
+    }
+    .field-item {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      &:after {
+        content:', ';
+      }
+      &:last-child:after {
+        content:'';
+      }
+    }
+  }
+}
