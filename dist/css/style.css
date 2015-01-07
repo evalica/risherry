@@ -27,6 +27,8 @@ h2 {
 }
 .category {
   background-color: transparent;
+  margin-top: 3em;
+  /* Needed for navigation */
 }
 .category ul {
   list-style-type: none;
@@ -193,6 +195,7 @@ h2 {
 }
 .portfolio-area .portfolio-list {
   padding: 0;
+  margin-top: 1em;
 }
 .portfolio-area .portfolio-item {
   height: 220px;
