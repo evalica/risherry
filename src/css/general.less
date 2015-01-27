@@ -4,7 +4,6 @@
 
 .category {
   background-color: @content-bg-color;
-  margin-top: 3em; /* Needed for navigation */
   ul {
     list-style-type: none;
     padding-left: 2em;
@@ -48,6 +47,10 @@
     &[aria-expanded=false]:after {
       content: 'More \00BB';
     }
+  }
+  margin-top: 3em; /* Needed for navigation */
+  @media (max-width: @screen-xs-max) {
+    margin-top: 6em;
   }
 }
 

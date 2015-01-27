@@ -5,7 +5,7 @@
 .navigation {
   background-color: @navigation-bg-color;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
-  height: @navigation-height;
+  min-height: @navigation-height;
   left: 0;
   overflow: visible;
   position: fixed;
@@ -114,6 +114,7 @@
 }
 
 .external {
+  box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.25);
   ul {
     li {
       float: right;
