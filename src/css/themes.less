@@ -1,0 +1,19 @@
+.themes {
+  color: @content-secondary-text-color;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  &:before {
+    content: '';
+  }
+  &:before, li {
+    float: left;
+    margin-right: .7em;
+  }
+  li {
+    height: 16px;
+    width: 16px;
+    background-color: @body-bg-color;
+    box-shadow: inset 0px 0px 2px rgba(255,255,255,.25);
+  }
+}

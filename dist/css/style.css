@@ -232,3 +232,23 @@ h2 {
 .portfolio-area .portfolio-fields .field-item:last-child:after {
   content: '';
 }
+.themes {
+  color: #bbbbbb;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.themes:before {
+  content: '';
+}
+.themes:before,
+.themes li {
+  float: left;
+  margin-right: .7em;
+}
+.themes li {
+  height: 16px;
+  width: 16px;
+  background-color: #0c293c;
+  box-shadow: inset 0px 0px 2px rgba(255, 255, 255, 0.25);
+}
