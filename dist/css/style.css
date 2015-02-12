@@ -22,8 +22,26 @@ h2 {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+.navigation {
+  background-color: #0e1d26;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+  min-height: 44px;
+  left: 0;
+  overflow: visible;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10000;
+}
 .content {
-  margin-top: 44px;
+  margin: 44px 0;
+}
+.footer {
+  background-color: #0e1d26;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(0, 0, 0, 0.1) inset;
+  min-height: 44px;
+  font-size: .8em;
+  padding: 14.66666667px 0;
 }
 .category {
   background-color: transparent;
@@ -89,26 +107,8 @@ h2 {
   font-family: Verdana, sans-serif;
   font-size: .8em;
 }
-.footer {
-  border-top: 1px dashed #405765;
-  font-size: .8em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-top: 3em;
-}
 .xfolkentry {
   text-indent: -2em;
-}
-.navigation {
-  background-color: #0e1d26;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
-  min-height: 44px;
-  left: 0;
-  overflow: visible;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 10000;
 }
 .navigation ul {
   list-style-type: none;
