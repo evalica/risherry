@@ -39,7 +39,7 @@ module.exports = function(grunt) {
     // configure watch to auto update ------------------------------------------ 
     watch: { 
       stylesheets: { 
-        files: ['src/**/*.css', 'src/**/*.less'], 
+        files: ['src/less/skin/*.less', 'src/less/style.less', 'src/less/themes/**/variables.less'], 
         tasks: ['swatch'] 
       }
     }
@@ -49,8 +49,6 @@ module.exports = function(grunt) {
   grunt.registerTask('build', 'build a theme', function(theme) {
 
     // copying the style.less file ---------------------------------------------
-    // run only if style.less is modified --------------------------------------
-    /* 
     var srcStyle;
     var destStyle;
     var filesStyle = {};
@@ -61,7 +59,6 @@ module.exports = function(grunt) {
 
     grunt.config('concat.dist', filesStyle);
     grunt.task.run(['concat']);
-    */
 
     // compile less stylesheets to css -----------------------------------------
     var srcLess;
