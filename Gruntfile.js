@@ -1,5 +1,6 @@
 module.exports = function(grunt) {
 
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
@@ -8,21 +9,30 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
+    // themes list -------------------------------------------------------------
+    swatch: {
+      1:{}, 2:{}
+    },
+
+    // copying the style.less file ---------------------------------------------
+    concat: {
+      dist: {
+        src: [],
+        dest: ''
+      }
+    },
+
     // compile less stylesheets to css -----------------------------------------
     less: {
       build: {
-        files: {
-          'dist/css/themes/1/style.css': 'src/less/style.less'
-        }
+        files: {}
       }
     },
 
     // configure cssmin to minify css files ------------------------------------
     cssmin: {
       build: {
-        files: {
-          'dist/css/themes/1/style.min.css': 'dist/css/themes/1/style.css'
-        }
+        files: {}
       }
     },
 
@@ -30,12 +40,61 @@ module.exports = function(grunt) {
     watch: { 
       stylesheets: { 
         files: ['src/**/*.css', 'src/**/*.less'], 
-        tasks: ['less', 'cssmin'] 
+        tasks: ['swatch'] 
       }
     }
 
   });
 
-  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('build', 'build a theme', function(theme) {
+
+    // copying the style.less file ---------------------------------------------
+    // run only if style.less is modified --------------------------------------
+    /* 
+    var srcStyle;
+    var destStyle;
+    var filesStyle = {};
+
+    srcStyle = 'src/less/style.less';
+    destStyle = 'src/less/themes/'+ theme +'/style.less';
+    filesStyle = {src: srcStyle, dest: destStyle};
+
+    grunt.config('concat.dist', filesStyle);
+    grunt.task.run(['concat']);
+    */
+
+    // compile less stylesheets to css -----------------------------------------
+    var srcLess;
+    var destLess;
+    var filesLess = {};
+
+    srcLess = 'src/less/themes/'+ theme +'/style.less';
+    destLess = 'dist/css/themes/'+ theme +'/style.css';
+    filesLess[destLess] = srcLess;
+
+    grunt.config('less.build.files', filesLess);
+
+    // configure cssmin to minify css files ------------------------------------
+    var srcMin;
+    var destMin;
+    var filesMin = {};
+
+    srcMin = 'dist/css/themes/'+ theme +'/style.css';
+    destMin = 'dist/css/themes/'+ theme +'/style.min.css';
+    filesMin[destMin] = srcMin;
+
+    grunt.config('cssmin.build.files', filesMin);
+
+    grunt.task.run(['less', 'cssmin']);
+  });
+
+  grunt.registerMultiTask('swatch', 'build themes', function() {
+    var t = this.target;
+    grunt.task.run('build:'+t);
+  });
+
+  grunt.registerTask('default', 'launch', function() {
+    grunt.task.run('watch');
+  });
 
 };
