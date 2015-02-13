@@ -12,7 +12,7 @@ module.exports = function(grunt) {
     less: {
       build: {
         files: {
-          'dist/css/style.css': 'src/less/style.less'
+          'dist/css/themes/1/style.css': 'src/less/style.less'
         }
       }
     },
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
     cssmin: {
       build: {
         files: {
-          'dist/css/style.min.css': 'dist/css/style.css'
+          'dist/css/themes/1/style.min.css': 'dist/css/themes/1/style.css'
         }
       }
     },
