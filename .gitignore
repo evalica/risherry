@@ -28,4 +28,4 @@ node_modules
 .lock-wscript
 
 # Themes generated files
-/src/less/themes/*/style.less
+/src/less/themes/*/.style.less

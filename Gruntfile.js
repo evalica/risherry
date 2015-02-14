@@ -54,7 +54,7 @@ module.exports = function(grunt) {
     var filesStyle = {};
 
     srcStyle = 'src/less/style.less';
-    destStyle = 'src/less/themes/'+ theme +'/style.less';
+    destStyle = 'src/less/themes/'+ theme +'/.style.less';
     filesStyle = {src: srcStyle, dest: destStyle};
 
     grunt.config('concat.dist', filesStyle);
@@ -65,7 +65,7 @@ module.exports = function(grunt) {
     var destLess;
     var filesLess = {};
 
-    srcLess = 'src/less/themes/'+ theme +'/style.less';
+    srcLess = 'src/less/themes/'+ theme +'/.style.less';
     destLess = 'dist/css/themes/'+ theme +'/style.css';
     filesLess[destLess] = srcLess;
 
