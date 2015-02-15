@@ -1,5 +1,6 @@
 body {
   background-color: #0c293c;
+  background-image: none;
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
 }
@@ -135,7 +136,7 @@ h2 {
   float: right;
 }
 .category {
-  margin-top: 3em;
+  padding-top: 44px;
   /* Needed for navigation */
 }
 .category ul {
@@ -189,7 +190,7 @@ h2 {
 }
 @media (max-width: 767px) {
   .category {
-    margin-top: 6em;
+    padding-top: 88px;
   }
 }
 .aside {

@@ -1,5 +1,6 @@
 body {
   background-color: #ffffff;
+  background-image: url('../../../../../../../img/themes/3/pattern.png');
   color: #287476;
   font-family: 'Open Sans', sans-serif;
 }
@@ -135,7 +136,7 @@ h2 {
   float: right;
 }
 .category {
-  margin-top: 3em;
+  padding-top: 44px;
   /* Needed for navigation */
 }
 .category ul {
@@ -189,7 +190,7 @@ h2 {
 }
 @media (max-width: 767px) {
   .category {
-    margin-top: 6em;
+    padding-top: 88px;
   }
 }
 .aside {
@@ -252,4 +253,20 @@ h2 {
   width: 16px;
   background-color: #ffffff;
   box-shadow: inset 0px 0px 2px rgba(255, 255, 255, 0.25);
+}
+.category:after {
+  background-color: #ffffff;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.row:last-of-type .category {
+  padding-bottom: 44px;
+  margin-bottom: -44px;
 }

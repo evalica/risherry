@@ -39,7 +39,7 @@ module.exports = function(grunt) {
     // configure watch to auto update ------------------------------------------ 
     watch: { 
       stylesheets: { 
-        files: ['src/less/skin/*.less', 'src/less/style.less', 'src/less/themes/**/variables.less'], 
+        files: ['src/less/skin/*.less', 'src/less/style.less', 'src/less/themes/**/variables.less', 'src/less/themes/**/custom.less'], 
         tasks: ['swatch'] 
       }
     }

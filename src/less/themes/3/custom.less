@@ -1,0 +1,17 @@
+.category:after {
+  background-color: @body-bg-color;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.row:last-of-type .category {
+  padding-bottom: @navigation-height;
+  margin-bottom: -@navigation-height;
+}
