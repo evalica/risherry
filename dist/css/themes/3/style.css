@@ -201,6 +201,15 @@ h2 {
 .xfolkentry {
   text-indent: -2em;
 }
+.vcard label {
+  color: #287476;
+  display: block;
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 1em;
+  text-transform: uppercase;
+}
 .portfolio-area .portfolio-list {
   padding: 0;
   margin-top: 1em;
