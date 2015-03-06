@@ -34,9 +34,6 @@ h2 {
   top: 0;
   z-index: 10000;
 }
-.content {
-  margin: 44px 0;
-}
 .footer {
   background-color: #0e1d26;
   color: #ffffff;
