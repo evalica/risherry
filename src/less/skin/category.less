@@ -44,8 +44,20 @@
     }
   }
   padding-top: @navigation-height; /* Needed for navigation */
-  @media (max-width: @screen-xs-max) {
-    padding-top: 2*@navigation-height;
+  &::after {
+    content: '';
+    display: block;
+    height: @navigation-height/2;
+    margin-top: @navigation-height;
+  }
+}
+
+#about {
+  padding-top: 1.5*@navigation-height;
+}
+@media (max-width: @screen-xs-max) {
+  #about {
+    padding-top: 2.5*@navigation-height;
   }
 }
 
