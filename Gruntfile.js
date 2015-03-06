@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 
     // themes list -------------------------------------------------------------
     swatch: {
-      moss:{}, 2:{}, 3:{}
+      bliss:{}, moss:{}, 2:{}, 3:{}
     },
 
     // copying the style.less file ---------------------------------------------
