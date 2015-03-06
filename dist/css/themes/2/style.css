@@ -185,9 +185,18 @@ h2 {
 .category .more[aria-expanded=false]:after {
   content: 'More \00BB';
 }
+.category::after {
+  content: '';
+  display: block;
+  height: 22px;
+  margin-top: 44px;
+}
+#about {
+  padding-top: 66px;
+}
 @media (max-width: 767px) {
-  .category {
-    padding-top: 88px;
+  #about {
+    padding-top: 110px;
   }
 }
 .aside {
