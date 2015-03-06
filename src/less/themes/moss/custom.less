@@ -1,3 +1,22 @@
 body {
   #gradient > .horizontal(#134e5e, #71b280);
 }
+
+#about, #talks {
+  #gradient > .horizontal(#000000, #004644);
+}
+
+@media (min-width: @screen-sm-min) {
+  #about {
+    background: url("/../../../../../../../../img/themes/moss/pattern.png") no-repeat 0 0 #000;
+  }
+}
+
+#about:after, #work:after {
+  content: '';
+  display: block;
+  height: @navigation-height/2;
+  background-color: @navigation-bg-color;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+}
+
