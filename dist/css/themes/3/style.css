@@ -1,6 +1,6 @@
 body {
   background-color: #ffffff;
-  background-image: url('../../../../../../../img/themes/3/pattern.png');
+  background-image: none;
   color: #287476;
   font-family: 'Open Sans', sans-serif;
 }
@@ -268,4 +268,20 @@ h2 {
   width: 16px;
   background-color: #ffffff;
   box-shadow: inset 0px 0px 2px rgba(255, 255, 255, 0.25);
+}
+#work {
+  background-color: #FbFbFb;
+}
+#about:after,
+#work:after {
+  content: '';
+  display: block;
+  height: 44px;
+  background: url('../../../../../../../img/themes/3/pattern.png') repeat-x 0 0 transparent;
+}
+#about:after {
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.2), 0 -1px 1px rgba(0, 0, 0, 0.07) inset;
+}
+#work:after {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
 }
