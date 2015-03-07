@@ -191,11 +191,11 @@ h2 {
   height: 22px;
   margin-top: 44px;
 }
-#about {
+.about {
   padding-top: 66px;
 }
 @media (max-width: 767px) {
-  #about {
+  .about {
     padding-top: 110px;
   }
 }
@@ -269,15 +269,15 @@ h2 {
   background-color: #0c293c;
   box-shadow: inset 0px 0px 2px rgba(255, 255, 255, 0.25);
 }
-body {
+.work {
   background-image: -webkit-linear-gradient(left, #134e5e 0%, #71b280 100%);
   background-image: -o-linear-gradient(left, #134e5e 0%, #71b280 100%);
   background-image: linear-gradient(to right, #134e5e 0%, #71b280 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff134e5e', endColorstr='#ff71b280', GradientType=1);
 }
-#about,
-#talks {
+.about,
+.talks {
   background-image: -webkit-linear-gradient(left, #000000 0%, #004644 100%);
   background-image: -o-linear-gradient(left, #000000 0%, #004644 100%);
   background-image: linear-gradient(to right, #000000 0%, #004644 100%);
@@ -285,15 +285,12 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff000000', endColorstr='#ff004644', GradientType=1);
 }
 @media (min-width: 768px) {
-  #about {
-    background: url("../../../../../../../img/themes/moss/pattern.png") no-repeat 0 0 #000000;
+  .about {
+    background: url("../../../../../../../../dist/img/themes/moss/pattern.png") no-repeat 0 0 #000000;
   }
 }
-#about:after,
-#work:after {
-  content: '';
-  display: block;
-  height: 22px;
+.about:after,
+.work:after {
   background-color: #0e1d26;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
 }
