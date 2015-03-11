@@ -286,7 +286,7 @@ h2 {
 }
 @media (min-width: 768px) {
   .about {
-    background: url("../../../../../../../../dist/img/themes/moss/pattern.png") no-repeat 0 0 #000000;
+    background: url("../../../../../../../../dist/img/themes/moss/pattern.jpg") no-repeat 0 0 #000000;
   }
 }
 .about:after,
