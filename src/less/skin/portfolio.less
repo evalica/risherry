@@ -11,6 +11,7 @@
 
   .portfolio-image {
     border: 8px solid @img-bg-color;
+    border-radius: 4px;
     max-width: 100%;
   }
 
@@ -34,6 +35,16 @@
       &:last-child:after {
         content:'';
       }
+    }
+  }
+
+  /* Hover behavior */
+  .portfolio-content:hover {
+    .portfolio-fields {
+      color: @content-text-color;
+    }
+    .portfolio-title a {
+      color: @link-text-hover-color;
     }
   }
 }
