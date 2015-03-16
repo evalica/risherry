@@ -1,4 +1,10 @@
 .category {
+  padding-top: 2.5*@navigation-height;
+  @media (min-width: @screen-sm-min) {
+    & {
+      padding-top: 1.5*@navigation-height;
+    }
+  }
   ul {
     list-style-type: none;
     padding-left: 2em;
@@ -44,21 +50,11 @@
       content: 'More \00BB';
     }
   }
-  padding-top: @navigation-height; /* Needed for navigation */
   &::after {
     content: '';
     display: block;
     height: @navigation-height/2;
     margin-top: @navigation-height;
-  }
-}
-
-.about {
-  padding-top: 1.5*@navigation-height;
-}
-@media (max-width: @screen-xs-max) {
-  .about {
-    padding-top: 2.5*@navigation-height;
   }
 }
 
