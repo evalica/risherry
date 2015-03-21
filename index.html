@@ -7,7 +7,10 @@
     <link type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans"/>
     <link type="text/css" rel="stylesheet" href='http://fonts.googleapis.com/css?family=Gentium+Basic'/>
-    <link type="text/css" rel="stylesheet" href="dist/css/themes/bliss/style.min.css" />
+    <link type="text/css" rel="stylesheet" title="Theme: Bliss" href="dist/css/themes/bliss/style.min.css" />
+    <link type="text/css" rel="stylesheet alternate" title="Theme: Moss" href="dist/css/themes/moss/style.min.css" />
+    <link type="text/css" rel="stylesheet alternate" title="Theme: Rain" href="dist/css/themes/rain/style.min.css" />
+    <link type="text/css" rel="stylesheet alternate" title="Theme: Bordo" href="dist/css/themes/bordo/style.min.css" />
     <title>risherry.ro</title>
   </head>
   <body data-spy="scroll" data-target=".menu">
@@ -282,10 +285,11 @@
               <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/ro/deed.en" title="Licensed under a Creative Commons Attribution-Share Alike 3.0 Romania License">Attribution-Share Alike 3.0</a> <span class="fa fa-cc"><span class="sr-only">CC</span></span> <span class="dtstart">2003 – 2015</span>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3">
+              <span class="hidden">Switch Color Theme:</span>
               <ul class="themes">
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><a href="#" onclick="setActiveStyleSheet('Theme: Bliss'); return false;"><span class="hidden">Bliss</span></a></li>
+                <li><a href="#" onclick="setActiveStyleSheet('Theme: Moss'); return false;"><span class="hidden">Moss</span></a></li>
+                <li><a href="#" onclick="setActiveStyleSheet('Theme: Rain'); return false;"><span class="hidden">Rain</span></a></li>
               </ul>
             </div>
           </div>
@@ -296,5 +300,6 @@
     <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
     <script type="text/javascript" src="src/js/portfolio.js"></script>
+    <script type="text/javascript" src="src/js/styleswitcher.js"></script>
   </body>
 </html>
