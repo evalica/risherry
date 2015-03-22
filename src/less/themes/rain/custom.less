@@ -1,7 +1,44 @@
-.about, .talks {
-  background-color: #F7F8FA;
-}
-
 .animation {
   display: none;
+}
+
+/* Headers displayed using background-clip + fallback */
+h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 5em;
+  font-weight: 900;
+  margin-bottom: .5em;
+
+  .about &, .talks & {
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+                url("@{img-path}@{theme-path}blue.jpg") repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+  }
+
+  .work & {
+    color: @body-bg-color;
+  }
+}
+
+/* Use a ligher color since the background-image is darker */
+.portfolio-area .portfolio-fields, 
+.portfolio-area .portfolio-content:hover .portfolio-fields,
+.work .aside {
+  color: @navigation-text-color;
+}
+
+/* Using an opacity gradient over an image */
+.work {
+  background-image: url("@{img-path}@{theme-path}blue.jpg");
+  &:before {
+    #gradient > .horizontal(@navigation-bg-color, #115b7f);
+    height: 100%;
+    bottom: 0;
+    position: absolute;
+    content: '';
+    width: 100%;
+    opacity: .85;
+  }
 }
