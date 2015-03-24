@@ -22,3 +22,16 @@ var userID  = 'risherry';
     });
   };
 })();
+
+(function() {
+  var risherryData = "src/risherry.json";
+
+  $.getJSON(risherryData, function(themes) {
+    var data = JSON.stringify(themes);
+    var themesData = JSON.parse(data),
+      getTemplate = $('#themes-template').html(),
+      template    = Handlebars.compile(getTemplate),
+      result      = template(themesData);
+    $('#themes').html(result);
+  });
+})();

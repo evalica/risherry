@@ -286,12 +286,20 @@
               <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/ro/deed.en" title="Licensed under a Creative Commons Attribution-Share Alike 3.0 Romania License">Attribution-Share Alike 3.0</a> <span class="fa fa-cc"><span class="sr-only">CC</span></span> <span class="dtstart">2003 – 2015</span>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3">
-              <span class="hidden">Switch Color Theme:</span>
-              <ul class="themes">
-                <li><a href="#" onclick="setActiveStyleSheet('Theme: Bliss'); return false;" title="Theme: Bliss"><span class="hidden">Bliss</span></a></li>
-                <li><a href="#" onclick="setActiveStyleSheet('Theme: Moss'); return false;" title="Theme: Moss"><span class="hidden">Moss</span></a></li>
-                <li><a href="#" onclick="setActiveStyleSheet('Theme: Rain'); return false;" title="Theme: Rain"><span class="hidden">Rain</span></a></li>
-              </ul>
+              <div id="themes">
+                <span class="hidden">Switch Color Theme:</span>
+                <script id="themes-template" type="text/x-handlebars-template">
+                  <ul class="themes">
+                    {{#each themes}}
+                      {{#if this.active}}
+                        <li>
+                          <a href="#" onclick="setActiveStyleSheet('Theme: {{this.name}}'); return false;" title="Theme: {{this.name}}"><span class="hidden">{{this.name}}</span></a>
+                        </li>
+                        {{/if}}
+                    {{/each}}
+                  </ul>
+                </script>
+              </div>
             </div>
           </div>
         </div>
