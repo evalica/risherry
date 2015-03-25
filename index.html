@@ -181,85 +181,21 @@
               <h2>Talks</h2>
             </div>
             <div class="col-xs-12 col-sm-8 col-md-9">
-              <ul>
-                <li class="xfolkentry">
-                  <a class="taggedlink" href="http://www.slideshare.net/valicac/design-process-in-an-open-community">&#8220;Design Process in an Open Community&#8221;</a> 
-                  &mdash;
-                  <a class="location" href="https://www.eventbrite.com/e/design-jam-autumn-edition-tickets-13430066691" title="Design Jam">Design Jam</a>, Ia&#351;i, 
-                  <span class="dtstart">Oct 2014</span>
-                </li>
-                <li class="xfolkentry">
-                  <a class="taggedlink" href="http://www.slideshare.net/valicac/xwikiorg">&#8220;XWiki.org, Project and Community&#8221;</a> 
-                  &mdash;
-                  <a class="location" href="http://www.xwiki.org/" title="XWiki">XWiki</a>, Ia&#351;i, 
-                  <span class="dtstart">Sep 2014</span>
-                </li>
-                <li class="xfolkentry">
-                  <a class="taggedlink" href="http://www.slideshare.net/valicac/xwiki-usability-testing-sessions">&#8220;Usability Testing Highlights and Findings&#8221;</a> 
-                  &mdash;
-                  <a class="location" href="http://www.xwiki.org/" title="XWiki">XWiki Seminar</a>, Vidraru, 
-                  <span class="dtstart">Jul 2014</span>
-                </li>
-                <li class="xfolkentry">
-                  <a class="taggedlink" href="http://www.slideshare.net/valicac/evolution-of-css">&#8220;Evolution of CSS&#8221;</a> 
-                  &mdash;
-                  <a class="location" href="http://www.eventbrite.com/e/winter-web-workshop-tickets-7122374213" title="Winter Web Workshop">Winter Web Workshop</a>, Ia&#351;i, 
-                  <span class="dtstart">Dec 2013</span>
-                </li>
-                <li class="xfolkentry">
-                  <a class="taggedlink" href="http://www.slideshare.net/valicac/xwiki-improvements-review-ver-24-51">&#8220;XWiki Improvements Review v2.4 - v5.1&#8221;</a> 
-                  &mdash;
-                  <a class="location" href="http://www.xwiki.org/" title="XWiki">XWiki Seminar</a>, Sighi&#351;oara, 
-                  <span class="dtstart">Jul 2013</span>
-                </li>
-              </ul>
+              <div id="talks-list">
+                <script id="talks-template" type="text/x-handlebars-template">
+                  <ul>
+                    {{#each talks}}
+                      <li class="xfolkentry">
+                        <a class="taggedlink" href="{{this.link}}">&#8220;{{this.name}}&#8221;</a> 
+                        &mdash;
+                        <a class="location" href="{{this.event.link}}" title="{{#if this.event.title}}{{this.event.title}}{{else}}{{this.event.name}}{{/if}}">{{this.event.name}}</a>, {{this.event.location}}, 
+                        <span class="dtstart">{{this.event.date}}</span>
+                      </li>
+                    {{/each}}
+                  </ul>
+                </script>
+              </div>
               <ul class="collapse" id="moreTalks">
-                <li class="xfolkentry">
-                  <a class="taggedlink" href="http://www.slideshare.net/Enygma2002/development-process-the-xwiki-way">&#8220;Development Process, the XWiki way&#8221;</a> 
-                  &mdash;
-                  <a class="location" href="http://jobshop.ro/" title="JobShop">JobShop</a>, Ia&#351;i, 
-                  <span class="dtstart">Apr 2012</span>
-                </li>
-                <li class="xfolkentry">
-                  <a class="taggedlink" href="http://www.slideshare.net/valicac/interconectarea-semantica-a-datelor-in-contextul-managementului-informatiilor-personale-2784214">&#8220;Semantically linked data in the context of personal information management&#8221;</a> 
-                  &mdash;
-                  <a class="location" href="http://www.infoiasi.ro/bin/Main/" title="Faculty of Computer Science, A.I.Cuza University of Iasi, Romania">Infoiasi</a>, Ia&#351;i, 
-                  <span class="dtstart">Jun 2009</span>
-                </li>
-                <li class="xfolkentry">
-                  <a class="taggedlink" href="http://www.slideshare.net/valicac/visual-communication-through-infographics-presentation">&#8220;Visual Communication through Infographics&#8221;</a> 
-                  &mdash;
-                  <a class="location" href="http://rochi2008.utcluj.ro/" title="RoCHI 2008">
-                    <abbr title="Romanian Computer Human Interaction">RoCHI</abbr> 2008</a>, 
-                  Ia&#351;i, 
-                  <span class="dtstart">Sep 2008</span>
-                </li>
-                <li class="xfolkentry">
-                  <a class="taggedlink" href="http://www.slideshare.net/valicac/interaction-design-patterns-presentation">&#8220;Interaction Design Patterns&#8221;</a> 
-                  &mdash;
-                  <a class="location" href="http://rochi2008.utcluj.ro/" title="RoCHI 2008">
-                    <abbr title="Romanian Computer Human Interaction">RoCHI</abbr> 2008</a>, 
-                  Ia&#351;i, 
-                  <span class="dtstart">Sep 2008</span>
-                </li>
-                <li class="xfolkentry">
-                  <a class="taggedlink" href="http://www.slideshare.net/valicac/captcha">&#8220;CAPTCHA&#8221;</a> 
-                  &mdash;
-                  <a class="location" href="http://www.infoiasi.ro/bin/Main/" title="Faculty of Computer Science, A.I.Cuza University of Iasi, Romania">Infoiasi</a>, Ia&#351;i, 
-                  <span class="dtstart">May 2008</span>
-                </li>
-                <li class="xfolkentry">
-                  <a class="taggedlink" href="http://www.slideshare.net/valicac/visual-cryptography">&#8220;Visual Cryptography&#8221;</a> 
-                  &mdash;
-                  <a class="location" href="http://www.infoiasi.ro/bin/Main/" title="Faculty of Computer Science, A.I.Cuza University of Iasi, Romania">Infoiasi</a>, Ia&#351;i, 
-                  <span class="dtstart">Apr 2008</span>
-                </li>
-                <li class="xfolkentry">
-                  <a class="taggedlink" href="http://www.slideshare.net/valicac/software-testing">&#8220;Software Testing &mdash; Achievements, Dreams&#8221;</a> 
-                  &mdash;
-                  <a class="location" href="http://www.infoiasi.ro/bin/Main/" title="Faculty of Computer Science, A.I.Cuza University of Iasi, Romania">Infoiasi</a>, Ia&#351;i, 
-                  <span class="dtstart">Dec 2007</span>
-                </li>
                 <li class="xfolkentry">
                   <a class="taggedlink" href="http://www.slideshare.net/valicac/mashups-87355/1">&#8220;Mashups &mdash; work you don&#39;t have to do&#8221;</a> 
                   &mdash;
@@ -295,7 +231,7 @@
                         <li>
                           <a href="#" onclick="setActiveStyleSheet('Theme: {{this.name}}'); return false;" title="Theme: {{this.name}}"><span class="hidden">{{this.name}}</span></a>
                         </li>
-                        {{/if}}
+                      {{/if}}
                     {{/each}}
                   </ul>
                 </script>

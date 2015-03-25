@@ -1,4 +1,158 @@
 {
+  "talks": [
+    {
+      "name": "Design Process in an Open Community",
+      "link": "http://www.slideshare.net/valicac/design-process-in-an-open-community",
+      "event":
+      {
+        "name": "Design Jam",
+        "link": "https://www.eventbrite.com/e/design-jam-autumn-edition-tickets-13430066691",
+        "location": "Iaşi",
+        "date": "Oct 2014"
+      }
+    },
+    {
+      "name": "XWiki.org, Project and Community",
+      "link": "http://www.slideshare.net/valicac/xwikiorg",
+      "event":
+      {
+        "name": "XWiki Training",
+        "title": "XWiki",
+        "link": "http://www.xwiki.org/",
+        "location": "Iaşi",
+        "date": "Sep 2014"
+      }
+    },
+    {
+      "name": "Usability Testing Highlights and Findings",
+      "link": "http://www.slideshare.net/valicac/xwiki-usability-testing-sessions",
+      "event":
+      {
+        "name": "XWiki Seminar",
+        "title": "XWiki",
+        "link": "http://www.xwiki.org/",
+        "location": "Vidraru",
+        "date": "Jul 2014"
+      }
+    },
+    {
+      "name": "Evolution of CSS",
+      "link": "http://www.slideshare.net/valicac/evolution-of-css",
+      "event":
+      {
+        "name": "Winter Web Workshop",
+        "link": "http://www.eventbrite.com/e/winter-web-workshop-tickets-7122374213",
+        "location": "Iaşi",
+        "date": "Dec 2013"
+      }
+    },
+    {
+      "name": "XWiki Improvements Review v2.4 - v5.1",
+      "link": "http://www.slideshare.net/valicac/xwiki-improvements-review-ver-24-51",
+      "event":
+      {
+        "name": "XWiki Seminar",
+        "title": "XWiki",
+        "link": "http://www.xwiki.org/",
+        "location": "Sighişoara",
+        "date": "Jul 2013"
+      }
+    },
+    {
+      "name": "Development Process, the XWiki way",
+      "link": "http://www.slideshare.net/Enygma2002/development-process-the-xwiki-way",
+      "event":
+      {
+        "name": "JobShop",
+        "link": "http://jobshop.ro/",
+        "location": "Iaşi",
+        "date": "Apr 2012"
+      }
+    },
+    {
+      "name": "Semantically linked data in the context of personal information management",
+      "link": "http://www.slideshare.net/valicac/interconectarea-semantica-a-datelor-in-contextul-managementului-informatiilor-personale-2784214",
+      "event":
+      {
+        "name": "Infoiasi",
+        "title": "Faculty of Computer Science, A.I.Cuza University of Iaşi, Romania",
+        "link": "http://www.infoiasi.ro",
+        "location": "Iaşi",
+        "date": "Jun 2009"
+      }
+    },
+    {
+      "name": "Visual Communication through Infographics",
+      "link": "http://www.slideshare.net/valicac/visual-communication-through-infographics-presentation",
+      "event":
+      {
+        "name": "RoCHI",
+        "title": "Romanian Computer Human Interaction",
+        "link": "http://rochi2008.utcluj.ro/",
+        "location": "Iaşi",
+        "date": "Sep 2008"
+      }
+    },
+    {
+      "name": "Interaction Design Patterns",
+      "link": "http://www.slideshare.net/valicac/interaction-design-patterns-presentation",
+      "event":
+      {
+        "name": "RoCHI",
+        "title": "Romanian Computer Human Interaction",
+        "link": "http://rochi2008.utcluj.ro/",
+        "location": "Iaşi",
+        "date": "Sep 2008"
+      }
+    },
+    {
+      "name": "CAPTCHA",
+      "link": "http://www.slideshare.net/valicac/captcha",
+      "event":
+      {
+        "name": "Infoiasi",
+        "title": "Faculty of Computer Science, A.I.Cuza University of Iaşi, Romania",
+        "link": "http://www.infoiasi.ro",
+        "location": "Iaşi",
+        "date": "May 2008"
+      }
+    },
+    {
+      "name": "Visual Cryptography",
+      "link": "http://www.slideshare.net/valicac/visual-cryptography",
+      "event":
+      {
+        "name": "Infoiasi",
+        "title": "Faculty of Computer Science, A.I.Cuza University of Iaşi, Romania",
+        "link": "http://www.infoiasi.ro",
+        "location": "Iaşi",
+        "date": "Apr 2008"
+      }
+    },
+    {
+      "name": "Software Testing — Achievements, Dreams",
+      "link": "http://www.slideshare.net/valicac/software-testing",
+      "event":
+      {
+        "name": "Infoiasi",
+        "title": "Faculty of Computer Science, A.I.Cuza University of Iaşi, Romania",
+        "link": "http://www.infoiasi.ro",
+        "location": "Iaşi",
+        "date": "Dec 2007"
+      }
+    },
+    {
+      "name": "Mashups — work you don't have to do",
+      "link": "http://www.slideshare.net/valicac/mashups-87355/1",
+      "event":
+      {
+        "name": "<Web/> Workshop on Web Technologies",
+        "link": "http://swapps.wordpress.com/",
+        "location": "Iaşi",
+        "date": "May 2007"
+      }
+    }
+  ],
   "themes": [
     {
       "name": "Bliss",
