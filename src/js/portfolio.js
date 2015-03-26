@@ -1,8 +1,8 @@
-var apiKey  = '83ALWlFcfphzIjCYB9q0lNx8ARptcRn9';
-var userID  = 'risherry';
+var apiKey = '83ALWlFcfphzIjCYB9q0lNx8ARptcRn9';
+var userID = 'risherry';
 (function() {
   var perPage = 10;
-  var behanceProjectAPI = 'http://www.behance.net/v2/users/'+ userID +'/projects?callback=?&api_key=' + apiKey + '&per_page=' + perPage;
+  var behanceProjectAPI = 'http://www.behance.net/v2/users/' + userID + '/projects?callback=?&api_key=' + apiKey + '&per_page=' + perPage;
 
   function setPortfolioTemplate() {
     var projectData = JSON.parse(sessionStorage.getItem('behanceProject')),
