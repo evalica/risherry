@@ -1,4 +1,33 @@
 {
+  "external": [
+    {
+      "name": "Twitter",
+      "link": "https://twitter.com/evalica"
+    },
+    {
+      "name": "Steam",
+      "link": "http://steamcommunity.com/id/risherry", 
+      "icon": "steam-square"
+    },
+    {
+      "name": "StackExchange",
+      "link": "http://ux.stackexchange.com/users/1141/risherry", 
+      "icon": "stack-overflow",
+      "class": "stackoverflow"
+    },
+    {
+      "name": "Behance",
+      "link": "https://www.behance.net/risherry"
+    },
+    {
+      "name": "GitHub",
+      "link": "https://github.com/evalica/"
+    },
+    {
+      "name": "LinkedIn",
+      "link": "http://ro.linkedin.com/in/evalica"
+    }
+  ],
   "talks": [
     {
       "name": "Design Process in an Open Community",

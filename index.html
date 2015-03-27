@@ -41,38 +41,17 @@
               </ul>
             </div>
             <div class="external col-xs-12 col-sm-6">
-              <ul>
-                <li>
-                  <a class="twitter" href="https://twitter.com/evalica" title="Twitter">
-                    <span class="fa fa-twitter"><span class="sr-only">Twitter</span></span>
-                  </a>
-                </li>
-                <li>
-                  <a class="steam" href="http://steamcommunity.com/id/risherry" title="Steam">
-                    <span class="fa fa-steam-square"><span class="sr-only">Steam</span></span>
-                  </a>
-                </li>
-                <li>
-                  <a class="stackoverflow" href="http://ux.stackexchange.com/users/1141/risherry" title="StackExchange">
-                    <span class="fa fa-stack-overflow"><span class="sr-only">StackExchange</span></span>
-                  </a>
-                </li>
-                <li>
-                  <a class="behance" href="https://www.behance.net/risherry" title="Behance">
-                    <span class="fa fa-behance"><span class="sr-only">Behance</span></span>
-                  </a>
-                </li>
-                <li>
-                  <a class="git" href="https://github.com/evalica/" title="GitHub">
-                    <span class="fa fa-github"><span class="sr-only">GitHub</span></span>
-                  </a>
-                </li>
-                <li>
-                  <a class="linkedin" href="http://ro.linkedin.com/in/evalica" title="LinkedIn">
-                    <span class="fa fa-linkedin"><span class="sr-only">LinkedIn</span></span>
-                  </a>
-                </li>
-              </ul>
+              <script id="external-template" type="text/x-handlebars-template">
+                <ul>
+                  {{#each external}}
+                    <li>
+                      <a class="{{{idFallback this 'class'}}}" href="{{this.link}}" title="{{this.name}}">
+                        <span class="fa fa-{{{idFallback this 'icon'}}}"><span class="sr-only">{{this.name}}</span></span>
+                      </a>
+                    </li>
+                  {{/each}}
+                </ul>
+              </script>
             </div>
           </div>
         </div>
