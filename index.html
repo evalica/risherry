@@ -7,11 +7,14 @@
     <link type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans" />
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Gentium+Basic" />
+    <link type="text/css" rel="stylesheet" title="Theme: Bliss" href="dist/css/themes/bliss/style.min.css" />
     <script id="stylesheet-template" type="text/x-handlebars-template">
       {{#each themes}}
-        {{#if this.active}}
-          <link type="text/css" rel="stylesheet{{#unless this.primary}} alternate{{/unless}}" title="Theme: {{this.name}}" href="dist/css/themes/{{{idFallback this 'icon'}}}/style.min.css" />
-        {{/if}}
+        {{#unless this.primary}}
+          {{#if this.active}}
+            <link type="text/css" rel="stylesheet{{#unless this.primary}} alternate{{/unless}}" title="Theme: {{this.name}}" href="dist/css/themes/{{{idFallback this 'icon'}}}/style.min.css" />
+          {{/if}}
+        {{/unless}}
       {{/each}}
     </script>
     <title>risherry.ro</title>
