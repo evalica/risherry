@@ -9,7 +9,7 @@ var userID = 'risherry';
       getTemplate = $('#portfolio-template').html(),
       template    = Handlebars.compile(getTemplate),
       result      = template(projectData);
-    $('#portfolio').html(result);
+    $('.portfolio').html(result);
   };
 
   if(sessionStorage.getItem('behanceProject')) {
@@ -30,14 +30,14 @@ var userID = 'risherry';
     var getTemplate = $('#themes-template').html(),
         template    = Handlebars.compile(getTemplate),
         result      = template(themes);
-    $('#themes').html(result);
+    $('.themes-container').html(result);
   });
 
   $.getJSON(risherryData, function(talks) {
     var getTemplate = $('#talks-template').html(),
         template    = Handlebars.compile(getTemplate),
         result      = template(talks);
-    $('#talks-list').html(result);
+    $('.talks-container').html(result);
   });
 
   $.getJSON(risherryData, function(external) {
