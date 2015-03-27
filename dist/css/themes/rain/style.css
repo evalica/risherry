@@ -1,5 +1,5 @@
 body {
-  background-color: #ffffff;
+  background-color: #f7f8fa;
   background-image: none;
   color: #646c81;
   font-family: 'Open Sans', sans-serif;
@@ -73,7 +73,7 @@ h2 {
   /* fa-linkedin fa-linkedin-square */
   background-color: #007bb6;
 }
-.navigation .git:hover {
+.navigation .github:hover {
   /* fa-git fa-git-square fa-github fa-github-square fa-github-alt */
   background-color: #44A79B;
 }
@@ -226,51 +226,50 @@ h2 {
   font-size: 22px;
   margin: .3em 0 .7em;
 }
-.portfolio-area {
+.portfolio {
   /* Hover behavior */
 }
-.portfolio-area .portfolio-list {
+.portfolio .portfolio-list {
   padding: 0;
   margin-top: 1em;
 }
-.portfolio-area .portfolio-item {
+.portfolio .portfolio-item {
   float: left;
   min-height: 250px;
 }
-.portfolio-area .portfolio-image {
+.portfolio .portfolio-image {
   border: 8px solid #f7f8fa;
   border-radius: 4px;
   max-width: 100%;
 }
-.portfolio-area .portfolio-title {
+.portfolio .portfolio-title {
   margin: .5em 0;
 }
-.portfolio-area .portfolio-fields {
+.portfolio .portfolio-fields {
   font-size: .8em;
   color: #808a96;
 }
-.portfolio-area .portfolio-fields .field-list {
+.portfolio .portfolio-fields .field-list {
   padding: 0;
 }
-.portfolio-area .portfolio-fields .field-item {
+.portfolio .portfolio-fields .field-item {
   display: inline-block;
   padding: 0;
   margin: 0;
 }
-.portfolio-area .portfolio-fields .field-item:after {
+.portfolio .portfolio-fields .field-item:after {
   content: ', ';
 }
-.portfolio-area .portfolio-fields .field-item:last-child:after {
+.portfolio .portfolio-fields .field-item:last-child:after {
   content: '';
 }
-.portfolio-area .portfolio-content:hover .portfolio-fields {
+.portfolio .portfolio-content:hover .portfolio-fields {
   color: #646c81;
 }
-.portfolio-area .portfolio-content:hover .portfolio-title a {
+.portfolio .portfolio-content:hover .portfolio-title a {
   color: #00cefb;
 }
 .themes {
-  color: #808a96;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -286,10 +285,65 @@ h2 {
 .themes li {
   height: 16px;
   width: 16px;
-  background-color: #ffffff;
+  background-color: #f7f8fa;
   box-shadow: inset 0px 0px 2px rgba(255, 255, 255, 0.25);
 }
-.about,
-.talks {
-  background-color: #F7F8FA;
+.themes li a {
+  display: block;
+  height: 100%;
+}
+.category {
+  position: relative;
+}
+.category .container {
+  z-index: 1;
+  position: relative;
+}
+.animation {
+  bottom: 21px;
+  position: absolute;
+  z-index: 0;
+}
+.animation {
+  display: none;
+}
+/* Headers displayed using background-clip + fallback */
+h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 5em;
+  font-weight: 900;
+  margin-bottom: .5em;
+}
+.about h2,
+.talks h2 {
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent), url("../../../../../../../../dist/img/themes/rain/blue.jpg") repeat;
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+}
+.work h2 {
+  color: #f7f8fa;
+}
+/* Use a ligher color since the background-image is darker */
+.portfolio .portfolio-fields,
+.portfolio .portfolio-content:hover .portfolio-fields,
+.work .aside {
+  color: #ffffff;
+}
+/* Using an opacity gradient over an image */
+.work {
+  background-image: url("../../../../../../../../dist/img/themes/rain/blue.jpg");
+}
+.work:before {
+  background-image: -webkit-linear-gradient(left, #1a1c25 0%, #115b7f 100%);
+  background-image: -o-linear-gradient(left, #1a1c25 0%, #115b7f 100%);
+  background-image: linear-gradient(to right, #1a1c25 0%, #115b7f 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1a1c25', endColorstr='#ff115b7f', GradientType=1);
+  height: 100%;
+  bottom: 0;
+  position: absolute;
+  content: '';
+  width: 100%;
+  opacity: .85;
 }

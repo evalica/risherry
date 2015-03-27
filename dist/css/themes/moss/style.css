@@ -73,10 +73,9 @@ h2 {
   /* fa-linkedin fa-linkedin-square */
   background-color: #007bb6;
 }
-.navigation .git:hover {
+.navigation .github:hover {
   /* fa-git fa-git-square fa-github fa-github-square fa-github-alt */
   background-color: #44A79B;
-  /* #151515 */
 }
 .navigation .stackoverflow:hover {
   /* fa-stack-overflow */
@@ -85,7 +84,6 @@ h2 {
 .navigation .behance:hover {
   /* fa-behance fa-behance-square */
   background-color: #CF9586;
-  /*#131418;*/
 }
 .navigation .steam:hover {
   /* fa-steam fa-steam-square */
@@ -206,17 +204,17 @@ h2 {
 .xfolkentry {
   text-indent: -2em;
 }
-.vcard label {
+.vcard dt {
   color: #ffffff;
   display: block;
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 1px;
   margin-bottom: 0;
   margin-top: 2em;
   text-transform: uppercase;
 }
-.vcard label:first-of-type {
+.vcard dt:first-of-type {
   margin-top: 1em;
 }
 .details {
@@ -228,51 +226,50 @@ h2 {
   font-size: 22px;
   margin: .3em 0 .7em;
 }
-.portfolio-area {
+.portfolio {
   /* Hover behavior */
 }
-.portfolio-area .portfolio-list {
+.portfolio .portfolio-list {
   padding: 0;
   margin-top: 1em;
 }
-.portfolio-area .portfolio-item {
+.portfolio .portfolio-item {
   float: left;
   min-height: 250px;
 }
-.portfolio-area .portfolio-image {
+.portfolio .portfolio-image {
   border: 8px solid #ffffff;
   border-radius: 4px;
   max-width: 100%;
 }
-.portfolio-area .portfolio-title {
+.portfolio .portfolio-title {
   margin: .5em 0;
 }
-.portfolio-area .portfolio-fields {
+.portfolio .portfolio-fields {
   font-size: .8em;
   color: #bbbbbb;
 }
-.portfolio-area .portfolio-fields .field-list {
+.portfolio .portfolio-fields .field-list {
   padding: 0;
 }
-.portfolio-area .portfolio-fields .field-item {
+.portfolio .portfolio-fields .field-item {
   display: inline-block;
   padding: 0;
   margin: 0;
 }
-.portfolio-area .portfolio-fields .field-item:after {
+.portfolio .portfolio-fields .field-item:after {
   content: ', ';
 }
-.portfolio-area .portfolio-fields .field-item:last-child:after {
+.portfolio .portfolio-fields .field-item:last-child:after {
   content: '';
 }
-.portfolio-area .portfolio-content:hover .portfolio-fields {
+.portfolio .portfolio-content:hover .portfolio-fields {
   color: #ffffff;
 }
-.portfolio-area .portfolio-content:hover .portfolio-title a {
+.portfolio .portfolio-content:hover .portfolio-title a {
   color: #f3ff77;
 }
 .themes {
-  color: #bbbbbb;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -290,6 +287,22 @@ h2 {
   width: 16px;
   background-color: #0c293c;
   box-shadow: inset 0px 0px 2px rgba(255, 255, 255, 0.25);
+}
+.themes li a {
+  display: block;
+  height: 100%;
+}
+.category {
+  position: relative;
+}
+.category .container {
+  z-index: 1;
+  position: relative;
+}
+.animation {
+  bottom: 21px;
+  position: absolute;
+  z-index: 0;
 }
 .work {
   background-image: -webkit-linear-gradient(left, #134e5e 0%, #71b280 100%);
