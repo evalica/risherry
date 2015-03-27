@@ -185,7 +185,8 @@
   "themes": [
     {
       "name": "Bliss",
-      "active": true
+      "active": true, 
+      "primary": true
     },
     {
       "name": "Moss",
@@ -196,8 +197,7 @@
       "active": true
     },
     {
-      "name": "Bordo",
-      "active": false
+      "name": "Bordo"
     }
   ]
 }

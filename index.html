@@ -6,11 +6,14 @@
     <link type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans" />
-    <link type="text/css" rel="stylesheet" href='http://fonts.googleapis.com/css?family=Gentium+Basic' />
-    <link type="text/css" rel="stylesheet" title="Theme: Bliss" href="dist/css/themes/bliss/style.min.css" />
-    <link type="text/css" rel="stylesheet alternate" title="Theme: Moss" href="dist/css/themes/moss/style.min.css" />
-    <link type="text/css" rel="stylesheet alternate" title="Theme: Rain" href="dist/css/themes/rain/style.min.css" />
-    <link type="text/css" rel="stylesheet alternate" title="Theme: Bordo" href="dist/css/themes/bordo/style.min.css" />
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Gentium+Basic" />
+    <script id="stylesheet-template" type="text/x-handlebars-template">
+      {{#each themes}}
+        {{#if this.active}}
+          <link type="text/css" rel="stylesheet{{#unless this.primary}} alternate{{/unless}}" title="Theme: {{this.name}}" href="dist/css/themes/{{{idFallback this 'icon'}}}/style.min.css" />
+        {{/if}}
+      {{/each}}
+    </script>
     <title>risherry.ro</title>
   </head>
   <body data-spy="scroll" data-target=".menu">
