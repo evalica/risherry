@@ -26,11 +26,11 @@ var userID = 'risherry';
 (function() {
   var risherryData = "src/data/risherry.json";
 
-  renderTemplate(risherryData, '#external-template', '.external');
-  renderTemplate(risherryData, '#about-template', '.about-container');
-  renderTemplate(risherryData, '#work-template', '.work-container');
-  renderTemplate(risherryData, '#talks-template', '.talks-container');
-  renderTemplate(risherryData, '#license-template', '.license-container');
+  renderTemplate(risherryData, '#external-template');
+  renderTemplate(risherryData, '#about-template');
+  renderTemplate(risherryData, '#work-template');
+  renderTemplate(risherryData, '#talks-template');
+  renderTemplate(risherryData, '#license-template');
 
 })();
 
@@ -44,25 +44,18 @@ Handlebars.registerHelper('idFallback', function(object, property) {
   return value;
 });
 
-function renderTemplate(dataLocation, templateId, containerId) {
+function renderTemplate(dataLocation, templateId) {
   $.getJSON(dataLocation, function(data) {
     var templateString = $(templateId).html(),
         template    = Handlebars.compile(templateString),
         result      = template(data);
-    $(containerId).html(result);
+    $(templateId).replaceWith(result);
   });
 };
 
 (function() {
   var themesData = "src/data/themes.json";
 
-  $.getJSON(themesData, function(stylesheets) {
-    var getTemplate = $('#stylesheet-template').html(),
-        template    = Handlebars.compile(getTemplate),
-        result      = template(stylesheets);
-    $('#stylesheet-template').remove();
-    $('head title').before(result);
-  });
-
-  renderTemplate(themesData, '#themes-template', '.themes-container');
+  renderTemplate(themesData, '#stylesheet-template');
+  renderTemplate(themesData, '#themes-template');
 })();
