@@ -26,11 +26,11 @@ var userID = 'risherry';
 (function() {
   var risherryData = "src/risherry.json";
 
-  $.getJSON(risherryData, function(themes) {
-    var getTemplate = $('#themes-template').html(),
+  $.getJSON(risherryData, function(footer) {
+    var getTemplate = $('#footer-template').html(),
         template    = Handlebars.compile(getTemplate),
-        result      = template(themes);
-    $('.themes-container').html(result);
+        result      = template(footer);
+    $('.footer-container').html(result);
   });
 
   $.getJSON(risherryData, function(talks) {
@@ -55,11 +55,18 @@ var userID = 'risherry';
     $('head title').before(result);
   });
 
-   $.getJSON(risherryData, function(about) {
+  $.getJSON(risherryData, function(about) {
     var getTemplate = $('#about-template').html(),
         template    = Handlebars.compile(getTemplate),
         result      = template(about);
     $('.about-container').html(result);
+  });
+
+  $.getJSON(risherryData, function(work) {
+    var getTemplate = $('#work-template').html(),
+        template    = Handlebars.compile(getTemplate),
+        result      = template(work);
+    $('.work-container').html(result);
   });
 })();
 

@@ -20,15 +20,9 @@
       "position": "Interaction Designer"
     }, 
     "quotes": [
-      {
-        "quote": "I'm an Open Source committer, <a href='https://www.behance.net/risherry' title='Behance Profile'>designing</a> and <a href='https://github.com/evalica/'' title='GitHub Profile'>developing</a> for the XWiki.org community."
-      },
-      {
-        "quote": "I like working on products, helping them improve, be more usable, more beautiful, more performant and staying relevant."
-      },
-      {  
-        "quote": "In my spare time, I'm a gamer and a collector."
-      }
+      "I'm an Open Source committer, <a href='https://www.behance.net/risherry' title='Behance Profile'>designing</a> and <a href='https://github.com/evalica/'' title='GitHub Profile'>developing</a> for the XWiki.org community.",
+      "I like working on products, helping them improve, be more usable, more beautiful, more performant and staying relevant.",
+      "In my spare time, I'm a gamer and a collector."
     ],
     "external": [
       {
@@ -60,6 +54,9 @@
       }
     ]
   },
+  "work": [
+    "More design proposals can be found at <a href='http://design.xwiki.org/xwiki/bin/view/Main/WebHome#|t=proposal&amp;p=1&amp;l=15&amp;s=doc.date&amp;d=desc&amp;participants=evalica' title='Design.xwiki.org'>design.xwiki.org</a>"
+  ],
   "talks": [
     {
       "name": "Design Process in an Open Community",
@@ -214,6 +211,13 @@
       }
     }
   ],
+  "contact": "I love sharing what knowledge I have, especially to students. If you'd like me to speak at your event, give you advice or just saying hi, <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#118;&#97;&#108;&#105;&#99;&#97;&#99;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;' title='Contact'>drop me a line</a>.",
+  "license": {
+    "name": "Attribution-Share Alike 3.0",
+    "title": "Licensed under a Creative Commons Attribution-Share Alike 3.0 Romania License",
+    "link": "http://creativecommons.org/licenses/by-sa/3.0/ro/deed.en",
+    "date": "2003 – 2015"
+  },
   "themes": [
     {
       "name": "Bliss",
