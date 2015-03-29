@@ -5,11 +5,8 @@ var userID = 'risherry';
   var behanceProjectAPI = 'http://www.behance.net/v2/users/' + userID + '/projects?callback=?&api_key=' + apiKey + '&per_page=' + perPage;
 
   function setPortfolioTemplate() {
-    var projectData = JSON.parse(sessionStorage.getItem('behanceProject')),
-      getTemplate = $('#portfolio-template').html(),
-      template    = Handlebars.compile(getTemplate),
-      result      = template(projectData);
-    $('.portfolio').html(result);
+    var projectData = JSON.parse(sessionStorage.getItem('behanceProject'));
+    renderTemplateFromData(projectData, '#portfolio-template');
   };
 
   if(sessionStorage.getItem('behanceProject')) {
@@ -44,12 +41,16 @@ Handlebars.registerHelper('idFallback', function(object, property) {
   return value;
 });
 
+function renderTemplateFromData(data, templateId) {
+  var templateString = $(templateId).html(),
+      template    = Handlebars.compile(templateString),
+      result      = template(data);
+  $(templateId).replaceWith(result);
+};
+
 function renderTemplate(dataLocation, templateId) {
   $.getJSON(dataLocation, function(data) {
-    var templateString = $(templateId).html(),
-        template    = Handlebars.compile(templateString),
-        result      = template(data);
-    $(templateId).replaceWith(result);
+    renderTemplateFromData(data, templateId);
   });
 };
 
