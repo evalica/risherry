@@ -217,23 +217,5 @@
     "title": "Licensed under a Creative Commons Attribution-Share Alike 3.0 Romania License",
     "link": "http://creativecommons.org/licenses/by-sa/3.0/ro/deed.en",
     "date": "2003 – 2015"
-  },
-  "themes": [
-    {
-      "name": "Bliss",
-      "active": true,
-      "primary": true
-    },
-    {
-      "name": "Moss",
-      "active": true
-    },
-    {
-      "name": "Rain",
-      "active": true
-    },
-    {
-      "name": "Bordo"
-    }
-  ]
+  }
 }

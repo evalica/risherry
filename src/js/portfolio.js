@@ -26,11 +26,11 @@ var userID = 'risherry';
 (function() {
   var risherryData = "src/risherry.json";
 
-  $.getJSON(risherryData, function(footer) {
-    var getTemplate = $('#footer-template').html(),
+  $.getJSON(risherryData, function(license) {
+    var getTemplate = $('#license-template').html(),
         template    = Handlebars.compile(getTemplate),
-        result      = template(footer);
-    $('.footer-container').html(result);
+        result      = template(license);
+    $('.license-container').html(result);
   });
 
   $.getJSON(risherryData, function(talks) {
@@ -45,14 +45,6 @@ var userID = 'risherry';
         template    = Handlebars.compile(getTemplate),
         result      = template(external);
     $('.external').html(result);
-  });
-
-  $.getJSON(risherryData, function(stylesheets) {
-    var getTemplate = $('#stylesheet-template').html(),
-        template    = Handlebars.compile(getTemplate),
-        result      = template(stylesheets);
-    $('#stylesheet-template').remove();
-    $('head title').before(result);
   });
 
   $.getJSON(risherryData, function(about) {
@@ -79,3 +71,23 @@ Handlebars.registerHelper('idFallback', function(object, property) {
   }
   return value;
 });
+
+(function() {
+  var risherryData = "src/themes.json";
+
+  $.getJSON(risherryData, function(stylesheets) {
+    var getTemplate = $('#stylesheet-template').html(),
+        template    = Handlebars.compile(getTemplate),
+        result      = template(stylesheets);
+    $('#stylesheet-template').remove();
+    $('head title').before(result);
+  });
+
+  $.getJSON(risherryData, function(themes) {
+    var getTemplate = $('#themes-template').html(),
+        template    = Handlebars.compile(getTemplate),
+        result      = template(themes);
+    $('.themes-container').html(result);
+  });
+
+})();

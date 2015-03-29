@@ -1,0 +1,20 @@
+{
+  "themes": [
+    {
+      "name": "Bliss",
+      "active": true,
+      "primary": true
+    },
+    {
+      "name": "Moss",
+      "active": true
+    },
+    {
+      "name": "Rain",
+      "active": true
+    },
+    {
+      "name": "Bordo"
+    }
+  ]
+}
