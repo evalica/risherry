@@ -1,0 +1,11 @@
+{
+  "behanceAPI": {
+    "userID": "risherry",
+    "apiKey": "83ALWlFcfphzIjCYB9q0lNx8ARptcRn9",
+    "perPage": "10"
+  },
+  "data": {
+    "user": "src/data/risherry.json",
+    "themes": "src/data/themes.json"
+  }
+}
