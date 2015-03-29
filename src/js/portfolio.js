@@ -26,20 +26,6 @@ var userID = 'risherry';
 (function() {
   var risherryData = "src/data/risherry.json";
 
-  $.getJSON(risherryData, function(license) {
-    var getTemplate = $('#license-template').html(),
-        template    = Handlebars.compile(getTemplate),
-        result      = template(license);
-    $('.license-container').html(result);
-  });
-
-  $.getJSON(risherryData, function(talks) {
-    var getTemplate = $('#talks-template').html(),
-        template    = Handlebars.compile(getTemplate),
-        result      = template(talks);
-    $('.talks-container').html(result);
-  });
-
   $.getJSON(risherryData, function(external) {
     var getTemplate = $('#external-template').html(),
         template    = Handlebars.compile(getTemplate),
@@ -59,6 +45,20 @@ var userID = 'risherry';
         template    = Handlebars.compile(getTemplate),
         result      = template(work);
     $('.work-container').html(result);
+  });
+
+  $.getJSON(risherryData, function(talks) {
+    var getTemplate = $('#talks-template').html(),
+        template    = Handlebars.compile(getTemplate),
+        result      = template(talks);
+    $('.talks-container').html(result);
+  });
+
+  $.getJSON(risherryData, function(license) {
+    var getTemplate = $('#license-template').html(),
+        template    = Handlebars.compile(getTemplate),
+        result      = template(license);
+    $('.license-container').html(result);
   });
 })();
 
