@@ -26,40 +26,12 @@ var userID = 'risherry';
 (function() {
   var risherryData = "src/data/risherry.json";
 
-  $.getJSON(risherryData, function(external) {
-    var getTemplate = $('#external-template').html(),
-        template    = Handlebars.compile(getTemplate),
-        result      = template(external);
-    $('.external').html(result);
-  });
+  renderTemplate(risherryData, '#external-template', '.external');
+  renderTemplate(risherryData, '#about-template', '.about-container');
+  renderTemplate(risherryData, '#work-template', '.work-container');
+  renderTemplate(risherryData, '#talks-template', '.talks-container');
+  renderTemplate(risherryData, '#license-template', '.license-container');
 
-  $.getJSON(risherryData, function(about) {
-    var getTemplate = $('#about-template').html(),
-        template    = Handlebars.compile(getTemplate),
-        result      = template(about);
-    $('.about-container').html(result);
-  });
-
-  $.getJSON(risherryData, function(work) {
-    var getTemplate = $('#work-template').html(),
-        template    = Handlebars.compile(getTemplate),
-        result      = template(work);
-    $('.work-container').html(result);
-  });
-
-  $.getJSON(risherryData, function(talks) {
-    var getTemplate = $('#talks-template').html(),
-        template    = Handlebars.compile(getTemplate),
-        result      = template(talks);
-    $('.talks-container').html(result);
-  });
-
-  $.getJSON(risherryData, function(license) {
-    var getTemplate = $('#license-template').html(),
-        template    = Handlebars.compile(getTemplate),
-        result      = template(license);
-    $('.license-container').html(result);
-  });
 })();
 
 Handlebars.registerHelper('idFallback', function(object, property) {
@@ -72,10 +44,19 @@ Handlebars.registerHelper('idFallback', function(object, property) {
   return value;
 });
 
-(function() {
-  var risherryData = "src/data/themes.json";
+function renderTemplate(dataLocation, templateId, containerId) {
+  $.getJSON(dataLocation, function(data) {
+    var templateString = $(templateId).html(),
+        template    = Handlebars.compile(templateString),
+        result      = template(data);
+    $(containerId).html(result);
+  });
+};
 
-  $.getJSON(risherryData, function(stylesheets) {
+(function() {
+  var themesData = "src/data/themes.json";
+
+  $.getJSON(themesData, function(stylesheets) {
     var getTemplate = $('#stylesheet-template').html(),
         template    = Handlebars.compile(getTemplate),
         result      = template(stylesheets);
@@ -83,11 +64,5 @@ Handlebars.registerHelper('idFallback', function(object, property) {
     $('head title').before(result);
   });
 
-  $.getJSON(risherryData, function(themes) {
-    var getTemplate = $('#themes-template').html(),
-        template    = Handlebars.compile(getTemplate),
-        result      = template(themes);
-    $('.themes-container').html(result);
-  });
-
+  renderTemplate(themesData, '#themes-template', '.themes-container');
 })();
