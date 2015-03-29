@@ -24,7 +24,7 @@ var userID = 'risherry';
 })();
 
 (function() {
-  var risherryData = "src/risherry.json";
+  var risherryData = "src/data/risherry.json";
 
   $.getJSON(risherryData, function(license) {
     var getTemplate = $('#license-template').html(),
@@ -73,7 +73,7 @@ Handlebars.registerHelper('idFallback', function(object, property) {
 });
 
 (function() {
-  var risherryData = "src/themes.json";
+  var risherryData = "src/data/themes.json";
 
   $.getJSON(risherryData, function(stylesheets) {
     var getTemplate = $('#stylesheet-template').html(),
