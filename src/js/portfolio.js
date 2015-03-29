@@ -54,6 +54,13 @@ var userID = 'risherry';
     $('#stylesheet-template').remove();
     $('head title').before(result);
   });
+
+   $.getJSON(risherryData, function(about) {
+    var getTemplate = $('#about-template').html(),
+        template    = Handlebars.compile(getTemplate),
+        result      = template(about);
+    $('.about-container').html(result);
+  });
 })();
 
 Handlebars.registerHelper('idFallback', function(object, property) {
