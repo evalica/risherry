@@ -217,7 +217,7 @@
                 <ul class="themes">
                   {{#each themes}}
                     {{#if this.active}}
-                      <li>
+                      <li style="background-color: {{this.color}};">
                         <a href="#" onclick="setActiveStyleSheet('Theme: {{this.name}}'); return false;" title="Theme: {{this.name}}"><span class="hidden">{{this.name}}</span></a>
                       </li>
                     {{/if}}
