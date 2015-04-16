@@ -171,29 +171,27 @@
             <div class="col-xs-12">
               <h2>Talks</h2>
             </div>
+            <script id="talk-template" type="text/x-handlebars-template">
+              <li class="xfolkentry">
+                <a class="taggedlink" href="{{this.link}}">&#8220;{{this.name}}&#8221;</a> 
+                &mdash;
+                <a class="location" href="{{this.event.link}}" title="{{#if this.event.title}}{{this.event.title}}{{else}}{{this.event.name}}{{/if}}">{{this.event.name}}</a>, {{this.event.location}}, 
+                <span class="dtstart">{{this.event.date}}</span>
+              </li>
+            </script>
             <script id="talks-template" type="text/x-handlebars-template">
               <div class="col-xs-12 col-sm-8 col-md-9">
                 <ul>
                   {{#each talks.data}}
                     {{#ifCond @index "<" ../talks.perPage}}
-                      <li class="xfolkentry">
-                        <a class="taggedlink" href="{{this.link}}">&#8220;{{this.name}}&#8221;</a> 
-                        &mdash;
-                        <a class="location" href="{{this.event.link}}" title="{{#if this.event.title}}{{this.event.title}}{{else}}{{this.event.name}}{{/if}}">{{this.event.name}}</a>, {{this.event.location}}, 
-                        <span class="dtstart">{{this.event.date}}</span>
-                      </li>
+                      {{> talkTemplate}}
                     {{/ifCond}}
                   {{/each}}
                 </ul>
                 <ul class="collapse" id="moreTalks">
                   {{#each talks.data}}
                     {{#ifCond @index ">=" ../talks.perPage}}
-                      <li class="xfolkentry">
-                        <a class="taggedlink" href="{{this.link}}">&#8220;{{this.name}}&#8221;</a> 
-                        &mdash;
-                        <a class="location" href="{{this.event.link}}" title="{{#if this.event.title}}{{this.event.title}}{{else}}{{this.event.name}}{{/if}}">{{this.event.name}}</a>, {{this.event.location}}, 
-                        <span class="dtstart">{{this.event.date}}</span>
-                      </li>
+                      {{> talkTemplate}}
                     {{/ifCond}}
                   {{/each}}
                 </ul>

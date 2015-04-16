@@ -77,6 +77,8 @@
       }
     });
 
+    Handlebars.registerPartial("talkTemplate", $("#talk-template").html());
+
     function renderTemplateFromData(data, templateId) {
       var templateString = $(templateId).html(),
           template    = Handlebars.compile(templateString),
