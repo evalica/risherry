@@ -174,23 +174,28 @@
             <script id="talks-template" type="text/x-handlebars-template">
               <div class="col-xs-12 col-sm-8 col-md-9">
                 <ul>
-                  {{#each talks}}
-                    <li class="xfolkentry">
-                      <a class="taggedlink" href="{{this.link}}">&#8220;{{this.name}}&#8221;</a> 
-                      &mdash;
-                      <a class="location" href="{{this.event.link}}" title="{{#if this.event.title}}{{this.event.title}}{{else}}{{this.event.name}}{{/if}}">{{this.event.name}}</a>, {{this.event.location}}, 
-                      <span class="dtstart">{{this.event.date}}</span>
-                    </li>
+                  {{#each talks.data}}
+                    {{#ifCond @index "<" ../talks.perPage}}
+                      <li class="xfolkentry">
+                        <a class="taggedlink" href="{{this.link}}">&#8220;{{this.name}}&#8221;</a> 
+                        &mdash;
+                        <a class="location" href="{{this.event.link}}" title="{{#if this.event.title}}{{this.event.title}}{{else}}{{this.event.name}}{{/if}}">{{this.event.name}}</a>, {{this.event.location}}, 
+                        <span class="dtstart">{{this.event.date}}</span>
+                      </li>
+                    {{/ifCond}}
                   {{/each}}
                 </ul>
                 <ul class="collapse" id="moreTalks">
-                  <li class="xfolkentry">
-                    <a class="taggedlink" href="http://www.slideshare.net/valicac/mashups-87355/1">&#8220;Mashups &mdash; work you don&#39;t have to do&#8221;</a> 
-                    &mdash;
-                    <a class="location" href="http://profs.info.uaic.ro/~web/2007/" title="Web Workshop on Web Technologies">&lt;Web/&gt; Workshop on Web Technologies</a>, 
-                    Ia&#351;i, 
-                    <span class="dtstart">May 2007</span>
-                  </li>
+                  {{#each talks.data}}
+                    {{#ifCond @index ">=" ../talks.perPage}}
+                      <li class="xfolkentry">
+                        <a class="taggedlink" href="{{this.link}}">&#8220;{{this.name}}&#8221;</a> 
+                        &mdash;
+                        <a class="location" href="{{this.event.link}}" title="{{#if this.event.title}}{{this.event.title}}{{else}}{{this.event.name}}{{/if}}">{{this.event.name}}</a>, {{this.event.location}}, 
+                        <span class="dtstart">{{this.event.date}}</span>
+                      </li>
+                    {{/ifCond}}
+                  {{/each}}
                 </ul>
                 <a class="more" href="#moreTalks" data-toggle="collapse" aria-expanded="false" title="More"></a>
               </div>
