@@ -2,7 +2,7 @@ body {
   background-color: #f7f8fa;
   background-image: none;
   color: #646c81;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 a,
 a:link,
@@ -50,6 +50,7 @@ h2 {
 .navigation ul li {
   float: left;
   margin: 0;
+  padding: 0;
 }
 .navigation ul li a {
   color: #ffffff;
@@ -65,47 +66,58 @@ h2 {
   animation-name: fadeIn;
   animation-delay: 0.6s;
 }
-.navigation .twitter:hover {
+.navigation .twitter:hover,
+.navigation .twitter:focus {
   /* fa-twitter fa-twitter-square */
   background-color: #00aced;
 }
-.navigation .linkedin:hover {
+.navigation .linkedin:hover,
+.navigation .linkedin:focus {
   /* fa-linkedin fa-linkedin-square */
   background-color: #007bb6;
 }
-.navigation .github:hover {
+.navigation .github:hover,
+.navigation .github:focus {
   /* fa-git fa-git-square fa-github fa-github-square fa-github-alt */
   background-color: #44A79B;
 }
-.navigation .stackoverflow:hover {
+.navigation .stackoverflow:hover,
+.navigation .stackoverflow:focus {
   /* fa-stack-overflow */
   background-color: #FF9900;
 }
-.navigation .behance:hover {
+.navigation .behance:hover,
+.navigation .behance:focus {
   /* fa-behance fa-behance-square */
   background-color: #CF9586;
 }
-.navigation .steam:hover {
+.navigation .steam:hover,
+.navigation .steam:focus {
   /* fa-steam fa-steam-square */
   background-color: #144578;
 }
-.navigation .dribbble:hover {
+.navigation .dribbble:hover,
+.navigation .dribbble:focus {
   /* fa-dribbble */
   background-color: #f26798;
 }
-.navigation .flickr:hover {
+.navigation .flickr:hover,
+.navigation .flickr:focus {
   /* fa-flickr */
   background-color: #ff0084;
 }
-.navigation .youtube:hover {
+.navigation .youtube:hover,
+.navigation .youtube:focus {
   /* fa-youtube fa-youtube-square fa-youtube-play */
   background-color: #bb0000;
 }
-.navigation .facebook:hover {
+.navigation .facebook:hover,
+.navigation .facebook:focus {
   /* fa-facebook fa-facebook-square fa-facebook-official */
   background-color: #3b5998;
 }
-.navigation .medium:hover {
+.navigation .medium:hover,
+.navigation .medium:focus {
   /* fa-medium */
   background-color: #53346d;
 }
@@ -161,7 +173,7 @@ h2 {
 .category ul li .separator,
 .category ul li sup {
   color: #808a96;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Gentium Basic", Georgia, "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: 400;
 }
@@ -174,10 +186,9 @@ h2 {
 .category .more {
   color: #646c81;
   float: right;
-  font-size: .9em;
-  font-weight: 800;
+  font-size: .8em;
   letter-spacing: 1px;
-  margin-top: -2.7em;
+  margin-top: -3em;
   text-align: right;
   text-transform: uppercase;
 }
@@ -202,8 +213,8 @@ h2 {
 }
 .aside {
   color: #808a96;
-  font-family: Verdana, sans-serif;
-  font-size: .8em;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .85em;
 }
 .xfolkentry {
   text-indent: -2em;
@@ -222,11 +233,11 @@ h2 {
   margin-top: 1em;
 }
 .details {
-  font-family: 'Gentium Basic', serif;
+  font-family: "Gentium Basic", Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
 }
 .details p:first-of-type {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 22px;
   margin: .3em 0 .7em;
 }
@@ -295,6 +306,9 @@ h2 {
 .themes li a {
   display: block;
   height: 100%;
+}
+.themes li a span {
+  display: none;
 }
 .category {
   position: relative;
