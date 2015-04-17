@@ -125,7 +125,7 @@
                   <li class="portfolio-item col-xs-6 col-sm-4 col-md-3 clearfix">
                     <div class="portfolio-content">
                       <figure class="portfolio-cover" title="{{this.name}}">
-                        <a href="{{this.url}}" title="{{this.name}}">
+                        <a href="{{this.url}}" title="{{this.name}}" class="thumbnail">
                           {{#if this.covers.[404]}}
                             <img class="portfolio-image" src="{{this.covers.[404]}}" alt="{{this.name}}" title="{{this.name}}"/>
                           {{else}}
@@ -221,7 +221,7 @@
                   {{#each themes}}
                     {{#if this.active}}
                       <li style="background-color: {{this.color}};">
-                        <a href="#" onclick="setActiveStyleSheet('Theme: {{this.name}}'); return false;" title="Theme: {{this.name}}"><span class="hidden">{{this.name}}</span></a>
+                        <a href="#" onclick="setActiveStyleSheet('Theme: {{this.name}}'); return false;" title="Theme: {{this.name}}"><span>{{this.name}}</span></a>
                       </li>
                     {{/if}}
                   {{/each}}
