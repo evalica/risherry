@@ -102,8 +102,12 @@ h2 {
   background-color: #bb0000;
 }
 .navigation .facebook:hover {
-  /* fa-facebook fa-facebook-square */
+  /* fa-facebook fa-facebook-square fa-facebook-official */
   background-color: #3b5998;
+}
+.navigation .medium:hover {
+  /* fa-medium */
+  background-color: #53346d;
 }
 .menu ul {
   margin: 0 -1em;
@@ -279,7 +283,7 @@ h2 {
 }
 .themes:before,
 .themes li {
-  float: left;
+  float: right;
   margin-right: .7em;
 }
 .themes li {
