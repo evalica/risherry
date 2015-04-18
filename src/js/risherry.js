@@ -26,6 +26,7 @@
       };
       renderTemplate(configData, '#head-template');
       renderTemplate(configData, '#heading-template');
+      renderTemplate(configData, '#analytics-template');
     })();
 
     (function() {
