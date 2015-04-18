@@ -4,6 +4,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   grunt.initConfig({
 
@@ -17,11 +18,15 @@ module.exports = function(grunt) {
       rain: {}
     },
 
-    // copying the style.less file ---------------------------------------------
+    // concatenate the files ---------------------------------------------------
     concat: {
-      dist: {
+      stylesheets: {
         src: [],
         dest: ''
+      },
+      javascript: {
+        src: ['src/js/*.js'],
+        dest: 'dist/js/risherry.js'
       }
     },
 
@@ -39,11 +44,24 @@ module.exports = function(grunt) {
       }
     },
 
+    // compress the javascript file --------------------------------------------
+    uglify : {
+        javascript: {
+            files: {
+              'dist/js/risherry.min.js' : [ 'dist/js/risherry.js' ]
+            }
+        }
+    },
+
     // configure watch to auto update ------------------------------------------ 
     watch: {
       stylesheets: {
         files: ['src/less/skin/*.less', 'src/less/style.less', 'src/less/themes/**/variables.less', 'src/less/themes/**/custom.less'],
         tasks: ['swatch']
+      },
+      javascript: {
+        files: ['src/js/*.js'],
+        tasks: ['concat:javascript', 'uglify:javascript']
       }
     }
 
@@ -63,8 +81,8 @@ module.exports = function(grunt) {
       dest: destStyle
     };
 
-    grunt.config('concat.dist', filesStyle);
-    grunt.task.run(['concat']);
+    grunt.config('concat.stylesheets', filesStyle);
+    grunt.task.run(['concat:stylesheets']);
 
     // compile less stylesheets to css -----------------------------------------
     var srcLess;
@@ -96,8 +114,6 @@ module.exports = function(grunt) {
     grunt.task.run('build:' + t);
   });
 
-  grunt.registerTask('default', 'launch', function() {
-    grunt.task.run('watch');
-  });
+  grunt.registerTask('default', ['watch']);
 
 };
