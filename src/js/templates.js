@@ -46,7 +46,7 @@
 
     Handlebars.registerHelper('idFallback', function(object, property) {
       var value = object[property];
-      if (value == undefined) {
+      if (value === undefined) {
         /* Fallback on name */
         value = object.name;
         value = value.toLowerCase();
