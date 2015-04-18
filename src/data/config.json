@@ -7,5 +7,13 @@
   "data": {
     "user": "src/data/risherry.json",
     "themes": "src/data/themes.json"
+  },
+  "head": {
+    "title": "Ecaterina Moraru - Personal Website",
+    "heading": "risherry: Ecaterina Moraru",
+    "meta": {
+      "description": "Ecaterina Moraru's Personal Website, containing about details, published work and talks",
+      "keywords": "risherry, evalica, valicac, moraru, usability, interaction, interface, design, hci, ui"
+    }
   }
 }

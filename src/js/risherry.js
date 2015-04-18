@@ -1,6 +1,8 @@
 (function() {
 
-  $.getJSON('src/data/config.json', function(config) {
+  var configData = 'src/data/config.json';
+
+  $.getJSON(configData, function(config) {
     createStructure(config);
   });
 
@@ -22,6 +24,8 @@
           setPortfolioTemplate();
         });
       };
+      renderTemplate(configData, '#head-template');
+      renderTemplate(configData, '#heading-template');
     })();
 
     (function() {
@@ -49,35 +53,35 @@
       return value;
     });
 
-    Handlebars.registerHelper("ifCond",function(v1,operator,v2,options) {
+    Handlebars.registerHelper('ifCond',function(v1,operator,v2,options) {
       switch (operator)
       {
-        case "==":
+        case '==':
           return (v1==v2)?options.fn(this):options.inverse(this);
-        case "!=":
+        case '!=':
           return (v1!=v2)?options.fn(this):options.inverse(this);
-        case "===":
+        case '===':
           return (v1===v2)?options.fn(this):options.inverse(this);
-        case "!==":
+        case '!==':
           return (v1!==v2)?options.fn(this):options.inverse(this);
-        case "&&":
+        case '&&':
           return (v1&&v2)?options.fn(this):options.inverse(this);
-        case "||":
+        case '||':
           return (v1||v2)?options.fn(this):options.inverse(this);
-        case "<":
+        case '<':
           return (v1<v2)?options.fn(this):options.inverse(this);
-        case "<=":
+        case '<=':
           return (v1<=v2)?options.fn(this):options.inverse(this);
-        case ">":
+        case '>':
           return (v1>v2)?options.fn(this):options.inverse(this);
-        case ">=":
+        case '>=':
          return (v1>=v2)?options.fn(this):options.inverse(this);
         default:
-          return eval(""+v1+operator+v2)?options.fn(this):options.inverse(this);
+          return eval(''+v1+operator+v2)?options.fn(this):options.inverse(this);
       }
     });
 
-    Handlebars.registerPartial("talkTemplate", $("#talk-template").html());
+    Handlebars.registerPartial('talkTemplate', $('#talk-template').html());
 
     function renderTemplateFromData(data, templateId) {
       var templateString = $(templateId).html(),
