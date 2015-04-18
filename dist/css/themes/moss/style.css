@@ -302,6 +302,7 @@ h2 {
   width: 16px;
   background-color: #0c293c;
   box-shadow: inset 0px 0px 2px rgba(255, 255, 255, 0.25);
+  padding: 0;
 }
 .themes li a {
   display: block;
