@@ -1,0 +1,4 @@
+Sitemap: http://risherry.ro/sitemap.xml
+User-agent: *
+Disallow: /feeds
+Disallow: /*/_/
