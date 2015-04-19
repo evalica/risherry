@@ -150,12 +150,12 @@ function setActiveStyleSheet(title) {  var i, a, main;  for(i=0; (a = document
     })();
 
     (function() {
-      var risherryData = config.data.user;
-      renderTemplate(risherryData, '#external-template');
-      renderTemplate(risherryData, '#about-template');
-      renderTemplate(risherryData, '#work-template');
-      renderTemplate(risherryData, '#talks-template');
-      renderTemplate(risherryData, '#license-template');
+      var contentData = config.data.user;
+      renderTemplate(contentData, '#external-template');
+      renderTemplate(contentData, '#about-template');
+      renderTemplate(contentData, '#work-template');
+      renderTemplate(contentData, '#talks-template');
+      renderTemplate(contentData, '#license-template');
     })();
 
     (function() {

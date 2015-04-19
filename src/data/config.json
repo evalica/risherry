@@ -1,6 +1,6 @@
 {
   "data": {
-    "user": "src/data/risherry.json",
+    "user": "src/data/content.json",
     "themes": "src/data/themes.json"
   },
   "head": {
