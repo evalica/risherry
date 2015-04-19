@@ -33,9 +33,9 @@ risherry/
 
 ### Themes
 
-By default, there are three available themes: `Bliss`, `Moss` and `Rain`. 
+By default, there are three available themes: `Bliss`, `Rain` and `Moss`. 
 
-<img src="https://cloud.githubusercontent.com/assets/629552/7220685/c166ada6-e6d9-11e4-9d9c-4263f94ad817.png" width="235px" height="593px" />  <img src="https://cloud.githubusercontent.com/assets/629552/7220686/c728afa0-e6d9-11e4-8e96-1016534586fc.png" width="235px" height="593px" >  <img src="https://cloud.githubusercontent.com/assets/629552/7220688/cb2b26c8-e6d9-11e4-8381-b3667e0ecbf5.png" width="235px" height="593px" />
+<img src="https://cloud.githubusercontent.com/assets/629552/7220685/c166ada6-e6d9-11e4-9d9c-4263f94ad817.png" width="235px" height="593px" />  <img src="https://cloud.githubusercontent.com/assets/629552/7220688/cb2b26c8-e6d9-11e4-8381-b3667e0ecbf5.png" width="235px" height="593px" />  <img src="https://cloud.githubusercontent.com/assets/629552/7220686/c728afa0-e6d9-11e4-8e96-1016534586fc.png" width="235px" height="593px" />
 
 Each of these themes have a `custom.less` and a `variables.less` file, that contain the theme's definition. New themes can be created and used.
 
