@@ -309,6 +309,7 @@ h2 {
 .portfolio .portfolio-content:hover .portfolio-image {
   opacity: .4;
   transform: scale(1.12);
+  z-index: 1;
 }
 .portfolio .portfolio-content:hover .portfolio-fields {
   color: #ffffff;
