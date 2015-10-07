@@ -58,8 +58,20 @@
     "More design proposals can be found at <a href='http://design.xwiki.org/xwiki/bin/view/Main/WebHome#|t=proposal&amp;p=1&amp;l=15&amp;s=doc.date&amp;d=desc&amp;participants=evalica' title='Design.xwiki.org'>design.xwiki.org</a>"
   ],
   "talks": {
-    "perPage": "6",
+    "perPage": "5",
     "data": [
+      {
+        "name": "Future of XWiki Skins",
+        "link": "http://www.slideshare.net/valicac/future-of-xwiki-skins",
+        "event":
+        {
+          "name": "XWiki Seminar",
+          "title": "XWiki",
+          "link": "http://www.xwiki.org/",
+          "location": "Breaza",
+          "date": "Jul 2015"
+        }
+      },
       {
         "name": "Design Process in an Open Community",
         "link": "http://www.slideshare.net/valicac/design-process-in-an-open-community",
