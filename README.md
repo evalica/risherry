@@ -1,8 +1,7 @@
-[![Build Status](https://travis-ci.org/evalica/risherry.svg?branch=master)](https://travis-ci.org/evalica/risherry)
-
 # [risherry](http://risherry.ro/)
 
-[![Join the chat at https://gitter.im/evalica/risherry](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/evalica/risherry?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/evalica/risherry](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/evalica/risherry?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/evalica/risherry.svg?branch=master)](https://travis-ci.org/evalica/risherry)
+ [![devDependency Status](https://david-dm.org/evalica/risherry/dev-status.svg)](https://david-dm.org/evalica/risherry#info=devDependencies)
 
 Risherry is designed as a customizable personal website.
 
