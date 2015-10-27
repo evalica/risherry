@@ -2,6 +2,8 @@
 
 # [risherry](http://risherry.ro/)
 
+[![Join the chat at https://gitter.im/evalica/risherry](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/evalica/risherry?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Risherry is designed as a customizable personal website.
 
 It's build using [Bootstrap](http://getbootstrap.com/), [Handlebars](http://handlebarsjs.com/) and [JQuery](https://jquery.com/) frameworks. Additionally it uses [LESS](http://lesscss.org/), [Font Awesome](http://fortawesome.github.io/Font-Awesome/) and [Google Fonts](http://www.google.com/fonts).
