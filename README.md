@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/evalica/risherry.svg?branch=master)](https://travis-ci.org/evalica/risherry)
+
 # [risherry](http://risherry.ro/)
 
 Risherry is designed as a customizable personal website.
