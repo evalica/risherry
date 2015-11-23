@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ecaterina Moraru's Personal Website, containing details about work and talks">
+    <meta name="keywords" content="risherry, evalica, valicac, moraru, portfolio, resume, usability, interaction, interface, design, hci, ui, ux, ui/ux, development, iaşi">
+    <title>Ecaterina Moraru - Personal Website</title>
+    <link type="image/x-icon" rel="icon" href="dist/img/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans" />
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Gentium+Basic" />
+    <link type="text/css" rel="stylesheet" title="Theme: Moss" href="dist/css/themes/moss/style.min.css" />
+    <!--script id="stylesheet-template" type="text/x-handlebars-template">
+      {{#each themes}}
+        {{#unless this.primary}}
+          {{#if this.active}}
+            <link type="text/css" rel="stylesheet{{#unless this.primary}} alternate{{/unless}}" title="Theme: {{this.name}}" href="dist/css/themes/{{{idFallback this 'icon'}}}/style.min.css" />
+          {{/if}}
+        {{/unless}}
+      {{/each}}
+    </script-->
+  </head>
+  <body data-spy="scroll" data-target=".menu">
+    <div class="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-9">
+            <div class="menu col-xs-12 col-sm-6">
+              <ul class="nav list-inline">
+                <li>
+                  <a href="#about" title="About">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#work" title="Work">
+                    Work
+                  </a>
+                </li>
+                <li>
+                  <a href="#talks" title="Talks">
+                    Talks
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="external col-xs-12 col-sm-6">
+              <script id="external-template" type="text/x-handlebars-template">
+                <ul class="list-inline">
+                  {{#each about.external}}
+                    <li>
+                      <a class="{{{idFallback this 'class'}}}" href="{{this.link}}" title="{{this.name}}">
+                        <span class="fa fa-{{{idFallback this 'icon'}}}"><span class="sr-only">{{this.name}}</span></span>
+                      </a>
+                    </li>
+                  {{/each}}
+                </ul>
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="category about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-9">
+            <div class="col-xs-12">
+              <script id="heading-template" type="text/x-handlebars-template">
+                <h1 id="top" class="hidden">{{this.head.heading}}</h1>
+              </script>
+              <h2>About</h2>
+            </div>
+            <script id="about-template" type="text/x-handlebars-template">
+              <div class="aside col-xs-12 col-sm-4 col-md-3">
+                <dl class="vcard">
+                  <dt>Real Name</dt>
+                  <dd>
+                    <a title="{{this.about.name.first}} {{this.about.name.last}}" class="xfn-me secondary" rel="me" href="{{this.about.link}}">
+                      <span class="fn n">
+                        <span class="given-name">{{this.about.name.first}}</span>
+                        <span class="family-name">{{this.about.name.last}}</span>
+                      </span>
+                    </a>
+                    <div class="url hidden">{{this.about.website}}</div>
+                    <div class="email hidden">{{this.about.email}}</div>
+                  </dd>
+                  <dt>Organization</dt>
+                  <dd class="org">{{this.about.organization.position}} at <a href="{{this.about.organization.link}} " class="secondary" title="{{this.about.organization.name}}">{{this.about.organization.name}}</a></dd>
+                  <dt class="type">Current Location</dt>
+                  <dd class="adr">
+                    <span class="geo">
+                      <a title="See location" class="microformat-geo secondary" href="https://www.google.com/maps/place/{{this.about.address.locality}},{{this.about.address.country}}/@{{this.about.address.latitude}},{{this.about.address.longitude}}">
+                        <span class="locality">{{this.about.address.locality}}</span>,
+                        <span class="country-name">{{this.about.address.country}}</span>
+                        <span class="postal-code hidden">{{this.about.address.postalCode}}</span>
+                        <span class="latitude hidden">{{this.about.address.latitude}}</span>
+                        <span class="longitude hidden">{{this.about.address.longitude}}</span>
+                      </a>
+                    </span>
+                  </dd>
+                </dl>
+              </div>
+              <div class="details col-xs-12 col-sm-8 col-md-9">
+                {{#each about.quotes}}
+                  <p>{{{this}}}</p>
+                {{/each}}
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <canvas id="animation" class="animation"></canvas>
+    </div>
+    <div class="category work" id="work">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-9">
+            <div class="col-xs-12">
+              <h2>Work</h2>
+            </div>
+            <div class="portfolio clearfix">
+              <script id="portfolio-template" type="text/x-handlebars-template">
+                <ul class="portfolio-list list-unstyled">
+                  {{#each projects}}
+                  <li class="portfolio-item col-xs-6 col-sm-4 col-md-3 clearfix">
+                    <div class="portfolio-content">
+                      <figure class="portfolio-cover" title="{{this.name}}">
+                        <a href="{{this.url}}" title="{{this.name}}">
+                          {{#if this.covers.[404]}}
+                            <img class="portfolio-image img-thumbnail" src="{{this.covers.[404]}}" alt="{{this.name}}" title="{{this.name}}"/>
+                          {{else}}
+                            {{#if this.covers.[230]}}
+                            <img class="portfolio-image img-thumbnail" src="{{this.covers.[230]}}" alt="{{this.name}}"/>
+                            {{else}}
+                            <img class="portfolio-image img-thumbnail" src="{{this.covers.[202]}}" alt="{{this.name}}"/>
+                            {{/if}}
+                          {{/if}}
+                        </a>
+                      </figure>
+                      <div class="portfolio-title">
+                        <a href="{{this.url}}" title="{{this.name}}">{{this.name}}</a>
+                      </div>
+                      <div class="portfolio-fields">
+                        <ul class="field-list">
+                          {{#each this.fields}}
+                            <li class="field-item">{{this}}</li>
+                          {{/each}}
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  {{/each}}
+                </ul>
+              </script>
+            </div>
+            <div class="aside col-xs-12">
+              <script id="work-template" type="text/x-handlebars-template">
+                {{#each work}}
+                  <p>{{{this}}}</p>
+                {{/each}}
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="category talks" id="talks">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-9">
+            <div class="col-xs-12">
+              <h2>Talks</h2>
+            </div>
+            <script id="talk-template" type="text/x-handlebars-template">
+              <li class="xfolkentry">
+                <a class="taggedlink" href="{{this.link}}">&#8220;{{this.name}}&#8221;</a> 
+                &mdash;
+                <a class="location" href="{{this.event.link}}" title="{{#if this.event.title}}{{this.event.title}}{{else}}{{this.event.name}}{{/if}}">{{this.event.name}}</a>, {{this.event.location}}, 
+                <span class="dtstart">{{this.event.date}}</span>
+              </li>
+            </script>
+            <script id="talks-template" type="text/x-handlebars-template">
+              <div class="col-xs-12 col-sm-8 col-md-9">
+                <ul>
+                  {{#each talks.data}}
+                    {{#ifCond @index "<" ../talks.perPage}}
+                      {{> talkTemplate}}
+                    {{/ifCond}}
+                  {{/each}}
+                </ul>
+                <ul class="collapse" id="moreTalks">
+                  {{#each talks.data}}
+                    {{#ifCond @index ">=" ../talks.perPage}}
+                      {{> talkTemplate}}
+                    {{/ifCond}}
+                  {{/each}}
+                </ul>
+                <a class="more" href="#moreTalks" data-toggle="collapse" aria-expanded="false" title="More"></a>
+              </div>
+              <div class="aside col-xs-12 col-sm-4 col-md-3">
+                <p>{{{this.contact}}}</p>
+              </div>
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-9">
+            <div class="col-xs-7 col-sm-8 col-md-9">
+              <script id="license-template" type="text/x-handlebars-template">
+                <a rel="license" href="{{this.license.link}}" title="{{this.license.title}}">{{this.license.name}}</a> <span class="fa fa-cc"><span class="sr-only">CC</span></span> <span class="dtstart">{{this.license.date}}</span>
+              </script>
+            </div>
+            <div class="col-xs-5 col-sm-4 col-md-3">
+              <!--script id="themes-template" type="text/x-handlebars-template">
+                <span class="hidden">Switch Color Theme:</span>
+                <ul class="themes list-inline">
+                  {{#each themes}}
+                    {{#if this.active}}
+                      <li style="background-color: {{this.color}};">
+                        <a href="#" onclick="setActiveStyleSheet('Theme: {{this.name}}'); return false;" title="Theme: {{this.name}}"><span>{{this.name}}</span></a>
+                      </li>
+                    {{/if}}
+                  {{/each}}
+                </ul>
+              </script-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.min.js"></script>
+    <script type="text/javascript" src="dist/js/risherry.min.js"></script>
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-851876-12', 'auto');ga('send', 'pageview');</script>
+  </body>
+</html>
