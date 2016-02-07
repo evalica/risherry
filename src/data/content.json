@@ -61,6 +61,18 @@
     "perPage": "5",
     "data": [
       {
+        "name": "Designer's compromises in Open Source",
+        "link": "http://www.slideshare.net/valicac/designers-compromises-in-open-source",
+        "event":
+        {
+          "name": "FOSDEM 2016",
+          "title": "Open Source Developers’ European Meeting 2016",
+          "link": "https://fosdem.org",
+          "location": "Brussels",
+          "date": "Jan 2016"
+        }
+      },
+      {
         "name": "Future of XWiki Skins",
         "link": "http://www.slideshare.net/valicac/future-of-xwiki-skins",
         "event":
