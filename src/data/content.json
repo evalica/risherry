@@ -17,12 +17,11 @@
     "organization": {
       "name": "XWiki.org",
       "link": "http://www.xwiki.org",
-      "position": "Interaction Designer"
+      "position": "Lead Interaction Designer"
     }, 
     "quotes": [
       "I'm an Open Source committer, <a href='https://www.behance.net/risherry' title='Behance Profile'>designing</a> and <a href='https://github.com/evalica/'' title='GitHub Profile'>developing</a> for the XWiki.org community.",
-      "I like working on products, helping them improve, be more usable, more beautiful, more performant and staying relevant.",
-      "In my spare time, I'm a gamer and a collector."
+      "Specialized in prototyping and usability. Passionate about Human-Computer Interaction, Web Technologies and Software Engineering. Careful on Standards Compliance and User Experience."
     ],
     "external": [
       {
@@ -243,6 +242,6 @@
     "name": "Attribution-Share Alike 3.0",
     "title": "Licensed under a Creative Commons Attribution-Share Alike 3.0 Romania License",
     "link": "http://creativecommons.org/licenses/by-sa/3.0/ro/deed.en",
-    "date": "2003 – 2015"
+    "date": "2003 – 2017"
   }
 }
