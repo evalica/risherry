@@ -60,8 +60,32 @@
     "perPage": "5",
     "data": [
       {
+        "name": "Design feedback in Open Source",
+        "link": "https://fosdem.org/2017/schedule/event/osd_giving_and_receiving_design_feedback/",
+        "event":
+        {
+          "name": "FOSDEM 2017",
+          "title": "Open Source Developers’ European Meeting 2017",
+          "link": "https://fosdem.org",
+          "location": "Brussels",
+          "date": "Feb 2017"
+        }
+      },
+      {
+        "name": "Success Stories from the OSD community",
+        "link": "https://fosdem.org/2017/schedule/event/osd_success_stories/",
+        "event":
+        {
+          "name": "FOSDEM 2017",
+          "title": "Open Source Developers’ European Meeting 2017",
+          "link": "https://fosdem.org",
+          "location": "Brussels",
+          "date": "Feb 2017"
+        }
+      },
+      {
         "name": "Designer's compromises in Open Source",
-        "link": "http://www.slideshare.net/valicac/designers-compromises-in-open-source",
+        "link": "https://archive.fosdem.org/2016/schedule/event/osd_designers_compromises_in_open_source/",
         "event":
         {
           "name": "FOSDEM 2016",
