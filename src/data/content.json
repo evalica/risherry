@@ -60,6 +60,18 @@
     "perPage": "5",
     "data": [
       {
+        "name": "Expectations from Open Source Designers",
+        "link": "https://www.youtube.com/watch?v=3M9ptBxFyP4",
+        "event":
+        {
+          "name": "FOSSASIA 2017",
+          "title": "Free and Open Source technology organization in Asia",
+          "link": "https://fossasia.org/",
+          "location": "Singapore",
+          "date": "Mar 2017"
+        }
+      },
+      {
         "name": "Design feedback in Open Source",
         "link": "https://fosdem.org/2017/schedule/event/osd_giving_and_receiving_design_feedback/",
         "event":
