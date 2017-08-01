@@ -60,11 +60,23 @@
     "perPage": "5",
     "data": [
       {
+        "name": "What's new in XWiki 8.x and half of 9.x",
+        "link": "https://www.slideshare.net/valicac/whats-new-in-x-wiki-8x-and-half-of-9x",
+        "event":
+        {
+          "name": "XWiki Seminar",
+          "title": "XWiki",
+          "link": "http://www.xwiki.org/",
+          "location": "Bucharest",
+          "date": "Jul 2017"
+        }
+      },
+      {
         "name": "Expectations from Open Source Designers",
         "link": "https://www.youtube.com/watch?v=3M9ptBxFyP4",
         "event":
         {
-          "name": "FOSSASIA 2017",
+          "name": "FOSSASIA",
           "title": "Free and Open Source technology organization in Asia",
           "link": "https://fossasia.org/",
           "location": "Singapore",
@@ -76,7 +88,7 @@
         "link": "https://fosdem.org/2017/schedule/event/osd_giving_and_receiving_design_feedback/",
         "event":
         {
-          "name": "FOSDEM 2017",
+          "name": "FOSDEM",
           "title": "Open Source Developers’ European Meeting 2017",
           "link": "https://fosdem.org",
           "location": "Brussels",
@@ -88,7 +100,7 @@
         "link": "https://fosdem.org/2017/schedule/event/osd_success_stories/",
         "event":
         {
-          "name": "FOSDEM 2017",
+          "name": "FOSDEM",
           "title": "Open Source Developers’ European Meeting 2017",
           "link": "https://fosdem.org",
           "location": "Brussels",
@@ -100,7 +112,7 @@
         "link": "https://archive.fosdem.org/2016/schedule/event/osd_designers_compromises_in_open_source/",
         "event":
         {
-          "name": "FOSDEM 2016",
+          "name": "FOSDEM",
           "title": "Open Source Developers’ European Meeting 2016",
           "link": "https://fosdem.org",
           "location": "Brussels",
