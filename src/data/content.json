@@ -60,6 +60,18 @@
     "perPage": "5",
     "data": [
       {
+        "name": "Icon Themes — Reusable icon variables and mappings for customizable user interfaces",
+        "link": "https://fosdem.org/2018/schedule/event/osd_icon_themes/",
+        "event":
+        {
+          "name": "FOSDEM",
+          "title": "Open Source Developers’ European Meeting 2018",
+          "link": "https://fosdem.org",
+          "location": "Brussels",
+          "date": "Feb 2018"
+        }
+      },
+      {
         "name": "What's new in XWiki 8.x and half of 9.x",
         "link": "https://www.slideshare.net/valicac/whats-new-in-x-wiki-8x-and-half-of-9x",
         "event":
