@@ -55,7 +55,6 @@ risherry/
         ├── style.less
         └── themes/
             ├── bliss/
-            ├── bordo/
             ├── moss/
             └── rain/
                 ├── custom.less

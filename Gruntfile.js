@@ -14,7 +14,6 @@ module.exports = function(grunt) {
     swatch: {
       bliss: {},
       moss: {},
-      bordo: {},
       rain: {}
     },
 
