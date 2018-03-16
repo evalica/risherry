@@ -54,7 +54,7 @@ risherry/
         ├── skin/
         ├── style.less
         └── themes/
-            └── rain/
+            └── default/
                 ├── custom.less
                 └── variables.less
 ```

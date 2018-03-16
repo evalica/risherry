@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 
     // themes list -------------------------------------------------------------
     swatch: {
-      rain: {}
+      default: {}
     },
 
     // concatenate the files ---------------------------------------------------
