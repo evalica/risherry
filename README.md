@@ -16,6 +16,8 @@ It's using Grunt plugins like [watch](https://www.npmjs.com/package/grunt-contri
 #### `grunt`
 After everything is set up, run `grunt` to launch the `watch` task that will compile and minify the CSS and JavaScript sources.
 
+#### `grunt swatch`
+
 ## Customizing
 
 ### Content
