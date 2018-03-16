@@ -12,7 +12,6 @@ module.exports = function(grunt) {
 
     // themes list -------------------------------------------------------------
     swatch: {
-      bliss: {},
       rain: {}
     },
 

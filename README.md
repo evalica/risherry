@@ -54,7 +54,6 @@ risherry/
         ├── skin/
         ├── style.less
         └── themes/
-            ├── bliss/
             └── rain/
                 ├── custom.less
                 └── variables.less
