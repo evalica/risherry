@@ -15,11 +15,15 @@ It's using Grunt plugins like [watch](https://www.npmjs.com/package/grunt-contri
 
 #### `npm install`
 
-After everything is set up, run `grunt` to launch the `watch` task that will compile and minify the CSS and JavaScript sources.
+After everything is set up, you can run the `swatch` task that builds all the available themes at once. Themes can be build also one at a time by using `grunt swatch:[theme]`, for example `grunt swatch:rain`.
 
 #### `grunt swatch`
 
 You should run the tasks on the `src/less` files and commit the results in the `dist` folder.
+
+#### `grunt watch`
+
+Launching the `watch` task that will start a process that listens to file changes and compiles and minifies the CSS and JavaScript sources.
 
 ## Customizing
 
