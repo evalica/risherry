@@ -38,12 +38,6 @@
       renderTemplate(contentData, '#license-template');
     })();
 
-    (function() {
-      var themesData = config.data.themes;
-      renderTemplate(themesData, '#stylesheet-template');
-      renderTemplate(themesData, '#themes-template');
-    })();
-
     Handlebars.registerHelper('idFallback', function(object, property) {
       var value = object[property];
       if (value === undefined) {
