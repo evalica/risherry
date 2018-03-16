@@ -59,8 +59,3 @@ risherry/
                 ├── custom.less
                 └── variables.less
 ```
-
-
-## License
-
-Copyright 2015 Ecaterina Moraru (Valica), under the [MIT](LICENSE) license.
