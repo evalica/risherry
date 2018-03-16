@@ -55,12 +55,13 @@ risherry/
         ├── style.less
         └── themes/
             ├── bliss/
+            ├── bordo/
             ├── moss/
             └── rain/
                 ├── custom.less
                 └── variables.less
 ```
 
-Version `0.2.0` provides the `Bliss`, `Rain` and `Moss` themes:
+Version `0.2.0` provides the `Bliss`, `Bordo`, `Rain` and `Moss` themes:
 
 <img src="https://cloud.githubusercontent.com/assets/629552/7220685/c166ada6-e6d9-11e4-9d9c-4263f94ad817.png" width="235px" height="593px" />  <img src="https://cloud.githubusercontent.com/assets/629552/7220688/cb2b26c8-e6d9-11e4-8381-b3667e0ecbf5.png" width="235px" height="593px" />  <img src="https://cloud.githubusercontent.com/assets/629552/7220686/c728afa0-e6d9-11e4-8e96-1016534586fc.png" width="235px" height="593px" />
