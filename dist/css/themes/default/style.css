@@ -317,33 +317,6 @@ h2 {
 .portfolio .portfolio-content:hover .portfolio-title a {
   color: #00CEFB;
 }
-.themes {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-.themes:before {
-  content: '';
-}
-.themes:before,
-.themes li {
-  float: right;
-  margin-right: .7em;
-}
-.themes li {
-  height: 16px;
-  width: 16px;
-  background-color: #F7F8FA;
-  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.25);
-  padding: 0;
-}
-.themes li a {
-  display: block;
-  height: 100%;
-}
-.themes li a span {
-  display: none;
-}
 .category {
   position: relative;
 }
