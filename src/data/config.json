@@ -1,7 +1,6 @@
 {
   "data": {
-    "user": "src/data/content.json",
-    "themes": "src/data/themes.json"
+    "user": "src/data/content.json"
   },
   "head": {
     "title": "Ecaterina Moraru - Personal Website",
