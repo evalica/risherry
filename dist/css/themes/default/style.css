@@ -329,11 +329,6 @@ h2 {
   position: absolute;
   z-index: 0;
 }
-.xfolkentry .event,
-.xfolkentry .location,
-.xfolkentry .dtstart {
-  display: block;
-}
 @media (min-width: 576px) {
   .talks-container {
     display: grid;
@@ -364,7 +359,12 @@ h2 {
     grid-row: 1;
   }
 }
-.xfolkentry {
+.talks-container .xfolkentry .event,
+.talks-container .xfolkentry .location,
+.talks-container .xfolkentry .dtstart {
+  display: block;
+}
+.talks-container .xfolkentry {
   background-color: #fafafa;
   border: 1px solid #f0f0f0;
   border-radius: 8px;
@@ -375,17 +375,17 @@ h2 {
   line-height: 1.5;
   overflow: hidden;
 }
-.xfolkentry:hover {
+.talks-container .xfolkentry:hover {
   background-color: #ffffff;
   transform: translateY(-8px);
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.03), 0 20px 30px 0 rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
-.xfolkentry a {
+.talks-container .xfolkentry a {
   font-weight: 600;
   text-decoration: none;
 }
-.xfolkentry .event {
+.talks-container .xfolkentry .event {
   font-weight: 100;
 }
 .animation {
