@@ -15,15 +15,6 @@
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans" />
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Gentium+Basic" />
     <link type="text/css" rel="stylesheet" title="Theme: Default" href="dist/css/themes/default/style.min.css" />
-    <script id="stylesheet-template" type="text/x-handlebars-template">
-      {{#each themes}}
-        {{#unless this.primary}}
-          {{#if this.active}}
-            <link type="text/css" rel="stylesheet{{#unless this.primary}} alternate{{/unless}}" title="Theme: {{this.name}}" href="dist/css/themes/{{{idFallback this 'icon'}}}/style.min.css" />
-          {{/if}}
-        {{/unless}}
-      {{/each}}
-    </script>
   </head>
   <body data-spy="scroll" data-target=".menu">
     <div class="navigation">
