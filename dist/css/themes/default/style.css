@@ -340,21 +340,21 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 33%));
   }
-  .xfolkentry {
+  .talks-container .xfolkentry {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     grid-auto-columns: minmax(300px, auto);
   }
-  .xfolkentry .details {
+  .talks-container .xfolkentry .details {
     grid-column: 1;
     grid-row: 2;
   }
-  .xfolkentry .preview {
+  .talks-container .xfolkentry .preview {
     grid-column: 2;
     grid-row: 2;
   }
-  .xfolkentry .taggedlink {
+  .talks-container .xfolkentry .taggedlink {
     grid-column: span 2;
     grid-row: 1;
   }
