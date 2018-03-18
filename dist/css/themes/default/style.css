@@ -335,13 +335,13 @@ h2 {
   display: block;
 }
 @media (min-width: 576px) {
-  .talks {
+  .talks-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 50%));
   }
 }
 @media (min-width: 1200px) {
-  .talks {
+  .talks-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 33%));
   }
