@@ -37,7 +37,6 @@ risherry/
     ├── data/
     │   ├── config.json
     │   ├── content.json
-    │   └── themes.json
     ├── js/
     └── less/
 
