@@ -149,6 +149,7 @@ h2 {
   float: right;
 }
 .category {
+  position: relative;
   padding-top: 105px;
 }
 @media (min-width: 768px) {
@@ -211,9 +212,6 @@ h2 {
   color: #808a96;
   font-size: .85em;
 }
-/*.xfolkentry {
-  text-indent: -2em;
-}*/
 .vcard dt {
   color: #646C81;
   display: block;
@@ -310,18 +308,9 @@ h2 {
 .portfolio .portfolio-content:hover .portfolio-title a {
   color: #00CEFB;
 }
-.category {
-  position: relative;
-}
-.category .container {
-  z-index: 1;
-  position: relative;
-}
-.animation {
-  bottom: 21px;
-  position: absolute;
-  z-index: 0;
-}
+/*.xfolkentry {
+  text-indent: -2em;
+}*/
 @media (min-width: 576px) {
   .talks-container {
     clear: both;
