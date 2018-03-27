@@ -13,14 +13,17 @@
     "node": ">= 0.12.2"
   },
   "devDependencies": {
-    "grunt": "~1.0.2",
+    "grunt": "^1.0.2",
     "grunt-contrib-concat": "latest",
-    "grunt-contrib-less": "latest",
     "grunt-contrib-cssmin": "latest",
-    "grunt-contrib-watch": "latest",
-    "grunt-contrib-uglify": "latest"
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest"
   },
   "scripts": {
     "test": "grunt swatch"
+  },
+  "dependencies": {
+    "npm": "^5.8.0"
   }
 }
