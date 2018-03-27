@@ -168,12 +168,8 @@ h2 {
 .category ul li .taggedlink {
   display: table-row;
 }
-.category ul li .bday,
-.category ul li .dtstart,
-.category ul li .separator,
-.category ul li sup {
+.category ul li .dtstart {
   color: #808a96;
-  font-family: "Gentium Basic", Georgia, "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: 400;
 }
@@ -213,7 +209,6 @@ h2 {
 }
 .aside {
   color: #808a96;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .85em;
 }
 /*.xfolkentry {
@@ -233,11 +228,9 @@ h2 {
   margin-top: 1em;
 }
 .details {
-  font-family: "Gentium Basic", Georgia, "Times New Roman", Times, serif;
-  font-size: 18px;
+  font-size: 1.1em;
 }
 .details p:first-of-type {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 22px;
   margin: .3em 0 .7em;
 }
@@ -331,6 +324,7 @@ h2 {
 }
 @media (min-width: 576px) {
   .talks-container {
+    clear: both;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 50%));
   }
@@ -370,7 +364,6 @@ h2 {
   border-radius: 8px;
   margin: 1em;
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  padding: 1.5em;
   font-size: 1em;
   line-height: 1.5;
   overflow: hidden;
@@ -388,8 +381,8 @@ h2 {
 .talks-container .xfolkentry .event {
   font-weight: 100;
 }
-.animation {
-  display: none;
+.talks-container .xfolkentry .details {
+  padding: .5em 1.5em;
 }
 /* Headers displayed using background-clip + fallback */
 h2 {
