@@ -1,0 +1,138 @@
+.navigation {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      float: left;
+      margin: 0;
+      padding: 0;
+      a {
+        color: @navigation-text-color;
+        display: inline-block;
+        font-size: 1.5em;
+        margin: 0;
+        min-width: @navigation-height;
+        padding: 7px 10px;
+        text-align: center;
+        transition: all 0.25s ease 0s;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: fadeIn;
+        animation-delay: 0.6s;
+      }
+    }
+  }
+
+  .twitter {
+    &:hover, &:focus {
+      /* fa-twitter fa-twitter-square */
+      background-color: #00aced;
+    }
+  }
+
+  .linkedin {
+    &:hover, &:focus {
+      /* fa-linkedin fa-linkedin-square */
+      background-color: #007bb6;
+    }
+  }
+
+  .github {
+    &:hover, &:focus {
+      /* fa-git fa-git-square fa-github fa-github-square fa-github-alt */
+      background-color: #44A79B;
+    }
+  }
+
+  .stackoverflow {
+    &:hover, &:focus {
+      /* fa-stack-overflow */
+      background-color: #FF9900;
+    } 
+  }
+
+  .behance {
+    &:hover, &:focus {
+      /* fa-behance fa-behance-square */
+      background-color: #CF9586;
+    }
+  }
+
+  .steam {
+    &:hover, &:focus {
+      /* fa-steam fa-steam-square */
+      background-color: #144578;
+    }
+  }
+
+  .dribbble {
+    &:hover, &:focus {
+      /* fa-dribbble */
+      background-color: #f26798;
+    }
+  }
+
+  .flickr {
+    &:hover, &:focus {
+      /* fa-flickr */
+      background-color: #ff0084;
+    }
+  }
+
+  .youtube {
+    &:hover, &:focus {
+      /* fa-youtube fa-youtube-square fa-youtube-play */
+      background-color: #bb0000;
+    }
+  }
+
+  .facebook {
+    &:hover, &:focus {
+      /* fa-facebook fa-facebook-square fa-facebook-official */
+      background-color: #3b5998;
+    }
+  }
+
+  .medium {
+    &:hover, &:focus {
+     /* fa-medium */
+      background-color: #53346d;
+    }
+  }
+}
+
+.menu {
+  ul {
+    margin: 0 -1em;
+    padding: 0;
+    li {
+      display: inline-block;
+      a {
+        padding: 4px 1em;
+        font-size: 1em;
+        font-weight: 500;
+        line-height: 2.55em;
+        text-transform: uppercase;
+        &:hover {
+          background-color: darken(@link-text-color, 20%);
+          text-decoration: none;
+        }
+      }
+      &.active {
+        a {
+          background-color: darken(@link-text-color, 20%);
+        }
+      }
+    }
+  }
+}
+
+.external {
+  box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.25);
+  ul {
+    li {
+      float: right;
+    }
+  }
+}

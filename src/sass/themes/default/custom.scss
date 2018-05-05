@@ -1,0 +1,39 @@
+/* Headers displayed using background-clip + fallback */
+h2 {
+  font-family: $heading-font-family-sans-serif;
+  font-size: 5em;
+  font-weight: 900;
+  margin-bottom: .5em;
+
+  .about &, .talks & {
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+                url("${img-path}${theme-path}blue.jpg") repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+  }
+
+  .work & {
+    color: $body-bg-color;
+  }
+}
+
+/* Use a ligher color since the background-image is darker */
+.portfolio .portfolio-fields, 
+.portfolio .portfolio-content:hover .portfolio-fields,
+.work .aside {
+  color: $navigation-text-color;
+}
+
+/* Using an opacity gradient over an image */
+.work {
+  background-image: url("${img-path}${theme-path}blue.jpg");
+  &:before {
+    height: 100%;
+    bottom: 0;
+    position: absolute;
+    content: '';
+    width: 100%;
+    opacity: .85;
+  }
+}

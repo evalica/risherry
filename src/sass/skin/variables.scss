@@ -1,0 +1,45 @@
+//
+// Base variables inherited by all themes
+// --------------------------------------------------
+
+// Typography
+// -------------------------
+$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-base:        $font-family-sans-serif;
+
+// Themes Paths
+// -------------------------
+$img-path: '/../../../../../../../../../dist/img/';
+
+// Responsive
+// -------------------------
+$screen-sm: 768px;
+$screen-sm-min: $screen-sm;
+$grid-gutter-width: 30px;
+$grid-padding: floor(($grid-gutter-width / 2));
+
+// Global
+// -------------------------
+$body-bg-color: #0c293c;
+$body-bg-img: none;
+
+// Type
+// -------------------------
+$content-text-color: #fff;
+$content-secondary-text-color: #bbb;
+
+$heading-text-color: $content-text-color;
+
+$link-text-color: #5ACBC0;
+$link-text-hover-color: #f3ff77;
+
+// Menu
+// -------------------------
+$navigation-bg-color: #0e1d26;
+$navigation-text-color: #fff;
+$navigation-height: 42px;
+
+// Footer
+// -------------------------
+$footer-bg-color: $navigation-bg-color;
+$footer-text-color: $content-text-color;
