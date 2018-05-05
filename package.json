@@ -10,10 +10,10 @@
     "url": "https://github.com/evalica/risherry"
   },
   "engines": {
-    "node": ">= 0.12.2"
+    "node": "latest"
   },
   "devDependencies": {
-    "grunt": "^1.0.2",
+    "grunt": "latest",
     "grunt-contrib-concat": "latest",
     "grunt-contrib-cssmin": "latest",
     "grunt-contrib-less": "latest",
@@ -24,6 +24,6 @@
     "test": "grunt swatch"
   },
   "dependencies": {
-    "npm": "^5.8.0"
+    "npm": "^6.0.0"
   }
 }
