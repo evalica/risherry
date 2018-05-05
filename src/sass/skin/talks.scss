@@ -10,13 +10,13 @@
 
 @media (min-width: 576px) {
   .talks-container {
-    grid-template-columns: repeat(auto-fill, minmax(300px, calc(~'50% - ${grid-gutter-width}')));
+    grid-template-columns: repeat(auto-fill, minmax(300px, calc(50% - #{$grid-gutter-width})));
   }
 }
 
 @media (min-width: 1200px) {
   .talks-container {
-    grid-template-columns: repeat(auto-fill, minmax(400px, calc(~'33% - ${grid-gutter-width}')));
+    grid-template-columns: repeat(auto-fill, minmax(400px, calc(33% - #{$grid-gutter-width})));
     .xfolkentry {
       display: grid;
       grid-template-columns: 1fr 1fr;

@@ -8,7 +8,7 @@ h2 {
   .about &, .talks & {
     -webkit-text-fill-color: transparent;
     background: -webkit-linear-gradient(transparent, transparent),
-                url("${img-path}${theme-path}blue.jpg") repeat;
+                url("#{$img-path}#{$theme-path}blue.jpg") repeat;
     background: -o-linear-gradient(transparent, transparent);
     -webkit-background-clip: text;
   }
@@ -27,7 +27,7 @@ h2 {
 
 /* Using an opacity gradient over an image */
 .work {
-  background-image: url("${img-path}${theme-path}blue.jpg");
+  background-image: url("#{$img-path}#{$theme-path}blue.jpg");
   &:before {
     height: 100%;
     bottom: 0;
