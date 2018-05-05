@@ -30,6 +30,9 @@ module.exports = function(grunt) {
     // compile sass stylesheets to css -----------------------------------------
     sass: {
       build: {
+        options: {
+          style: 'expanded',
+        },
         files: {}
       }
     },
