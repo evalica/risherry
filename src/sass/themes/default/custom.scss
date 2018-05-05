@@ -35,5 +35,6 @@ h2 {
     content: '';
     width: 100%;
     opacity: .85;
+    background-image: linear-gradient(to right,$navigation-bg-color 0,darken($link-text-color, 20%) 100%);
   }
 }

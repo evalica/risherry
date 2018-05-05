@@ -407,7 +407,7 @@ h2 {
 }
 .about h2, .talks h2 {
   -webkit-text-fill-color: transparent;
-  background: -webkit-linear-gradient(transparent, transparent), url("/../../../../../../../../../dist/img/themes/default/blue.jpg") repeat;
+  background: -webkit-linear-gradient(transparent, transparent), url("../../../../dist/img/themes/default/blue.jpg") repeat;
   background: -o-linear-gradient(transparent, transparent);
   -webkit-background-clip: text;
 }
@@ -424,7 +424,7 @@ h2 {
 
 /* Using an opacity gradient over an image */
 .work {
-  background-image: url("/../../../../../../../../../dist/img/themes/default/blue.jpg");
+  background-image: url("../../../../dist/img/themes/default/blue.jpg");
 }
 .work:before {
   height: 100%;
@@ -433,4 +433,5 @@ h2 {
   content: '';
   width: 100%;
   opacity: .85;
+  background-image: linear-gradient(to right, #1A1C25 0, #115b7f 100%);
 }
