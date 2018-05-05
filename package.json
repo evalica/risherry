@@ -16,7 +16,6 @@
     "grunt": "latest",
     "grunt-contrib-concat": "latest",
     "grunt-contrib-cssmin": "latest",
-    "grunt-contrib-less": "latest",
     "grunt-contrib-sass": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest"
@@ -25,6 +24,7 @@
     "test": "grunt swatch"
   },
   "dependencies": {
+    "node-sass": "^4.9.0",
     "npm": "^6.0.0"
   },
   "bugs": {
