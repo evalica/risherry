@@ -8,11 +8,11 @@
       margin: 0;
       padding: 0;
       a {
-        color: @navigation-text-color;
+        color: $navigation-text-color;
         display: inline-block;
         font-size: 1.5em;
         margin: 0;
-        min-width: @navigation-height;
+        min-width: $navigation-height;
         padding: 7px 10px;
         text-align: center;
         transition: all 0.25s ease 0s;
@@ -115,13 +115,13 @@
         line-height: 2.55em;
         text-transform: uppercase;
         &:hover {
-          background-color: darken(@link-text-color, 20%);
+          background-color: darken($link-text-color, 20%);
           text-decoration: none;
         }
       }
       &.active {
         a {
-          background-color: darken(@link-text-color, 20%);
+          background-color: darken($link-text-color, 20%);
         }
       }
     }
