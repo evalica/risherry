@@ -27,5 +27,9 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 
+# Sass compiler files
+.sass-cache/
+*.css.map
+
 # Themes generated files
-/src/less/themes/*/.style.less
+/src/sass/themes/*/.style.scss
