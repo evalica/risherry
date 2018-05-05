@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script id="head-template" type="text/x-handlebars-template">
       {{#each head.meta}}
-        <meta name="{{@key}}" content="{{this}}" />
-      {{/each}}
+      <meta name="{{@key}}" content="{{this}}" /> {{/each}}
       <title>{{this.head.title}}</title>
     </script>
     <link type="image/x-icon" rel="icon" href="dist/img/favicon.ico">
@@ -16,6 +16,7 @@
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Gentium+Basic" />
     <link type="text/css" rel="stylesheet" title="Theme: Default" href="dist/css/themes/default/style.min.css" />
   </head>
+
   <body data-spy="scroll" data-target=".menu">
     <div class="navigation">
       <div class="container">
@@ -44,11 +45,11 @@
               <script id="external-template" type="text/x-handlebars-template">
                 <ul class="list-inline">
                   {{#each about.external}}
-                    <li>
-                      <a class="{{{idFallback this 'class'}}}" href="{{this.link}}" title="{{this.name}}">
+                  <li>
+                    <a class="{{{idFallback this 'class'}}}" href="{{this.link}}" title="{{this.name}}">
                         <span class="fa fa-{{{idFallback this 'icon'}}}"><span class="sr-only">{{this.name}}</span></span>
                       </a>
-                    </li>
+                  </li>
                   {{/each}}
                 </ul>
               </script>
@@ -88,18 +89,18 @@
                     <span class="geo">
                       <a title="See location" class="microformat-geo secondary" href="https://www.google.com/maps/place/{{this.about.address.locality}},{{this.about.address.country}}/@{{this.about.address.latitude}},{{this.about.address.longitude}}">
                         <span class="locality">{{this.about.address.locality}}</span>,
-                        <span class="country-name">{{this.about.address.country}}</span>
-                        <span class="postal-code hidden">{{this.about.address.postalCode}}</span>
-                        <span class="latitude hidden">{{this.about.address.latitude}}</span>
-                        <span class="longitude hidden">{{this.about.address.longitude}}</span>
-                      </a>
+                    <span class="country-name">{{this.about.address.country}}</span>
+                    <span class="postal-code hidden">{{this.about.address.postalCode}}</span>
+                    <span class="latitude hidden">{{this.about.address.latitude}}</span>
+                    <span class="longitude hidden">{{this.about.address.longitude}}</span>
+                    </a>
                     </span>
                   </dd>
                 </dl>
               </div>
               <div class="details col-xs-12 col-sm-8 col-md-9">
                 {{#each about.quotes}}
-                  <p>{{{this}}}</p>
+                <p>{{{this}}}</p>
                 {{/each}}
               </div>
             </script>
@@ -139,7 +140,7 @@
                       <div class="portfolio-fields">
                         <ul class="field-list">
                           {{#each this.fields}}
-                            <li class="field-item">{{this}}</li>
+                          <li class="field-item">{{this}}</li>
                           {{/each}}
                         </ul>
                       </div>
@@ -152,7 +153,7 @@
             <div class="aside col-xs-12">
               <script id="work-template" type="text/x-handlebars-template">
                 {{#each work}}
-                  <p>{{{this}}}</p>
+                <p>{{{this}}}</p>
                 {{/each}}
               </script>
             </div>
@@ -169,105 +170,101 @@
             </div>
             <script id="talk-template" type="text/x-handlebars-template">
               <li class="xfolkentry">
-                <a class="taggedlink" href="{{this.link}}">&#8220;{{this.name}}&#8221;</a> 
-                &mdash;
-                <a class="location" href="{{this.event.link}}" title="{{#if this.event.title}}{{this.event.title}}{{else}}{{this.event.name}}{{/if}}">{{this.event.name}}</a>, {{this.event.location}}, 
+                <a class="taggedlink" href="{{this.link}}">&#8220;{{this.name}}&#8221;</a> &mdash;
+                <a class="location" href="{{this.event.link}}" title="{{#if this.event.title}}{{this.event.title}}{{else}}{{this.event.name}}{{/if}}">{{this.event.name}}</a>, {{this.event.location}},
                 <span class="dtstart">{{this.event.date}}</span>
               </li>
             </script>
             <script id="talks-template" type="text/x-handlebars-template">
               <div class="col-xs-12 col-sm-8 col-md-9">
                 <ul>
-                  {{#each talks.data}}
-                    {{#ifCond @index "<" ../talks.perPage}}
+                  {{#each talks.data}} {{#ifCond @index "
+                  < " ../talks.perPage}}
                       {{> talkTemplate}}
                     {{/ifCond}}
                   {{/each}}
                 </ul>
-                <ul class="collapse" id="moreTalks">
+                <ul class="collapse " id="moreTalks ">
                   {{#each talks.data}}
-                    {{#ifCond @index ">=" ../talks.perPage}}
-                      {{> talkTemplate}}
-                    {{/ifCond}}
-                  {{/each}}
+                    {{#ifCond @index ">=" ../talks.perPage}} {{> talkTemplate}} {{/ifCond}} {{/each}}
                 </ul>
                 <a class="more" href="#moreTalks" data-toggle="collapse" aria-expanded="false" title="More"></a>
               </div>
               <div class="aside col-xs-12 col-sm-4 col-md-3">
                 <p>{{{this.contact}}}</p>
               </div>
-            </script>            
-  
-
-<div class="talks-container">
-
-  <div class="xfolkentry">
-    <div class="info">
-      <a class="taggedlink" href="https://www.youtube.com/watch?v=3M9ptBxFyP4">“Expectations from Open Source Designers”</a>
-      <a class="event" href="https://fossasia.org/" title="Free and Open Source technology organization in Asia">FOSSASIA</a>
-      <span class="location">Singapore</span>
-      <span class="dtstart">Mar 2017</span>
-    </div>
-    <div class="preview video"><iframe src="//www.youtube.com/embed/3M9ptBxFyP4" frameborder="0" allowfullscreen=""></iframe></div>
-  </div>
-
-  <div class="xfolkentry">
-    <div class="info">
-      <a class="taggedlink" href="https://fosdem.org/2017/schedule/event/osd_giving_and_receiving_design_feedback/">“Design feedback in Open Source”</a>
-      <a class="event" href="https://fosdem.org" title="Open Source Developers’ European Meeting 2017">FOSDEM</a>
-      <span class="location">Brussels</span>
-      <span class="dtstart">Feb 2017</span>
-    </div>
-    <div class="preview video"><iframe src="//www.youtube.com/embed/M4DeY3Mv7CU" frameborder="0" allowfullscreen=""></iframe></div>
-  </div>
-
-  <div class="xfolkentry">
-    <div class="info">
-      <a class="taggedlink" href="https://fosdem.org/2017/schedule/event/osd_success_stories/">“Success Stories from the OSD community”</a>
-      <a class="event" href="https://fosdem.org" title="Open Source Developers’ European Meeting 2017">FOSDEM</a>
-      <span class="location">Brussels</span>
-      <span class="dtstart">Feb 2017</span>
-    </div>
-    <div class="preview video"><iframe src="//www.youtube.com/embed/eSb-BRnr8o4" frameborder="0" allowfullscreen=""></iframe></div>
-  </div>
+            </script>
 
 
-<!-- Start -->
+            <div class="talks-container">
 
-  <div class="xfolkentry">
-    <div class="preview video"><iframe src="//www.slideshare.net/slideshow/embed_code/key/LVTvmUrnQKWrQb" frameborder="0" allowfullscreen=""></iframe></div>
-    <div class="info">
-      <a class="taggedlink" href="https://fosdem.org/2017/schedule/event/osd_success_stories/">“Success Stories from the OSD community”</a>
-      <a class="event" href="https://fosdem.org" title="Open Source Developers’ European Meeting 2017">FOSDEM</a>
-      <span class="location">Brussels</span>
-      <span class="dtstart">Feb 2017</span>
-    </div>
-  </div>
+              <div class="xfolkentry">
+                <div class="info">
+                  <a class="taggedlink" href="https://www.youtube.com/watch?v=3M9ptBxFyP4">“Expectations from Open Source Designers”</a>
+                  <a class="event" href="https://fossasia.org/" title="Free and Open Source technology organization in Asia">FOSSASIA</a>
+                  <span class="location">Singapore</span>
+                  <span class="dtstart">Mar 2017</span>
+                </div>
+                <div class="preview video"><iframe src="//www.youtube.com/embed/3M9ptBxFyP4" frameborder="0" allowfullscreen=""></iframe></div>
+              </div>
 
-  <div class="xfolkentry">
-    <div class="preview video"><iframe src="//www.slideshare.net/slideshow/embed_code/key/LVTvmUrnQKWrQb" frameborder="0" allowfullscreen=""></iframe></div>
-    <div class="info">
-      <a class="taggedlink" href="https://fosdem.org/2017/schedule/event/osd_success_stories/">“Success Stories from the OSD community”</a>
-      <a class="event" href="https://fosdem.org" title="Open Source Developers’ European Meeting 2017">FOSDEM</a>
-      <span class="location">Brussels</span>
-      <span class="dtstart">Feb 2017</span>
-    </div>
-  </div>
+              <div class="xfolkentry">
+                <div class="info">
+                  <a class="taggedlink" href="https://fosdem.org/2017/schedule/event/osd_giving_and_receiving_design_feedback/">“Design feedback in Open Source”</a>
+                  <a class="event" href="https://fosdem.org" title="Open Source Developers’ European Meeting 2017">FOSDEM</a>
+                  <span class="location">Brussels</span>
+                  <span class="dtstart">Feb 2017</span>
+                </div>
+                <div class="preview video"><iframe src="//www.youtube.com/embed/M4DeY3Mv7CU" frameborder="0" allowfullscreen=""></iframe></div>
+              </div>
 
-  <div class="xfolkentry">
-    <div class="preview video"><iframe src="//www.slideshare.net/slideshow/embed_code/key/LVTvmUrnQKWrQb" frameborder="0" allowfullscreen=""></iframe></div>
-    <div class="info">
-      <a class="taggedlink" href="https://fosdem.org/2017/schedule/event/osd_success_stories/">“Success Stories from the OSD community”</a>
-      <a class="event" href="https://fosdem.org" title="Open Source Developers’ European Meeting 2017">FOSDEM</a>
-      <span class="location">Brussels</span>
-      <span class="dtstart">Feb 2017</span>
-    </div>
-  </div>
-
-<!-- End -->
+              <div class="xfolkentry">
+                <div class="info">
+                  <a class="taggedlink" href="https://fosdem.org/2017/schedule/event/osd_success_stories/">“Success Stories from the OSD community”</a>
+                  <a class="event" href="https://fosdem.org" title="Open Source Developers’ European Meeting 2017">FOSDEM</a>
+                  <span class="location">Brussels</span>
+                  <span class="dtstart">Feb 2017</span>
+                </div>
+                <div class="preview video"><iframe src="//www.youtube.com/embed/eSb-BRnr8o4" frameborder="0" allowfullscreen=""></iframe></div>
+              </div>
 
 
-</div>
+              <!-- Start -->
+
+              <div class="xfolkentry">
+                <div class="preview video"><iframe src="//www.slideshare.net/slideshow/embed_code/key/LVTvmUrnQKWrQb" frameborder="0" allowfullscreen=""></iframe></div>
+                <div class="info">
+                  <a class="taggedlink" href="https://fosdem.org/2017/schedule/event/osd_success_stories/">“Success Stories from the OSD community”</a>
+                  <a class="event" href="https://fosdem.org" title="Open Source Developers’ European Meeting 2017">FOSDEM</a>
+                  <span class="location">Brussels</span>
+                  <span class="dtstart">Feb 2017</span>
+                </div>
+              </div>
+
+              <div class="xfolkentry">
+                <div class="preview video"><iframe src="//www.slideshare.net/slideshow/embed_code/key/LVTvmUrnQKWrQb" frameborder="0" allowfullscreen=""></iframe></div>
+                <div class="info">
+                  <a class="taggedlink" href="https://fosdem.org/2017/schedule/event/osd_success_stories/">“Success Stories from the OSD community”</a>
+                  <a class="event" href="https://fosdem.org" title="Open Source Developers’ European Meeting 2017">FOSDEM</a>
+                  <span class="location">Brussels</span>
+                  <span class="dtstart">Feb 2017</span>
+                </div>
+              </div>
+
+              <div class="xfolkentry">
+                <div class="preview video"><iframe src="//www.slideshare.net/slideshow/embed_code/key/LVTvmUrnQKWrQb" frameborder="0" allowfullscreen=""></iframe></div>
+                <div class="info">
+                  <a class="taggedlink" href="https://fosdem.org/2017/schedule/event/osd_success_stories/">“Success Stories from the OSD community”</a>
+                  <a class="event" href="https://fosdem.org" title="Open Source Developers’ European Meeting 2017">FOSDEM</a>
+                  <span class="location">Brussels</span>
+                  <span class="dtstart">Feb 2017</span>
+                </div>
+              </div>
+
+              <!-- End -->
+            </div>
+
+          </div>
 
         </div>
       </div>
@@ -290,7 +287,17 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
     <script type="text/javascript" src="dist/js/risherry.min.js"></script>
     <script id="analytics-template" type="text/x-handlebars-template">
-      <script>{{{this.analyticsTracker}}}</script>
+      <script>
+        {
+          {
+            {
+              this.analyticsTracker
+            }
+          }
+        }
+
+      </script>
     </script>
   </body>
+
 </html>
