@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -27,8 +27,8 @@ module.exports = function(grunt) {
       }
     },
 
-    // compile less stylesheets to css -----------------------------------------
-    less: {
+    // compile sass stylesheets to css -----------------------------------------
+    sass: {
       build: {
         files: {}
       }
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
     // configure watch to auto update ------------------------------------------ 
     watch: {
       stylesheets: {
-        files: ['src/less/skin/*.less', 'src/less/style.less', 'src/less/themes/**/variables.less', 'src/less/themes/**/custom.less'],
+        files: ['src/sass/skin/*.scss', 'src/sass/style.scss', 'src/sass/themes/**/variables.scss', 'src/sass/themes/**/custom.scss'],
         tasks: ['swatch']
       },
       javascript: {
@@ -66,13 +66,13 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build', 'build a theme', function(theme) {
 
-    // copying the style.less file ---------------------------------------------
+    // copying the style.scss file ---------------------------------------------
     var srcStyle;
     var destStyle;
     var filesStyle = {};
 
-    srcStyle = 'src/less/style.less';
-    destStyle = 'src/less/themes/' + theme + '/.style.less';
+    srcStyle = 'src/sass/style.scss';
+    destStyle = 'src/sass/themes/' + theme + '/.style.scss';
     filesStyle = {
       src: srcStyle,
       dest: destStyle
@@ -81,16 +81,16 @@ module.exports = function(grunt) {
     grunt.config('concat.stylesheets', filesStyle);
     grunt.task.run(['concat:stylesheets']);
 
-    // compile less stylesheets to css -----------------------------------------
-    var srcLess;
-    var destLess;
-    var filesLess = {};
+    // compile sass stylesheets to css -----------------------------------------
+    var srcSass;
+    var destSass;
+    var filesSass = {};
 
-    srcLess = 'src/less/themes/' + theme + '/.style.less';
-    destLess = 'dist/css/themes/' + theme + '/style.css';
-    filesLess[destLess] = srcLess;
+    srcSass = 'src/sass/themes/' + theme + '/.style.scss';
+    destSass = 'dist/css/themes/' + theme + '/style.css';
+    filesSass[destSass] = srcSass;
 
-    grunt.config('less.build.files', filesLess);
+    grunt.config('sass.build.files', filesSass);
 
     // configure cssmin to minify css files ------------------------------------
     var srcMin;
@@ -103,7 +103,7 @@ module.exports = function(grunt) {
 
     grunt.config('cssmin.build.files', filesMin);
 
-    grunt.task.run(['less', 'cssmin']);
+    grunt.task.run(['sass', 'cssmin']);
   });
 
   grunt.registerMultiTask('swatch', 'build themes', function() {
