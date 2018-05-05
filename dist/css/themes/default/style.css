@@ -4,25 +4,26 @@ body {
   color: #646C81;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-a,
-a:link,
-a:visited {
+
+a, a:link, a:visited {
   color: #1D9BD9;
 }
 a:hover {
   color: #00CEFB;
-  transition: color 0.3s ease-in-out;
+  transition: color .3s ease-in-out;
   text-decoration: none;
 }
-h1,
-h2 {
+
+h1, h2 {
   color: #1A1C25;
 }
+
 h2 {
   font-weight: 500;
   letter-spacing: 5px;
   text-transform: uppercase;
 }
+
 .navigation {
   background-color: #1A1C25;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
@@ -34,14 +35,16 @@ h2 {
   top: 0;
   z-index: 10000;
 }
+
 .footer {
-  background-color: #1A1C25;
+  background-color: #0e1d26;
   color: #808a96;
   box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(0, 0, 0, 0.1) inset;
   min-height: 42px;
   font-size: .8em;
   padding: 14px 0;
 }
+
 .navigation ul {
   list-style-type: none;
   padding: 0;
@@ -66,61 +69,51 @@ h2 {
   animation-name: fadeIn;
   animation-delay: 0.6s;
 }
-.navigation .twitter:hover,
-.navigation .twitter:focus {
+.navigation .twitter:hover, .navigation .twitter:focus {
   /* fa-twitter fa-twitter-square */
   background-color: #00aced;
 }
-.navigation .linkedin:hover,
-.navigation .linkedin:focus {
+.navigation .linkedin:hover, .navigation .linkedin:focus {
   /* fa-linkedin fa-linkedin-square */
   background-color: #007bb6;
 }
-.navigation .github:hover,
-.navigation .github:focus {
+.navigation .github:hover, .navigation .github:focus {
   /* fa-git fa-git-square fa-github fa-github-square fa-github-alt */
   background-color: #44A79B;
 }
-.navigation .stackoverflow:hover,
-.navigation .stackoverflow:focus {
+.navigation .stackoverflow:hover, .navigation .stackoverflow:focus {
   /* fa-stack-overflow */
   background-color: #FF9900;
 }
-.navigation .behance:hover,
-.navigation .behance:focus {
+.navigation .behance:hover, .navigation .behance:focus {
   /* fa-behance fa-behance-square */
   background-color: #CF9586;
 }
-.navigation .steam:hover,
-.navigation .steam:focus {
+.navigation .steam:hover, .navigation .steam:focus {
   /* fa-steam fa-steam-square */
   background-color: #144578;
 }
-.navigation .dribbble:hover,
-.navigation .dribbble:focus {
+.navigation .dribbble:hover, .navigation .dribbble:focus {
   /* fa-dribbble */
   background-color: #f26798;
 }
-.navigation .flickr:hover,
-.navigation .flickr:focus {
+.navigation .flickr:hover, .navigation .flickr:focus {
   /* fa-flickr */
   background-color: #ff0084;
 }
-.navigation .youtube:hover,
-.navigation .youtube:focus {
+.navigation .youtube:hover, .navigation .youtube:focus {
   /* fa-youtube fa-youtube-square fa-youtube-play */
   background-color: #bb0000;
 }
-.navigation .facebook:hover,
-.navigation .facebook:focus {
+.navigation .facebook:hover, .navigation .facebook:focus {
   /* fa-facebook fa-facebook-square fa-facebook-official */
   background-color: #3b5998;
 }
-.navigation .medium:hover,
-.navigation .medium:focus {
+.navigation .medium:hover, .navigation .medium:focus {
   /* fa-medium */
   background-color: #53346d;
 }
+
 .menu ul {
   margin: 0 -1em;
   padding: 0;
@@ -142,12 +135,14 @@ h2 {
 .menu ul li.active a {
   background-color: #115b7f;
 }
+
 .external {
   box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.25);
 }
 .external ul li {
   float: right;
 }
+
 .category {
   position: relative;
   padding-top: 105px;
@@ -189,9 +184,7 @@ h2 {
   text-align: right;
   text-transform: uppercase;
 }
-.category .more:focus,
-.category .more:active,
-.category .more:hover {
+.category .more:focus, .category .more:active, .category .more:hover {
   text-decoration: none;
 }
 .category .more:after {
@@ -208,10 +201,12 @@ h2 {
   height: 21px;
   margin-top: 42px;
 }
+
 .aside {
   color: #808a96;
   font-size: .85em;
 }
+
 .vcard dt {
   color: #646C81;
   display: block;
@@ -225,6 +220,7 @@ h2 {
 .vcard dt:first-of-type {
   margin-top: 1em;
 }
+
 .details {
   font-size: 1.1em;
   line-height: 2em;
@@ -233,6 +229,7 @@ h2 {
   font-size: 22px;
   margin: .3em 0 .7em;
 }
+
 .portfolio {
   /* Hover behavior */
 }
@@ -309,6 +306,7 @@ h2 {
 .portfolio .portfolio-content:hover .portfolio-title a {
   color: #00CEFB;
 }
+
 /*.xfolkentry {
   text-indent: -2em;
 }*/
@@ -317,6 +315,7 @@ h2 {
   display: grid;
   grid-gap: 15px 15px;
 }
+
 @media (min-width: 576px) {
   .talks-container {
     grid-template-columns: repeat(auto-fill, minmax(300px, calc(50% - 30px)));
@@ -364,24 +363,29 @@ h2 {
 .talks-container .xfolkentry .event {
   font-weight: 100;
 }
+
 .xfolkentry .taggedlink {
   grid-column: span 2;
 }
+
 .xfolkentry .event {
   grid-column: span 2;
   color: #484848;
   font-size: .85em;
   margin-bottom: 1em;
 }
+
 .xfolkentry .info {
   padding: .5em 1em;
   display: grid;
   grid-template-rows: repeat(2, auto);
   grid-template-columns: repeat(2, 1fr);
 }
+
 .xfolkentry iframe {
   width: 100%;
 }
+
 .xfolkentry .location,
 .xfolkentry .dtstart {
   color: #747c83;
@@ -389,9 +393,11 @@ h2 {
   font-size: .85em;
   font-weight: 100;
 }
+
 .xfolkentry .dtstart {
   text-align: right;
 }
+
 /* Headers displayed using background-clip + fallback */
 h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -399,32 +405,28 @@ h2 {
   font-weight: 900;
   margin-bottom: .5em;
 }
-.about h2,
-.talks h2 {
+.about h2, .talks h2 {
   -webkit-text-fill-color: transparent;
-  background: -webkit-linear-gradient(transparent, transparent), url("../../../../../../../../dist/img/themes/default/blue.jpg") repeat;
+  background: -webkit-linear-gradient(transparent, transparent), url("/../../../../../../../../../dist/img/themes/default/blue.jpg") repeat;
   background: -o-linear-gradient(transparent, transparent);
   -webkit-background-clip: text;
 }
 .work h2 {
   color: #F7F8FA;
 }
+
 /* Use a ligher color since the background-image is darker */
 .portfolio .portfolio-fields,
 .portfolio .portfolio-content:hover .portfolio-fields,
 .work .aside {
   color: #fff;
 }
+
 /* Using an opacity gradient over an image */
 .work {
-  background-image: url("../../../../../../../../dist/img/themes/default/blue.jpg");
+  background-image: url("/../../../../../../../../../dist/img/themes/default/blue.jpg");
 }
 .work:before {
-  background-image: -webkit-linear-gradient(left, #1A1C25 0%, #115b7f 100%);
-  background-image: -o-linear-gradient(left, #1A1C25 0%, #115b7f 100%);
-  background-image: linear-gradient(to right, #1A1C25 0%, #115b7f 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1a1c25', endColorstr='#ff115b7f', GradientType=1);
   height: 100%;
   bottom: 0;
   position: absolute;
