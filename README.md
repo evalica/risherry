@@ -5,13 +5,13 @@
 
 Risherry is designed as a customizable personal website.
 
-It's build using [Bootstrap](http://getbootstrap.com/), [Handlebars](http://handlebarsjs.com/) and [JQuery](https://jquery.com/) frameworks. Additionally it uses [LESS](http://lesscss.org/), [Font Awesome](http://fortawesome.github.io/Font-Awesome/) and [Google Fonts](http://www.google.com/fonts).
+It's build using [Bootstrap](http://getbootstrap.com/), [Handlebars](http://handlebarsjs.com/) and [JQuery](https://jquery.com/) frameworks. Additionally it uses [Sass](http://sass-lang.com/), [Font Awesome](http://fortawesome.github.io/Font-Awesome/) and [Google Fonts](http://www.google.com/fonts).
 
 ## Quick Start
 
 If you want to customize locally the sources you will need [Node.js](https://nodejs.org/) and [Grunt](http://gruntjs.com/).
 
-It's using Grunt plugins like [watch](https://www.npmjs.com/package/grunt-contrib-watch), [less](https://www.npmjs.com/package/grunt-contrib-less), [concat](https://www.npmjs.com/package/grunt-contrib-concat), [cssmin](https://www.npmjs.com/package/grunt-contrib-cssmin), [uglify](https://www.npmjs.com/package/grunt-contrib-uglify). The plugins are installed and managed via [npm](https://npmjs.org/), the Node.js package manager.
+It's using Grunt plugins like [watch](https://www.npmjs.com/package/grunt-contrib-watch), [sass](https://www.npmjs.com/package/grunt-contrib-sass), [concat](https://www.npmjs.com/package/grunt-contrib-concat), [cssmin](https://www.npmjs.com/package/grunt-contrib-cssmin), [uglify](https://www.npmjs.com/package/grunt-contrib-uglify). The plugins are installed and managed via [npm](https://npmjs.org/), the Node.js package manager.
 
 #### `npm install`
 
@@ -19,7 +19,7 @@ After everything is set up, you can run the `swatch` task that builds all the av
 
 #### `grunt swatch`
 
-You should run the tasks on the `src/less` files and commit the results in the `dist` folder.
+You should run the tasks on the `src/sass` files and commit the results in the `dist` folder.
 
 #### `grunt watch`
 
@@ -38,7 +38,7 @@ risherry/
     │   ├── config.json
     │   ├── content.json
     ├── js/
-    └── less/
+    └── sass/
 
 ```
 
@@ -46,20 +46,20 @@ risherry/
 
 By default, there are default available themes. 
 
-Each of these themes have a `custom.less` and a `variables.less` file, that contain the theme's definition. New themes can be created and used.
+Each of these themes have a `custom.scss` and a `variables.scss` file, that contain the theme's definition. New themes can be created and used.
 
 ```
 risherry/
 ├── src/
     ├── data/
     ├── js/
-    └── less/
+    └── sass/
         ├── skin/
-        ├── style.less
+        ├── style.scss
         └── themes/
             └── default/
-                ├── custom.less
-                └── variables.less
+                ├── custom.scss
+                └── variables.scss
 ```
 
 Version `0.2.0` provides the `Bliss`, `Bordo`, `Rain` and `Moss` themes:
