@@ -24,7 +24,6 @@
     "test": "grunt swatch"
   },
   "dependencies": {
-    "grunt-sass": "^2.1.0",
     "node-sass": "^4.9.0",
     "npm": "^6.0.0"
   },
