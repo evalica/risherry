@@ -18,7 +18,8 @@
     "grunt-contrib-cssmin": "latest",
     "grunt-contrib-sass": "latest",
     "grunt-contrib-uglify": "latest",
-    "grunt-contrib-watch": "latest"
+    "grunt-contrib-watch": "latest",
+    "hoek": "4.2.1"
   },
   "scripts": {
     "test": "grunt swatch"
