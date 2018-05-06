@@ -14,6 +14,7 @@
 }
 
 :root {
+  --footer-bg-color: var(--navigation-bg-color);
   --footer-text-color: var(--content-secondary-text-color);
 }
 
@@ -56,7 +57,7 @@ h2 {
 }
 
 .footer {
-  background-color: var(--navigation-bg-color);
+  background-color: var(--footer-bg-color);
   color: var(--footer-text-color);
   box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(0, 0, 0, 0.1) inset;
   min-height: 42px;

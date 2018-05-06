@@ -45,7 +45,7 @@ $navigation-height: 42px;
 
 // Footer
 // -------------------------
-$footer-bg-color: var(--navigation-bg-color);
 :root {
+--footer-bg-color: var(--navigation-bg-color);
 --footer-text-color: var(--content-secondary-text-color);
 }
