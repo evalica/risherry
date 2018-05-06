@@ -6,10 +6,10 @@ body {
 
 a {
   &, &:link, &:visited {
-    color: $link-text-color;
+    color: var(--link-text-color);
   }
   &:hover {
-    color: $link-text-hover-color;
+    color: var(--link-text-hover-color);
     transition: color .3s ease-in-out;
     text-decoration: none;
   }
