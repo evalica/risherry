@@ -115,13 +115,13 @@
         line-height: 2.55em;
         text-transform: uppercase;
         &:hover {
-          background-color: darken($link-text-color, 20%);
+          background-color: var(--navigation-bg-hover-color);
           text-decoration: none;
         }
       }
       &.active {
         a {
-          background-color: darken($link-text-color, 20%);
+          background-color: var(--navigation-bg-hover-color);
         }
       }
     }

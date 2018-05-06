@@ -35,13 +35,17 @@ $link-text-hover-color: #f3ff77;
 
 // Menu
 // -------------------------
-$navigation-bg-color: #0e1d26;
+:root {
+--navigation-bg-color: #0e1d26;
+--navigation-bg-hover-color: #115b7f;
+}
+$navigation-bg-hover-color: #115b7f;
 $navigation-text-color: #fff;
 $navigation-height: 42px;
 
 // Footer
 // -------------------------
-$footer-bg-color: $navigation-bg-color;
+$footer-bg-color: var(--navigation-bg-color);
 :root {
 --footer-text-color: var(--content-text-color);
 }

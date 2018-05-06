@@ -1,5 +1,5 @@
 .navigation {
-  background-color: $navigation-bg-color;
+  background-color: var(--navigation-bg-color);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
   min-height: $navigation-height;
   left: 0;
