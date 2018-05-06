@@ -37,4 +37,7 @@ h2 {
     opacity: .85;
     background-image: linear-gradient(to right, var(--navigation-bg-color) 0, var(--navigation-bg-hover-color) 100%);
   }
+  &-container {
+    position: relative;
+  }
 }

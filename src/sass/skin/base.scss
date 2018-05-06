@@ -1,3 +1,21 @@
+/* Reset */
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Utilities */
+
+.d-none {
+  display: none;
+}
+
+/* Base */
+
 body {
   background-color: var(--body-bg-color);
   color: var(--content-text-color);
