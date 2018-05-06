@@ -1,16 +1,13 @@
-// Typography
-// -------------------------
-$heading-font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-// Themes Paths
-// -------------------------
-$theme-path: 'themes/default/';
+//
+// Base variables
+// --------------------------------------------------
 
 // Global
 // -------------------------
 $body-bg-color: #F7F8FA;
 
-// Typography
+// Type
 // -------------------------
 $content-text-color: #646C81;
 $content-secondary-text-color: #808a96;
@@ -27,3 +24,15 @@ $navigation-bg-color: #1A1C25;
 // Footer
 // -------------------------
 $footer-text-color: $content-secondary-text-color;
+
+//
+// Themes Custom
+// --------------------------------------------------
+
+// Themes Paths
+// -------------------------
+$theme-path: 'themes/default/';
+
+// Typography
+// -------------------------
+$heading-font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;

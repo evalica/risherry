@@ -2,11 +2,6 @@
 // Base variables inherited by all themes
 // --------------------------------------------------
 
-// Typography
-// -------------------------
-$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-base:        $font-family-sans-serif;
-
 // Themes Paths
 // -------------------------
 $img-path: '../../../../dist/img/';
@@ -17,6 +12,11 @@ $screen-sm: 768px;
 $screen-sm-min: $screen-sm;
 $grid-gutter-width: 30px;
 $grid-padding: floor(($grid-gutter-width / 2));
+
+// Typography
+// -------------------------
+$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-base:        $font-family-sans-serif;
 
 // Global
 // -------------------------
