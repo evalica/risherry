@@ -22,7 +22,7 @@ h2 {
 .portfolio .portfolio-fields, 
 .portfolio .portfolio-content:hover .portfolio-fields,
 .work .aside {
-  color: $navigation-text-color;
+  color: var(--navigation-text-color);
 }
 
 /* Using an opacity gradient over an image */

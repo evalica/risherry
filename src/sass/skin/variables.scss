@@ -12,6 +12,7 @@ $screen-sm: 768px;
 
 $grid-gutter-width: 30px;
 $grid-padding: floor(($grid-gutter-width / 2));
+$navigation-height: 42px;
 
 :root {
 // Typography
@@ -31,21 +32,15 @@ $grid-padding: floor(($grid-gutter-width / 2));
 
 --link-text-color: #1D9BD9;
 --link-text-hover-color: #00CEFB;
-}
 
 // Menu
 // -------------------------
-:root {
 --navigation-bg-color: #0e1d26;
 --navigation-bg-hover-color: #115b7f;
-}
-$navigation-bg-hover-color: #115b7f;
-$navigation-text-color: #fff;
-$navigation-height: 42px;
+--navigation-text-color: #fff;
 
 // Footer
 // -------------------------
-:root {
 --footer-bg-color: var(--navigation-bg-color);
 --footer-text-color: var(--content-secondary-text-color);
 }
