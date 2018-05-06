@@ -17,11 +17,12 @@ $grid-padding: floor(($grid-gutter-width / 2));
 // Typography
 // -------------------------
 --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+
 
 // Global
 // -------------------------
-$body-bg-color: #0c293c;
+--body-bg-color: #0c293c;
+}
 
 // Type
 // -------------------------

@@ -14,7 +14,7 @@ h2 {
   }
 
   .work & {
-    color: $body-bg-color;
+    color: var(--body-bg-color);
   }
 }
 

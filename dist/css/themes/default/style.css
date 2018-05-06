@@ -1,9 +1,14 @@
 :root {
   --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --body-bg-color: #0c293c;
+}
+
+:root {
+  --body-bg-color: #F7F8FA;
 }
 
 body {
-  background-color: #F7F8FA;
+  background-color: var(--body-bg-color);
   color: #646C81;
   font-family: var(--font-family-base);
 }
@@ -246,7 +251,6 @@ h2 {
   min-height: 250px;
 }
 .portfolio .portfolio-cover {
-  background: #F7F8FA;
   box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
   float: left;
   margin: 10px 1%;
@@ -416,7 +420,7 @@ h2 {
   -webkit-background-clip: text;
 }
 .work h2 {
-  color: #F7F8FA;
+  color: var(--body-bg-color);
 }
 
 /* Use a ligher color since the background-image is darker */
