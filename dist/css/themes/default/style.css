@@ -42,12 +42,9 @@ h2 {
 .navigation {
   background-color: var(--navigation-bg-color);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
-  min-height: 42px;
   left: 0;
-  overflow: visible;
   position: fixed;
   right: 0;
-  top: 0;
   z-index: 10000;
 }
 
@@ -55,29 +52,17 @@ h2 {
   background-color: var(--footer-bg-color);
   color: var(--footer-text-color);
   box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(0, 0, 0, 0.1) inset;
-  min-height: 42px;
   font-size: .8em;
-  padding: 14px 0;
+  padding: 15px 0;
 }
 
-.navigation ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-.navigation ul li {
-  float: left;
-  margin: 0;
-  padding: 0;
-}
 .navigation ul li a {
   color: var(--navigation-text-color);
   display: inline-block;
   font-size: 1.5em;
-  margin: 0;
-  min-width: 42px;
-  padding: 7px 10px;
-  text-align: center;
+  min-height: 42px;
+  padding-left: .5em;
+  padding-right: .5em;
   transition: all 0.25s ease 0s;
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -129,17 +114,10 @@ h2 {
   background-color: #53346d;
 }
 
-.menu ul {
-  margin: 0 -1em;
-  padding: 0;
-}
-.menu ul li {
-  display: inline-block;
-}
 .menu ul li a {
-  padding: 4px 1em;
+  padding-left: 1em;
+  padding-right: 1em;
   font-size: 1em;
-  font-weight: 500;
   line-height: 2.55em;
   text-transform: uppercase;
 }

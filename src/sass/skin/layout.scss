@@ -1,12 +1,9 @@
 .navigation {
   background-color: var(--navigation-bg-color);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
-  min-height: $navigation-height;
   left: 0;
-  overflow: visible;
   position: fixed;
   right: 0;
-  top: 0;
   z-index: 10000;
 }
 
@@ -14,7 +11,6 @@
   background-color: var(--footer-bg-color);
   color: var(--footer-text-color);
   box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(0, 0, 0, 0.1) inset;
-  min-height: $navigation-height;
   font-size: .8em;
-  padding: ($navigation-height / 3) 0;
+  padding: $grid-padding 0;
 }

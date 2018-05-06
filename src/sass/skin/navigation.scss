@@ -1,20 +1,13 @@
 .navigation {
   ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
     li {
-      float: left;
-      margin: 0;
-      padding: 0;
       a {
         color: var(--navigation-text-color);
         display: inline-block;
         font-size: 1.5em;
-        margin: 0;
-        min-width: $navigation-height;
-        padding: 7px 10px;
-        text-align: center;
+        min-height: $navigation-height;
+        padding-left: .5em;
+        padding-right: .5em;
         transition: all 0.25s ease 0s;
         animation-duration: 1s;
         animation-fill-mode: both;
@@ -104,14 +97,11 @@
 
 .menu {
   ul {
-    margin: 0 -1em;
-    padding: 0;
     li {
-      display: inline-block;
       a {
-        padding: 4px 1em;
+        padding-left: 1em;
+        padding-right: 1em;
         font-size: 1em;
-        font-weight: 500;
         line-height: 2.55em;
         text-transform: uppercase;
         &:hover {
