@@ -1,15 +1,29 @@
 :root {
   --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --body-bg-color: #0c293c;
+  --content-text-color: #fff;
+  --content-secondary-text-color: #bbb;
+  --heading-text-color: var(--content-text-color);
+}
+
+:root {
+  --footer-text-color: var(--content-text-color);
 }
 
 :root {
   --body-bg-color: #F7F8FA;
+  --content-text-color: #646C81;
+  --content-secondary-text-color: #808a96;
+  --heading-text-color: #1A1C25;
+}
+
+:root {
+  --footer-text-color: var(--content-secondary-text-color);
 }
 
 body {
   background-color: var(--body-bg-color);
-  color: #646C81;
+  color: var(--content-text-color);
   font-family: var(--font-family-base);
 }
 
@@ -23,7 +37,7 @@ a:hover {
 }
 
 h1, h2 {
-  color: #1A1C25;
+  color: var(--heading-text-color);
   font-family: var(--font-family-base);
 }
 
@@ -47,7 +61,7 @@ h2 {
 
 .footer {
   background-color: #0e1d26;
-  color: #808a96;
+  color: var(--footer-text-color);
   box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(0, 0, 0, 0.1) inset;
   min-height: 42px;
   font-size: .8em;
@@ -174,18 +188,17 @@ h2 {
   display: table-row;
 }
 .category ul li .dtstart {
-  color: #808a96;
+  color: var(--content-secondary-text-color);
   font-style: italic;
   font-weight: 400;
 }
 .category ul li .location {
-  color: #646C81;
+  color: var(--content-text-color);
 }
 .category ul li .location:hover {
   text-decoration: underline;
 }
 .category .more {
-  color: #646C81;
   float: right;
   font-size: .8em;
   letter-spacing: 1px;
@@ -212,12 +225,12 @@ h2 {
 }
 
 .aside {
-  color: #808a96;
+  color: var(--content-secondary-text-color);
   font-size: .85em;
 }
 
 .vcard dt {
-  color: #646C81;
+  color: var(--content-text-color);
   display: block;
   font-size: 1em;
   font-weight: 400;
@@ -284,7 +297,7 @@ h2 {
 }
 .portfolio .portfolio-fields {
   font-size: .8em;
-  color: #808a96;
+  color: var(--content-secondary-text-color);
 }
 .portfolio .portfolio-fields .field-list {
   padding: 0;
@@ -307,9 +320,6 @@ h2 {
   opacity: .4;
   transform: scale(1.12);
   z-index: 1;
-}
-.portfolio .portfolio-content:hover .portfolio-fields {
-  color: #646C81;
 }
 .portfolio .portfolio-content:hover .portfolio-title a {
   color: #00CEFB;

@@ -1,6 +1,6 @@
 body {
   background-color: var(--body-bg-color);
-  color: $content-text-color;
+  color: var(--content-text-color);
   font-family: var(--font-family-base);
 }
 
@@ -16,7 +16,7 @@ a {
 }
 
 h1, h2 {
-  color: $heading-text-color;
+  color: var(--heading-text-color);
   font-family: var(--font-family-base);
 }
 

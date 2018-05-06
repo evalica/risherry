@@ -18,18 +18,17 @@ $grid-padding: floor(($grid-gutter-width / 2));
 // -------------------------
 --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-
 // Global
 // -------------------------
 --body-bg-color: #0c293c;
-}
 
 // Type
 // -------------------------
-$content-text-color: #fff;
-$content-secondary-text-color: #bbb;
+--content-text-color: #fff;
+--content-secondary-text-color: #bbb;
 
-$heading-text-color: $content-text-color;
+--heading-text-color: var(--content-text-color);
+}
 
 $link-text-color: #5ACBC0;
 $link-text-hover-color: #f3ff77;
@@ -43,4 +42,6 @@ $navigation-height: 42px;
 // Footer
 // -------------------------
 $footer-bg-color: $navigation-bg-color;
-$footer-text-color: $content-text-color;
+:root {
+--footer-text-color: var(--content-text-color);
+}

@@ -46,7 +46,7 @@
 
   .portfolio-fields {
     font-size: .8em;
-    color: $content-secondary-text-color;
+    color: var(--content-secondary-text-color);
     .field-list {
       padding: 0;
     }
@@ -74,9 +74,6 @@
       opacity: .4;
       transform: scale(1.12);
       z-index: 1;
-    }
-    .portfolio-fields {
-      color: $content-text-color;
     }
     .portfolio-title a {
       color: $link-text-hover-color;

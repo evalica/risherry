@@ -17,12 +17,12 @@
         display: table-row;
       }
       .dtstart {
-        color: $content-secondary-text-color;
+        color: var(--content-secondary-text-color);
         font-style: italic;
         font-weight: 400;
       }
       .location {
-        color: $content-text-color;
+        color: var(--content-text-color);
         &:hover {
           text-decoration: underline;
         }
@@ -30,7 +30,6 @@
     }
   }
   .more {
-    color: $content-text-color;
     float: right;
     font-size: .8em;
     letter-spacing: 1px;
@@ -58,13 +57,13 @@
 }
 
 .aside {
-  color: $content-secondary-text-color;
+  color: var(--content-secondary-text-color);
   font-size: .85em;
 }
 
 .vcard {
   dt {
-    color: $content-text-color;
+    color: var(--content-text-color);
     display: block;
     font-size: 1em;
     font-weight: 400;
