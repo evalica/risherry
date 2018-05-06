@@ -1,9 +1,9 @@
 :root {
   --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --body-bg-color: #0c293c;
-  --content-text-color: #fff;
-  --content-secondary-text-color: #bbb;
-  --heading-text-color: var(--content-text-color);
+  --body-bg-color: #F7F8FA;
+  --content-text-color: #646C81;
+  --content-secondary-text-color: #808a96;
+  --heading-text-color: #0e1d26;
 }
 
 :root {
@@ -12,18 +12,6 @@
 }
 
 :root {
-  --footer-text-color: var(--content-text-color);
-}
-
-:root {
-  --body-bg-color: #F7F8FA;
-  --content-text-color: #646C81;
-  --content-secondary-text-color: #808a96;
-  --heading-text-color: #1A1C25;
-}
-
-:root {
-  --navigation-bg-color: #1A1C25;
   --footer-text-color: var(--content-secondary-text-color);
 }
 
