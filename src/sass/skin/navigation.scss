@@ -1,119 +1,90 @@
 .navigation {
-  ul {
-    li {
-      a {
-        color: var(--navigation-text-color);
-        display: inline-block;
-        font-size: 1.5em;
-        min-height: $navigation-height;
-        padding-left: .5em;
-        padding-right: .5em;
-        transition: all 0.25s ease 0s;
-        animation-duration: 1s;
-        animation-fill-mode: both;
-        animation-name: fadeIn;
-        animation-delay: 0.6s;
-      }
+  a {
+    color: var(--navigation-text-color);
+    display: inline-block;
+    transition: all 0.25s ease 0s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+    animation-delay: 0.6s;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 2.55em;
+    text-transform: uppercase;
+    &:hover {
+      background-color: var(--navigation-bg-hover-color);
+      text-decoration: none;
     }
   }
-
+  li.active {
+    a {
+      background-color: var(--navigation-bg-hover-color);
+    }
+  }
   .twitter {
-    &:hover, &:focus {
-      /* fa-twitter fa-twitter-square */
-      background-color: #00aced;
+    &:hover,
+    &:focus {
+      --navigation-bg-hover-color: #00aced;
     }
   }
-
   .linkedin {
-    &:hover, &:focus {
-      /* fa-linkedin fa-linkedin-square */
-      background-color: #007bb6;
+    &:hover,
+    &:focus {
+      --navigation-bg-hover-color: #007bb6;
     }
   }
-
   .github {
-    &:hover, &:focus {
-      /* fa-git fa-git-square fa-github fa-github-square fa-github-alt */
-      background-color: #44A79B;
+    &:hover,
+    &:focus {
+      --navigation-bg-hover-color: #44A79B;
     }
   }
-
   .stackoverflow {
-    &:hover, &:focus {
-      /* fa-stack-overflow */
-      background-color: #FF9900;
-    } 
+    &:hover,
+    &:focus {
+      --navigation-bg-hover-color: #FF9900;
+    }
   }
-
   .behance {
-    &:hover, &:focus {
-      /* fa-behance fa-behance-square */
-      background-color: #CF9586;
+    &:hover,
+    &:focus {
+      --navigation-bg-hover-color: #CF9586;
     }
   }
-
   .steam {
-    &:hover, &:focus {
-      /* fa-steam fa-steam-square */
-      background-color: #144578;
+    &:hover,
+    &:focus {
+      --navigation-bg-hover-color: #144578;
     }
   }
-
   .dribbble {
-    &:hover, &:focus {
-      /* fa-dribbble */
-      background-color: #f26798;
+    &:hover,
+    &:focus {
+      --navigation-bg-hover-color: #f26798;
     }
   }
-
   .flickr {
-    &:hover, &:focus {
-      /* fa-flickr */
-      background-color: #ff0084;
+    &:hover,
+    &:focus {
+      --navigation-bg-hover-color: #ff0084;
     }
   }
-
   .youtube {
-    &:hover, &:focus {
-      /* fa-youtube fa-youtube-square fa-youtube-play */
-      background-color: #bb0000;
+    &:hover,
+    &:focus {
+      --navigation-bg-hover-color: #bb0000;
     }
   }
-
   .facebook {
-    &:hover, &:focus {
-      /* fa-facebook fa-facebook-square fa-facebook-official */
-      background-color: #3b5998;
+    &:hover,
+    &:focus {
+      --navigation-bg-hover-color: #3b5998;
     }
   }
-
   .medium {
-    &:hover, &:focus {
-     /* fa-medium */
-      background-color: #53346d;
-    }
-  }
-}
-
-.menu {
-  ul {
-    li {
-      a {
-        padding-left: 1em;
-        padding-right: 1em;
-        font-size: 1em;
-        line-height: 2.55em;
-        text-transform: uppercase;
-        &:hover {
-          background-color: var(--navigation-bg-hover-color);
-          text-decoration: none;
-        }
-      }
-      &.active {
-        a {
-          background-color: var(--navigation-bg-hover-color);
-        }
-      }
+    &:hover,
+    &:focus {
+      --navigation-bg-hover-color: #53346d;
     }
   }
 }

@@ -56,77 +56,58 @@ h2 {
   padding: 15px 0;
 }
 
-.navigation ul li a {
+.navigation a {
   color: var(--navigation-text-color);
   display: inline-block;
-  font-size: 1.5em;
-  min-height: 42px;
-  padding-left: .5em;
-  padding-right: .5em;
   transition: all 0.25s ease 0s;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-name: fadeIn;
   animation-delay: 0.6s;
-}
-.navigation .twitter:hover, .navigation .twitter:focus {
-  /* fa-twitter fa-twitter-square */
-  background-color: #00aced;
-}
-.navigation .linkedin:hover, .navigation .linkedin:focus {
-  /* fa-linkedin fa-linkedin-square */
-  background-color: #007bb6;
-}
-.navigation .github:hover, .navigation .github:focus {
-  /* fa-git fa-git-square fa-github fa-github-square fa-github-alt */
-  background-color: #44A79B;
-}
-.navigation .stackoverflow:hover, .navigation .stackoverflow:focus {
-  /* fa-stack-overflow */
-  background-color: #FF9900;
-}
-.navigation .behance:hover, .navigation .behance:focus {
-  /* fa-behance fa-behance-square */
-  background-color: #CF9586;
-}
-.navigation .steam:hover, .navigation .steam:focus {
-  /* fa-steam fa-steam-square */
-  background-color: #144578;
-}
-.navigation .dribbble:hover, .navigation .dribbble:focus {
-  /* fa-dribbble */
-  background-color: #f26798;
-}
-.navigation .flickr:hover, .navigation .flickr:focus {
-  /* fa-flickr */
-  background-color: #ff0084;
-}
-.navigation .youtube:hover, .navigation .youtube:focus {
-  /* fa-youtube fa-youtube-square fa-youtube-play */
-  background-color: #bb0000;
-}
-.navigation .facebook:hover, .navigation .facebook:focus {
-  /* fa-facebook fa-facebook-square fa-facebook-official */
-  background-color: #3b5998;
-}
-.navigation .medium:hover, .navigation .medium:focus {
-  /* fa-medium */
-  background-color: #53346d;
-}
-
-.menu ul li a {
   padding-left: 1em;
   padding-right: 1em;
-  font-size: 1em;
   line-height: 2.55em;
   text-transform: uppercase;
 }
-.menu ul li a:hover {
+.navigation a:hover {
   background-color: var(--navigation-bg-hover-color);
   text-decoration: none;
 }
-.menu ul li.active a {
+.navigation li.active a {
   background-color: var(--navigation-bg-hover-color);
+}
+.navigation .twitter:hover, .navigation .twitter:focus {
+  --navigation-bg-hover-color: #00aced;
+}
+.navigation .linkedin:hover, .navigation .linkedin:focus {
+  --navigation-bg-hover-color: #007bb6;
+}
+.navigation .github:hover, .navigation .github:focus {
+  --navigation-bg-hover-color: #44A79B;
+}
+.navigation .stackoverflow:hover, .navigation .stackoverflow:focus {
+  --navigation-bg-hover-color: #FF9900;
+}
+.navigation .behance:hover, .navigation .behance:focus {
+  --navigation-bg-hover-color: #CF9586;
+}
+.navigation .steam:hover, .navigation .steam:focus {
+  --navigation-bg-hover-color: #144578;
+}
+.navigation .dribbble:hover, .navigation .dribbble:focus {
+  --navigation-bg-hover-color: #f26798;
+}
+.navigation .flickr:hover, .navigation .flickr:focus {
+  --navigation-bg-hover-color: #ff0084;
+}
+.navigation .youtube:hover, .navigation .youtube:focus {
+  --navigation-bg-hover-color: #bb0000;
+}
+.navigation .facebook:hover, .navigation .facebook:focus {
+  --navigation-bg-hover-color: #3b5998;
+}
+.navigation .medium:hover, .navigation .medium:focus {
+  --navigation-bg-hover-color: #53346d;
 }
 
 .external {
