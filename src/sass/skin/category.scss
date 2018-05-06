@@ -1,7 +1,7 @@
 .category {
   position: relative;
   padding-top: 2.5*$navigation-height;
-  @media (min-width: $screen-sm-min) {
+  @media (min-width: $screen-sm) {
     & {
       padding-top: 1.5*$navigation-height;
     }

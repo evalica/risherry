@@ -1,6 +1,6 @@
 /* Headers displayed using background-clip + fallback */
 h2 {
-  font-family: $heading-font-family-sans-serif;
+  --font-family-base:  "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 5em;
   font-weight: 900;
   margin-bottom: .5em;

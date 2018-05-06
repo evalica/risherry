@@ -1,8 +1,11 @@
+:root {
+  --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 body {
   background-color: #F7F8FA;
-  background-image: none;
   color: #646C81;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--font-family-base);
 }
 
 a, a:link, a:visited {
@@ -16,6 +19,7 @@ a:hover {
 
 h1, h2 {
   color: #1A1C25;
+  font-family: var(--font-family-base);
 }
 
 h2 {
@@ -400,7 +404,7 @@ h2 {
 
 /* Headers displayed using background-clip + fallback */
 h2 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 5em;
   font-weight: 900;
   margin-bottom: .5em;

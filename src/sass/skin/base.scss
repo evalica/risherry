@@ -1,8 +1,7 @@
 body {
   background-color: $body-bg-color;
-  background-image: $body-bg-img;
   color: $content-text-color;
-  font-family: $font-family-base;
+  font-family: var(--font-family-base);
 }
 
 a {
@@ -18,6 +17,7 @@ a {
 
 h1, h2 {
   color: $heading-text-color;
+  font-family: var(--font-family-base);
 }
 
 h2 {

@@ -9,19 +9,19 @@ $img-path: '../../../../dist/img/';
 // Responsive
 // -------------------------
 $screen-sm: 768px;
-$screen-sm-min: $screen-sm;
+
 $grid-gutter-width: 30px;
 $grid-padding: floor(($grid-gutter-width / 2));
 
+:root {
 // Typography
 // -------------------------
-$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-base:        $font-family-sans-serif;
+--font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
 // Global
 // -------------------------
 $body-bg-color: #0c293c;
-$body-bg-img: none;
 
 // Type
 // -------------------------
