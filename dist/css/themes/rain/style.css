@@ -173,7 +173,6 @@ h2 {
 .category ul li .separator,
 .category ul li sup {
   color: #808a96;
-  font-family: "Gentium Basic", Georgia, "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: 400;
 }
@@ -233,8 +232,7 @@ h2 {
   margin-top: 1em;
 }
 .details {
-  font-family: "Gentium Basic", Georgia, "Times New Roman", Times, serif;
-  font-size: 18px;
+  font-size: 17px;
 }
 .details p:first-of-type {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
