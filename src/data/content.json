@@ -29,11 +29,6 @@
         "link": "https://twitter.com/evalica"
       },
       {
-        "name": "Steam",
-        "link": "http://steamcommunity.com/id/risherry",
-        "icon": "steam-square"
-      },
-      {
         "name": "StackExchange",
         "link": "http://ux.stackexchange.com/users/1141/risherry",
         "icon": "stack-overflow",
@@ -59,6 +54,30 @@
   "talks": {
     "perPage": "5",
     "data": [
+      {
+        "name": "CSS Variables — Native reusable custom properties",
+        "link": "https://www.slideshare.net/valicac/css-variables-native-reusable-custom-properties-96549426/",
+        "event":
+        {
+          "name": "ISCSS",
+          "title": "Iaşi CSS Group",
+          "link": "https://www.meetup.com/IS-CSS/",
+          "location": "Iaşi",
+          "date": "May 2018"
+        }
+      },
+      {
+        "name": "Icon Themes — Reusable icon variables and mappings for customizable user interfaces",
+        "link": "https://codecamp.ro/archive/20180324-Iasi/",
+        "event":
+        {
+          "name": "Codecamp Romania",
+          "title": "Codecamp Romania 2018",
+          "link": "https://codecamp.ro/",
+          "location": "Iaşi",
+          "date": "Mar 2018"
+        }
+      },
       {
         "name": "Icon Themes — Reusable icon variables and mappings for customizable user interfaces",
         "link": "https://fosdem.org/2018/schedule/event/osd_icon_themes/",
