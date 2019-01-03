@@ -34,5 +34,6 @@ body > div {
   color: var(--footer-text-color);
   box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(0, 0, 0, 0.1) inset;
   font-size: .8em;
-  padding: $grid-padding 0;
+  padding-top: $grid-padding;
+  padding-bottom: $grid-padding;
 }

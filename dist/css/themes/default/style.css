@@ -363,12 +363,14 @@ body > div {
   color: var(--footer-text-color);
   box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(0, 0, 0, 0.1) inset;
   font-size: .8em;
-  padding: 15px 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .navigation {
   background-color: var(--navigation-bg-color);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+  top: 0;
   left: 0;
   position: fixed;
   right: 0;
