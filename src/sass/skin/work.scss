@@ -1,0 +1,22 @@
+/* Headers displayed using background-clip + fallback */
+h2 {
+  --font-family-base: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+  margin-bottom: .5em;
+
+  .work & {
+    color: var(--accent-text-color);
+  }
+}
+
+/* Use a ligher color since the background-image is darker */
+.portfolio .portfolio-fields, 
+.portfolio .portfolio-content:hover .portfolio-fields,
+.work .aside {
+  color: var(--navigation-text-color);
+}
+
+.work {
+  background-color: var(--accent-bg-color);
+}

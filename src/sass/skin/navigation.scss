@@ -8,6 +8,8 @@
   ul {
     display: flex;
     list-style: none;
+    margin: 5px 0;
+    padding-left: 0;
   }
   a {
     color: var(--navigation-text-color);

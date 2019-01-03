@@ -1,9 +1,13 @@
 /* Grid */
 
-.grid-container {
-  margin: 0 1fr 0 3fr;
+body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+}
+
+body > div {
+  margin: 0;
+  padding: 0 10%;
 }
 
 .navigation {
@@ -23,6 +27,14 @@
 }
 
 /* Styling */
+
+.navigation, .footer {
+  max-height: $navigation-height;
+}
+
+.work {
+  
+}
 
 .footer {
   background-color: var(--footer-bg-color);
