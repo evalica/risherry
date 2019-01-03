@@ -1,0 +1,326 @@
+{
+  "about": {
+    "name": {
+      "first": "Ecaterina",
+      "last": "Moraru (Valicã)"
+    },
+    "link": "dist/EcaterinaMoraruResume.pdf",
+    "website": "http://www.risherry.ro",
+    "email": "&#118;&#97;&#108;&#105;&#99;&#97;&#99;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;",
+    "address": {
+      "locality": "Iaşi",
+      "country": "Romania",
+      "postalCode": "700465",
+      "latitude": "47.331377",
+      "longitude": "27.347717"
+    },
+    "organization": {
+      "name": "XWiki.org",
+      "link": "http://www.xwiki.org",
+      "position": "Lead Interaction Designer"
+    }, 
+    "quotes": [
+      "I'm an Open Source committer, <a href='https://www.behance.net/risherry' title='Behance Profile'>designing</a> and <a href='https://github.com/evalica/'' title='GitHub Profile'>developing</a> for the XWiki.org community.",
+      "Specialized in Prototyping and Usability. Passionate about User Experience, Human-Computer Interaction, Standards Compliance, Web Technologies and Software Engineering."
+    ],
+    "external": [
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/evalica"
+      },
+      {
+        "name": "StackExchange",
+        "link": "http://ux.stackexchange.com/users/1141/risherry",
+        "icon": "stack-overflow",
+        "class": "stackoverflow"
+      },
+      {
+        "name": "Behance",
+        "link": "https://www.behance.net/risherry"
+      },
+      {
+        "name": "GitHub",
+        "link": "https://github.com/evalica/"
+      },
+      {
+        "name": "LinkedIn",
+        "link": "http://ro.linkedin.com/in/evalica"
+      }
+    ]
+  },
+  "work": [
+    "More design proposals can be found at <a href='http://design.xwiki.org/xwiki/bin/view/Main/WebHome#|t=proposal&amp;p=1&amp;l=15&amp;s=doc.date&amp;d=desc&amp;participants=evalica' title='Design.xwiki.org'>design.xwiki.org</a>"
+  ],
+  "talks": {
+    "perPage": "5",
+    "data": [
+      {
+        "name": "CSS Variables — Native reusable custom properties",
+        "link": "https://www.slideshare.net/valicac/css-variables-native-reusable-custom-properties-96549426/",
+        "event":
+        {
+          "name": "ISCSS",
+          "title": "Iaşi CSS Group",
+          "link": "https://www.meetup.com/IS-CSS/",
+          "location": "Iaşi",
+          "date": "May 2018"
+        }
+      },
+      {
+        "name": "Icon Themes — Reusable icon variables and mappings for customizable user interfaces",
+        "link": "https://codecamp.ro/archive/20180324-Iasi/",
+        "event":
+        {
+          "name": "Codecamp Romania",
+          "title": "Codecamp Romania 2018",
+          "link": "https://codecamp.ro/",
+          "location": "Iaşi",
+          "date": "Mar 2018"
+        }
+      },
+      {
+        "name": "Icon Themes — Reusable icon variables and mappings for customizable user interfaces",
+        "link": "https://fosdem.org/2018/schedule/event/osd_icon_themes/",
+        "event":
+        {
+          "name": "FOSDEM",
+          "title": "Open Source Developers’ European Meeting 2018",
+          "link": "https://fosdem.org",
+          "location": "Brussels",
+          "date": "Feb 2018"
+        }
+      },
+      {
+        "name": "What's new in XWiki 8.x and half of 9.x",
+        "link": "https://www.slideshare.net/valicac/whats-new-in-x-wiki-8x-and-half-of-9x",
+        "event":
+        {
+          "name": "XWiki Seminar",
+          "title": "XWiki",
+          "link": "http://www.xwiki.org/",
+          "location": "Bucharest",
+          "date": "Jul 2017"
+        }
+      },
+      {
+        "name": "Expectations from Open Source Designers",
+        "link": "https://www.youtube.com/watch?v=3M9ptBxFyP4",
+        "event":
+        {
+          "name": "FOSSASIA",
+          "title": "Free and Open Source technology organization in Asia",
+          "link": "https://fossasia.org/",
+          "location": "Singapore",
+          "date": "Mar 2017"
+        }
+      },
+      {
+        "name": "Design feedback in Open Source",
+        "link": "https://fosdem.org/2017/schedule/event/osd_giving_and_receiving_design_feedback/",
+        "event":
+        {
+          "name": "FOSDEM",
+          "title": "Open Source Developers’ European Meeting 2017",
+          "link": "https://fosdem.org",
+          "location": "Brussels",
+          "date": "Feb 2017"
+        }
+      },
+      {
+        "name": "Success Stories from the OSD community",
+        "link": "https://fosdem.org/2017/schedule/event/osd_success_stories/",
+        "event":
+        {
+          "name": "FOSDEM",
+          "title": "Open Source Developers’ European Meeting 2017",
+          "link": "https://fosdem.org",
+          "location": "Brussels",
+          "date": "Feb 2017"
+        }
+      },
+      {
+        "name": "Designer's compromises in Open Source",
+        "link": "https://archive.fosdem.org/2016/schedule/event/osd_designers_compromises_in_open_source/",
+        "event":
+        {
+          "name": "FOSDEM",
+          "title": "Open Source Developers’ European Meeting 2016",
+          "link": "https://fosdem.org",
+          "location": "Brussels",
+          "date": "Jan 2016"
+        }
+      },
+      {
+        "name": "Future of XWiki Skins",
+        "link": "http://www.slideshare.net/valicac/future-of-xwiki-skins",
+        "event":
+        {
+          "name": "XWiki Seminar",
+          "title": "XWiki",
+          "link": "http://www.xwiki.org/",
+          "location": "Breaza",
+          "date": "Jul 2015"
+        }
+      },
+      {
+        "name": "Design Process in an Open Community",
+        "link": "http://www.slideshare.net/valicac/design-process-in-an-open-community",
+        "event":
+        {
+          "name": "Design Jam",
+          "link": "https://www.eventbrite.com/e/design-jam-autumn-edition-tickets-13430066691",
+          "location": "Iaşi",
+          "date": "Oct 2014"
+        }
+      },
+      {
+        "name": "XWiki.org, Project and Community",
+        "link": "http://www.slideshare.net/valicac/xwikiorg",
+        "event":
+        {
+          "name": "XWiki Training",
+          "title": "XWiki",
+          "link": "http://www.xwiki.org/",
+          "location": "Iaşi",
+          "date": "Sep 2014"
+        }
+      },
+      {
+        "name": "Usability Testing Highlights and Findings",
+        "link": "http://www.slideshare.net/valicac/xwiki-usability-testing-sessions",
+        "event":
+        {
+          "name": "XWiki Seminar",
+          "title": "XWiki",
+          "link": "http://www.xwiki.org/",
+          "location": "Vidraru",
+          "date": "Jul 2014"
+        }
+      },
+      {
+        "name": "Evolution of CSS",
+        "link": "http://www.slideshare.net/valicac/evolution-of-css",
+        "event":
+        {
+          "name": "Winter Web Workshop",
+          "link": "http://www.eventbrite.com/e/winter-web-workshop-tickets-7122374213",
+          "location": "Iaşi",
+          "date": "Dec 2013"
+        }
+      },
+      {
+        "name": "XWiki Improvements Review v2.4 - v5.1",
+        "link": "http://www.slideshare.net/valicac/xwiki-improvements-review-ver-24-51",
+        "event":
+        {
+          "name": "XWiki Seminar",
+          "title": "XWiki",
+          "link": "http://www.xwiki.org/",
+          "location": "Sighişoara",
+          "date": "Jul 2013"
+        }
+      },
+      {
+        "name": "Development Process, the XWiki way",
+        "link": "http://www.slideshare.net/Enygma2002/development-process-the-xwiki-way",
+        "event":
+        {
+          "name": "JobShop",
+          "link": "http://jobshop.ro/",
+          "location": "Iaşi",
+          "date": "Apr 2012"
+        }
+      },
+      {
+        "name": "Semantically linked data in the context of personal information management",
+        "link": "http://www.slideshare.net/valicac/interconectarea-semantica-a-datelor-in-contextul-managementului-informatiilor-personale-2784214",
+        "event":
+        {
+          "name": "Infoiasi",
+          "title": "Faculty of Computer Science, A.I.Cuza University of Iaşi, Romania",
+          "link": "http://www.infoiasi.ro",
+          "location": "Iaşi",
+          "date": "Jun 2009"
+        }
+      },
+      {
+        "name": "Visual Communication through Infographics",
+        "link": "http://www.slideshare.net/valicac/visual-communication-through-infographics-presentation",
+        "event":
+        {
+          "name": "RoCHI",
+          "title": "Romanian Computer Human Interaction",
+          "link": "http://rochi2008.utcluj.ro/",
+          "location": "Iaşi",
+          "date": "Sep 2008"
+        }
+      },
+      {
+        "name": "Interaction Design Patterns",
+        "link": "http://www.slideshare.net/valicac/interaction-design-patterns-presentation",
+        "event":
+        {
+          "name": "RoCHI",
+          "title": "Romanian Computer Human Interaction",
+          "link": "http://rochi2008.utcluj.ro/",
+          "location": "Iaşi",
+          "date": "Sep 2008"
+        }
+      },
+      {
+        "name": "CAPTCHA",
+        "link": "http://www.slideshare.net/valicac/captcha",
+        "event":
+        {
+          "name": "Infoiasi",
+          "title": "Faculty of Computer Science, A.I.Cuza University of Iaşi, Romania",
+          "link": "http://www.infoiasi.ro",
+          "location": "Iaşi",
+          "date": "May 2008"
+        }
+      },
+      {
+        "name": "Visual Cryptography",
+        "link": "http://www.slideshare.net/valicac/visual-cryptography",
+        "event":
+        {
+          "name": "Infoiasi",
+          "title": "Faculty of Computer Science, A.I.Cuza University of Iaşi, Romania",
+          "link": "http://www.infoiasi.ro",
+          "location": "Iaşi",
+          "date": "Apr 2008"
+        }
+      },
+      {
+        "name": "Software Testing — Achievements, Dreams",
+        "link": "http://www.slideshare.net/valicac/software-testing",
+        "event":
+        {
+          "name": "Infoiasi",
+          "title": "Faculty of Computer Science, A.I.Cuza University of Iaşi, Romania",
+          "link": "http://www.infoiasi.ro",
+          "location": "Iaşi",
+          "date": "Dec 2007"
+        }
+      },
+      {
+        "name": "Mashups — work you don't have to do",
+        "link": "http://www.slideshare.net/valicac/mashups-87355/1",
+        "event":
+        {
+          "name": "<Web/> Workshop on Web Technologies",
+          "link": "http://swapps.wordpress.com/",
+          "location": "Iaşi",
+          "date": "May 2007"
+        }
+      }
+    ]
+  },
+  "contact": "I love sharing what knowledge I have, especially to students. If you'd like me to speak at your event, give you advice or just saying hi, <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#118;&#97;&#108;&#105;&#99;&#97;&#99;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;' title='Contact'>drop me a line</a>.",
+  "license": {
+    "name": "Attribution-Share Alike 3.0",
+    "title": "Licensed under a Creative Commons Attribution-Share Alike 3.0 Romania License",
+    "link": "http://creativecommons.org/licenses/by-sa/3.0/ro/deed.en",
+    "date": "2003 – 2018"
+  }
+}
