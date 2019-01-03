@@ -306,6 +306,7 @@ body {
   background-color: var(--body-bg-color);
   color: var(--content-text-color);
   font-family: var(--font-family-base);
+  font-size: 14px;
 }
 
 a, a:link, a:visited {
@@ -343,10 +344,6 @@ body > div {
   display: flex;
 }
 
-.navigation div {
-  flex: 1 auto;
-}
-
 .category {
   grid-column: 1 / -1;
 }
@@ -357,7 +354,8 @@ body > div {
 
 /* Styling */
 .navigation, .footer {
-  max-height: 50px;
+  max-height: 45px;
+  height: 45px;
 }
 
 .footer {
@@ -375,15 +373,28 @@ body > div {
   position: fixed;
   right: 0;
   z-index: 10000;
+  overflow: hidden;
+}
+.navigation div {
+  flex: 1 auto;
+  display: flex;
+  align-items: center;
 }
 .navigation ul {
   display: flex;
   list-style: none;
-  margin: 5px 0;
+  margin: 0;
   padding-left: 0;
+}
+.navigation li {
+  display: flex;
+  justify-items: center;
+  height: 100%;
 }
 .navigation a {
   color: var(--navigation-text-color);
+  display: flex;
+  align-items: center;
   transition: all 0.25s ease 0s;
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -391,8 +402,8 @@ body > div {
   animation-delay: 0.6s;
   padding-left: 1em;
   padding-right: 1em;
-  line-height: 2.55em;
   text-transform: uppercase;
+  height: 100%;
 }
 .navigation a:hover {
   background-color: var(--navigation-bg-hover-color);
@@ -434,21 +445,31 @@ body > div {
 .navigation .medium:hover, .navigation .medium:focus {
   --navigation-bg-hover-color: #53346d;
 }
+.navigation .menu {
+  margin-left: -1em;
+}
 
 .external {
   box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.25);
+  flex-direction: row-reverse;
+}
+.external ul {
+  flex-direction: row-reverse;
+}
+.external a {
+  font-size: 1.5em;
 }
 
 .category {
   position: relative;
-  padding-top: 125px;
+  padding-top: 112.5px;
 }
 @media (min-width: 768px) {
   .category {
-    padding-top: 75px;
+    padding-top: 67.5px;
   }
   .category.about {
-    padding-top: 110px;
+    margin-top: 35px;
   }
 }
 .category ul {
@@ -496,8 +517,8 @@ body > div {
 .category::after {
   content: '';
   display: block;
-  height: 25px;
-  margin-top: 50px;
+  height: 22.5px;
+  margin-top: 45px;
 }
 
 .aside {

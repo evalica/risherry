@@ -14,10 +14,6 @@ body > div {
   display: flex;
 }
 
-.navigation div {
-  flex: 1 auto;
-}
-
 .category {
   grid-column: 1 / -1;
 }
@@ -30,10 +26,7 @@ body > div {
 
 .navigation, .footer {
   max-height: $navigation-height;
-}
-
-.work {
-  
+  height: $navigation-height;
 }
 
 .footer {
