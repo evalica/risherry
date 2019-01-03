@@ -41,21 +41,20 @@
 .talks-container {
 
   .xfolkentry {
-    border: 1px solid #f0f0f0;
+    background-color: #fff;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
-    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
     line-height: 1.5;
     overflow: hidden;
   }
 
   .xfolkentry:hover {
     transform: translateY(-8px);
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.03), 0 20px 30px 0 rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
   }
 
   .xfolkentry a {
-    font-weight: 600;
     text-decoration: none;
   }
 

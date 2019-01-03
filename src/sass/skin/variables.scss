@@ -17,25 +17,26 @@ $navigation-height: 42px;
 :root {
 // Typography
 // -------------------------
---font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+--font-family-base: 'Open Sans', Helvetica, Arial, sans-serif;
 
 // Global
 // -------------------------
---body-bg-color: #F7F8FA;
+--body-bg-color: #f0f4f8;
+--border-color: #D9E2EC;
 
 // Type
 // -------------------------
 --content-text-color: #646C81;
 --content-secondary-text-color: #808a96;
 
---heading-text-color: #0e1d26;
+--heading-text-color: #102A43;
 
---link-text-color: #1D9BD9;
---link-text-hover-color: #00CEFB;
+--link-text-color: #127FBF;
+--link-text-hover-color: #2BB0ED;
 
 // Menu
 // -------------------------
---navigation-bg-color: #0e1d26;
+--navigation-bg-color: #102A43;
 --navigation-bg-hover-color: #115b7f;
 --navigation-text-color: #fff;
 
@@ -43,4 +44,9 @@ $navigation-height: 42px;
 // -------------------------
 --footer-bg-color: var(--navigation-bg-color);
 --footer-text-color: var(--content-secondary-text-color);
+
+// Work
+// -------------------------
+--accent-bg-color: #D9E2EC;
+--accent-text-color: var(--heading-text-color);
 }

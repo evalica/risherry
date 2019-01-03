@@ -1,20 +1,12 @@
 /* Headers displayed using background-clip + fallback */
 h2 {
-  --font-family-base:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 5em;
+  --font-family-base: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 3em;
   font-weight: 900;
   margin-bottom: .5em;
 
-  .about &, .talks & {
-    -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(transparent, transparent),
-                url("#{$img-path}#{$theme-path}blue.jpg") repeat;
-    background: -o-linear-gradient(transparent, transparent);
-    -webkit-background-clip: text;
-  }
-
   .work & {
-    color: var(--body-bg-color);
+    color: var(--accent-text-color);
   }
 }
 
@@ -25,17 +17,14 @@ h2 {
   color: var(--navigation-text-color);
 }
 
-/* Using an opacity gradient over an image */
 .work {
-  background-image: url("#{$img-path}#{$theme-path}blue.jpg");
   &:before {
     height: 100%;
     bottom: 0;
     position: absolute;
     content: '';
     width: 100%;
-    opacity: .85;
-    background-image: linear-gradient(to right, var(--navigation-bg-color) 0, var(--navigation-bg-hover-color) 100%);
+    background-color: var(--accent-bg-color);
   }
   &-container {
     position: relative;
