@@ -387,6 +387,7 @@ body > div {
   list-style: none;
   margin: 0;
   padding-left: 0;
+  height: 100%;
 }
 .navigation li {
   display: flex;
