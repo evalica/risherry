@@ -345,21 +345,41 @@ body > div {
   display: flex;
 }
 
-.category, .footer {
+/* Mobile */
+.category, .category div,
+.footer {
   grid-column: 1 / -1;
 }
 
-.about .aside {
-  grid-column: 1 / 4;
-}
-.about .details {
-  grid-column: 4 / -1;
-}
-
 .portfolio-item {
-  grid-column: span 3;
+  grid-column: 1 / -1;
 }
 
+/* Tablet */
+@media (min-width: 768px) {
+  .about .aside {
+    grid-column: 1 / 4;
+  }
+  .about .details {
+    grid-column: 4 / -1;
+  }
+
+  .portfolio-item {
+    grid-column: span 6;
+  }
+}
+/* Tablet */
+@media (min-width: 992px) {
+  .portfolio-item {
+    grid-column: span 4;
+  }
+}
+/* Desktop */
+@media (min-width: 1200px) {
+  .portfolio-item {
+    grid-column: span 3;
+  }
+}
 /* Styling */
 .navigation, .footer {
   max-height: 45px;
