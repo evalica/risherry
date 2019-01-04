@@ -330,7 +330,8 @@ h2 {
 }
 
 /* Grid */
-body {
+body, .about,
+.work .portfolio {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -344,12 +345,19 @@ body > div {
   display: flex;
 }
 
-.category {
+.category, .footer {
   grid-column: 1 / -1;
 }
 
-.footer {
-  grid-column: 1 / -1;
+.about .aside {
+  grid-column: 1 / 4;
+}
+.about .details {
+  grid-column: 4 / -1;
+}
+
+.portfolio-item {
+  grid-column: span 3;
 }
 
 /* Styling */
@@ -477,7 +485,7 @@ body > div {
 }
 .category ul {
   list-style-type: none;
-  padding-left: 2em;
+  padding: 0;
 }
 .category ul li {
   margin-bottom: .5em;
