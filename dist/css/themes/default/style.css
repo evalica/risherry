@@ -553,11 +553,11 @@ body > div {
 
 .details {
   font-size: 1.1em;
-  line-height: 2em;
+  line-height: 1.4em;
 }
 .details p:first-of-type {
-  font-size: 22px;
-  margin: .3em 0 .7em;
+  font-size: 1.4em;
+  line-height: 1.6em;
 }
 
 .portfolio {
