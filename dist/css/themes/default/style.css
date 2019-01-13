@@ -745,16 +745,6 @@ h2 {
   font-weight: 900;
   margin-bottom: .5em;
 }
-.work h2 {
-  color: var(--accent-text-color);
-}
-
-/* Use a ligher color since the background-image is darker */
-.portfolio .portfolio-fields,
-.portfolio .portfolio-content:hover .portfolio-fields,
-.work .aside {
-  color: var(--navigation-text-color);
-}
 
 .work {
   background-color: var(--accent-bg-color);
