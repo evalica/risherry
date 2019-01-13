@@ -4,6 +4,7 @@ body, .about,
 .work .portfolio {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-gap: $grid-gutter-width;
 }
 
 body > div {
@@ -16,12 +17,12 @@ body > div {
 }
 
 /* Mobile */
-.category, .category div, 
-.footer {
-  grid-column: 1 / -1;
-}
-
-.portfolio-item {
+.category,
+.footer, 
+h2, 
+.portfolio-item, 
+.about .aside, 
+.about .details {
   grid-column: 1 / -1;
 }
 
