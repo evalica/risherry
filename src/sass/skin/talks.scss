@@ -1,72 +1,17 @@
-/*.xfolkentry {
+.xfolkentry {
+  line-height: 1.5;
   text-indent: -2em;
-}*/
-
-.talks-container {
-  clear: both;
-  display: grid;
-  grid-gap: $grid-padding $grid-padding;
+  margin-bottom: 2em;
+  padding-left: 2em;
 }
 
-@media (min-width: 576px) {
-  .talks-container {
-    grid-template-columns: repeat(auto-fill, minmax(300px, calc(50% - #{$grid-gutter-width})));
-  }
+.xfolkentry a {
+  text-decoration: none;
 }
 
-@media (min-width: 1200px) {
-  .talks-container {
-    grid-template-columns: repeat(auto-fill, minmax(400px, calc(33% - #{$grid-gutter-width})));
-    .xfolkentry {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 10px;
-      grid-auto-columns: minmax(300px, auto);
-      .info {
-        grid-column: 1;
-        grid-row: 2;
-      }
-      .preview {
-        grid-column: 2;
-        grid-row: 2;
-      }
-      .taggedlink {
-        grid-column: span 2;
-        grid-row: 1;
-      }
-    }
-  }
+.xfolkentry .event {
+  font-weight: 100;
 }
-
-.talks-container {
-
-  .xfolkentry {
-    background-color: #fff;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    line-height: 1.5;
-    overflow: hidden;
-  }
-
-  .xfolkentry:hover {
-    transform: translateY(-8px);
-    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  }
-
-  .xfolkentry a {
-    text-decoration: none;
-  }
-
-  .xfolkentry .event {
-    font-weight: 100;
-  }
-
-  .xfolkentry iframe {}
-
-}
-
-
 
 .xfolkentry .taggedlink {
   grid-column: span 2;
