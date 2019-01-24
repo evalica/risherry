@@ -10,7 +10,7 @@
     "url": "git+https://github.com/evalica/risherry.git"
   },
   "engines": {
-    "node": "latest"
+    "node": ">= 0.12.2"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
