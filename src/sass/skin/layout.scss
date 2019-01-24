@@ -57,13 +57,3 @@ h2,
     grid-column: span floor($grid-columns / 4);
   }
 }
-
-/* Styling */
-
-footer {
-  background-color: var(--footer-bg-color);
-  color: var(--footer-text-color);
-  font-size: .8em;
-  padding-top: $grid-padding;
-  padding-bottom: $grid-padding;
-}
