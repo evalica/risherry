@@ -74,4 +74,10 @@
       color: var(--link-text-hover-color);
     }
   }
+   &::after {
+    content: '';
+    display: block;
+    height: $navigation-height/2;
+    margin-top: $navigation-height;
+  }
 }

@@ -5,10 +5,6 @@
     & {
       padding-top: 1.5*$navigation-height;
     }
-
-    &.about {
-      margin-top: 35px;
-    }
   }
   ul {
     list-style-type: none;
@@ -48,12 +44,6 @@
     &[aria-expanded=false]:after {
       content: 'More \00BB';
     }
-  }
-  &::after {
-    content: '';
-    display: block;
-    height: $navigation-height/2;
-    margin-top: $navigation-height;
   }
 }
 
