@@ -1,9 +1,9 @@
 # [risherry](http://risherry.ro/)
 
-Risherry is designed as a customizable personal website.
-
 [![Build Status](https://travis-ci.org/evalica/risherry.svg?branch=master)](https://travis-ci.org/evalica/risherry)
- [![devDependency Status](https://david-dm.org/evalica/risherry/dev-status.svg)](https://david-dm.org/evalica/risherry#info=devDependencies)
+[![devDependency Status](https://david-dm.org/evalica/risherry/dev-status.svg)](https://david-dm.org/evalica/risherry#info=devDependencies)
+
+Risherry is designed as a customizable personal website.
 
 It's build using [Bootstrap](http://getbootstrap.com/), [Handlebars](http://handlebarsjs.com/) and [JQuery](https://jquery.com/) frameworks. Additionally it uses [Sass](http://sass-lang.com/), [Font Awesome](http://fortawesome.github.io/Font-Awesome/) and [Google Fonts](http://www.google.com/fonts).
 
