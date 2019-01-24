@@ -10,9 +10,11 @@ $theme-path: 'themes/default/';
 // Themes Custom
 // --------------------------------------------------
 
-/**
 
 :root {
+/**
+
+
 // Global
 // -------------------------
 --body-bg-color: #f0f4f8;
@@ -34,15 +36,22 @@ $theme-path: 'themes/default/';
 --navigation-bg-hover-color: #115b7f;
 --navigation-text-color: #fff;
 
-// Footer
-// -------------------------
---footer-bg-color: var(--navigation-bg-color);
---footer-text-color: var(--content-secondary-text-color);
 
 // Work
 // -------------------------
 --accent-bg-color: #D9E2EC;
 --accent-text-color: var(--heading-text-color);
-}
+
 
 **/
+
+  --body-bg-color:             #{$gray-50};
+  --content-text-color:        #{$gray-900};
+
+  --navigation-bg-color:       #{$gray-900};
+  --navigation-bg-hover-color: #{$gray-800};
+  --navigation-text-color:     #{$white};
+
+  --accent-bg-color:           #{$gray-200};
+
+}
