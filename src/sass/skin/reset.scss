@@ -178,9 +178,11 @@ sup { top: -.5em; }
 //
 
 a {
-  color: $link-color;
-  text-decoration: $link-decoration;
-  background-color: transparent; // Remove the gray background on active links in IE 10.
+  &, &:link, &:visited {
+    color: $link-color;
+    text-decoration: $link-decoration;
+    background-color: transparent; // Remove the gray background on active links in IE 10.
+  }
 
   &:hover {
     color: $link-hover-color;

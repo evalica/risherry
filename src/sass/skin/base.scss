@@ -8,13 +8,8 @@ body {
 }
 
 a {
-  &, &:link, &:visited {
-    color: var(--link-text-color);
-  }
   &:hover {
-    color: var(--link-text-hover-color);
     transition: color .3s ease-in-out;
-    text-decoration: none;
   }
 }
 
