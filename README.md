@@ -1,6 +1,7 @@
 # [risherry](http://risherry.ro/)
 
-[![Version](https://img.shields.io/github/release/evalica/risherry.svg)](https://github.com/evalica/risherry/releases)
+[![Version](https://img.shields.io/github/release/evalica/risherry.svg)](https://github.com/evalica/risherry/releases) [![Release Data](https://img.shields.io/github/release-date/evalica/risherry.svg)](https://github.com/evalica/risherry/releases)
+
 [![Build Status](https://img.shields.io/travis/evalica/risherry.svg)](https://travis-ci.org/evalica/risherry)
 [![devDependency Status](https://img.shields.io/david/evalica/risherry.svg)](https://david-dm.org/evalica/risherry)
 
