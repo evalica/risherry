@@ -27,8 +27,9 @@
     "test": "grunt swatch"
   },
   "dependencies": {
-    "node-sass": "^4.9.0",
-    "npm": "^6.7.0"
+    "node-sass": "^4.11.0",
+    "npm": "^6.7.0",
+    "request": "^2.81.0"
   },
   "bugs": {
     "url": "https://github.com/evalica/risherry/issues"
