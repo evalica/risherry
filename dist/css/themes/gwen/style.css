@@ -543,7 +543,7 @@ h2,
 
 .category {
   position: relative;
-  padding-top: 10rem;
+  padding-top: 8rem;
 }
 @media (min-width: 768px) {
   .category {
