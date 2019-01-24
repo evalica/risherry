@@ -1,22 +1,22 @@
 /* Grid */
 
-body, .about, 
-.work .portfolio {
-  display: grid;
-  grid-template-columns: repeat($grid-columns, 1fr);
-  grid-gap: $grid-gutter-width;
-}
-
-body > div, 
 nav,
+section,
 footer {
   margin: 0;
   padding-left: 10%;
   padding-right: 25%;
 }
 
+.about, 
+.work .portfolio {
+  display: grid;
+  grid-template-columns: repeat($grid-columns, 1fr);
+  grid-gap: $grid-gutter-width;
+}
+
 /* Mobile */
-.category,
+section,
 footer, 
 h2, 
 .portfolio-item, 

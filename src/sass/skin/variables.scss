@@ -33,6 +33,7 @@ $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Rob
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              .9rem; 
 
 $font-weight-normal:          400 !default;
 $font-weight-bold:            700 !default;
@@ -82,9 +83,6 @@ $navigation-height:           4rem;
 // CSS Variables Defaults
 :root {
   --font-family-base:        'Open Sans', Helvetica, Arial, sans-serif;
-
-  --content-secondary-text-color: #{$gray-500};
-
   --footer-bg-color:         var(--navigation-bg-color);
   --footer-text-color:       var(--content-secondary-text-color);
 }
