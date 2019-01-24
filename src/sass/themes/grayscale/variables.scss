@@ -11,15 +11,15 @@ $theme-path: 'themes/grayscale/';
 // --------------------------------------------------
 
 :root {
-  --body-bg-color:             #{$gray-50};
-  --accent-bg-color:           #{$gray-200};
+  --body-bg-color:                #{$gray-50};
+  --accent-bg-color:              #{$gray-200};
 
-  --content-text-color:        #{$gray-900};
-  --link-text-color:           #{$gray-600};
-  --link-text-hover-color:     #{$gray-800};
+  --content-text-color:           #{$gray-900};
+  --content-secondary-text-color: #{$gray-500};
+  --link-text-color:              #{$gray-600};
+  --link-text-hover-color:        #{$gray-800};
 
-  --navigation-bg-color:       #{$gray-900};
-  --navigation-bg-hover-color: #{$gray-800};
-  --navigation-text-color:     #{$white};
-
+  --navigation-bg-color:          #{$gray-900};
+  --navigation-bg-hover-color:    #{$gray-800};
+  --navigation-text-color:        #{$white};
 }
