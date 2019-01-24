@@ -296,11 +296,6 @@ template {
   display: none !important;
 }
 
-/* Utilities */
-.d-none {
-  display: none;
-}
-
 /* Base */
 body {
   background-color: var(--body-bg-color);
@@ -327,6 +322,11 @@ h2 {
   font-weight: 500;
   letter-spacing: 5px;
   text-transform: uppercase;
+}
+
+/* Utilities */
+.d-none {
+  display: none;
 }
 
 /* Grid */
