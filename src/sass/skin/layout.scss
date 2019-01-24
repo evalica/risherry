@@ -3,7 +3,7 @@
 body, .about, 
 .work .portfolio {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat($grid-columns, 1fr);
   grid-gap: $grid-gutter-width;
 }
 
@@ -30,30 +30,32 @@ h2,
 @media (min-width: $screen-sm) {
   .about {
     .aside {
-      grid-column: 1 / 4;
+      grid-column-start: 1;
+      grid-column-end: floor($grid-columns / 3);
     }
 
     .details {
-      grid-column: 4 / -1;
+      grid-column-start: floor($grid-columns / 3);
+      grid-column-end: -1;
     }
   }
 
   .portfolio-item {
-    grid-column: span 6;
+    grid-column: span floor($grid-columns / 2);
   }
 }
 
 /* Tablet */ 
 @media (min-width: $screen-md) {
   .portfolio-item {
-    grid-column: span 4;
+    grid-column: span floor($grid-columns / 3);
   }
 }
 
 /* Desktop */ 
 @media (min-width: $screen-lg) {
   .portfolio-item {
-    grid-column: span 3;
+    grid-column: span floor($grid-columns / 4);
   }
 }
 

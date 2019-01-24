@@ -407,10 +407,12 @@ h2,
 /* Tablet */
 @media (min-width: 768px) {
   .about .aside {
-    grid-column: 1 / 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
   }
   .about .details {
-    grid-column: 4 / -1;
+    grid-column-start: 4;
+    grid-column-end: -1;
   }
 
   .portfolio-item {
@@ -431,8 +433,8 @@ h2,
 }
 /* Styling */
 .navigation, .footer {
-  max-height: 45px;
-  height: 45px;
+  max-height: 4rem;
+  height: 4rem;
 }
 
 .footer {
@@ -542,11 +544,11 @@ h2,
 
 .category {
   position: relative;
-  padding-top: 112.5px;
+  padding-top: 10rem;
 }
 @media (min-width: 768px) {
   .category {
-    padding-top: 67.5px;
+    padding-top: 6rem;
   }
   .category.about {
     margin-top: 35px;
@@ -592,8 +594,8 @@ h2,
 .category::after {
   content: '';
   display: block;
-  height: 22.5px;
-  margin-top: 45px;
+  height: 2rem;
+  margin-top: 4rem;
 }
 
 .aside {
