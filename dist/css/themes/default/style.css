@@ -384,14 +384,11 @@ body, .about,
 }
 
 body > div,
+nav,
 footer {
   margin: 0;
   padding-left: 10%;
   padding-right: 25%;
-}
-
-.navigation {
-  display: flex;
 }
 
 /* Mobile */
@@ -432,11 +429,6 @@ h2,
   }
 }
 /* Styling */
-.navigation {
-  max-height: 4rem;
-  height: 4rem;
-}
-
 footer {
   background-color: var(--footer-bg-color);
   color: var(--footer-text-color);
@@ -445,37 +437,28 @@ footer {
   padding-bottom: 15px;
 }
 
-.navigation {
+nav {
+  height: 4rem;
+  display: flex;
   background-color: var(--navigation-bg-color);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
   top: 0;
   left: 0;
   position: fixed;
   right: 0;
   z-index: 10000;
   overflow: hidden;
+  justify-content: space-between;
 }
-.navigation div {
-  flex: 1 auto;
-  display: flex;
-  align-items: center;
-}
-.navigation ul {
+nav ul {
   display: flex;
   list-style: none;
-  margin: 0;
   padding-left: 0;
   height: 100%;
 }
-.navigation li {
-  display: flex;
-  justify-items: center;
-  height: 100%;
-}
-.navigation a {
-  color: var(--navigation-text-color);
+nav a {
   display: flex;
   align-items: center;
+  height: 100%;
   transition: all 0.25s ease 0s;
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -484,61 +467,58 @@ footer {
   padding-left: 1em;
   padding-right: 1em;
   text-transform: uppercase;
-  height: 100%;
 }
-.navigation a:hover {
+nav a, nav a:link, nav a:visited {
+  color: var(--navigation-text-color);
+}
+nav a:hover {
   background-color: var(--navigation-bg-hover-color);
   text-decoration: none;
 }
-.navigation li.active a {
+nav li.active a {
   background-color: var(--navigation-bg-hover-color);
 }
-.navigation .twitter:hover, .navigation .twitter:focus {
-  --navigation-bg-hover-color: #00aced;
-}
-.navigation .linkedin:hover, .navigation .linkedin:focus {
-  --navigation-bg-hover-color: #007bb6;
-}
-.navigation .github:hover, .navigation .github:focus {
-  --navigation-bg-hover-color: #44A79B;
-}
-.navigation .stackoverflow:hover, .navigation .stackoverflow:focus {
-  --navigation-bg-hover-color: #FF9900;
-}
-.navigation .behance:hover, .navigation .behance:focus {
-  --navigation-bg-hover-color: #CF9586;
-}
-.navigation .steam:hover, .navigation .steam:focus {
-  --navigation-bg-hover-color: #144578;
-}
-.navigation .dribbble:hover, .navigation .dribbble:focus {
-  --navigation-bg-hover-color: #f26798;
-}
-.navigation .flickr:hover, .navigation .flickr:focus {
-  --navigation-bg-hover-color: #ff0084;
-}
-.navigation .youtube:hover, .navigation .youtube:focus {
-  --navigation-bg-hover-color: #bb0000;
-}
-.navigation .facebook:hover, .navigation .facebook:focus {
-  --navigation-bg-hover-color: #3b5998;
-}
-.navigation .medium:hover, .navigation .medium:focus {
-  --navigation-bg-hover-color: #53346d;
-}
-.navigation .menu {
+nav .menu {
   margin-left: -1em;
 }
-
-.external {
-  box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.25);
+nav .external {
   flex-direction: row-reverse;
 }
-.external ul {
-  flex-direction: row-reverse;
-}
-.external a {
+nav .external a {
   font-size: 1.5em;
+}
+nav .twitter:hover, nav .twitter:focus {
+  --navigation-bg-hover-color: #00aced;
+}
+nav .linkedin:hover, nav .linkedin:focus {
+  --navigation-bg-hover-color: #007bb6;
+}
+nav .github:hover, nav .github:focus {
+  --navigation-bg-hover-color: #44A79B;
+}
+nav .stackoverflow:hover, nav .stackoverflow:focus {
+  --navigation-bg-hover-color: #FF9900;
+}
+nav .behance:hover, nav .behance:focus {
+  --navigation-bg-hover-color: #CF9586;
+}
+nav .steam:hover, nav .steam:focus {
+  --navigation-bg-hover-color: #144578;
+}
+nav .dribbble:hover, nav .dribbble:focus {
+  --navigation-bg-hover-color: #f26798;
+}
+nav .flickr:hover, nav .flickr:focus {
+  --navigation-bg-hover-color: #ff0084;
+}
+nav .youtube:hover, nav .youtube:focus {
+  --navigation-bg-hover-color: #bb0000;
+}
+nav .facebook:hover, nav .facebook:focus {
+  --navigation-bg-hover-color: #3b5998;
+}
+nav .medium:hover, nav .medium:focus {
+  --navigation-bg-hover-color: #53346d;
 }
 
 .category {

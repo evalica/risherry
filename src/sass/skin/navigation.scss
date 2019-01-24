@@ -1,33 +1,24 @@
-.navigation {
+nav {
+  height: $navigation-height;
+  display: flex;
   background-color: var(--navigation-bg-color);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
   top: 0;
   left: 0;
   position: fixed;
   right: 0;
   z-index: 10000;
   overflow: hidden;
-  div {
-    flex: 1 auto;
-    display: flex;
-    align-items: center;
-  }
+  justify-content: space-between;
   ul {
     display: flex;
     list-style: none;
-    margin: 0;
     padding-left: 0;
     height: 100%;
   }
-  li {
-    display: flex;
-    justify-items: center;
-    height: 100%;
-  }
   a {
-    color: var(--navigation-text-color);
     display: flex;
     align-items: center;
+    height: 100%;
     transition: all 0.25s ease 0s;
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -36,7 +27,9 @@
     padding-left: 1em;
     padding-right: 1em;
     text-transform: uppercase;
-    height: 100%;
+    &, &:link, &:visited {
+      color: var(--navigation-text-color);
+    }
     &:hover {
       background-color: var(--navigation-bg-hover-color);
       text-decoration: none;
@@ -45,6 +38,15 @@
   li.active {
     a {
       background-color: var(--navigation-bg-hover-color);
+    }
+  }
+  .menu {
+    margin-left: -1em;
+  }
+  .external {
+    flex-direction: row-reverse;  
+    a {
+      font-size: 1.5em;
     }
   }
   .twitter {
@@ -112,20 +114,5 @@
     &:focus {
       --navigation-bg-hover-color: #53346d;
     }
-  }
-
-  .menu {
-    margin-left: -1em;
-  }
-}
-
-.external {
-  box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.25);
-  flex-direction: row-reverse;  
-  ul {
-    flex-direction: row-reverse;  
-  }
-  a {
-    font-size: 1.5em;
   }
 }

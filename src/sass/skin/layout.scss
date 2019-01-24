@@ -8,14 +8,11 @@ body, .about,
 }
 
 body > div, 
+nav,
 footer {
   margin: 0;
   padding-left: 10%;
   padding-right: 25%;
-}
-
-.navigation {
-  display: flex;
 }
 
 /* Mobile */
@@ -62,11 +59,6 @@ h2,
 }
 
 /* Styling */
-
-.navigation {
-  max-height: $navigation-height;
-  height: $navigation-height;
-}
 
 footer {
   background-color: var(--footer-bg-color);
