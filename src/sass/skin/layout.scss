@@ -7,9 +7,11 @@ body, .about,
   grid-gap: $grid-gutter-width;
 }
 
-body > div {
+body > div, 
+footer {
   margin: 0;
-  padding: 0 10%;
+  padding-left: 10%;
+  padding-right: 25%;
 }
 
 .navigation {
@@ -18,7 +20,7 @@ body > div {
 
 /* Mobile */
 .category,
-.footer, 
+footer, 
 h2, 
 .portfolio-item, 
 .about .aside, 
@@ -61,15 +63,14 @@ h2,
 
 /* Styling */
 
-.navigation, .footer {
+.navigation {
   max-height: $navigation-height;
   height: $navigation-height;
 }
 
-.footer {
+footer {
   background-color: var(--footer-bg-color);
   color: var(--footer-text-color);
-  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(0, 0, 0, 0.1) inset;
   font-size: .8em;
   padding-top: $grid-padding;
   padding-bottom: $grid-padding;
