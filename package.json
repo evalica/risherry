@@ -19,14 +19,16 @@
     "grunt-contrib-sass": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest",
-    "hoek": "latest"
+    "hoek": "latest",
+    "cryptiles": ">=4.1.2",
+    "debug": ">=2.6.9"
   },
   "scripts": {
     "test": "grunt swatch"
   },
   "dependencies": {
     "node-sass": "^4.9.0",
-    "npm": "^6.1.0"
+    "npm": "^6.7.0"
   },
   "bugs": {
     "url": "https://github.com/evalica/risherry/issues"
