@@ -19,40 +19,37 @@
   </head>
 
   <body>
-    <div class="navigation">
-      <div class="menu">
-        <ul>
-          <li>
-            <a href="#about" title="About">About</a>
-          </li>
-          <li>
-            <a href="#work" title="Work">Work</a>
-          </li>
-          <li>
-            <a href="#talks" title="Talks">Talks</a>
-          </li>
-        </ul>
-      </div>
-      <div class="external">
-        <script id="external-template" type="text/x-handlebars-template">
-          <ul>
-            {{#each about.external}}
-            <li>
-              <a class="{{{idFallback this 'class'}}}" href="{{this.link}}" title="{{this.name}}">
+    <nav>
+      <ul class="menu">
+        <li>
+          <a href="#about" title="About">About</a>
+        </li>
+        <li>
+          <a href="#work" title="Work">Work</a>
+        </li>
+        <li>
+          <a href="#talks" title="Talks">Talks</a>
+        </li>
+      </ul>
+      
+    <script id="external-template" type="text/x-handlebars-template">
+      <ul class="external">
+        {{#each about.external}}
+        <li>
+          <a class="{{{idFallback this 'class'}}}" href="{{this.link}}" title="{{this.name}}">
             <span class="fa fa-{{{idFallback this 'icon'}}}"><span class="sr-only">{{this.name}}</span></span>
           </a>
-            </li>
-            {{/each}}
-          </ul>
-        </script>
-      </div>
-    </div>
+        </li>
+        {{/each}}
+      </ul>
+    </script>
+    </nav>
 
-    <div class="category about" id="about">
+    <section class="category about" id="about">
 
-      <script id="heading-template" type="text/x-handlebars-template">
-        <h1 id="top" class="d-none">{{this.head.heading}}</h1>
-      </script>
+    <script id="heading-template" type="text/x-handlebars-template">
+      <h1 id="top" class="d-none">{{this.head.heading}}</h1>
+    </script>
       <h2>About</h2>
 
       <script id="about-template" type="text/x-handlebars-template">
@@ -91,10 +88,9 @@
           {{/each}}
         </div>
       </script>
+    </section>
 
-    </div>
-
-    <div class="category work" id="work">
+    <section class="category work" id="work">
       <div class="work-container">
         <h2>Work</h2>
         <div class="portfolio">
@@ -140,10 +136,9 @@
           </script>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="category talks" id="talks">
-
+    <section class="category talks" id="talks">
       <h2>Talks</h2>
       <script id="talk-template" type="text/x-handlebars-template">
         <li class="xfolkentry">
@@ -170,32 +165,27 @@
           <p>{{{this.contact}}}</p>
         </div>
       </script>
+    </section>
 
-    </div>
-
-    <div class="footer">
-      <script id="license-template" type="text/x-handlebars-template">
-        <a rel="license" href="{{this.license.link}}" title="{{this.license.title}}">{{this.license.name}}</a> <span class="fa fa-cc"><span class="sr-only">CC</span></span> <span class="dtstart">{{this.license.date}}</span>
-      </script>
-    </div>
-
-
+    <footer>
+    <script id="license-template" type="text/x-handlebars-template">
+      <a rel="license" href="{{this.license.link}}" title="{{this.license.title}}">{{this.license.name}}</a> <span class="fa fa-cc"><span class="sr-only">CC</span></span> <span class="dtstart">{{this.license.date}}</span>
+    </script>
+    </footer>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="dist/js/risherry.min.js"></script>
     <script id="analytics-template" type="text/x-handlebars-template">
-      <script>
+    <script>
+      {
         {
           {
-            {
-              this.analyticsTracker
-            }
+            this.analyticsTracker
           }
         }
-
-      </script>
+      }
+    </script>
     </script>
   </body>
-
 </html>
