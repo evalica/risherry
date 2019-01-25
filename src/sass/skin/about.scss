@@ -1,3 +1,12 @@
+.about {
+  h2 {
+    margin-top: ($navigation-height / 4 ) * 3;
+  }
+  &:target h2 {
+    margin-top: 0;
+  }
+}
+
 .aside {
   color: var(--content-secondary-text-color);
   font-size: .85em;

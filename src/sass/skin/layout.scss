@@ -1,11 +1,17 @@
 /* Grid */
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
 nav,
 section,
 footer {
   margin: 0;
   padding-left: 10%;
-  padding-right: 25%;
+  padding-right: 10%;
+  overflow: hidden;
 }
 
 .about, 
@@ -22,11 +28,17 @@ h2,
 .portfolio-item, 
 .about .aside, 
 .about .details {
-  grid-column: 1 / -1;
+  grid-column: 1 / 11;
 }
 
 /* Tablet */
 @media (min-width: $screen-sm) {
+  nav,
+  section,
+  footer {
+    padding-right: 25%;
+  }
+
   .about {
     .aside {
       grid-column-start: 1;

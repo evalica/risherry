@@ -1,13 +1,9 @@
-.category {
-  padding-top: 1.5*$navigation-height;
-  @media (min-width: $screen-sm) {
-    & {
-      padding-top: 1.5*$navigation-height;
-    }
-  }
+section {
+  padding-top: $navigation-height;
   ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
     li {
       .taggedlink {
         display: table-row;
@@ -24,5 +20,15 @@
         }
       }
     }
+  }
+}
+
+.about .aside,
+.portfolio, 
+.talks ul {
+  &::after {
+    content: '';
+    display: block;
+    margin-top: $navigation-height;
   }
 }
