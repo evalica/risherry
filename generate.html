@@ -5,17 +5,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script id="head-template" type="text/x-handlebars-template">
-      {{#each head.meta}}
-      <meta name="{{@key}}" content="{{this}}" /> {{/each}}
-      <title>{{this.head.title}}</title>
+    {{#each head.meta}}
+    <meta name="{{@key}}" content="{{this}}" />
+    {{/each}}
+    <title>{{this.head.title}}</title>
     </script>
     <link type="text/css" rel="stylesheet" title="Theme: Default" href="dist/css/themes/default/style.min.css" />
     
-    <link type="image/x-icon" rel="icon" href="dist/img/favicon.ico">
+    <link type="image/x-icon" rel="icon" href="dist/img/favicon.ico" />
     <link type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
   </head>
 
   <body>
@@ -47,95 +48,85 @@
 
     <section class="category about" id="about">
 
-    <script id="heading-template" type="text/x-handlebars-template">
+      <script id="heading-template" type="text/x-handlebars-template">
       <h1 id="top" class="d-none">{{this.head.heading}}</h1>
-    </script>
+      </script>
       <h2>About</h2>
 
       <script id="about-template" type="text/x-handlebars-template">
-        <div class="aside">
-          <dl class="vcard">
-            <dt>Real Name</dt>
-            <dd>
-              <a title="{{this.about.name.first}} {{this.about.name.last}}" class="xfn-me secondary" rel="me" href="{{this.about.link}}">
-            <span class="fn n">
-              <span class="given-name">{{this.about.name.first}}</span>
-              <span class="family-name">{{this.about.name.last}}</span>
-            </span>
-          </a>
-              <div class="url d-none">{{this.about.website}}</div>
-              <div class="email d-none">{{this.about.email}}</div>
-            </dd>
-            <dt>Organization</dt>
-            <dd class="org">{{this.about.organization.position}} at <a href="{{this.about.organization.link}} " class="secondary" title="{{this.about.organization.name}}">{{this.about.organization.name}}</a></dd>
-            <dt class="type">Current Location</dt>
-            <dd class="adr">
-              <span class="geo">
-            <a title="See location" class="microformat-geo secondary" href="https://www.google.com/maps/place/{{this.about.address.locality}},{{this.about.address.country}}/@{{this.about.address.latitude}},{{this.about.address.longitude}}">
-              <span class="locality">{{this.about.address.locality}}</span>,
-              <span class="country-name">{{this.about.address.country}}</span>
-              <span class="postal-code d-none">{{this.about.address.postalCode}}</span>
-              <span class="latitude d-none">{{this.about.address.latitude}}</span>
-              <span class="longitude d-none">{{this.about.address.longitude}}</span>
-              </a>
+      <div class="aside">
+        <dl class="vcard">
+          <dt>Full Name</dt>
+          <dd>
+            <a title="{{this.about.name.first}} {{this.about.name.last}}" class="xfn-me secondary" rel="me" href="{{this.about.link}}">
+              <span class="fn n">
+                <span class="given-name">{{this.about.name.first}}</span>
+                <span class="family-name">{{this.about.name.last}}</span>
               </span>
-            </dd>
-          </dl>
-        </div>
-        <div class="details">
-          {{#each about.quotes}}
-          <p>{{{this}}}</p>
-          {{/each}}
-        </div>
+            </a>
+            <div class="url d-none">{{this.about.website}}</div>
+            <div class="email d-none">{{this.about.email}}</div>
+          </dd>
+          <dt>Organization</dt>
+          <dd class="org">
+            {{this.about.organization.position}} at <a href="{{this.about.organization.link}} " class="secondary" title="{{this.about.organization.name}}">{{this.about.organization.name}}</a>
+          </dd>
+          <dt class="type">Current Location</dt>
+          <dd class="adr">
+            <span class="geo">
+              <a title="See location" class="microformat-geo secondary" href="https://www.google.com/maps/place/{{this.about.address.locality}},{{this.about.address.country}}/@{{this.about.address.latitude}},{{this.about.address.longitude}}">
+                <span class="locality">{{this.about.address.locality}}</span>,
+                <span class="country-name">{{this.about.address.country}}</span>
+                <span class="latitude d-none">{{this.about.address.latitude}}</span>
+                <span class="longitude d-none">{{this.about.address.longitude}}</span>
+              </a>
+            </span>
+          </dd>
+        </dl>
+      </div>
+      <div class="details">
+        {{#each about.quotes}}
+        <p>{{{this}}}</p>
+        {{/each}}
+      </div>
       </script>
     </section>
 
     <section class="category work" id="work">
-      <div class="work-container">
-        <h2>Work</h2>
-        <div class="portfolio">
-          <script id="portfolio-template" type="text/x-handlebars-template">
-            <ul class="row portfolio-list list-unstyled">
-              {{#each projects}}
-              <li class="portfolio-item">
-                <div class="portfolio-content">
-                  <figure class="portfolio-cover" title="{{this.name}}">
-                    <a href="{{this.url}}" title="{{this.name}}">
-                  {{#if this.covers.[404]}}
-                    <img class="portfolio-image img-thumbnail" src="{{this.covers.[404]}}" alt="{{this.name}}" title="{{this.name}}"/>
-                  {{else}}
-                    {{#if this.covers.[230]}}
-                    <img class="portfolio-image img-thumbnail" src="{{this.covers.[230]}}" alt="{{this.name}}"/>
-                    {{else}}
-                    <img class="portfolio-image img-thumbnail" src="{{this.covers.[202]}}" alt="{{this.name}}"/>
-                    {{/if}}
-                  {{/if}}
-                </a>
-                  </figure>
-                  <div class="portfolio-title">
-                    <a href="{{this.url}}" title="{{this.name}}">{{this.name}}</a>
-                  </div>
-                  <div class="portfolio-fields">
-                    <ul class="field-list">
-                      {{#each this.fields}}
-                      <li class="field-item">{{this}}</li>
-                      {{/each}}
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              {{/each}}
-            </ul>
-          </script>
-        </div>
-        <div class="aside">
-          <script id="work-template" type="text/x-handlebars-template">
-            {{#each work}}
-            <p>{{{this}}}</p>
-            {{/each}}
-          </script>
-        </div>
-      </div>
+      <h2>Work</h2>
+      <script id="portfolio-template" type="text/x-handlebars-template">
+      <ul class="portfolio">
+        {{#each projects}}
+        <li class="portfolio-item">
+          <div class="portfolio-content">
+            <figure class="portfolio-cover" title="{{this.name}}">
+              <a href="{{this.url}}" title="{{this.name}}">
+            {{#if this.covers.[404]}}
+              <img class="portfolio-image img-thumbnail" src="{{this.covers.[404]}}" alt="{{this.name}}" title="{{this.name}}"/>
+            {{else}}
+              {{#if this.covers.[230]}}
+              <img class="portfolio-image img-thumbnail" src="{{this.covers.[230]}}" alt="{{this.name}}"/>
+              {{else}}
+              <img class="portfolio-image img-thumbnail" src="{{this.covers.[202]}}" alt="{{this.name}}"/>
+              {{/if}}
+            {{/if}}
+          </a>
+            </figure>
+            <div class="portfolio-title">
+              <a href="{{this.url}}" title="{{this.name}}">{{this.name}}</a>
+            </div>
+            <div class="portfolio-fields">
+              <ul class="field-list">
+                {{#each this.fields}}
+                <li class="field-item">{{this}}</li>
+                {{/each}}
+              </ul>
+            </div>
+          </div>
+        </li>
+        {{/each}}
+      </ul>
+      </script>
     </section>
 
     <section class="category talks" id="talks">
@@ -161,15 +152,12 @@
           {{/each}}
         </ul>
         <a class="more" href="#moreTalks" data-toggle="collapse" aria-expanded="false" title="More"></a>
-        <div class="aside">
-          <p>{{{this.contact}}}</p>
-        </div>
       </script>
     </section>
 
     <footer>
     <script id="license-template" type="text/x-handlebars-template">
-      <a rel="license" href="{{this.license.link}}" title="{{this.license.title}}">{{this.license.name}}</a> <span class="fa fa-cc"><span class="sr-only">CC</span></span> <span class="dtstart">{{this.license.date}}</span>
+    <span class="dtstart">{{this.license.date}}</span> <span class="fa fa-cc"><span class="sr-only">CC</span></span> <a rel="license" href="{{this.license.link}}" title="{{this.license.title}}">{{this.license.name}}</a> {{{this.license.contact}}}
     </script>
     </footer>
 
