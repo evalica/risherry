@@ -1,0 +1,29 @@
+.aside {
+  color: var(--content-secondary-text-color);
+  font-size: .85em;
+}
+
+.vcard {
+  dt {
+    color: var(--content-text-color);
+    display: block;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    margin-top: 2em;
+    text-transform: uppercase;
+  }
+  dt:first-of-type {
+    margin-top: 1em;
+  }
+}
+
+.details {
+  font-size: 1.1em;
+  line-height: 1.4em;
+  p:first-of-type {
+    font-size: 1.4em;
+    line-height: 1.6em;
+  }
+}

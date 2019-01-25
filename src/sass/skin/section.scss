@@ -1,6 +1,5 @@
 .category {
-  position: relative;
-  padding-top: 2.5*$navigation-height;
+  padding-top: 1.5*$navigation-height;
   @media (min-width: $screen-sm) {
     & {
       padding-top: 1.5*$navigation-height;
@@ -25,54 +24,5 @@
         }
       }
     }
-  }
-  .more {
-    float: right;
-    font-size: .8em;
-    letter-spacing: 1px;
-    margin-top: -3em;
-    text-align: right;
-    text-transform: uppercase;
-    &:focus, &:active, &:hover {
-      text-decoration: none;
-    }
-    &:after {
-      content: 'Less \00BB';
-      position: relative;
-      display: block;
-    }
-    &[aria-expanded=false]:after {
-      content: 'More \00BB';
-    }
-  }
-}
-
-.aside {
-  color: var(--content-secondary-text-color);
-  font-size: .85em;
-}
-
-.vcard {
-  dt {
-    color: var(--content-text-color);
-    display: block;
-    font-size: 1em;
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin-bottom: 0;
-    margin-top: 2em;
-    text-transform: uppercase;
-  }
-  dt:first-of-type {
-    margin-top: 1em;
-  }
-}
-
-.details {
-  font-size: 1.1em;
-  line-height: 1.4em;
-  p:first-of-type {
-    font-size: 1.4em;
-    line-height: 1.6em;
   }
 }

@@ -19,9 +19,7 @@
 .category h2 {
   --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 5em;
-  font-weight: 900;
   color: #fff;
-  margin-bottom: 0;
 }
 
 .about h2, .talks h2 {
@@ -80,7 +78,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 
 p {
@@ -505,8 +503,7 @@ nav .medium:hover, nav .medium:focus {
 }
 
 .category {
-  position: relative;
-  padding-top: 10rem;
+  padding-top: 6rem;
 }
 @media (min-width: 768px) {
   .category {
@@ -530,65 +527,6 @@ nav .medium:hover, nav .medium:focus {
 }
 .category ul li .location:hover {
   text-decoration: underline;
-}
-.category .more {
-  float: right;
-  font-size: .8em;
-  letter-spacing: 1px;
-  margin-top: -3em;
-  text-align: right;
-  text-transform: uppercase;
-}
-.category .more:focus, .category .more:active, .category .more:hover {
-  text-decoration: none;
-}
-.category .more:after {
-  content: 'Less \00BB';
-  position: relative;
-  display: block;
-}
-.category .more[aria-expanded=false]:after {
-  content: 'More \00BB';
-}
-
-.aside {
-  color: var(--content-secondary-text-color);
-  font-size: .85em;
-}
-
-.vcard dt {
-  color: var(--content-text-color);
-  display: block;
-  font-size: 1em;
-  font-weight: 400;
-  letter-spacing: 1px;
-  margin-bottom: 0;
-  margin-top: 2em;
-  text-transform: uppercase;
-}
-.vcard dt:first-of-type {
-  margin-top: 1em;
-}
-
-.details {
-  font-size: 1.1em;
-  line-height: 1.4em;
-}
-.details p:first-of-type {
-  font-size: 1.4em;
-  line-height: 1.6em;
-}
-
-/* Headers displayed using background-clip + fallback */
-h2 {
-  --font-family-base: 'Raleway', Helvetica, Arial, sans-serif;
-  font-size: 3em;
-  font-weight: 900;
-  margin-bottom: .5em;
-}
-
-.work {
-  background-color: var(--accent-bg-color);
 }
 
 .portfolio {
@@ -666,6 +604,45 @@ h2 {
   margin-top: 4rem;
 }
 
+.aside {
+  color: var(--content-secondary-text-color);
+  font-size: .85em;
+}
+
+.vcard dt {
+  color: var(--content-text-color);
+  display: block;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  margin-top: 2em;
+  text-transform: uppercase;
+}
+.vcard dt:first-of-type {
+  margin-top: 1em;
+}
+
+.details {
+  font-size: 1.1em;
+  line-height: 1.4em;
+}
+.details p:first-of-type {
+  font-size: 1.4em;
+  line-height: 1.6em;
+}
+
+/* Headers displayed using background-clip + fallback */
+h2 {
+  --font-family-base: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+}
+
+.work {
+  background-color: var(--accent-bg-color);
+}
+
 .xfolkentry {
   line-height: 1.5;
   text-indent: -2em;
@@ -713,6 +690,26 @@ h2 {
 
 .xfolkentry .dtstart {
   text-align: right;
+}
+
+.more {
+  float: right;
+  font-size: .8em;
+  letter-spacing: 1px;
+  margin-top: -3em;
+  text-align: right;
+  text-transform: uppercase;
+}
+.more:focus, .more:active, .more:hover {
+  text-decoration: none;
+}
+.more:after {
+  content: 'Less \00BB';
+  position: relative;
+  display: block;
+}
+.more[aria-expanded=false]:after {
+  content: 'More \00BB';
 }
 
 footer {
