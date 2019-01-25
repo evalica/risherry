@@ -93,44 +93,40 @@
     </section>
 
     <section class="category work" id="work">
-      <div class="work-container">
-        <h2>Work</h2>
-        <div class="portfolio">
-          <script id="portfolio-template" type="text/x-handlebars-template">
-            <ul class="row portfolio-list list-unstyled">
-              {{#each projects}}
-              <li class="portfolio-item">
-                <div class="portfolio-content">
-                  <figure class="portfolio-cover" title="{{this.name}}">
-                    <a href="{{this.url}}" title="{{this.name}}">
-                  {{#if this.covers.[404]}}
-                    <img class="portfolio-image img-thumbnail" src="{{this.covers.[404]}}" alt="{{this.name}}" title="{{this.name}}"/>
-                  {{else}}
-                    {{#if this.covers.[230]}}
-                    <img class="portfolio-image img-thumbnail" src="{{this.covers.[230]}}" alt="{{this.name}}"/>
-                    {{else}}
-                    <img class="portfolio-image img-thumbnail" src="{{this.covers.[202]}}" alt="{{this.name}}"/>
-                    {{/if}}
-                  {{/if}}
-                </a>
-                  </figure>
-                  <div class="portfolio-title">
-                    <a href="{{this.url}}" title="{{this.name}}">{{this.name}}</a>
-                  </div>
-                  <div class="portfolio-fields">
-                    <ul class="field-list">
-                      {{#each this.fields}}
-                      <li class="field-item">{{this}}</li>
-                      {{/each}}
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              {{/each}}
-            </ul>
-          </script>
-        </div>
-      </div>
+      <h2>Work</h2>
+      <script id="portfolio-template" type="text/x-handlebars-template">
+      <ul class="portfolio">
+        {{#each projects}}
+        <li class="portfolio-item">
+          <div class="portfolio-content">
+            <figure class="portfolio-cover" title="{{this.name}}">
+              <a href="{{this.url}}" title="{{this.name}}">
+            {{#if this.covers.[404]}}
+              <img class="portfolio-image img-thumbnail" src="{{this.covers.[404]}}" alt="{{this.name}}" title="{{this.name}}"/>
+            {{else}}
+              {{#if this.covers.[230]}}
+              <img class="portfolio-image img-thumbnail" src="{{this.covers.[230]}}" alt="{{this.name}}"/>
+              {{else}}
+              <img class="portfolio-image img-thumbnail" src="{{this.covers.[202]}}" alt="{{this.name}}"/>
+              {{/if}}
+            {{/if}}
+          </a>
+            </figure>
+            <div class="portfolio-title">
+              <a href="{{this.url}}" title="{{this.name}}">{{this.name}}</a>
+            </div>
+            <div class="portfolio-fields">
+              <ul class="field-list">
+                {{#each this.fields}}
+                <li class="field-item">{{this}}</li>
+                {{/each}}
+              </ul>
+            </div>
+          </div>
+        </li>
+        {{/each}}
+      </ul>
+      </script>
     </section>
 
     <section class="category talks" id="talks">
