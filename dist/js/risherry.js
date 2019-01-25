@@ -33,7 +33,6 @@
       var contentData = config.data.user;
       renderTemplate(contentData, '#external-template');
       renderTemplate(contentData, '#about-template');
-      renderTemplate(contentData, '#work-template');
       renderTemplate(contentData, '#talks-template');
       renderTemplate(contentData, '#license-template');
     })();

@@ -47,9 +47,6 @@
       }
     ]
   },
-  "work": [
-    "More design proposals can be found at <a href='http://design.xwiki.org/xwiki/bin/view/Main/WebHome#|t=proposal&amp;p=1&amp;l=15&amp;s=doc.date&amp;d=desc&amp;participants=evalica' title='Design.xwiki.org'>design.xwiki.org</a>"
-  ],
   "talks": {
     "perPage": "5",
     "data": [
