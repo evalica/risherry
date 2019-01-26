@@ -56,31 +56,32 @@
         {
           "name": "ISCSS",
           "title": "Iaşi CSS Group",
-          "link": "https://www.meetup.com/IS-CSS/",
+          "link": "https://www.meetup.com/IS-CSS/events/250102141/",
           "location": "Iaşi",
           "date": "May 2018"
         }
       },
       {
         "name": "Icon Themes — Reusable icon variables and mappings for customizable user interfaces",
-        "link": "https://codecamp.ro/archive/20180324-Iasi/",
+        "link": "",
         "event":
         {
           "name": "Codecamp Romania",
           "title": "Codecamp Romania 2018",
-          "link": "https://codecamp.ro/",
+          "link": "https://codecamp.ro/archive/20180324-Iasi/",
           "location": "Iaşi",
           "date": "Mar 2018"
         }
       },
       {
         "name": "Icon Themes — Reusable icon variables and mappings for customizable user interfaces",
-        "link": "https://fosdem.org/2018/schedule/event/osd_icon_themes/",
+        "link": "https://www.slideshare.net/valicac/icon-themes",
+        "video": "https://www.youtube.com/watch?v=afZMLCgxl_s",
         "event":
         {
           "name": "FOSDEM",
           "title": "Open Source Developers’ European Meeting 2018",
-          "link": "https://fosdem.org",
+          "link": "https://fosdem.org/2018/schedule/event/osd_icon_themes/",
           "location": "Brussels",
           "date": "Feb 2018"
         }
@@ -99,48 +100,51 @@
       },
       {
         "name": "Expectations from Open Source Designers",
-        "link": "https://www.youtube.com/watch?v=3M9ptBxFyP4",
+        "link": "https://www.slideshare.net/valicac/expectations-from-open-source-designers",
+        "video": "https://www.youtube.com/watch?v=3M9ptBxFyP4",
         "event":
         {
           "name": "FOSSASIA",
           "title": "Free and Open Source technology organization in Asia",
-          "link": "https://fossasia.org/",
+          "link": "https://2017.fossasia.org/tracks.html#2830",
           "location": "Singapore",
           "date": "Mar 2017"
         }
       },
       {
         "name": "Design feedback in Open Source",
-        "link": "https://fosdem.org/2017/schedule/event/osd_giving_and_receiving_design_feedback/",
+        "link": "https://www.slideshare.net/valicac/design-feedback-in-open-source",
+        "video": "https://www.youtube.com/watch?v=byoYAYBUqAs",
         "event":
         {
           "name": "FOSDEM",
           "title": "Open Source Developers’ European Meeting 2017",
-          "link": "https://fosdem.org",
+          "link": "https://fosdem.org/2017/schedule/event/osd_giving_and_receiving_design_feedback/",
           "location": "Brussels",
           "date": "Feb 2017"
         }
       },
       {
         "name": "Success Stories from the OSD community",
-        "link": "https://fosdem.org/2017/schedule/event/osd_success_stories/",
+        "link": "https://www.slideshare.net/valicac/success-stats-from-osd-community",
+        "video": "https://www.youtube.com/watch?v=-riFE76nI84",
         "event":
         {
           "name": "FOSDEM",
           "title": "Open Source Developers’ European Meeting 2017",
-          "link": "https://fosdem.org",
+          "link": "https://fosdem.org/2017/schedule/event/osd_success_stories/",
           "location": "Brussels",
           "date": "Feb 2017"
         }
       },
       {
         "name": "Designer's compromises in Open Source",
-        "link": "https://archive.fosdem.org/2016/schedule/event/osd_designers_compromises_in_open_source/",
+        "link": "https://www.slideshare.net/valicac/designers-compromises-in-open-source",
         "event":
         {
           "name": "FOSDEM",
           "title": "Open Source Developers’ European Meeting 2016",
-          "link": "https://fosdem.org",
+          "link": "https://archive.fosdem.org/2016/schedule/event/osd_designers_compromises_in_open_source/",
           "location": "Brussels",
           "date": "Jan 2016"
         }
