@@ -4,4 +4,7 @@ footer {
   font-size: .8em;
   padding-top: $grid-padding;
   padding-bottom: $grid-padding;
+  display: flex;
+  align-items: center;
+  white-space: pre;
 }
