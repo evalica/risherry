@@ -141,9 +141,11 @@
           {{/ifCond}}
         {{/each}}
         </ul>
-        <ul class="collapse " id="moreTalks ">
+        <ul class="collapse" id="moreTalks">
         {{#each talks.data}}
-          {{#ifCond @index ">=" ../talks.perPage}} {{> talkTemplate}} {{/ifCond}} 
+          {{#ifCond @index ">=" ../talks.perPage}}
+            {{> talkTemplate}}
+          {{/ifCond}} 
         {{/each}}
         </ul>
         <a class="more" href="#moreTalks" data-toggle="collapse" aria-expanded="false" title="More"></a>
