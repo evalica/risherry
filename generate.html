@@ -127,9 +127,11 @@
       <li class="xfolkentry">
         <a class="taggedlink" href="{{this.link}}">&#8220;{{this.name}}&#8221;</a> 
         {{#each this.event}}
-          &mdash;
-          <a class="location" href="{{this.link}}" title="{{#if this.title}}{{this.title}}{{else}}{{this.name}}{{/if}}">{{this.name}}</a>, {{this.location}},
-          <span class="dtstart">{{this.date}}</span>
+          <span class="event">
+            &mdash;
+            <a class="location" href="{{this.link}}" title="{{#if this.title}}{{this.title}}{{else}}{{this.name}}{{/if}}">{{this.name}}</a>, {{this.location}},
+            <span class="dtstart">{{this.date}}</span>
+          </span>
         {{/each}}
       </li>
       </script>

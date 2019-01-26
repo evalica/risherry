@@ -681,13 +681,9 @@ h2 {
 }
 
 .xfolkentry {
-  line-height: 1.5;
   text-indent: -2em;
   margin-bottom: 2em;
   padding-left: 2em;
-}
-.xfolkentry a {
-  text-decoration: none;
 }
 .xfolkentry .event {
   font-weight: 100;
