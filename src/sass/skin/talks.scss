@@ -14,6 +14,15 @@
     content: '\2014';
   }
 
+  .taggedlink {
+    &::before {
+      content: '\201c';
+    }
+    &::after {
+      content: '\201d';
+    }
+  }
+
   .location, 
   .dtstart {
     color: var(--content-secondary-text-color);

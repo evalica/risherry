@@ -688,6 +688,12 @@ h2 {
 .xfolkentry .event::before {
   content: '\2014';
 }
+.xfolkentry .taggedlink::before {
+  content: '\201c';
+}
+.xfolkentry .taggedlink::after {
+  content: '\201d';
+}
 .xfolkentry .location,
 .xfolkentry .dtstart {
   color: var(--content-secondary-text-color);
