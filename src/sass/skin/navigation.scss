@@ -119,4 +119,10 @@ nav {
       --navigation-bg-hover-color: #53346d;
     }
   }
+  .instagram {
+    &:hover,
+    &:focus {
+      --navigation-bg-hover-color: #E1306C;
+    }
+  }
 }
