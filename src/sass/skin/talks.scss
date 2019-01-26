@@ -42,17 +42,28 @@
   font-size: .8em;
   letter-spacing: 1px;
   margin-top: -3em;
-  text-align: right;
   text-transform: uppercase;
-  &:focus, &:active, &:hover {
-    text-decoration: none;
-  }
   &:after {
-    content: 'Less \00BB';
-    position: relative;
-    display: block;
+    content: 'More \25BC';
   }
-  &[aria-expanded=false]:after {
-    content: 'More \00BB';
-  }
+}
+
+#toggle:checked ~ .more:after {
+  content: 'Less \25B2';
+}
+
+#moreTalks {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all .5s ease-out;
+}
+
+#toggle:checked ~ #moreTalks {
+  height: auto;
+  opacity: 1;
+}
+
+#toggle {
+  display: none;
 }
