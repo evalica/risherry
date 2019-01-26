@@ -396,7 +396,7 @@ footer {
   overflow: hidden;
 }
 
-.about,
+.about .main,
 .work .portfolio,
 .talks .promoted {
   display: grid;
@@ -410,7 +410,7 @@ footer,
 h2,
 .portfolio-item, .promoted .video,
 .about .aside,
-.about .details {
+.about .summary {
   grid-column: 1 / 11;
 }
 
@@ -426,7 +426,7 @@ h2,
     grid-column-start: 1;
     grid-column-end: 4;
   }
-  .about .details {
+  .about .summary {
     grid-column-start: 4;
     grid-column-end: -1;
   }
@@ -656,11 +656,12 @@ section::after {
   margin-top: 1em;
 }
 
-.details {
+.summary {
+  display: block;
   font-size: 1.1em;
   line-height: 1.4em;
 }
-.details p:first-of-type {
+.summary p:first-of-type {
   font-size: 1.4em;
   line-height: 1.6em;
 }

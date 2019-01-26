@@ -46,6 +46,7 @@
       <h1 id="top" class="d-none">{{this.head.heading}}</h1>
       </script>
       <h2>About</h2>
+      <div class="main">
       <script id="about-template" type="text/x-handlebars-template">
       <div class="aside">
         <dl class="vcard">
@@ -76,12 +77,13 @@
           </dd>
         </dl>
       </div>
-      <div class="details">
+      <div class="summary">
         {{#each about.quotes}}
         <p>{{{this}}}</p>
         {{/each}}
       </div>
       </script>
+      </div>
     </section>
 
     <section class="work" id="work">
@@ -125,7 +127,7 @@
       <h2>Talks</h2>
       <script id="video-template" type="text/x-handlebars-template">
       <li class="xfolkentry video">
-        <iframe src="https://www.youtube.com/embed/{{this.video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/{{this.video}}" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <a class="taggedlink" href="https://www.youtube.com/watch?v={{this.video}}">{{this.name}}</a>
       </li>
       </script>
@@ -174,9 +176,9 @@
     </script>
     </footer>
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="dist/js/risherry.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js" crossorigin="anonymous"></script>
+    <script src="dist/js/risherry.min.js"></script>
     <script id="analytics-template" type="text/x-handlebars-template">
     <script>
       {{{this.analyticsTracker}}}

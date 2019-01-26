@@ -14,7 +14,7 @@ footer {
   overflow: hidden;
 }
 
-.about, 
+.about .main, 
 .work .portfolio, 
 .talks .promoted {
   display: grid;
@@ -28,7 +28,7 @@ footer,
 h2, 
 .portfolio-item, .promoted .video,
 .about .aside, 
-.about .details {
+.about .summary {
   grid-column: 1 / 11;
 }
 
@@ -46,7 +46,7 @@ h2,
       grid-column-end: floor($grid-columns / 3);
     }
 
-    .details {
+    .summary {
       grid-column-start: floor($grid-columns / 3);
       grid-column-end: -1;
     }
