@@ -8,7 +8,7 @@
   --body-bg-color: #fff;
   --accent-bg-color: #1b1733;
   --content-text-color: #080740;
-  --content-secondary-text-color: #9e9e9e;
+  --content-secondary-text-color: #747c83;
   --link-text-color: #a338b5;
   --link-text-hover-color: #0fc1d4;
   --navigation-bg-color: #1b1733;
@@ -545,9 +545,6 @@ section ul {
   padding: 0;
   margin: 0;
 }
-section ul li .taggedlink {
-  display: table-row;
-}
 section ul li .dtstart {
   color: var(--content-secondary-text-color);
   font-style: italic;
@@ -681,40 +678,19 @@ h2 {
 }
 
 .xfolkentry {
-  text-indent: -2em;
   margin-bottom: 2em;
-  padding-left: 2em;
+}
+.xfolkentry .taggedlink, .xfolkentry .event {
+  display: block;
 }
 .xfolkentry .event {
-  font-weight: 100;
-}
-.xfolkentry .taggedlink {
-  grid-column: span 2;
-}
-.xfolkentry .event {
-  grid-column: span 2;
-  color: #484848;
   font-size: .85em;
-  margin-bottom: 1em;
-}
-.xfolkentry .info {
-  padding: .5em 1em;
-  display: grid;
-  grid-template-rows: repeat(2, auto);
-  grid-template-columns: repeat(2, 1fr);
-}
-.xfolkentry iframe {
-  width: 100%;
+  margin: .5em 0 .5em 2em;
 }
 .xfolkentry .location,
 .xfolkentry .dtstart {
-  color: #747c83;
+  color: var(--content-secondary-text-color);
   text-transform: uppercase;
-  font-size: .85em;
-  font-weight: 100;
-}
-.xfolkentry .dtstart {
-  text-align: right;
 }
 
 .more {
