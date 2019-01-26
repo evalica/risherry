@@ -136,6 +136,13 @@
       </li>
       </script>
       <script id="talks-template" type="text/x-handlebars-template">
+        <ul class="promoted">
+        {{#each talks.data}}
+          {{#if this.promoted}}
+            {{> talkTemplate}}
+          {{/if}}
+        {{/each}}
+        </ul>
         <ul>
         {{#each talks.data}}
           {{#ifCond @index "< " ../talks.perPage}}
