@@ -47,6 +47,10 @@ nav {
     flex-direction: row-reverse;  
     a {
       font-size: 1.5em;
+      .svg {
+        width: 1em;
+        height: 1.5em;
+      }
     }
   }
   .twitter {
