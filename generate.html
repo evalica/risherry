@@ -123,6 +123,12 @@
 
     <section class="talks" id="talks">
       <h2>Talks</h2>
+      <script id="video-template" type="text/x-handlebars-template">
+      <li class="xfolkentry video">
+        <iframe src="https://www.youtube.com/embed/{{this.video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <a class="taggedlink" href="https://www.youtube.com/watch?v={{this.video}}">{{this.name}}</a>
+      </li>
+      </script>
       <script id="talk-template" type="text/x-handlebars-template">
       <li class="xfolkentry">
         <a class="taggedlink" href="{{this.link}}">&#8220;{{this.name}}&#8221;</a> 
@@ -139,7 +145,7 @@
         <ul class="promoted">
         {{#each talks.data}}
           {{#if this.promoted}}
-            {{> talkTemplate}}
+            {{> videoTemplate}}
           {{/if}}
         {{/each}}
         </ul>

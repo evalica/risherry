@@ -76,6 +76,7 @@
     });
 
     Handlebars.registerPartial('talkTemplate', $('#talk-template').html());
+    Handlebars.registerPartial('videoTemplate', $('#video-template').html());
 
     function renderTemplateFromData(data, templateId) {
       var templateString = $(templateId).html(),
