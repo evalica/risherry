@@ -125,9 +125,12 @@
       <h2>Talks</h2>
       <script id="talk-template" type="text/x-handlebars-template">
       <li class="xfolkentry">
-        <a class="taggedlink" href="{{this.link}}">&#8220;{{this.name}}&#8221;</a> &mdash;
-        <a class="location" href="{{this.event.link}}" title="{{#if this.event.title}}{{this.event.title}}{{else}}{{this.event.name}}{{/if}}">{{this.event.name}}</a>, {{this.event.location}},
-        <span class="dtstart">{{this.event.date}}</span>
+        <a class="taggedlink" href="{{this.link}}">&#8220;{{this.name}}&#8221;</a> 
+        {{#each this.event}}
+          &mdash;
+          <a class="location" href="{{this.link}}" title="{{#if this.title}}{{this.title}}{{else}}{{this.name}}{{/if}}">{{this.name}}</a>, {{this.location}},
+          <span class="dtstart">{{this.date}}</span>
+        {{/each}}
       </li>
       </script>
       <script id="talks-template" type="text/x-handlebars-template">

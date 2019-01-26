@@ -52,266 +52,282 @@
       {
         "name": "CSS Variables — Native reusable custom properties",
         "link": "https://www.slideshare.net/valicac/css-variables-native-reusable-custom-properties-96549426/",
-        "event":
-        {
-          "name": "ISCSS",
-          "title": "Iaşi CSS Group",
-          "link": "https://www.meetup.com/IS-CSS/events/250102141/",
-          "location": "Iaşi",
-          "date": "May 2018"
-        }
-      },
-      {
-        "name": "Icon Themes — Reusable icon variables and mappings for customizable user interfaces",
-        "link": "",
-        "event":
-        {
-          "name": "Codecamp Romania",
-          "title": "Codecamp Romania 2018",
-          "link": "https://codecamp.ro/archive/20180324-Iasi/",
-          "location": "Iaşi",
-          "date": "Mar 2018"
-        }
+        "event": [
+          {
+            "name": "ISCSS",
+            "title": "Iaşi CSS Group",
+            "link": "https://www.meetup.com/IS-CSS/events/250102141/",
+            "location": "Iaşi",
+            "date": "May 2018"
+          }
+        ]
       },
       {
         "name": "Icon Themes — Reusable icon variables and mappings for customizable user interfaces",
         "link": "https://www.slideshare.net/valicac/icon-themes",
         "video": "https://www.youtube.com/watch?v=afZMLCgxl_s",
-        "event":
-        {
-          "name": "FOSDEM",
-          "title": "Open Source Developers’ European Meeting 2018",
-          "link": "https://fosdem.org/2018/schedule/event/osd_icon_themes/",
-          "location": "Brussels",
-          "date": "Feb 2018"
-        }
+        "event": [
+          {
+          "name": "Codecamp Romania",
+          "title": "Codecamp Romania 2018",
+          "link": "https://codecamp.ro/archive/20180324-Iasi/",
+          "location": "Iaşi",
+          "date": "Mar 2018"
+          },
+          {
+            "name": "FOSDEM",
+            "title": "Open Source Developers’ European Meeting 2018",
+            "link": "https://fosdem.org/2018/schedule/event/osd_icon_themes/",
+            "location": "Brussels",
+            "date": "Feb 2018"
+          }
+        ]
       },
       {
         "name": "What's new in XWiki 8.x and half of 9.x",
         "link": "https://www.slideshare.net/valicac/whats-new-in-x-wiki-8x-and-half-of-9x",
-        "event":
-        {
-          "name": "XWiki Seminar",
-          "title": "XWiki",
-          "link": "http://www.xwiki.org/",
-          "location": "Bucharest",
-          "date": "Jul 2017"
-        }
+        "event": [
+          {
+            "name": "XWiki Seminar",
+            "title": "XWiki",
+            "link": "http://www.xwiki.org/",
+            "location": "Bucharest",
+            "date": "Jul 2017"
+          }
+        ]
       },
       {
         "name": "Expectations from Open Source Designers",
         "link": "https://www.slideshare.net/valicac/expectations-from-open-source-designers",
         "video": "https://www.youtube.com/watch?v=3M9ptBxFyP4",
-        "event":
-        {
-          "name": "FOSSASIA",
-          "title": "Free and Open Source technology organization in Asia",
-          "link": "https://2017.fossasia.org/tracks.html#2830",
-          "location": "Singapore",
-          "date": "Mar 2017"
-        }
+        "event": [
+          {
+            "name": "FOSSASIA",
+            "title": "Free and Open Source technology organization in Asia",
+            "link": "https://2017.fossasia.org/tracks.html#2830",
+            "location": "Singapore",
+            "date": "Mar 2017"
+          }
+        ]
       },
       {
         "name": "Design feedback in Open Source",
         "link": "https://www.slideshare.net/valicac/design-feedback-in-open-source",
         "video": "https://www.youtube.com/watch?v=byoYAYBUqAs",
-        "event":
-        {
-          "name": "FOSDEM",
-          "title": "Open Source Developers’ European Meeting 2017",
-          "link": "https://fosdem.org/2017/schedule/event/osd_giving_and_receiving_design_feedback/",
-          "location": "Brussels",
-          "date": "Feb 2017"
-        }
+        "event": [
+          {
+            "name": "FOSDEM",
+            "title": "Open Source Developers’ European Meeting 2017",
+            "link": "https://fosdem.org/2017/schedule/event/osd_giving_and_receiving_design_feedback/",
+            "location": "Brussels",
+            "date": "Feb 2017"
+          }
+        ]
       },
       {
         "name": "Success Stories from the OSD community",
         "link": "https://www.slideshare.net/valicac/success-stats-from-osd-community",
         "video": "https://www.youtube.com/watch?v=-riFE76nI84",
-        "event":
-        {
-          "name": "FOSDEM",
-          "title": "Open Source Developers’ European Meeting 2017",
-          "link": "https://fosdem.org/2017/schedule/event/osd_success_stories/",
-          "location": "Brussels",
-          "date": "Feb 2017"
-        }
+        "event": [
+          {
+            "name": "FOSDEM",
+            "title": "Open Source Developers’ European Meeting 2017",
+            "link": "https://fosdem.org/2017/schedule/event/osd_success_stories/",
+            "location": "Brussels",
+            "date": "Feb 2017"
+          }
+        ]
       },
       {
         "name": "Designer's compromises in Open Source",
         "link": "https://www.slideshare.net/valicac/designers-compromises-in-open-source",
-        "event":
-        {
-          "name": "FOSDEM",
-          "title": "Open Source Developers’ European Meeting 2016",
-          "link": "https://archive.fosdem.org/2016/schedule/event/osd_designers_compromises_in_open_source/",
-          "location": "Brussels",
-          "date": "Jan 2016"
-        }
+        "event": [
+          {
+            "name": "FOSDEM",
+            "title": "Open Source Developers’ European Meeting 2016",
+            "link": "https://archive.fosdem.org/2016/schedule/event/osd_designers_compromises_in_open_source/",
+            "location": "Brussels",
+            "date": "Jan 2016"
+          }
+        ]
       },
       {
         "name": "Future of XWiki Skins",
         "link": "http://www.slideshare.net/valicac/future-of-xwiki-skins",
-        "event":
-        {
-          "name": "XWiki Seminar",
-          "title": "XWiki",
-          "link": "http://www.xwiki.org/",
-          "location": "Breaza",
-          "date": "Jul 2015"
-        }
+        "event": [
+          {
+            "name": "XWiki Seminar",
+            "title": "XWiki",
+            "link": "http://www.xwiki.org/",
+            "location": "Breaza",
+            "date": "Jul 2015"
+          }
+        ]
       },
       {
         "name": "Design Process in an Open Community",
         "link": "http://www.slideshare.net/valicac/design-process-in-an-open-community",
-        "event":
-        {
-          "name": "Design Jam",
-          "link": "https://www.eventbrite.com/e/design-jam-autumn-edition-tickets-13430066691",
-          "location": "Iaşi",
-          "date": "Oct 2014"
-        }
+        "event": [
+          {
+            "name": "Design Jam",
+            "link": "https://www.eventbrite.com/e/design-jam-autumn-edition-tickets-13430066691",
+            "location": "Iaşi",
+            "date": "Oct 2014"
+          }
+        ]
       },
       {
         "name": "XWiki.org, Project and Community",
         "link": "http://www.slideshare.net/valicac/xwikiorg",
-        "event":
-        {
-          "name": "XWiki Training",
-          "title": "XWiki",
-          "link": "http://www.xwiki.org/",
-          "location": "Iaşi",
-          "date": "Sep 2014"
-        }
+        "event": [
+          {
+            "name": "XWiki Training",
+            "title": "XWiki",
+            "link": "http://www.xwiki.org/",
+            "location": "Iaşi",
+            "date": "Sep 2014"
+          }
+        ]
       },
       {
         "name": "Usability Testing Highlights and Findings",
         "link": "http://www.slideshare.net/valicac/xwiki-usability-testing-sessions",
-        "event":
-        {
-          "name": "XWiki Seminar",
-          "title": "XWiki",
-          "link": "http://www.xwiki.org/",
-          "location": "Vidraru",
-          "date": "Jul 2014"
-        }
+        "event": [
+          {
+            "name": "XWiki Seminar",
+            "title": "XWiki",
+            "link": "http://www.xwiki.org/",
+            "location": "Vidraru",
+            "date": "Jul 2014"
+          }
+        ]
       },
       {
         "name": "Evolution of CSS",
         "link": "http://www.slideshare.net/valicac/evolution-of-css",
-        "event":
-        {
-          "name": "Winter Web Workshop",
-          "link": "http://www.eventbrite.com/e/winter-web-workshop-tickets-7122374213",
-          "location": "Iaşi",
-          "date": "Dec 2013"
-        }
+        "event": [
+          {
+            "name": "Winter Web Workshop",
+            "link": "http://www.eventbrite.com/e/winter-web-workshop-tickets-7122374213",
+            "location": "Iaşi",
+            "date": "Dec 2013"
+          }
+        ]
       },
       {
         "name": "XWiki Improvements Review v2.4 - v5.1",
         "link": "http://www.slideshare.net/valicac/xwiki-improvements-review-ver-24-51",
-        "event":
-        {
-          "name": "XWiki Seminar",
-          "title": "XWiki",
-          "link": "http://www.xwiki.org/",
-          "location": "Sighişoara",
-          "date": "Jul 2013"
-        }
+        "event": [
+          {
+            "name": "XWiki Seminar",
+            "title": "XWiki",
+            "link": "http://www.xwiki.org/",
+            "location": "Sighişoara",
+            "date": "Jul 2013"
+          }
+        ]
       },
       {
         "name": "Development Process, the XWiki way",
         "link": "http://www.slideshare.net/Enygma2002/development-process-the-xwiki-way",
-        "event":
-        {
-          "name": "JobShop",
-          "link": "http://jobshop.ro/",
-          "location": "Iaşi",
-          "date": "Apr 2012"
-        }
+        "event": [
+          {
+            "name": "JobShop",
+            "link": "http://jobshop.ro/",
+            "location": "Iaşi",
+            "date": "Apr 2012"
+          }
+        ]
       },
       {
         "name": "Semantically linked data in the context of personal information management",
         "link": "http://www.slideshare.net/valicac/interconectarea-semantica-a-datelor-in-contextul-managementului-informatiilor-personale-2784214",
-        "event":
-        {
-          "name": "Infoiasi",
-          "title": "Faculty of Computer Science, A.I.Cuza University of Iaşi, Romania",
-          "link": "http://www.info.uaic.ro",
-          "location": "Iaşi",
-          "date": "Jun 2009"
-        }
+        "event": [
+          {
+            "name": "Infoiasi",
+            "title": "Faculty of Computer Science, A.I.Cuza University of Iaşi, Romania",
+            "link": "http://www.info.uaic.ro",
+            "location": "Iaşi",
+            "date": "Jun 2009"
+          }
+        ]
       },
       {
         "name": "Visual Communication through Infographics",
         "link": "http://www.slideshare.net/valicac/visual-communication-through-infographics-presentation",
-        "event":
-        {
-          "name": "RoCHI",
-          "title": "Romanian Computer Human Interaction",
-          "link": "http://rochi2008.utcluj.ro/",
-          "location": "Iaşi",
-          "date": "Sep 2008"
-        }
+        "event": [
+          {
+            "name": "RoCHI",
+            "title": "Romanian Computer Human Interaction",
+            "link": "http://rochi2008.utcluj.ro/",
+            "location": "Iaşi",
+            "date": "Sep 2008"
+          }
+        ]
       },
       {
         "name": "Interaction Design Patterns",
         "link": "http://www.slideshare.net/valicac/interaction-design-patterns-presentation",
-        "event":
-        {
-          "name": "RoCHI",
-          "title": "Romanian Computer Human Interaction",
-          "link": "http://rochi2008.utcluj.ro/",
-          "location": "Iaşi",
-          "date": "Sep 2008"
-        }
+        "event": [
+          {
+            "name": "RoCHI",
+            "title": "Romanian Computer Human Interaction",
+            "link": "http://rochi2008.utcluj.ro/",
+            "location": "Iaşi",
+            "date": "Sep 2008"
+          }
+        ]
       },
       {
         "name": "CAPTCHA",
         "link": "http://www.slideshare.net/valicac/captcha",
-        "event":
-        {
-          "name": "Infoiasi",
-          "title": "Faculty of Computer Science, A.I.Cuza University of Iaşi, Romania",
-          "link": "http://www.info.uaic.ro",
-          "location": "Iaşi",
-          "date": "May 2008"
-        }
+        "event": [
+          {
+            "name": "Infoiasi",
+            "title": "Faculty of Computer Science, A.I.Cuza University of Iaşi, Romania",
+            "link": "http://www.info.uaic.ro",
+            "location": "Iaşi",
+            "date": "May 2008"
+          }
+        ]
       },
       {
         "name": "Visual Cryptography",
         "link": "http://www.slideshare.net/valicac/visual-cryptography",
-        "event":
-        {
-          "name": "Infoiasi",
-          "title": "Faculty of Computer Science, A.I.Cuza University of Iaşi, Romania",
-          "link": "http://www.info.uaic.ro",
-          "location": "Iaşi",
-          "date": "Apr 2008"
-        }
+        "event": [
+          {
+            "name": "Infoiasi",
+            "title": "Faculty of Computer Science, A.I.Cuza University of Iaşi, Romania",
+            "link": "http://www.info.uaic.ro",
+            "location": "Iaşi",
+            "date": "Apr 2008"
+          }
+        ]
       },
       {
         "name": "Software Testing — Achievements, Dreams",
         "link": "http://www.slideshare.net/valicac/software-testing",
-        "event":
-        {
-          "name": "Infoiasi",
-          "title": "Faculty of Computer Science, A.I.Cuza University of Iaşi, Romania",
-          "link": "http://www.info.uaic.ro",
-          "location": "Iaşi",
-          "date": "Dec 2007"
-        }
+        "event": [
+          {
+            "name": "Infoiasi",
+            "title": "Faculty of Computer Science, A.I.Cuza University of Iaşi, Romania",
+            "link": "http://www.info.uaic.ro",
+            "location": "Iaşi",
+            "date": "Dec 2007"
+          }
+        ]
       },
       {
         "name": "Mashups — work you don't have to do",
         "link": "http://www.slideshare.net/valicac/mashups-87355/1",
-        "event":
-        {
-          "name": "<Web/> Workshop on Web Technologies",
-          "link": "http://swapps.wordpress.com/",
-          "location": "Iaşi",
-          "date": "May 2007"
-        }
+        "event": [
+          {
+            "name": "<Web/> Workshop on Web Technologies",
+            "link": "http://swapps.wordpress.com/",
+            "location": "Iaşi",
+            "date": "May 2007"
+          }
+        ]
       }
     ]
   },
