@@ -397,7 +397,8 @@ footer {
 }
 
 .about,
-.work .portfolio {
+.work .portfolio,
+.talks .promoted {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 30px;
@@ -407,7 +408,7 @@ footer {
 section,
 footer,
 h2,
-.portfolio-item,
+.portfolio-item, .promoted .video,
 .about .aside,
 .about .details {
   grid-column: 1 / 11;
@@ -430,19 +431,19 @@ h2,
     grid-column-end: -1;
   }
 
-  .portfolio-item {
+  .portfolio-item, .promoted .video {
     grid-column: span 6;
   }
 }
 /* Tablet */
 @media (min-width: 992px) {
-  .portfolio-item {
+  .portfolio-item, .promoted .video {
     grid-column: span 4;
   }
 }
 /* Desktop */
 @media (min-width: 1200px) {
-  .portfolio-item {
+  .portfolio-item, .promoted .video {
     grid-column: span 3;
   }
 }
@@ -556,10 +557,7 @@ section ul li .location {
 section ul li .location:hover {
   text-decoration: underline;
 }
-
-.about .aside::after,
-.work ul::after,
-.talks ul::after {
+section::after {
   content: '';
   display: block;
   margin-top: 4rem;
@@ -691,6 +689,10 @@ h2 {
 .xfolkentry .dtstart {
   color: var(--content-secondary-text-color);
   text-transform: uppercase;
+}
+.xfolkentry.video iframe {
+  max-width: 100%;
+  width: 100%;
 }
 
 .more {

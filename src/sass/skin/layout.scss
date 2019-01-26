@@ -15,7 +15,8 @@ footer {
 }
 
 .about, 
-.work .portfolio {
+.work .portfolio, 
+.talks .promoted {
   display: grid;
   grid-template-columns: repeat($grid-columns, 1fr);
   grid-gap: $grid-gutter-width;
@@ -25,7 +26,7 @@ footer {
 section,
 footer, 
 h2, 
-.portfolio-item, 
+.portfolio-item, .promoted .video,
 .about .aside, 
 .about .details {
   grid-column: 1 / 11;
@@ -51,21 +52,21 @@ h2,
     }
   }
 
-  .portfolio-item {
+  .portfolio-item, .promoted .video {
     grid-column: span floor($grid-columns / 2);
   }
 }
 
 /* Tablet */ 
 @media (min-width: $screen-md) {
-  .portfolio-item {
+  .portfolio-item, .promoted .video {
     grid-column: span floor($grid-columns / 3);
   }
 }
 
 /* Desktop */ 
 @media (min-width: $screen-lg) {
-  .portfolio-item {
+  .portfolio-item, .promoted .video {
     grid-column: span floor($grid-columns / 4);
   }
 }

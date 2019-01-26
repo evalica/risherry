@@ -15,6 +15,13 @@
     color: var(--content-secondary-text-color);
     text-transform: uppercase;
   }
+
+  &.video {
+    iframe {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
 }
 
 .more {

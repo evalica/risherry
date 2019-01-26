@@ -18,11 +18,7 @@ section {
       }
     }
   }
-}
-
-.about .aside,
-.work ul, 
-.talks ul {
+  
   &::after {
     content: '';
     display: block;
