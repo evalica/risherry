@@ -10,6 +10,10 @@
     margin: .5em 0 .5em 2em;
   }
 
+  .event::before {
+    content: '\2014';
+  }
+
   .location, 
   .dtstart {
     color: var(--content-secondary-text-color);

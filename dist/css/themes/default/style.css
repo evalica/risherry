@@ -685,6 +685,9 @@ h2 {
   font-size: .85em;
   margin: .5em 0 .5em 2em;
 }
+.xfolkentry .event::before {
+  content: '\2014';
+}
 .xfolkentry .location,
 .xfolkentry .dtstart {
   color: var(--content-secondary-text-color);
