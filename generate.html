@@ -169,7 +169,8 @@
           {{/ifCond}}
         {{/each}}
         </ul>
-        <label for="toggle" class="more"><input id="toggle" type="checkbox"/></label>
+        <input id="toggle" type="checkbox"/>
+        <label for="toggle" class="more"></label>
         <ul class="collapse" id="moreTalks">
         {{#each talks.data}}
           {{#ifCond @index ">=" ../talks.perPage}}
