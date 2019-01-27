@@ -772,6 +772,7 @@ h2 {
   letter-spacing: 1px;
   margin-top: -3em;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .more:after {
   content: 'More \25BC';
