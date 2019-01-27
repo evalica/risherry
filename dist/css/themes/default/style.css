@@ -764,6 +764,7 @@ h2 {
   box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.15);
   background-color: var(--body-bg-color);
   border: 3px solid #efeff5;
+  border-width: 0 1px 3px;
   display: flex;
   flex-direction: column;
 }
@@ -774,6 +775,14 @@ h2 {
 }
 .video .video-content {
   padding: 1em;
+}
+.video .taggedlink {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.video .video-details {
+  font-size: .85em;
 }
 
 .more {

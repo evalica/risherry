@@ -132,8 +132,10 @@
           <a class="taggedlink" href="https://www.youtube.com/watch?v={{this.video}}">{{this.name}}</a>
           {{#each this.event}}
             {{#if this.recorded}}
-            <a class="location" href="{{this.link}}" title="{{this.title}}">{{this.name}}</a>, {{this.location}},
-            <span class="dtstart">{{this.date}}</span>
+            <span class="video-details">
+              <a class="location" href="{{this.link}}" title="{{this.title}}">{{this.name}}</a>, {{this.location}},
+              <span class="dtstart">{{this.date}}</span>
+            </span>
             {{/if}}
           {{/each}}
         </span>
