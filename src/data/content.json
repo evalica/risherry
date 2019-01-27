@@ -70,13 +70,14 @@
         "video": "afZMLCgxl_s",
         "event": [
           {
-          "name": "Codecamp Romania",
-          "title": "Codecamp Romania 2018",
-          "link": "https://codecamp.ro/archive/20180324-Iasi/",
-          "location": "Iaşi",
-          "date": "Mar 2018"
+            "name": "Codecamp Romania",
+            "title": "Codecamp Romania 2018",
+            "link": "https://codecamp.ro/archive/20180324-Iasi/",
+            "location": "Iaşi",
+            "date": "Mar 2018"
           },
           {
+            "recorded": true,
             "name": "FOSDEM",
             "title": "Open Source Developers’ European Meeting 2018",
             "link": "https://fosdem.org/2018/schedule/event/osd_icon_themes/",
@@ -119,6 +120,7 @@
         "video": "3M9ptBxFyP4",
         "event": [
           {
+            "recorded": true,
             "name": "FOSSASIA",
             "title": "Free and Open Source technology organization in Asia",
             "link": "https://2017.fossasia.org/tracks.html#2830",
@@ -134,6 +136,7 @@
         "video": "byoYAYBUqAs",
         "event": [
           {
+            "recorded": true,
             "name": "FOSDEM",
             "title": "Open Source Developers’ European Meeting 2017",
             "link": "https://fosdem.org/2017/schedule/event/osd_giving_and_receiving_design_feedback/",
