@@ -46,6 +46,7 @@
   border-width: 0 1px 3px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 
   iframe {
     max-width: 100%;
