@@ -46,6 +46,10 @@ section {
   nav {
     height: $navigation-height;
     flex-direction: row;
+    .external {
+      margin: 0;
+      margin-right: -1em;
+    }
   }
 
   section {
