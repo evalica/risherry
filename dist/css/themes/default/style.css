@@ -735,8 +735,12 @@ h2 {
   background-color: var(--accent-bg-color);
 }
 
+.promoted {
+  margin-bottom: 1rem;
+}
+
 .xfolkentry {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 .xfolkentry .taggedlink, .xfolkentry .event {
   display: block;
