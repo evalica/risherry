@@ -787,6 +787,7 @@ h2 {
 .video iframe {
   max-width: 100%;
   width: 100%;
+  min-height: 160px;
   border: 0;
 }
 .video .video-content {
