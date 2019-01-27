@@ -7,16 +7,16 @@
 :root {
   --body-bg-color: #fff;
   --accent-bg-color: #1b1733;
-  --content-text-color: #080740;
+  --content-text-color: var(--accent-bg-color);
   --content-secondary-text-color: #747c83;
   --link-text-color: #a338b5;
   --link-text-hover-color: #0fc1d4;
-  --navigation-bg-color: #1b1733;
-  --navigation-bg-hover-color: #a338b5;
-  --navigation-text-color: #fff;
+  --navigation-bg-color: var(--accent-bg-color);
+  --navigation-bg-hover-color: var(--link-text-color);
+  --navigation-text-color: var(--body-bg-color);
   --portfolio-bg-color: #29253f;
   --portfolio-secondary-text-color: #aeabc3;
-  --video-bg-color: #fff;
+  --video-bg-color: var(--body-bg-color);
   --video-border-color: #efeff5;
   --footer-text-color: var(--portfolio-secondary-text-color);
 }
@@ -24,7 +24,7 @@
 section h2 {
   --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 5em;
-  color: #fff;
+  color: var(--body-bg-color);
 }
 
 .about h2, .talks h2 {
