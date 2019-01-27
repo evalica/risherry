@@ -38,6 +38,8 @@ nav {
   height: 2 * $navigation-height;
   .external {
     justify-content: space-between;
+    margin-right: -12%;
+    margin-left: -12%;
   }
 }
 
