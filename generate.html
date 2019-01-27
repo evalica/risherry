@@ -128,7 +128,9 @@
       <script id="video-template" type="text/x-handlebars-template">
       <li class="xfolkentry video">
         <iframe src="https://www.youtube.com/embed/{{this.video}}" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <a class="taggedlink" href="https://www.youtube.com/watch?v={{this.video}}">{{this.name}}</a>
+        <span class="video-content">
+          <a class="taggedlink" href="https://www.youtube.com/watch?v={{this.video}}">{{this.name}}</a>
+        </span>
       </li>
       </script>
       <script id="talk-template" type="text/x-handlebars-template">

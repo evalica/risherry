@@ -28,14 +28,23 @@
     color: var(--content-secondary-text-color);
     text-transform: uppercase;
   }
+}
 
-  &.video {
-    iframe {
-      max-width: 100%;
-      width: 100%;
-      box-shadow: 1px 2px 2px rgba(0,0,0,.2);
-      border: 0;
-    }
+.video {
+  box-shadow: 0 0 35px 0 rgba(154,161,171,.15);
+  background-color: var(--body-bg-color);
+  border: 3px solid #efeff5;
+  display: flex;
+  flex-direction: column;
+
+  iframe {
+    max-width: 100%;
+    width: 100%;
+    border: 0;
+  }
+
+  .video-content {
+    padding: 1em;
   }
 }
 
