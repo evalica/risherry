@@ -11,12 +11,8 @@
     <title>{{this.head.title}}</title>
     </script>
     <link type="text/css" rel="stylesheet" title="Theme: Default" href="dist/css/themes/default/style.min.css" />
-    
     <link type="image/x-icon" rel="icon" href="dist/img/favicon.ico" />
-    <link type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
   </head>
 
   <body>
@@ -32,27 +28,25 @@
           <a href="#talks" title="Talks">Talks</a>
         </li>
       </ul>
-      
-    <script id="external-template" type="text/x-handlebars-template">
+      <script id="external-template" type="text/x-handlebars-template">
       <ul class="external">
         {{#each about.external}}
         <li>
           <a class="{{{idFallback this 'class'}}}" href="{{this.link}}" title="{{this.name}}">
-            <span class="fa fa-{{{idFallback this 'icon'}}}"><span class="sr-only">{{this.name}}</span></span>
+            <span class="svg svg-{{{idFallback this 'class'}}}"><span class="sr-only">{{this.name}}</span></span>
           </a>
         </li>
         {{/each}}
       </ul>
-    </script>
+      </script>
     </nav>
 
-    <section class="category about" id="about">
-
+    <section class="about" id="about">
       <script id="heading-template" type="text/x-handlebars-template">
       <h1 id="top" class="d-none">{{this.head.heading}}</h1>
       </script>
       <h2>About</h2>
-
+      <div class="main">
       <script id="about-template" type="text/x-handlebars-template">
       <div class="aside">
         <dl class="vcard">
@@ -65,7 +59,6 @@
               </span>
             </a>
             <div class="url d-none">{{this.about.website}}</div>
-            <div class="email d-none">{{this.about.email}}</div>
           </dd>
           <dt>Organization</dt>
           <dd class="org">
@@ -84,15 +77,16 @@
           </dd>
         </dl>
       </div>
-      <div class="details">
+      <div class="summary">
         {{#each about.quotes}}
         <p>{{{this}}}</p>
         {{/each}}
       </div>
       </script>
+      </div>
     </section>
 
-    <section class="category work" id="work">
+    <section class="work" id="work">
       <h2>Work</h2>
       <script id="portfolio-template" type="text/x-handlebars-template">
       <ul class="portfolio">
@@ -129,50 +123,76 @@
       </script>
     </section>
 
-    <section class="category talks" id="talks">
+    <section class="talks" id="talks">
       <h2>Talks</h2>
+      <script id="video-template" type="text/x-handlebars-template">
+      <li class="xfolkentry video">
+        <iframe src="https://www.youtube.com/embed/{{this.video}}" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <span class="video-content">
+          <a class="taggedlink" href="https://www.youtube.com/watch?v={{this.video}}">{{this.name}}</a>
+          {{#each this.event}}
+            {{#if this.recorded}}
+            <span class="video-details">
+              <span class="dtstart">{{this.date}}</span>,
+              <a class="location" href="{{this.link}}" title="{{this.title}}">{{this.name}}</a>, {{this.location}}
+            </span>
+            {{/if}}
+          {{/each}}
+        </span>
+      </li>
+      </script>
       <script id="talk-template" type="text/x-handlebars-template">
-        <li class="xfolkentry">
-          <a class="taggedlink" href="{{this.link}}">&#8220;{{this.name}}&#8221;</a> &mdash;
-          <a class="location" href="{{this.event.link}}" title="{{#if this.event.title}}{{this.event.title}}{{else}}{{this.event.name}}{{/if}}">{{this.event.name}}</a>, {{this.event.location}},
-          <span class="dtstart">{{this.event.date}}</span>
-        </li>
+      <li class="xfolkentry">
+        <a class="taggedlink" href="{{this.link}}">{{this.name}}</a>
+        <ul>
+        {{#each this.event}}
+          <li class="event">
+            <span class="dtstart">{{this.date}}</span>,
+            <a class="location" href="{{this.link}}" title="{{#if this.title}}{{this.title}}{{else}}{{this.name}}{{/if}}">{{this.name}}</a>, {{this.location}}
+          </li>
+        {{/each}}
+        </ul>
+      </li>
       </script>
       <script id="talks-template" type="text/x-handlebars-template">
+        <ul class="promoted">
+        {{#each talks.data}}
+          {{#if this.promoted}}
+            {{> videoTemplate}}
+          {{/if}}
+        {{/each}}
+        </ul>
         <ul>
-          {{#each talks.data}}
-            {{#ifCond @index "< " ../talks.perPage}}
-              {{> talkTemplate}}
-            {{/ifCond}}
-          {{/each}}
+        {{#each talks.data}}
+          {{#ifCond @index "< " ../talks.perPage}}
+            {{> talkTemplate}}
+          {{/ifCond}}
+        {{/each}}
         </ul>
-        <ul class="collapse " id="moreTalks ">
-          {{#each talks.data}}
-            {{#ifCond @index ">=" ../talks.perPage}} {{> talkTemplate}} {{/ifCond}} 
-          {{/each}}
+        <input id="toggle" type="checkbox"/>
+        <label for="toggle" class="more"></label>
+        <ul class="collapse" id="moreTalks">
+        {{#each talks.data}}
+          {{#ifCond @index ">=" ../talks.perPage}}
+            {{> talkTemplate}}
+          {{/ifCond}} 
+        {{/each}}
         </ul>
-        <a class="more" href="#moreTalks" data-toggle="collapse" aria-expanded="false" title="More"></a>
       </script>
     </section>
 
     <footer>
     <script id="license-template" type="text/x-handlebars-template">
-    <span class="dtstart">{{this.license.date}}</span> <span class="fa fa-cc"><span class="sr-only">CC</span></span> <a rel="license" href="{{this.license.link}}" title="{{this.license.title}}">{{this.license.name}}</a> {{{this.license.contact}}}
+    <span class="dtstart">{{this.license.date}}</span> <span class="svg svg-cc"><span class="sr-only">CC</span></span> <a rel="license" href="{{this.license.link}}" title="{{this.license.title}}">{{this.license.name}}</a> {{{this.license.contact}}}
     </script>
     </footer>
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="dist/js/risherry.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js" crossorigin="anonymous"></script>
+    <script src="dist/js/risherry.min.js"></script>
     <script id="analytics-template" type="text/x-handlebars-template">
     <script>
-      {
-        {
-          {
-            this.analyticsTracker
-          }
-        }
-      }
+      {{{this.analyticsTracker}}}
     </script>
     </script>
   </body>

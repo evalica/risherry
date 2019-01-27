@@ -33,15 +33,8 @@
       var contentData = config.data.user;
       renderTemplate(contentData, '#external-template');
       renderTemplate(contentData, '#about-template');
-      renderTemplate(contentData, '#work-template');
       renderTemplate(contentData, '#talks-template');
       renderTemplate(contentData, '#license-template');
-    })();
-
-    (function() {
-      var themesData = config.data.themes;
-      renderTemplate(themesData, '#stylesheet-template');
-      renderTemplate(themesData, '#themes-template');
     })();
 
     Handlebars.registerHelper('idFallback', function(object, property) {
@@ -83,6 +76,7 @@
     });
 
     Handlebars.registerPartial('talkTemplate', $('#talk-template').html());
+    Handlebars.registerPartial('videoTemplate', $('#video-template').html());
 
     function renderTemplateFromData(data, templateId) {
       var templateString = $(templateId).html(),
