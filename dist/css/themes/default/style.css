@@ -14,6 +14,9 @@
   --navigation-bg-color: #1b1733;
   --navigation-bg-hover-color: #a338b5;
   --navigation-text-color: #fff;
+  --portfolio-bg-color: #29253f;
+  --portfolio-secondary-text-color: #aeabc3;
+  --footer-text-color: var(--portfolio-secondary-text-color);
 }
 
 section h2 {
@@ -568,10 +571,16 @@ section::after {
   margin-top: 1em;
   /* Hover behavior */
 }
+.portfolio .portfolio-content {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 0.6em;
+  background: var(--portfolio-bg-color);
+  display: flex;
+  flex-direction: column;
+}
 .portfolio .portfolio-cover {
-  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+  margin: 0;
   float: left;
-  margin: 10px 1%;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -588,6 +597,7 @@ section::after {
 .portfolio .portfolio-image {
   border: 0;
   border-radius: 0;
+  border-top-left-radius: 0.5em;
   display: block;
   max-width: 100%;
   opacity: 1;
@@ -597,12 +607,18 @@ section::after {
   transition: opacity 0.35s, transform 0.35s;
   width: 100%;
 }
+.portfolio .portfolio-title,
+.portfolio .portfolio-fields {
+  padding: 1rem;
+}
 .portfolio .portfolio-title {
-  margin: .8em 0 .5em;
+  padding-bottom: .5rem;
 }
 .portfolio .portfolio-fields {
+  border-bottom: 3px solid var(--navigation-bg-color);
+  padding-top: 0;
   font-size: .8em;
-  color: var(--content-secondary-text-color);
+  color: var(--portfolio-secondary-text-color);
 }
 .portfolio .portfolio-fields .field-list {
   padding: 0;
@@ -703,6 +719,8 @@ h2 {
 .xfolkentry.video iframe {
   max-width: 100%;
   width: 100%;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+  border: 0;
 }
 
 .more {

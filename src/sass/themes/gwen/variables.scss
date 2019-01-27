@@ -23,6 +23,10 @@ $theme-path: 'themes/gwen/';
   --navigation-bg-hover-color:    #a338b5;
   --navigation-text-color:        #{$white};
 
+  --portfolio-bg-color:           #29253f;
+  --portfolio-secondary-text-color: #aeabc3;
+
+  --footer-text-color:            var(--portfolio-secondary-text-color);
 }
 
 section h2 {
