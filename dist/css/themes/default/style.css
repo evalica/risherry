@@ -800,6 +800,9 @@ h2 {
   font-size: .85em;
   margin-top: auto;
 }
+.video:hover .taggedlink {
+  color: var(--link-text-hover-color);
+}
 
 .more {
   float: right;

@@ -75,6 +75,12 @@
     font-size: .85em;
     margin-top: auto;
   }
+
+  &:hover {
+    .taggedlink {
+      color: var(--link-text-hover-color);
+    }
+  }
 }
 
 .more {
