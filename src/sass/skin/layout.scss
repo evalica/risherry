@@ -42,13 +42,15 @@ h2,
 
   .about {
     .aside {
-      grid-column-start: 1;
-      grid-column-end: floor($grid-columns / 3);
+      grid-row-start: 1;
+      grid-column-start: 7;
+      grid-column-end: -1;
     }
 
     .summary {
-      grid-column-start: floor($grid-columns / 3);
-      grid-column-end: -1;
+      grid-row-start: 1;
+      grid-column-start: 1;
+      grid-column-end: 7;
     }
   }
 
@@ -62,11 +64,35 @@ h2,
   .portfolio-item, .promoted .video {
     grid-column: span floor($grid-columns / 3);
   }
+
+  .about {
+    .aside {
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+
+    .summary {
+      grid-column-start: 5;
+      grid-column-end: -1;
+    }
+  }
 }
 
 /* Desktop */ 
 @media (min-width: $screen-lg) {
   .portfolio-item, .promoted .video {
     grid-column: span floor($grid-columns / 4);
+  }
+
+  .about {
+    .aside {
+      grid-column-start: 1;
+      grid-column-end: floor($grid-columns / 3);
+    }
+
+    .summary {
+      grid-column-start: floor($grid-columns / 3);
+      grid-column-end: -1;
+    }
   }
 }
