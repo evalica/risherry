@@ -11,7 +11,7 @@ $theme-path: 'themes/gwen/';
 // --------------------------------------------------
 
 :root {
-  --body-bg-color:                #efeff5;
+  --body-bg-color:                #{$white};
   --accent-bg-color:              #1b1733;
 
   --content-text-color:           #080740;
