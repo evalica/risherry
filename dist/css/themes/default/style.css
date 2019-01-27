@@ -5,7 +5,7 @@
 }
 
 :root {
-  --body-bg-color: #fff;
+  --body-bg-color: #efeff5;
   --accent-bg-color: #1b1733;
   --content-text-color: #080740;
   --content-secondary-text-color: #747c83;
@@ -16,6 +16,8 @@
   --navigation-text-color: #fff;
   --portfolio-bg-color: #29253f;
   --portfolio-secondary-text-color: #aeabc3;
+  --video-bg-color: #fff;
+  --video-border-color: #efeff5;
   --footer-text-color: var(--portfolio-secondary-text-color);
 }
 
@@ -762,8 +764,8 @@ h2 {
 
 .video {
   box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.15);
-  background-color: var(--body-bg-color);
-  border: 3px solid #efeff5;
+  background-color: var(--video-bg-color);
+  border: 3px solid var(--video-border-color);
   border-width: 0 1px 3px;
   display: flex;
   flex-direction: column;
@@ -774,15 +776,23 @@ h2 {
   border: 0;
 }
 .video .video-content {
-  padding: 1em;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .video .taggedlink {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  padding-bottom: .5rem;
+}
+.video .taggedlink::after, .video .taggedlink::before {
+  content: '';
 }
 .video .video-details {
   font-size: .85em;
+  margin-top: auto;
 }
 
 .more {

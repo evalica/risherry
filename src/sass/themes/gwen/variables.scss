@@ -11,7 +11,7 @@ $theme-path: 'themes/gwen/';
 // --------------------------------------------------
 
 :root {
-  --body-bg-color:                #{$white};
+  --body-bg-color:                #efeff5;
   --accent-bg-color:              #1b1733;
 
   --content-text-color:           #080740;
@@ -25,6 +25,9 @@ $theme-path: 'themes/gwen/';
 
   --portfolio-bg-color:           #29253f;
   --portfolio-secondary-text-color: #aeabc3;
+
+  --video-bg-color:               #{$white};
+  --video-border-color:           #efeff5;
 
   --footer-text-color:            var(--portfolio-secondary-text-color);
 }
