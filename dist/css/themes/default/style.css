@@ -15,7 +15,7 @@
   --navigation-bg-hover-color: var(--link-text-color);
   --navigation-text-color: var(--body-bg-color);
   --portfolio-bg-color: #29253f;
-  --portfolio-secondary-text-color: #aeabc3;
+  --portfolio-secondary-text-color: var(--body-bg-color);
   --video-bg-color: var(--body-bg-color);
   --video-border-color: #efeff5;
   --footer-text-color: var(--portfolio-secondary-text-color);
@@ -720,7 +720,9 @@ section::after {
 .summary p:first-of-type {
   font-size: 1.4em;
   line-height: 1.6em;
-  margin-bottom: 1.5rem;
+}
+.summary p {
+  margin-bottom: 1rem;
 }
 
 /* Headers displayed using background-clip + fallback */
