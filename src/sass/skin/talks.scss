@@ -25,8 +25,17 @@
 
   .location, 
   .dtstart {
-    color: var(--content-secondary-text-color);
     text-transform: uppercase;
+  }
+
+  .event, 
+  .dtstart, 
+  .video-details {
+    color: var(--content-secondary-text-color);
+  }
+
+  .location {
+    color: var(--content-text-color); 
   }
 }
 

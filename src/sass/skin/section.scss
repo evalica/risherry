@@ -4,13 +4,7 @@ section {
     padding: 0;
     margin: 0;
     li {
-      .dtstart {
-        color: var(--content-secondary-text-color);
-        font-style: italic;
-        font-weight: 400;
-      }
       .location {
-        color: var(--content-text-color);
         &:hover {
           text-decoration: underline;
         }

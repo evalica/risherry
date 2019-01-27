@@ -133,8 +133,8 @@
           {{#each this.event}}
             {{#if this.recorded}}
             <span class="video-details">
-              <a class="location" href="{{this.link}}" title="{{this.title}}">{{this.name}}</a>, {{this.location}},
-              <span class="dtstart">{{this.date}}</span>
+              <span class="dtstart">{{this.date}}</span>,
+              <a class="location" href="{{this.link}}" title="{{this.title}}">{{this.name}}</a>, {{this.location}}
             </span>
             {{/if}}
           {{/each}}
@@ -147,8 +147,8 @@
         <ul>
         {{#each this.event}}
           <li class="event">
-            <a class="location" href="{{this.link}}" title="{{#if this.title}}{{this.title}}{{else}}{{this.name}}{{/if}}">{{this.name}}</a>, {{this.location}},
-            <span class="dtstart">{{this.date}}</span>
+            <span class="dtstart">{{this.date}}</span>,
+            <a class="location" href="{{this.link}}" title="{{#if this.title}}{{this.title}}{{else}}{{this.name}}{{/if}}">{{this.name}}</a>, {{this.location}}
           </li>
         {{/each}}
         </ul>

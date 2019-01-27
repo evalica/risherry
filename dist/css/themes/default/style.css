@@ -594,14 +594,6 @@ section ul {
   padding: 0;
   margin: 0;
 }
-section ul li .dtstart {
-  color: var(--content-secondary-text-color);
-  font-style: italic;
-  font-weight: 400;
-}
-section ul li .location {
-  color: var(--content-text-color);
-}
 section ul li .location:hover {
   text-decoration: underline;
 }
@@ -758,8 +750,15 @@ h2 {
 }
 .xfolkentry .location,
 .xfolkentry .dtstart {
-  color: var(--content-secondary-text-color);
   text-transform: uppercase;
+}
+.xfolkentry .event,
+.xfolkentry .dtstart,
+.xfolkentry .video-details {
+  color: var(--content-secondary-text-color);
+}
+.xfolkentry .location {
+  color: var(--content-text-color);
 }
 
 .video {
