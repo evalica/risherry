@@ -735,6 +735,10 @@ h2 {
   background-color: var(--accent-bg-color);
 }
 
+.talks {
+  position: relative;
+}
+
 .promoted {
   margin-bottom: 1rem;
 }
@@ -809,12 +813,15 @@ h2 {
 }
 
 .more {
-  float: right;
   font-size: .8em;
   letter-spacing: 1px;
-  margin-top: -3em;
   text-transform: uppercase;
+  position: absolute;
+  bottom: 3em;
   cursor: pointer;
+}
+.more:hover {
+  color: var(--link-text-hover-color);
 }
 .more:after {
   content: 'More \25BC';

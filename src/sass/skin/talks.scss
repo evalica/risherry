@@ -1,3 +1,7 @@
+.talks {
+  position: relative;
+}
+
 .promoted {
   margin-bottom: 1rem;
 }
@@ -88,12 +92,15 @@
 }
 
 .more {
-  float: right;
   font-size: .8em;
   letter-spacing: 1px;
-  margin-top: -3em;
   text-transform: uppercase;
+  position: absolute;
+  bottom: 3em;
   cursor: pointer;
+  &:hover {
+    color: var(--link-text-hover-color);
+  }
   &:after {
     content: 'More \25BC';
   }
