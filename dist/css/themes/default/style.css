@@ -399,6 +399,7 @@ footer {
   overflow: hidden;
 }
 
+/* Mobile */
 .about .main,
 .work .portfolio,
 .talks .promoted {
@@ -407,7 +408,6 @@ footer {
   grid-gap: 30px;
 }
 
-/* Mobile */
 section,
 footer,
 h2,
@@ -417,8 +417,30 @@ h2,
   grid-column: 1 / 11;
 }
 
+nav {
+  height: 4rem;
+  flex-direction: column-reverse;
+  height: 8rem;
+}
+nav .external {
+  justify-content: space-between;
+}
+
+section {
+  padding-top: 7rem;
+}
+
 /* Tablet */
 @media (min-width: 768px) {
+  nav {
+    height: 4rem;
+    flex-direction: row;
+  }
+
+  section {
+    padding-top: 4rem;
+  }
+
   nav,
   section,
   footer {
@@ -471,7 +493,6 @@ h2,
   }
 }
 nav {
-  height: 4rem;
   display: flex;
   background-color: var(--navigation-bg-color);
   top: 0;
@@ -487,6 +508,7 @@ nav ul {
   list-style: none;
   padding-left: 0;
   height: 100%;
+  margin: 0;
 }
 nav a {
   display: flex;
@@ -516,6 +538,7 @@ nav .menu {
 }
 nav .external {
   flex-direction: row-reverse;
+  border-bottom: 1px solid var(--portfolio-bg-color);
 }
 nav .external a {
   font-size: 1.5em;
@@ -561,9 +584,6 @@ nav .instagram:hover, nav .instagram:focus {
   --navigation-bg-hover-color: #E1306C;
 }
 
-section {
-  padding-top: 4rem;
-}
 section ul {
   list-style-type: none;
   padding: 0;

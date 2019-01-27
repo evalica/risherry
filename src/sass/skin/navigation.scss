@@ -1,5 +1,4 @@
 nav {
-  height: $navigation-height;
   display: flex;
   background-color: var(--navigation-bg-color);
   top: 0;
@@ -14,6 +13,7 @@ nav {
     list-style: none;
     padding-left: 0;
     height: 100%;
+    margin: 0;
   }
   a {
     display: flex;
@@ -44,7 +44,8 @@ nav {
     margin-left: -1em;
   }
   .external {
-    flex-direction: row-reverse;  
+    flex-direction: row-reverse;
+    border-bottom: 1px solid var(--portfolio-bg-color);
     a {
       font-size: 1.5em;
       .svg {

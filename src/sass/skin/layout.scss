@@ -14,6 +14,7 @@ footer {
   overflow: hidden;
 }
 
+/* Mobile */
 .about .main, 
 .work .portfolio, 
 .talks .promoted {
@@ -22,7 +23,6 @@ footer {
   grid-gap: $grid-gutter-width;
 }
 
-/* Mobile */
 section,
 footer, 
 h2, 
@@ -32,8 +32,30 @@ h2,
   grid-column: 1 / 11;
 }
 
+nav {
+  height: $navigation-height;
+  flex-direction: column-reverse;
+  height: 2 * $navigation-height;
+  .external {
+    justify-content: space-between;
+  }
+}
+
+section {
+  padding-top: $navigation-height + (floor($navigation-height / 2) + 1);
+}
+
 /* Tablet */
 @media (min-width: $screen-sm) {
+  nav {
+    height: $navigation-height;
+    flex-direction: row;
+  }
+
+  section {
+    padding-top: $navigation-height;
+  }
+
   nav,
   section,
   footer {
