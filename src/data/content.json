@@ -51,6 +51,19 @@
     "perPage": "5",
     "data": [
       {
+        "name": "Panel: Difficulties in having more designers participate in Open Source",
+        "link": "https://www.slideshare.net/valicac/difficulties-in-having-more-designers-participate-in-open-source",
+        "event": [
+          {
+            "name": "FOSDEM",
+            "title": "Open Source Developers’ European Meeting 2019",
+            "link": "https://fosdem.org/2019/schedule/event/panel_more_designers/",
+            "location": "Brussels",
+            "date": "Feb 2019"
+          }
+        ]
+      },
+      {
         "name": "CSS Variables — Native reusable custom properties",
         "link": "https://www.slideshare.net/valicac/css-variables-native-reusable-custom-properties-96549426/",
         "event": [
@@ -131,7 +144,7 @@
       },
       {
         "promoted": true,
-        "name": "Design feedback in Open Source",
+        "name": "Panel: Design feedback in Open Source",
         "link": "https://www.slideshare.net/valicac/design-feedback-in-open-source",
         "video": "byoYAYBUqAs",
         "event": [
