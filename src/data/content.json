@@ -64,6 +64,19 @@
         ]
       },
       {
+        "name": "XWiki Skin 10.x+ Ideas",
+        "link": "https://www.slideshare.net/valicac/xwiki-skin-10x-ideas/",
+        "event": [
+          {
+            "name": "XWiki Seminar",
+            "title": "XWiki",
+            "link": "http://www.xwiki.org/",
+            "location": "Braşov",
+            "date": "Jul 2018"
+          }
+        ]
+      },
+      {
         "name": "CSS Variables — Native reusable custom properties",
         "link": "https://www.slideshare.net/valicac/css-variables-native-reusable-custom-properties-96549426/",
         "event": [
