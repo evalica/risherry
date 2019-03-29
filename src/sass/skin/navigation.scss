@@ -127,3 +127,10 @@ nav {
     }
   }
 }
+
+/* Tablet */ 
+@media (min-width: $screen-md) {
+  nav .external {
+    border-bottom: 0;
+  }
+}
