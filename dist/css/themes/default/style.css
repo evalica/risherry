@@ -588,6 +588,12 @@ nav .instagram:hover, nav .instagram:focus {
   --navigation-bg-hover-color: #E1306C;
 }
 
+/* Tablet */
+@media (min-width: 992px) {
+  nav .external {
+    border-bottom: 0;
+  }
+}
 section ul {
   list-style-type: none;
   padding: 0;
