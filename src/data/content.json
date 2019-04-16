@@ -50,6 +50,26 @@
   "talks": {
     "perPage": "5",
     "data": [
+        {
+        "name": "Designing in the open",
+        "link": "https://www.slideshare.net/valicac/designing-in-the-open-139863412",
+        "event": [
+          {
+            "name": "Tech Women Summit",
+            "title": "Tech Women Summit Moldova 2019",
+            "link": "https://www.tekwill.md/news/meet-tech-women-summit-speaker-ecaterina-moraru",
+            "location": "Chişinãu",
+            "date": "Apr 2019"
+          },
+          {
+            "name": "Codecamp Romania",
+            "title": "Codecamp Romania 2019",
+            "link": "https://codecamp.ro/",
+            "location": "Iaşi",
+            "date": "Apr 2019"
+          }
+        ]
+      },
       {
         "promoted": true,
         "name": "Panel: Difficulties in having more designers participate in Open Source",
