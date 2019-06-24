@@ -102,6 +102,7 @@
       {
         "name": "CSS Variables — Native reusable custom properties",
         "link": "https://www.slideshare.net/valicac/css-variables-native-reusable-custom-properties-96549426/",
+        "video": "snReZ9lLEms",
         "event": [
           {
             "name": "ISCSS",
@@ -197,7 +198,7 @@
       {
         "name": "Success Stories from the OSD community",
         "link": "https://www.slideshare.net/valicac/success-stats-from-osd-community",
-        "video": "https://www.youtube.com/watch?v=-riFE76nI84",
+        "video": "-riFE76nI84",
         "event": [
           {
             "name": "FOSDEM",
