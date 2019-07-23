@@ -184,6 +184,7 @@
         ]
       },
       {
+        "promoted": true,
         "name": "Our Open Source Design collective in 2018",
         "link": "https://www.youtube.com/watch?v=nVTY4kBkwjU",
         "video": "nVTY4kBkwjU",
@@ -243,6 +244,7 @@
         ]
       },
       {
+        "promoted": true,
         "name": "Success Stories from the OSD community",
         "link": "https://www.slideshare.net/valicac/success-stats-from-osd-community",
         "video": "-riFE76nI84",
