@@ -80,10 +80,27 @@
         ]
       },
       {
-        "name": "Designing in the open",
+        "name": "Panel: Women in IT — the difference we can make (-26:02 min)",
+        "link": "https://www.privesc.eu/Arhiva/86037/Evenimentul--Tech-Women-Summit-",
+        "event": [
+          {
+            "recorded": true,
+            "video": "https://www.privesc.eu/Arhiva/86037/Evenimentul--Tech-Women-Summit-",
+            "name": "Tech Women Summit",
+            "title": "Tech Women Summit Moldova 2019",
+            "link": "https://www.tekwill.md/news/meet-tech-women-summit-speaker-ecaterina-moraru",
+            "location": "Chişinãu",
+            "date": "Apr 2019"
+          }
+        ]
+      },
+      {
+        "name": "Designing in the open (-46:04 min)",
         "link": "https://www.slideshare.net/valicac/designing-in-the-open-139863412",
         "event": [
           {
+            "recorded": true,
+            "video": "https://www.privesc.eu/Arhiva/86039/Evenimentul--Tech-Women-Summit---Sesiunea--Software-Development",
             "name": "Tech Women Summit",
             "title": "Tech Women Summit Moldova 2019",
             "link": "https://www.tekwill.md/news/meet-tech-women-summit-speaker-ecaterina-moraru",
