@@ -50,7 +50,36 @@
   "talks": {
     "perPage": "5",
     "data": [
-        {
+      {
+        "name": "Sketch Session",
+        "link": "https://www.slideshare.net/valicac/sketching-session",
+        "event": [
+          {
+            "name": "XWiki Seminar",
+            "title": "XWiki",
+            "link": "http://www.xwiki.org/",
+            "location": "Roiffé",
+            "date": "Jul 2019"
+          }
+        ]
+      },
+      {
+        "promoted": true,
+        "name": "CSS Grid vs. Flexbox",
+        "link": "https://www.slideshare.net/valicac/css-grid-vs-flexbox",
+        "video": "9g8WqKp4BGI",
+        "event": [
+          {
+            "recorded": true,
+            "name": "ISCSS",
+            "title": "Iaşi CSS Group",
+            "link": "https://www.meetup.com/IS-CSS/events/262580285/",
+            "location": "Iaşi",
+            "date": "Jul 2019"
+          }
+        ]
+      },
+      {
         "name": "Designing in the open",
         "link": "https://www.slideshare.net/valicac/designing-in-the-open-139863412",
         "event": [
