@@ -151,6 +151,7 @@
         "video": "snReZ9lLEms",
         "event": [
           {
+            "recorded": true,
             "name": "ISCSS",
             "title": "Iaşi CSS Group",
             "link": "https://www.meetup.com/IS-CSS/events/250102141/",
