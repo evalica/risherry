@@ -149,6 +149,9 @@
           <li class="event">
             <span class="dtstart">{{this.date}}</span>,
             <a class="location" href="{{this.link}}" title="{{#if this.title}}{{this.title}}{{else}}{{this.name}}{{/if}}">{{this.name}}</a>, {{this.location}}
+            {{#if this.recorded}}
+              <a class="location" href="https://www.youtube.com/watch?v={{this.video}}"> (Video)</a>
+            {{/if}}
           </li>
         {{/each}}
         </ul>
