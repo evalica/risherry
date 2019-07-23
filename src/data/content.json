@@ -190,6 +190,7 @@
         "video": "nVTY4kBkwjU",
         "event": [
           {
+            "recorded": true,
             "name": "FOSDEM",
             "title": "Open Source Developers’ European Meeting 2018",
             "link": "https://fosdem.org/2018/schedule/event/osd_our_open_source_design_collective/",
@@ -250,6 +251,7 @@
         "video": "-riFE76nI84",
         "event": [
           {
+            "recorded": true,
             "name": "FOSDEM",
             "title": "Open Source Developers’ European Meeting 2017",
             "link": "https://fosdem.org/2017/schedule/event/osd_success_stories/",
