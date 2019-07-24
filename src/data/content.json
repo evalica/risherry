@@ -19,7 +19,7 @@
       "position": "Interaction Designer"
     }, 
     "quotes": [
-      "I'm an Interaction Designer, <a href='https://design.xwiki.org' title='XWiki.org Design'>designing</a> and <a href='https://github.com/evalica/' title='GitHub Profile'>developing</a> for Open Source communities, see <a href='https://www.xwiki.org' title='XWiki.org'>XWiki.org</a> and <a href='https://opensourcedesign.net/' title='Open Source Design'>Open Source Design</a>.",
+      "I'm an Interaction Designer, <a href='https://design.xwiki.org' title='XWiki.org Design'>designing</a> and <a href='https://github.com/evalica/' title='GitHub Profile'>developing</a> for Open Source communities, like <a href='https://www.xwiki.org' title='XWiki.org'>XWiki.org</a> and <a href='https://opensourcedesign.net/' title='Open Source Design'>Open Source Design</a>.",
       "Specialized in Prototyping and Usability.",
       "Passionate about User Experience, Human-Computer Interaction, Standards Compliance, Web Technologies and Software Engineering."
     ],
@@ -110,7 +110,7 @@
           {
             "name": "Codecamp Romania",
             "title": "Codecamp Romania 2019",
-            "link": "https://codecamp.ro/",
+            "link": "https://codecamp.ro/iasiSpring",
             "location": "Iaşi",
             "date": "Apr 2019"
           }
