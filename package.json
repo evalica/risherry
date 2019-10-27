@@ -21,7 +21,9 @@
     "grunt-contrib-watch": "latest",
     "hoek": "latest",
     "cryptiles": ">=4.1.2",
-    "debug": ">=2.6.9"
+    "debug": ">=2.6.9",
+    "lodash": ">=4.17.13",
+    "lodash.mergewith": ">=4.6.2"
   },
   "scripts": {
     "test": "grunt swatch"
@@ -29,8 +31,7 @@
   "dependencies": {
     "node-sass": "^4.11.0",
     "npm": "^6.12.0",
-    "request": "<=2.81.0",
-    "lodash.mergewith": ">=4.6.2"
+    "request": "<=2.81.0"
   },
   "bugs": {
     "url": "https://github.com/evalica/risherry/issues"
