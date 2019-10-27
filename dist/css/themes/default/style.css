@@ -617,13 +617,13 @@ section::after {
 }
 .portfolio .portfolio-content {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  border-top-left-radius: 0.6em;
+  border-radius: .6em;
   background: var(--portfolio-bg-color);
   display: flex;
   flex-direction: column;
 }
 .portfolio .portfolio-cover {
-  border-top-left-radius: .5em;
+  border-top-left-radius: 0.5em;
   margin: 0;
   float: left;
   overflow: hidden;
@@ -645,6 +645,7 @@ section::after {
   border: 0;
   border-radius: 0;
   border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
   display: block;
   opacity: 1;
   padding: 0;
@@ -662,6 +663,9 @@ section::after {
 }
 .portfolio .portfolio-fields {
   border-bottom: 3px solid var(--navigation-bg-color);
+  border-radius: 0;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
   padding-top: 0;
   font-size: .8em;
   color: var(--portfolio-secondary-text-color);
@@ -784,6 +788,7 @@ h2 {
 }
 
 .video {
+  border-radius: 0.5em;
   box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.15);
   background-color: var(--video-bg-color);
   border: 3px solid var(--video-border-color);

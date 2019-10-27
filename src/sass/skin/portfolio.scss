@@ -3,14 +3,14 @@
 
   .portfolio-content {
     box-shadow: 2px 2px 2px rgba(0,0,0,.2);
-    border-top-left-radius: 0.6em;
+    border-radius: .6em;
     background: var(--portfolio-bg-color);
     display: flex;
     flex-direction: column;
   }
 
   .portfolio-cover {
-    border-top-left-radius: .5em;
+    border-top-left-radius: $border-radius;
     margin: 0;
     float: left;
     overflow: hidden;
@@ -32,7 +32,8 @@
   .portfolio-image {
     border: 0;
     border-radius: 0;
-    border-top-left-radius: 0.5em;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
     display: block;
     opacity: 1;
     padding: 0;
@@ -53,6 +54,9 @@
 
   .portfolio-fields {
     border-bottom: 3px solid var(--navigation-bg-color);
+    border-radius: 0;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
     padding-top: 0;
     font-size: .8em;
     color: var(--portfolio-secondary-text-color);

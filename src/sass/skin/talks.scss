@@ -48,6 +48,7 @@
 }
 
 .video {
+  border-radius: $border-radius;
   box-shadow: 0 0 35px 0 rgba(154,161,171,.15);
   background-color: var(--video-bg-color);
   border: 3px solid var(--video-border-color);
