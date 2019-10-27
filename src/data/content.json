@@ -51,6 +51,19 @@
     "perPage": "5",
     "data": [
       {
+        "name": "UI/UX Tips & Tricks for developers",
+        "link": "https://www.slideshare.net/valicac/uiux-tips-tricks-for-developers",
+        "event": [
+          {
+            "name": "ApacheCon Europe",
+            "title": "ApacheCon Europe 2019",
+            "link": "https://aceu19.apachecon.com/session/uiux-tips-tricks-developers",
+            "location": "Berlin",
+            "date": "Oct 2019"
+          }
+        ]
+      },
+      {
         "name": "Sketch Session",
         "link": "https://www.slideshare.net/valicac/sketching-session",
         "event": [
