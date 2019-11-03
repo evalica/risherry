@@ -168,14 +168,14 @@
           {{> videoTemplate}}
         {{/if}}
       {{/each}}
-</ul>
+        </ul>
         <ul>
       {{#each talks.data}}
         {{#ifCond @index "< " ../talks.perPage}}
           {{> talkTemplate}}
         {{/ifCond}}
       {{/each}}
-</ul>
+        </ul>
         <input id="toggle" type="checkbox"/>
         <label for="toggle" class="more"></label>
         <ul class="collapse" id="moreTalks">
@@ -184,7 +184,7 @@
           {{> talkTemplate}}
         {{/ifCond}} 
       {{/each}}
-</ul>
+      </ul>
       </script>
     </section>
 
