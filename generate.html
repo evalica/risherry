@@ -142,24 +142,24 @@
 </li>
       </script>
       <script id="talk-template" type="text/x-handlebars-template">
-      <li class="xfolkentry">
-        <a class="taggedlink" href="{{this.link}}">{{this.name}}</a>
-        <ul>
-        {{#each this.event}}
-          <li class="event">
-            <span class="dtstart">{{this.date}}</span>,
-            <a class="location" href="{{this.link}}" title="{{#if this.title}}{{this.title}}{{else}}{{this.name}}{{/if}}">{{this.name}}</a>, {{this.location}}
-            {{#if this.recorded}}
-              {{#if this.video}}
-                <a class="location" href="{{this.video}}"> (Video)</a>
-              {{else}}
-                <a class="location" href="https://www.youtube.com/watch?v={{../video}}"> (Video)</a>
-              {{/if}}
-            {{/if}}
-          </li>
-        {{/each}}
-        </ul>
-      </li>
+<li class="xfolkentry">
+  <a class="taggedlink" href="{{this.link}}">{{this.name}}</a>
+  <ul>
+  {{#each this.event}}
+    <li class="event">
+      <span class="dtstart">{{this.date}}</span>,
+      <a class="location" href="{{this.link}}" title="{{#if this.title}}{{this.title}}{{else}}{{this.name}}{{/if}}">{{this.name}}</a>, {{this.location}}
+      {{#if this.recorded}}
+        {{#if this.video}}
+          <a class="location" href="{{this.video}}"> (Video)</a>
+        {{else}}
+          <a class="location" href="https://www.youtube.com/watch?v={{../video}}"> (Video)</a>
+        {{/if}}
+      {{/if}}
+    </li>
+  {{/each}}
+  </ul>
+</li>
       </script>
       <script id="talks-template" type="text/x-handlebars-template">
       <ul class="promoted">
@@ -168,14 +168,14 @@
           {{> videoTemplate}}
         {{/if}}
       {{/each}}
-      </ul>
+</ul>
       <ul>
       {{#each talks.data}}
         {{#ifCond @index "< " ../talks.perPage}}
           {{> talkTemplate}}
         {{/ifCond}}
       {{/each}}
-      </ul>
+</ul>
       <input id="toggle" type="checkbox"/>
       <label for="toggle" class="more"></label>
       <ul class="collapse" id="moreTalks">
