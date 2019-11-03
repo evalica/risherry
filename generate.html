@@ -126,20 +126,20 @@
     <section class="talks" id="talks">
       <h2>Talks</h2>
       <script id="video-template" type="text/x-handlebars-template">
-      <li class="xfolkentry video">
-        <iframe src="https://www.youtube.com/embed/{{this.video}}" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <span class="video-content">
-          <a class="taggedlink" href="https://www.youtube.com/watch?v={{this.video}}">{{this.name}}</a>
-          {{#each this.event}}
-            {{#if this.recorded}}
-            <span class="video-details">
-              <span class="dtstart">{{this.date}}</span>,
-              <a class="location" href="{{this.link}}" title="{{this.title}}">{{this.name}}</a>, {{this.location}}
-            </span>
-            {{/if}}
-          {{/each}}
-        </span>
-      </li>
+<li class="xfolkentry video">
+  <iframe src="https://www.youtube.com/embed/{{this.video}}" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <span class="video-content">
+    <a class="taggedlink" href="https://www.youtube.com/watch?v={{this.video}}">{{this.name}}</a>
+    {{#each this.event}}
+      {{#if this.recorded}}
+      <span class="video-details">
+        <span class="dtstart">{{this.date}}</span>,
+        <a class="location" href="{{this.link}}" title="{{this.title}}">{{this.name}}</a>, {{this.location}}
+      </span>
+      {{/if}}
+    {{/each}}
+  </span>
+</li>
       </script>
       <script id="talk-template" type="text/x-handlebars-template">
       <li class="xfolkentry">
@@ -165,7 +165,7 @@
       <ul class="promoted">
       {{#each talks.data}}
         {{#if this.promoted}}
-  {{> videoTemplate}}
+          {{> videoTemplate}}
         {{/if}}
       {{/each}}
       </ul>
@@ -190,10 +190,9 @@
 
     <footer>
     <script id="license-template" type="text/x-handlebars-template">
-    <span class="dtstart">{{this.license.date}}</span> <span class="svg svg-cc"><span class="sr-only">CC</span></span> <a rel="license" href="{{this.license.link}}" title="{{this.license.title}}">{{this.license.name}}</a> {{{this.license.contact}}}
+      <span class="dtstart">{{this.license.date}}</span> <span class="svg svg-cc"><span class="sr-only">CC</span></span> <a rel="license" href="{{this.license.link}}" title="{{this.license.title}}">{{this.license.name}}</a> {{{this.license.contact}}}
     </script>
     </footer>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js" crossorigin="anonymous"></script>
     <script src="dist/js/risherry.min.js"></script>
