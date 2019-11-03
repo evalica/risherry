@@ -47,42 +47,42 @@
       </script>
       <h2>About</h2>
       <div class="main">
-      <script id="about-template" type="text/x-handlebars-template">
-      <div class="aside">
-        <dl class="vcard">
-          <dt>Full Name</dt>
-          <dd>
-            <a title="{{this.about.name.first}} {{this.about.name.last}}" class="xfn-me secondary" rel="me" href="{{this.about.link}}">
-              <span class="fn n">
-                <span class="given-name">{{this.about.name.first}}</span>
-                <span class="family-name">{{this.about.name.last}}</span>
-              </span>
-            </a>
-            <div class="url d-none">{{this.about.website}}</div>
-          </dd>
-          <dt>Organization</dt>
-          <dd class="org">
-            {{this.about.organization.position}} at <a href="{{this.about.organization.link}} " class="secondary" title="{{this.about.organization.name}}">{{this.about.organization.name}}</a>
-          </dd>
-          <dt class="type">Current Location</dt>
-          <dd class="adr">
-            <span class="geo">
-              <a title="See location" class="microformat-geo secondary" href="https://www.google.com/maps/place/{{this.about.address.locality}},{{this.about.address.country}}/@{{this.about.address.latitude}},{{this.about.address.longitude}}">
-                <span class="locality">{{this.about.address.locality}}</span>,
-                <span class="country-name">{{this.about.address.country}}</span>
-                <span class="latitude d-none">{{this.about.address.latitude}}</span>
-                <span class="longitude d-none">{{this.about.address.longitude}}</span>
+        <script id="about-template" type="text/x-handlebars-template">
+        <div class="aside">
+          <dl class="vcard">
+            <dt>Full Name</dt>
+            <dd>
+              <a title="{{this.about.name.first}} {{this.about.name.last}}" class="xfn-me secondary" rel="me" href="{{this.about.link}}">
+                <span class="fn n">
+                  <span class="given-name">{{this.about.name.first}}</span>
+                  <span class="family-name">{{this.about.name.last}}</span>
+                </span>
               </a>
-            </span>
-          </dd>
-        </dl>
-      </div>
-      <div class="summary">
-        {{#each about.quotes}}
-        <p>{{{this}}}</p>
-        {{/each}}
-      </div>
-      </script>
+              <div class="url d-none">{{this.about.website}}</div>
+            </dd>
+            <dt>Organization</dt>
+            <dd class="org">
+              {{this.about.organization.position}} at <a href="{{this.about.organization.link}} " class="secondary" title="{{this.about.organization.name}}">{{this.about.organization.name}}</a>
+            </dd>
+            <dt class="type">Current Location</dt>
+            <dd class="adr">
+              <span class="geo">
+                <a title="See location" class="microformat-geo secondary" href="https://www.google.com/maps/place/{{this.about.address.locality}},{{this.about.address.country}}/@{{this.about.address.latitude}},{{this.about.address.longitude}}">
+                  <span class="locality">{{this.about.address.locality}}</span>,
+                  <span class="country-name">{{this.about.address.country}}</span>
+                  <span class="latitude d-none">{{this.about.address.latitude}}</span>
+                  <span class="longitude d-none">{{this.about.address.longitude}}</span>
+                </a>
+              </span>
+            </dd>
+          </dl>
+        </div>
+        <div class="summary">
+          {{#each about.quotes}}
+          <p>{{{this}}}</p>
+          {{/each}}
+        </div>
+        </script>
       </div>
     </section>
 
@@ -162,29 +162,29 @@
       </li>
       </script>
       <script id="talks-template" type="text/x-handlebars-template">
-        <ul class="promoted">
-        {{#each talks.data}}
-          {{#if this.promoted}}
-            {{> videoTemplate}}
-          {{/if}}
-        {{/each}}
-        </ul>
-        <ul>
-        {{#each talks.data}}
-          {{#ifCond @index "< " ../talks.perPage}}
-            {{> talkTemplate}}
-          {{/ifCond}}
-        {{/each}}
-        </ul>
-        <input id="toggle" type="checkbox"/>
-        <label for="toggle" class="more"></label>
-        <ul class="collapse" id="moreTalks">
-        {{#each talks.data}}
-          {{#ifCond @index ">=" ../talks.perPage}}
-            {{> talkTemplate}}
-          {{/ifCond}} 
-        {{/each}}
-        </ul>
+      <ul class="promoted">
+      {{#each talks.data}}
+        {{#if this.promoted}}
+  {{> videoTemplate}}
+        {{/if}}
+      {{/each}}
+      </ul>
+      <ul>
+      {{#each talks.data}}
+        {{#ifCond @index "< " ../talks.perPage}}
+          {{> talkTemplate}}
+        {{/ifCond}}
+      {{/each}}
+      </ul>
+      <input id="toggle" type="checkbox"/>
+      <label for="toggle" class="more"></label>
+      <ul class="collapse" id="moreTalks">
+      {{#each talks.data}}
+        {{#ifCond @index ">=" ../talks.perPage}}
+          {{> talkTemplate}}
+        {{/ifCond}} 
+      {{/each}}
+      </ul>
       </script>
     </section>
 
