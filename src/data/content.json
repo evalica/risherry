@@ -54,10 +54,19 @@
         "promoted": true,
         "name": "UI/UX Tips & Tricks for developers",
         "link": "https://www.slideshare.net/valicac/uiux-tips-tricks-for-developers",
-        "video": "QND4EQMTGeU",
         "event": [
           {
             "recorded": true,
+            "video": "https://video.fosdem.org/2020/H.2213/ui_ux_trips_and_tricks_for_developers.mp4",
+            "name": "FOSDEM",
+            "title": "Open Source Developers’ European Meeting 2020",
+            "link": "https://fosdem.org/2020/schedule/event/ui_ux_trips_and_tricks_for_developers/",
+            "location": "Brussels",
+            "date": "Feb 2020"
+          },
+          {
+            "recorded": true,
+            "video": "QND4EQMTGeU",
             "name": "ApacheCon EU",
             "title": "ApacheCon Europe 2019",
             "link": "https://aceu19.apachecon.com/session/uiux-tips-tricks-developers",
