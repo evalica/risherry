@@ -12,7 +12,9 @@ $theme-path: 'themes/gwen/';
 
 :root {
   --body-bg-color:                  #{$white};
+  --border-color:                   #efeff5;
   --accent-bg-color:                #1b1733;
+  --accent-text-color:              #{$white};
 
   --content-text-color:             var(--accent-bg-color);
   --content-secondary-text-color:   #747c83;
@@ -27,9 +29,9 @@ $theme-path: 'themes/gwen/';
   --portfolio-secondary-text-color: var(--body-bg-color);
 
   --video-bg-color:                 var(--body-bg-color);
-  --video-border-color:             #efeff5;
+  --video-border-color:             var(--border-color);
 
-  --footer-text-color:              var(--portfolio-secondary-text-color);
+  --footer-text-color:              #{$white};
 }
 
 section h2 {
