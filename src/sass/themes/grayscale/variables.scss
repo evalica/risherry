@@ -11,8 +11,9 @@ $theme-path: 'themes/grayscale/';
 // --------------------------------------------------
 
 :root {
-  --body-bg-color:                #{$gray-50};
+  --body-bg-color:                #{$gray-100};
   --accent-bg-color:              #{$gray-200};
+  --border-color:                 #{$gray-300};
 
   --content-text-color:           #{$gray-900};
   --content-secondary-text-color: #{$gray-500};
