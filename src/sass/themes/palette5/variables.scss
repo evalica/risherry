@@ -28,12 +28,12 @@ $theme-path: 'themes/palette5/';
 
 // Menu
 // -------------------------
---navigation-bg-color: #102A43;
+--navigation-bg-color: var(--heading-text-color);
 --navigation-bg-hover-color: #115b7f;
 --navigation-text-color: #fff;
 
 // Work
 // -------------------------
---accent-bg-color: #D9E2EC;
+--accent-bg-color: var(--border-color);
 --accent-text-color: var(--heading-text-color);
 }
