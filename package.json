@@ -28,7 +28,8 @@
     "js-yaml": ">=3.13.1",
     "tar": ">=2.2.2",
     "fstream": ">=1.0.12",
-    "underscore.string": ">=3.3.5"
+    "underscore.string": ">=3.3.5",
+    "minimist": ">=0.2.1"
   },
   "scripts": {
     "test": "grunt swatch"
