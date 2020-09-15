@@ -51,6 +51,19 @@
     "perPage": "5",
     "data": [
       {
+        "name": "Panel: What should we expect from 2020?",
+        "link": "https://www.facebook.com/events/183096789750030/",
+        "event": [
+          {
+            "name": "Frontend Hub",
+            "title": "Frontend Hub",
+            "link": "https://www.facebook.com/frontendhub/",
+            "location": "Iaşi",
+            "date": "Jan 2020"
+          }
+        ]
+      },
+      {
         "promoted": true,
         "name": "UI/UX Tips & Tricks for developers",
         "link": "https://www.slideshare.net/valicac/uiux-tips-tricks-for-developers",
