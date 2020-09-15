@@ -23,7 +23,7 @@
     "cryptiles": ">=4.1.2",
     "debug": ">=2.6.9",
     "request": "<=2.81.0",
-    "lodash": ">=4.17.13",
+    "lodash": ">=4.17.19",
     "lodash.mergewith": ">=4.6.2",
     "js-yaml": ">=3.13.1",
     "tar": ">=2.2.2",
