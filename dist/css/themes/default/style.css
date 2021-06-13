@@ -6,7 +6,9 @@
 
 :root {
   --body-bg-color: #fff;
+  --border-color: #efeff5;
   --accent-bg-color: #1b1733;
+  --accent-text-color: #fff;
   --content-text-color: var(--accent-bg-color);
   --content-secondary-text-color: #747c83;
   --link-text-color: #a338b5;
@@ -17,8 +19,8 @@
   --portfolio-bg-color: #29253f;
   --portfolio-secondary-text-color: var(--body-bg-color);
   --video-bg-color: var(--body-bg-color);
-  --video-border-color: #efeff5;
-  --footer-text-color: var(--portfolio-secondary-text-color);
+  --video-border-color: var(--border-color);
+  --footer-text-color: #fff;
 }
 
 section h2 {
