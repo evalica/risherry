@@ -695,6 +695,10 @@ section::after {
   z-index: 1;
 }
 .portfolio .portfolio-content:hover .portfolio-title a {
+  color: var(--link-text-color);
+}
+
+.work a, .work a:link, .work a:visited {
   color: var(--link-text-hover-color);
 }
 
@@ -747,13 +751,6 @@ h2 {
 
 .work {
   background-color: var(--accent-bg-color);
-}
-
-.work a, .work a:link, .work a:visited {
-  color: var(--link-text-hover-color);
-}
-.work a:hover {
-  color: var(--link-text-color);
 }
 
 .talks {
