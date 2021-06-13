@@ -433,8 +433,16 @@ section {
   padding-top: 7rem;
 }
 
+.work .more {
+  display: block;
+}
+
 /* Tablet */
 @media (min-width: 768px) {
+  .work .more {
+    display: inline-block;
+  }
+
   nav {
     height: 4rem;
     flex-direction: row;
