@@ -99,3 +99,9 @@
       color: var(--link-text-hover-color);
     }
 }
+
+.work .more {
+  &:after {
+    content: 'View portfolio \00BB';
+  }
+}

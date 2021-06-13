@@ -93,18 +93,14 @@
   }
 }
 
-.more {
-  font-size: .8em;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+.talks .more {
   position: absolute;
   bottom: 3em;
-  cursor: pointer;
   &:hover {
     color: var(--link-text-hover-color);
   }
   &:after {
-    content: 'More \00BB';
+    content: 'More Talks \00BB';
   }
 }
 

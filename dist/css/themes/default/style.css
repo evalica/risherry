@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --font-family-base: 'Open Sans', Helvetica, Arial, sans-serif;
   --footer-bg-color: var(--navigation-bg-color);
@@ -621,6 +622,17 @@ section::after {
   margin-top: 4rem;
 }
 
+.more {
+  bottom: inherit;
+  cursor: pointer;
+  font-size: .8rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+  position: relative;
+  text-transform: uppercase;
+}
+
 .portfolio {
   padding: 0;
   /* Hover behavior */
@@ -710,6 +722,10 @@ section::after {
   color: var(--link-text-hover-color);
 }
 
+.work .more:after {
+  content: 'View portfolio \00BB';
+}
+
 .about h2 {
   margin-top: 3rem;
 }
@@ -749,6 +765,13 @@ section::after {
 }
 .summary p {
   margin-bottom: 1rem;
+}
+
+.about .more {
+  display: block;
+}
+.about .more:after {
+  content: 'Download résumé \00BB';
 }
 
 /* Headers displayed using background-clip + fallback */
@@ -840,19 +863,15 @@ h2 {
   color: var(--link-text-hover-color);
 }
 
-.more {
-  font-size: .8em;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+.talks .more {
   position: absolute;
   bottom: 3em;
-  cursor: pointer;
 }
-.more:hover {
+.talks .more:hover {
   color: var(--link-text-hover-color);
 }
-.more:after {
-  content: 'More \00BB';
+.talks .more:after {
+  content: 'More Talks \00BB';
 }
 
 #toggle:checked ~ .more:after {

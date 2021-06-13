@@ -41,3 +41,11 @@
     margin-bottom: 1rem;
   }
 }
+
+
+.about .more {
+  display: block;
+  &:after {
+    content: 'Download résumé \00BB';
+  }
+}
