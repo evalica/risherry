@@ -670,6 +670,7 @@ section::after {
   transition: opacity 1s;
 }
 .portfolio .portfolio-image {
+  background-color: var(--portfolio-secondary-text-color);
   border: 0;
   border-radius: 0;
   border-top-left-radius: 0.5em;
