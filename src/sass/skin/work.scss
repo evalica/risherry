@@ -7,12 +7,3 @@ h2 {
 .work {
   background-color: var(--accent-bg-color);
 }
-
-.work a { 
-  &, &:link, &:visited {
-      color: var(--link-text-hover-color);
-    }
-    &:hover {
-      color: var(--link-text-color);
-    }
-}

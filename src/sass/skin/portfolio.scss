@@ -89,7 +89,13 @@
       z-index: 1;
     }
     .portfolio-title a {
-      color: var(--link-text-hover-color);
+      color: var(--link-text-color);
     }
   }
+}
+
+.work a { 
+  &, &:link, &:visited {
+      color: var(--link-text-hover-color);
+    }
 }
