@@ -631,13 +631,11 @@ section::after {
 }
 
 .more {
-  bottom: inherit;
   cursor: pointer;
   font-size: .8rem;
   font-weight: 400;
   margin-top: 1rem;
   letter-spacing: 1px;
-  position: relative;
   text-transform: uppercase;
 }
 
@@ -876,34 +874,6 @@ h2 {
 
 .talks .more:after {
   content: 'More Talks \00BB';
-}
-
-.talks label.more {
-  position: absolute;
-  bottom: 3em;
-}
-.talks label.more:hover {
-  color: var(--link-text-hover-color);
-}
-
-#toggle:checked ~ .more:after {
-  content: 'Less \25B2';
-}
-
-#moreTalks {
-  height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition: all .5s ease-out;
-}
-
-#toggle:checked ~ #moreTalks {
-  height: auto;
-  opacity: 1;
-}
-
-#toggle {
-  display: none;
 }
 
 footer {
