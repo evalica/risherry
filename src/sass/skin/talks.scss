@@ -94,13 +94,16 @@
 }
 
 .talks .more {
+  &:after {
+    content: 'More Talks \00BB';
+  }
+}
+
+.talks label.more {
   position: absolute;
   bottom: 3em;
   &:hover {
     color: var(--link-text-hover-color);
-  }
-  &:after {
-    content: 'More Talks \00BB';
   }
 }
 

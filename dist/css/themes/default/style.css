@@ -871,14 +871,14 @@ h2 {
   color: var(--link-text-hover-color);
 }
 
-.talks .more {
+.talks label.more {
   position: absolute;
   bottom: 3em;
 }
-.talks .more:hover {
+.talks label.more:hover {
   color: var(--link-text-hover-color);
 }
-.talks .more:after {
+.talks label.more:after {
   content: 'More Talks \00BB';
 }
 
