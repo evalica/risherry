@@ -108,13 +108,21 @@ section {
 
   .about {
     .aside {
+      /* 1/4
       grid-column-start: 1;
       grid-column-end: floor($grid-columns / 3);
+      */
+      grid-column-start: 10;
+      grid-column-end: -1;
     }
 
     .summary {
+      /* 4 / -1
       grid-column-start: floor($grid-columns / 3);
       grid-column-end: -1;
+      */
+      grid-column-start: 1;
+      grid-column-end: 10;
     }
-  }
+  }  
 }
