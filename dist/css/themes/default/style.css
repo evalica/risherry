@@ -749,6 +749,13 @@ h2 {
   background-color: var(--accent-bg-color);
 }
 
+.work a, .work a:link, .work a:visited {
+  color: var(--link-text-hover-color);
+}
+.work a:hover {
+  color: var(--link-text-color);
+}
+
 .talks {
   position: relative;
 }
@@ -840,7 +847,7 @@ h2 {
   color: var(--link-text-hover-color);
 }
 .more:after {
-  content: 'More \25BC';
+  content: 'More \00BB';
 }
 
 #toggle:checked ~ .more:after {
