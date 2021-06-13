@@ -433,13 +433,13 @@ section {
   padding-top: 7rem;
 }
 
-.work .more {
+.work .more, .talks .more {
   display: block;
 }
 
 /* Tablet */
 @media (min-width: 768px) {
-  .work .more {
+  .work .more, .talks .more {
     display: inline-block;
   }
 
@@ -729,6 +729,9 @@ section::after {
 .work a, .work a:link, .work a:visited {
   color: var(--link-text-hover-color);
 }
+.work a:hover {
+  color: var(--link-text-color);
+}
 
 .work .more:after {
   content: 'View portfolio \00BB';
@@ -871,15 +874,16 @@ h2 {
   color: var(--link-text-hover-color);
 }
 
+.talks .more:after {
+  content: 'More Talks \00BB';
+}
+
 .talks label.more {
   position: absolute;
   bottom: 3em;
 }
 .talks label.more:hover {
   color: var(--link-text-hover-color);
-}
-.talks label.more:after {
-  content: 'More Talks \00BB';
 }
 
 #toggle:checked ~ .more:after {
