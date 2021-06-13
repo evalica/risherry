@@ -41,8 +41,16 @@ section {
   padding-top: $navigation-height + (floor($navigation-height / 2) + 1);
 }
 
+.work .more {
+  display: block;
+}
+
 /* Tablet */
 @media (min-width: $screen-sm) {
+  .work .more {
+    display: inline-block;
+  }
+
   nav {
     height: $navigation-height;
     flex-direction: row;
