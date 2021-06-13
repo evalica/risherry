@@ -41,13 +41,13 @@ section {
   padding-top: $navigation-height + (floor($navigation-height / 2) + 1);
 }
 
-.work .more {
+.work .more, .talks .more {
   display: block;
 }
 
 /* Tablet */
 @media (min-width: $screen-sm) {
-  .work .more {
+  .work .more, .talks .more {
     display: inline-block;
   }
 
