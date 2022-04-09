@@ -29,7 +29,7 @@
     "tar": ">=5.0.10",
     "fstream": ">=1.0.12",
     "underscore.string": ">=3.3.5",
-    "minimist": ">=0.2.1",
+    "minimist": ">=1.2.6",
     "websocket-extensions": ">=0.1.4"
   },
   "scripts": {
