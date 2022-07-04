@@ -928,3 +928,8 @@ footer {
 .talks a.more {
   -webkit-text-fill-color: var(--link-text-color);
 }
+
+footer {
+  display: inherit;
+  white-space: inherit;
+}
