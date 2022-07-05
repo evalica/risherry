@@ -933,3 +933,8 @@ footer {
   display: inherit;
   white-space: inherit;
 }
+
+
+::root {
+ --content-secondary-text-color:#6f767b; 
+}
