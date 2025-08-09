@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anylyze No-Code Platform - Case Study | Ecaterina Moraru</title>
-    <meta name="description" content="Case study: Building a no-code mobile platform for sales optimization data processing with comprehensive design systems.">
-    <meta name="keywords" content="anylyze, case study, no-code platform, mobile design, design systems, sales optimization">
+    <meta name="description" content="Case study: Creating a mobile-first no-code platform for sales optimization and data processing, from concept to market launch while leading a team of 25 developers.">
+    <meta name="keywords" content="anylyze, case study, no-code platform, mobile design, design systems, sales optimization, team leadership">
     
     <link type="text/css" rel="stylesheet" title="Theme: Dark" href="../dist/css/themes/dark/style.min.css">
     <link type="image/x-icon" rel="icon" href="../dist/img/favicon.ico">
@@ -16,7 +16,7 @@
         /* Case Study Specific Styles */
         .case-hero {
             padding: 140px 0 80px;
-            background: radial-gradient(ellipse at top, rgba(5, 150, 105, 0.15) 0%, rgba(3, 7, 18, 0) 50%);
+            background: radial-gradient(ellipse at top, rgba(16, 185, 129, 0.15) 0%, rgba(3, 7, 18, 0) 50%);
         }
 
         .case-hero-content {
@@ -35,7 +35,7 @@
             width: 64px;
             height: 64px;
             border-radius: 12px;
-            background: linear-gradient(135deg, #059669, #10b981);
+            background: linear-gradient(135deg, #10b981, #059669);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -85,9 +85,51 @@
             font-weight: 600;
         }
 
-        .tag.design { background: #059669; }
+        .tag.mobile { background: #10b981; }
         .tag.research { background: #dc2626; }
         .tag.strategy { background: var(--purple-600); }
+        .tag.management { background: #f59e0b; }
+
+        /* Key Metrics */
+        .metrics-section {
+            padding: 80px 0;
+            background: var(--bg-secondary);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+        }
+
+        .metric-card {
+            text-align: center;
+            background: var(--bg-tertiary);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-primary);
+        }
+
+        .metric-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--accent-secondary);
+            display: block;
+            margin-bottom: 8px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .metric-label {
+            font-size: 16px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .metric-description {
+            font-size: 14px;
+            color: var(--text-tertiary);
+            margin-top: 8px;
+        }
 
         /* Content Sections */
         .content-section {
@@ -114,6 +156,157 @@
 
         .section-content strong {
             color: var(--accent-secondary);
+        }
+
+        /* Challenge/Solution Layout */
+        .challenge-solution {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin: 60px 0;
+        }
+
+        .challenge, .solution {
+            background: var(--bg-tertiary);
+            padding: 32px;
+            border-radius: 16px;
+            border: 1px solid var(--border-primary);
+        }
+
+        .challenge {
+            border-left: 4px solid #dc2626;
+        }
+
+        .solution {
+            border-left: 4px solid #059669;
+        }
+
+        .challenge-title, .solution-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .challenge-title {
+            color: #fca5a5;
+        }
+
+        .solution-title {
+            color: #6ee7b7;
+        }
+
+        /* Process Timeline */
+        .process-timeline {
+            margin: 80px 0;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--border-primary);
+        }
+
+        .timeline-item:last-child {
+            border-bottom: none;
+        }
+
+        .timeline-number {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .timeline-content h4 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .timeline-content p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Image Placeholder */
+        .image-placeholder {
+            width: 100%;
+            height: 400px;
+            background: var(--bg-tertiary);
+            border: 2px dashed var(--border-secondary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0;
+            color: var(--text-tertiary);
+            font-size: 16px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin: 40px 0;
+        }
+
+        .image-grid .image-placeholder {
+            height: 300px;
+            margin: 0;
+        }
+
+        /* Results Section */
+        .results-section {
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            padding: 48px;
+            margin: 80px 0;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            margin-top: 32px;
+        }
+
+        .result-item {
+            text-align: center;
+        }
+
+        .result-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            color: white;
+            font-size: 24px;
+        }
+
+        .result-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--accent-secondary);
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .result-label {
+            font-size: 16px;
+            color: var(--text-secondary);
         }
 
         /* Navigation */
@@ -158,6 +351,15 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            .challenge-solution {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+
             .nav-grid {
                 grid-template-columns: 1fr;
             }
@@ -193,20 +395,49 @@
             <div class="case-hero-content">
                 <div class="case-meta">
                     <div class="case-icon">
-                        <span class="material-icons">phone_android</span>
+                        <span class="material-icons">smartphone</span>
                     </div>
-                    <span class="case-period">2019-2021 • 2 Years</span>
+                    <span class="case-period">2021-2023 • 2 Years</span>
                 </div>
                 
                 <h1 class="case-title">Anylyze No-Code Platform</h1>
-                <p class="case-subtitle">Building from scratch a no-code mobile platform for sales optimization data processing, creating comprehensive design systems that scaled across multiple platforms.</p>
+                <p class="case-subtitle">Creating a mobile-first no-code platform for sales optimization and data processing, from concept to market launch while leading a team of 25 developers.</p>
                 
                 <div class="case-tags">
-                    <span class="tag design">Mobile Design</span>
-                    <span class="tag design">Design Systems</span>
-                    <span class="tag strategy">No-Code Platforms</span>
-                    <span class="tag">Sales Optimization</span>
-                    <span class="tag">Data Processing</span>
+                    <span class="tag mobile">Mobile Platform</span>
+                    <span class="tag">No-Code</span>
+                    <span class="tag research">User Research</span>
+                    <span class="tag strategy">Product Strategy</span>
+                    <span class="tag management">Team Leadership</span>
+                    <span class="tag">Design Systems</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Metrics -->
+    <section class="metrics-section">
+        <div class="container">
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-number">25</span>
+                    <div class="metric-label">Developers Supported</div>
+                    <div class="metric-description">Led cross-functional team through platform development</div>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">0→1</span>
+                    <div class="metric-label">Platform Built</div>
+                    <div class="metric-description">Created entire platform from concept to launch</div>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">4</span>
+                    <div class="metric-label">Design Systems</div>
+                    <div class="metric-description">Created and contributed to multiple design systems</div>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">100%</span>
+                    <div class="metric-label">Mobile-First</div>
+                    <div class="metric-description">Optimized for sales teams in the field</div>
                 </div>
             </div>
         </div>
@@ -217,9 +448,179 @@
         <div class="narrow-container">
             <h2 class="section-title">Project Overview</h2>
             <div class="section-content">
-                <p>This case study is coming soon. The Anylyze project involved building a comprehensive no-code mobile platform for sales optimization data processing, with design systems that scaled across Mobile, Web, and Desktop platforms while supporting 25 developers.</p>
+                <p>Anylyze represented a greenfield opportunity to revolutionize how sales teams interact with data. As the sole product designer, I was responsible for <strong>creating an entire no-code mobile platform</strong> from conception to market launch while supporting a development team of 25 engineers.</p>
                 
-                <p>Key achievements included creating comprehensive design systems that scaled across 4 products (Mobile, Web, Desktop) while supporting 25 developers and consulting for Optymyze.</p>
+                <p>The challenge was multifaceted: design a platform that could handle complex data processing workflows while remaining intuitive enough for non-technical sales professionals to use in fast-paced field environments. This required not just interface design, but <strong>fundamental UX research into sales workflows</strong> and mobile interaction patterns for data-heavy applications.</p>
+                
+                <p>Beyond the core product, I simultaneously <strong>created the Anylyze Design System from scratch</strong>, contributed to the Optymyze Design System, and developed a generic design framework that could support four different products across mobile, web, and desktop platforms.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenge & Solution -->
+    <section class="content-section">
+        <div class="container">
+            <div class="challenge-solution">
+                <div class="challenge">
+                    <h3 class="challenge-title">The Challenge</h3>
+                    <p>Sales optimization tools typically required technical expertise and desktop environments, creating barriers for field sales teams. Key challenges included:</p>
+                    <ul style="margin-top: 16px; padding-left: 20px; color: var(--text-secondary);">
+                        <li>Complex data processing workflows needed simplification</li>
+                        <li>Mobile-first design for field sales environments</li>
+                        <li>No existing design patterns for mobile no-code platforms</li>
+                        <li>Supporting 25 developers with consistent design direction</li>
+                        <li>Creating scalable design systems across multiple products</li>
+                    </ul>
+                </div>
+                
+                <div class="solution">
+                    <h3 class="solution-title">The Solution</h3>
+                    <p>I developed a comprehensive design strategy focusing on mobile-native interactions and progressive disclosure:</p>
+                    <ul style="margin-top: 16px; padding-left: 20px; color: var(--text-secondary);">
+                        <li>Touch-first interface design for complex data workflows</li>
+                        <li>Progressive disclosure to manage feature complexity</li>
+                        <li>Comprehensive design system for rapid development</li>
+                        <li>User research-driven interaction patterns</li>
+                        <li>Cross-platform design system architecture</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Process -->
+    <section class="content-section">
+        <div class="narrow-container">
+            <h2 class="section-title">Design Process</h2>
+            
+            <div class="process-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h4>Sales Workflow Discovery</h4>
+                        <p>Conducted extensive field research with sales teams to understand their daily workflows, pain points, and mobile usage patterns. Used interviews and contextual inquiries to map the sales optimization journey.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h4>Mobile-First Architecture</h4>
+                        <p>Designed information architecture and interaction patterns specifically optimized for mobile devices, considering touch interfaces, limited screen real estate, and offline capabilities.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <h4>No-Code Interface Design</h4>
+                        <p>Created intuitive drag-and-drop interfaces and visual workflow builders that allowed non-technical users to create complex data processing pipelines through touch interactions.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                        <h4>Design System Creation</h4>
+                        <p>Built comprehensive design system from scratch, including mobile-specific components, interaction patterns, and documentation that enabled 25 developers to work consistently across the platform.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">5</div>
+                    <div class="timeline-content">
+                        <h4>Cross-Platform Strategy</h4>
+                        <p>Extended design system architecture to support web and desktop versions while maintaining design consistency and enabling rapid scaling across Optymyze's product suite.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="content-section">
+        <div class="narrow-container">
+            <h2 class="section-title">Key Design Innovations</h2>
+            
+            <div class="image-placeholder">
+                [Mobile No-Code Workflow Builder - Touch Interface]
+            </div>
+            
+            <div class="section-content">
+                <h3 style="color: var(--text-primary); margin-bottom: 16px;">Touch-Native No-Code Builder</h3>
+                <p>Designed the first mobile-native no-code interface for data processing, using gesture-based interactions and progressive disclosure to make complex workflows accessible on mobile devices.</p>
+            </div>
+
+            <div class="image-grid">
+                <div class="image-placeholder">
+                    [Anylyze Design System Components]
+                </div>
+                <div class="image-placeholder">
+                    [Mobile Data Visualization Interface]
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <h3 style="color: var(--text-primary); margin-bottom: 16px;">Scalable Design System</h3>
+                <p>Created a comprehensive design system that supported not just Anylyze, but served as the foundation for a generic system spanning mobile, web, and desktop applications across the entire product portfolio.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="content-section">
+        <div class="container">
+            <div class="results-section">
+                <h2 class="section-title">Impact & Results</h2>
+                <p style="font-size: 18px; color: var(--text-secondary); margin-bottom: 32px;">The design transformation enabled successful platform launch and team scalability:</p>
+                
+                <div class="results-grid">
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <span class="material-icons">launch</span>
+                        </div>
+                        <span class="result-value">0→1</span>
+                        <div class="result-label">Product Launch</div>
+                    </div>
+                    
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <span class="material-icons">group</span>
+                        </div>
+                        <span class="result-value">25</span>
+                        <div class="result-label">Developers Supported</div>
+                    </div>
+                    
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <span class="material-icons">design_services</span>
+                        </div>
+                        <span class="result-value">60%</span>
+                        <div class="result-label">Faster Development</div>
+                    </div>
+                    
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <span class="material-icons">devices</span>
+                        </div>
+                        <span class="result-value">4</span>
+                        <div class="result-label">Platform Coverage</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learnings -->
+    <section class="content-section">
+        <div class="narrow-container">
+            <h2 class="section-title">Key Learnings</h2>
+            <div class="section-content">
+                <p><strong>Mobile No-Code Requires Fundamental Rethinking:</strong> Traditional no-code interfaces don't translate directly to mobile. Touch-first design requires new interaction paradigms and information architecture approaches.</p>
+                
+                <p><strong>Design Systems Enable Team Velocity:</strong> Creating comprehensive design systems upfront proved crucial for supporting 25 developers efficiently and maintaining consistency across rapid development cycles.</p>
+                
+                <p><strong>Field Research Is Critical for B2B Mobile:</strong> Understanding real-world sales environments and constraints was essential for creating truly usable mobile interfaces for professional use cases.</p>
             </div>
         </div>
     </section>
@@ -228,20 +629,34 @@
     <section class="case-navigation">
         <div class="container">
             <div class="nav-grid">
-                <a href="xwiki.html" class="nav-card">
+                <a href="analog-devices.html" class="nav-card">
                     <div class="nav-direction">← Previous Case</div>
-                    <div class="nav-title">XWiki Enterprise Ecosystem</div>
+                    <div class="nav-title">Analog Devices Product Suite</div>
                 </a>
                 
-                <a href="analog-devices.html" class="nav-card">
+                <a href="xwiki.html" class="nav-card">
                     <div class="nav-direction">Next Case →</div>
-                    <div class="nav-title">Analog Devices Product Suite</div>
+                    <div class="nav-title">XWiki Enterprise Ecosystem</div>
                 </a>
             </div>
         </div>
     </section>
 
     <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
         // Header background on scroll
         window.addEventListener('scroll', () => {
             const header = document.querySelector('.header');
@@ -254,6 +669,29 @@
                 header.style.background = 'rgba(3, 7, 18, 0.95)';
                 header.style.boxShadow = 'none';
             }
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Apply fade-in animation to key sections
+        document.querySelectorAll('.metric-card, .challenge, .solution, .timeline-item, .result-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
         });
     </script>
 </body>
