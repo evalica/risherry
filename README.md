@@ -5,9 +5,7 @@
  <!--- [![Build Status](https://img.shields.io/travis/evalica/risherry.svg)](https://travis-ci.org/evalica/risherry)
 [![devDependency Status](https://img.shields.io/david/evalica/risherry.svg)](https://david-dm.org/evalica/risherry) --->
 
-Risherry is designed as a customizable personal website.
-
-It's build using [Bootstrap](http://getbootstrap.com/), [Handlebars](http://handlebarsjs.com/) and [JQuery](https://jquery.com/) frameworks. Additionally it uses [Sass](http://sass-lang.com/), [Font Awesome](http://fortawesome.github.io/Font-Awesome/) and [Google Fonts](http://www.google.com/fonts).
+Risherry began as a customizable personal website and portfolio build using [Bootstrap](http://getbootstrap.com/), [Handlebars](http://handlebarsjs.com/) and [JQuery](https://jquery.com/) frameworks. It also incorporates [Sass](http://sass-lang.com/), [Font Awesome](http://fortawesome.github.io/Font-Awesome/) and [Google Fonts](http://www.google.com/fonts).
 
 ## Quick Start
 
@@ -20,6 +18,7 @@ It's using Grunt plugins like [watch](https://www.npmjs.com/package/grunt-contri
 After everything is set up, you can run the `swatch` task that builds all the available themes at once. Themes can be build also one at a time by using `grunt swatch:[theme]`, for example `grunt swatch:rain`.
 
 #### `grunt swatch`
+#### `npx grunt swatch:default`
 
 You should run the tasks on the `src/sass` files and commit the results in the `dist` folder.
 
@@ -63,10 +62,6 @@ risherry/
                 ├── custom.scss
                 └── variables.scss
 ```
-
-Version `0.2.0` provides the `Bliss`, `Bordo`, `Rain` and `Moss` themes:
-
-<img src="https://cloud.githubusercontent.com/assets/629552/7220685/c166ada6-e6d9-11e4-9d9c-4263f94ad817.png" width="235px" height="593px" />  <img src="https://cloud.githubusercontent.com/assets/629552/7220688/cb2b26c8-e6d9-11e4-8381-b3667e0ecbf5.png" width="235px" height="593px" />  <img src="https://cloud.githubusercontent.com/assets/629552/7220686/c728afa0-e6d9-11e4-8e96-1016534586fc.png" width="235px" height="593px" />
 
 ## Testing
 
