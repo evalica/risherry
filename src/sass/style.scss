@@ -1,8 +1,11 @@
-// Theme variables (should override skin variables)
-@use "variables" as theme-vars;
 // Skin variables
 @use "../../skin/variables" as skin-vars;
-// Theme components (should override skin components)
-@use "custom" as custom;
+
+// Theme variables (should override skin variables)
+@use "variables" as theme-vars;
+
 // Skin components
 @use "../../skin/skin" as skin;
+
+// Theme components (should override skin components)
+@use "custom" as custom;
