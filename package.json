@@ -13,7 +13,7 @@
     "node": ">= 0.12.2"
   },
   "devDependencies": {
-    "grunt": "^1.3.0",
+    "grunt": "^1.6.1",
     "grunt-contrib-concat": "latest",
     "grunt-contrib-cssmin": "latest",
     "grunt-contrib-sass": "latest",
