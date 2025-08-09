@@ -351,6 +351,13 @@ body {
   position: relative;
 }
 
+.case-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
 .case-card::before {
   content: '';
   position: absolute;

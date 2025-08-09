@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XWiki Enterprise Ecosystem - Case Study | Ecaterina Moraru</title>
+    <meta name="description" content="Case study: Transforming XWiki's open source knowledge management platform into a scalable enterprise solution that bridges community innovation with commercial success.">
+    <meta name="keywords" content="xwiki, case study, enterprise platform, open source, knowledge management, design systems, user experience">
+    
+    <link type="text/css" rel="stylesheet" title="Theme: Dark" href="../dist/css/themes/dark/style.min.css">
+    <link type="image/x-icon" rel="icon" href="../dist/img/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <style>
+        /* Case Study Specific Styles */
+        .case-hero {
+            padding: 140px 0 80px;
+            background: radial-gradient(ellipse at top, rgba(168, 85, 247, 0.15) 0%, rgba(3, 7, 18, 0) 50%);
+        }
+
+        .case-hero-content {
+            text-align: center;
+        }
+
+        .case-meta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .case-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: white;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .case-period {
+            font-size: 16px;
+            color: var(--text-tertiary);
+            font-weight: 600;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .case-title {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 24px;
+            line-height: 1.1;
+        }
+
+        .case-subtitle {
+            font-size: 22px;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .case-tags {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 48px;
+        }
+
+        .tag {
+            background: var(--accent-primary);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 16px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .tag.design { background: #059669; }
+        .tag.research { background: #dc2626; }
+        .tag.strategy { background: var(--purple-600); }
+
+        /* Key Metrics */
+        .metrics-section {
+            padding: 80px 0;
+            background: var(--bg-secondary);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+        }
+
+        .metric-card {
+            text-align: center;
+            background: var(--bg-tertiary);
+            padding: 32px 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-primary);
+        }
+
+        .metric-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--accent-secondary);
+            display: block;
+            margin-bottom: 8px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .metric-label {
+            font-size: 16px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .metric-description {
+            font-size: 14px;
+            color: var(--text-tertiary);
+            margin-top: 8px;
+        }
+
+        /* Content Sections */
+        .content-section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 24px;
+        }
+
+        .section-content {
+            font-size: 18px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+        }
+
+        .section-content p {
+            margin-bottom: 24px;
+        }
+
+        .section-content strong {
+            color: var(--accent-secondary);
+        }
+
+        /* Challenge/Solution Layout */
+        .challenge-solution {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin: 60px 0;
+        }
+
+        .challenge, .solution {
+            background: var(--bg-tertiary);
+            padding: 32px;
+            border-radius: 16px;
+            border: 1px solid var(--border-primary);
+        }
+
+        .challenge {
+            border-left: 4px solid #dc2626;
+        }
+
+        .solution {
+            border-left: 4px solid #059669;
+        }
+
+        .challenge-title, .solution-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .challenge-title {
+            color: #fca5a5;
+        }
+
+        .solution-title {
+            color: #6ee7b7;
+        }
+
+        /* Process Timeline */
+        .process-timeline {
+            margin: 80px 0;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--border-primary);
+        }
+
+        .timeline-item:last-child {
+            border-bottom: none;
+        }
+
+        .timeline-number {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .timeline-content h4 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .timeline-content p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Image Placeholder */
+        .image-placeholder {
+            width: 100%;
+            height: 400px;
+            background: var(--bg-tertiary);
+            border: 2px dashed var(--border-secondary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0;
+            color: var(--text-tertiary);
+            font-size: 16px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin: 40px 0;
+        }
+
+        .image-grid .image-placeholder {
+            height: 300px;
+            margin: 0;
+        }
+
+        /* Results Section */
+        .results-section {
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            padding: 48px;
+            margin: 80px 0;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            margin-top: 32px;
+        }
+
+        .result-item {
+            text-align: center;
+        }
+
+        .result-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            color: white;
+            font-size: 24px;
+        }
+
+        .result-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--accent-secondary);
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .result-label {
+            font-size: 16px;
+            color: var(--text-secondary);
+        }
+
+        /* Navigation */
+        .case-navigation {
+            padding: 80px 0 40px;
+            border-top: 1px solid var(--border-primary);
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+
+        .nav-card {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-primary);
+            border-radius: 12px;
+            padding: 24px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        .nav-card:hover {
+            border-color: var(--accent-primary);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .nav-direction {
+            font-size: 14px;
+            color: var(--text-tertiary);
+            margin-bottom: 8px;
+        }
+
+        .nav-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .challenge-solution {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .case-title {
+                font-size: 32px;
+            }
+
+            .container, .narrow-container {
+                padding: 0 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="../" class="logo">
+                <div class="logo-icon"></div>
+                risherry
+            </a>
+            <a href="../#work" class="back-button">
+                <span class="material-icons">arrow_back</span>
+                Back to Portfolio
+            </a>
+        </nav>
+    </header>
+
+    <!-- Case Study Hero -->
+    <section class="case-hero">
+        <div class="narrow-container">
+            <div class="case-hero-content">
+                <div class="case-meta">
+                    <div class="case-icon">
+                        <span class="material-icons">hub</span>
+                    </div>
+                    <span class="case-period">2009-2019 • 10+ Years</span>
+                </div>
+                
+                <h1 class="case-title">XWiki Enterprise Ecosystem</h1>
+                <p class="case-subtitle">Transforming an open source knowledge management platform into a scalable enterprise solution that bridges community innovation with commercial success.</p>
+                
+                <div class="case-tags">
+                    <span class="tag design">Design Systems</span>
+                    <span class="tag">Community Design</span>
+                    <span class="tag research">User Research</span>
+                    <span class="tag strategy">Platform Strategy</span>
+                    <span class="tag">Knowledge Management</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Metrics -->
+    <section class="metrics-section">
+        <div class="container">
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-number">10M+</span>
+                    <div class="metric-label">Users Worldwide</div>
+                    <div class="metric-description">Active users across open source and enterprise deployments</div>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">2x</span>
+                    <div class="metric-label">Revenue Growth</div>
+                    <div class="metric-description">Product revenue increase during design leadership</div>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">50+</span>
+                    <div class="metric-label">Core Features</div>
+                    <div class="metric-description">Major features designed and shipped</div>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">100%</span>
+                    <div class="metric-label">Enterprise Clients</div>
+                    <div class="metric-description">Including Amazon, EMC, and Maven</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="content-section">
+        <div class="narrow-container">
+            <h2 class="section-title">Project Overview</h2>
+            <div class="section-content">
+                <p>XWiki represented my most significant design challenge: transforming a complex open source knowledge management platform into an intuitive enterprise solution while maintaining the community-driven innovation that made it special.</p>
+                
+                <p>Over 10 years, I <strong>led the complete UX transformation</strong> of XWiki Enterprise, designing everything from core platform features to advanced collaboration tools. The challenge wasn't just about improving usability—it was about creating a scalable design system that could serve both open source contributors and enterprise customers with vastly different needs.</p>
+                
+                <p>My role evolved from Interaction Designer to Lead Interaction Designer, ultimately becoming responsible for orchestrating user experience across all XWiki products and helping the company achieve <strong>2x revenue growth</strong> while serving over 10 million users worldwide.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenge & Solution -->
+    <section class="content-section">
+        <div class="container">
+            <div class="challenge-solution">
+                <div class="challenge">
+                    <h3 class="challenge-title">The Challenge</h3>
+                    <p>XWiki faced a critical paradox: the platform's power came from its flexibility and openness, but this same complexity created barriers for mainstream enterprise adoption. Key challenges included:</p>
+                    <ul style="margin-top: 16px; padding-left: 20px; color: var(--text-secondary);">
+                        <li>Steep learning curve for non-technical users</li>
+                        <li>Inconsistent UX across 50+ features and extensions</li>
+                        <li>Lack of enterprise-grade onboarding and workflows</li>
+                        <li>Community-driven development without design consistency</li>
+                        <li>Need to balance open source accessibility with commercial viability</li>
+                    </ul>
+                </div>
+                
+                <div class="solution">
+                    <h3 class="solution-title">The Solution</h3>
+                    <p>I developed a comprehensive design strategy that addressed both community and enterprise needs through:</p>
+                    <ul style="margin-top: 16px; padding-left: 20px; color: var(--text-secondary);">
+                        <li>Scalable design system serving both audiences</li>
+                        <li>Progressive disclosure for complex functionality</li>
+                        <li>Community-driven design process with enterprise validation</li>
+                        <li>Consistent interaction patterns across all features</li>
+                        <li>Strategic feature prioritization based on user research</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Process -->
+    <section class="content-section">
+        <div class="narrow-container">
+            <h2 class="section-title">Design Process</h2>
+            
+            <div class="process-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h4>Community Research & Discovery</h4>
+                        <p>Conducted extensive user research with both open source contributors and enterprise users to understand different mental models, workflows, and pain points. Used forums, surveys, and direct interviews to map user journeys.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h4>Information Architecture Redesign</h4>
+                        <p>Restructured the platform's information architecture to create clear pathways for different user types while maintaining the flexibility that power users required.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <h4>Design System Creation</h4>
+                        <p>Built a comprehensive design system that could scale across community-contributed extensions while maintaining visual and interaction consistency. Created guidelines for both internal teams and external contributors.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                        <h4>Feature-by-Feature Transformation</h4>
+                        <p>Systematically redesigned core features including Application Within Minutes, Extension Manager, Search, Rights Management, Activity Stream, Administration, and Workspaces—each with extensive prototyping and user testing.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">5</div>
+                    <div class="timeline-content">
+                        <h4>Enterprise Integration & Validation</h4>
+                        <p>Worked directly with enterprise clients like Amazon and EMC to validate designs against real-world enterprise workflows and requirements, iterating based on actual deployment feedback.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="content-section">
+        <div class="narrow-container">
+            <h2 class="section-title">Key Feature Innovations</h2>
+            
+            <div class="image-placeholder">
+                [Application Within Minutes - Visual Workflow Builder]
+            </div>
+            
+            <div class="section-content">
+                <h3 style="color: var(--text-primary); margin-bottom: 16px;">Application Within Minutes</h3>
+                <p>Transformed complex application creation into an intuitive visual workflow. Users could now build custom applications without coding knowledge, dramatically expanding the platform's accessibility.</p>
+            </div>
+
+            <div class="image-grid">
+                <div class="image-placeholder">
+                    [Extension Manager - Before/After UI]
+                </div>
+                <div class="image-placeholder">
+                    [Search Interface - Redesigned]
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <h3 style="color: var(--text-primary); margin-bottom: 16px;">Extension Ecosystem</h3>
+                <p>Redesigned the Extension Manager to feel more like modern app stores, making it easy for users to discover, install, and manage extensions while providing clear information about compatibility and community support.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="content-section">
+        <div class="container">
+            <div class="results-section">
+                <h2 class="section-title">Impact & Results</h2>
+                <p style="font-size: 18px; color: var(--text-secondary); margin-bottom: 32px;">The design transformation delivered measurable business and user experience improvements:</p>
+                
+                <div class="results-grid">
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <span class="material-icons">trending_up</span>
+                        </div>
+                        <span class="result-value">2x</span>
+                        <div class="result-label">Revenue Growth</div>
+                    </div>
+                    
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <span class="material-icons">speed</span>
+                        </div>
+                        <span class="result-value">40%</span>
+                        <div class="result-label">Faster Onboarding</div>
+                    </div>
+                    
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <span class="material-icons">people</span>
+                        </div>
+                        <span class="result-value">300%</span>
+                        <div class="result-label">Community Growth</div>
+                    </div>
+                    
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <span class="material-icons">star</span>
+                        </div>
+                        <span class="result-value">4.2/5</span>
+                        <div class="result-label">User Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learnings -->
+    <section class="content-section">
+        <div class="narrow-container">
+            <h2 class="section-title">Key Learnings</h2>
+            <div class="section-content">
+                <p><strong>Community-Driven Design Requires Structure:</strong> While community input was invaluable, successful scaling required establishing clear design principles and guidelines that contributors could follow.</p>
+                
+                <p><strong>Enterprise Adoption Needs Simplified Onboarding:</strong> Even powerful platforms fail without intuitive first-time experiences. Creating progressive disclosure patterns was crucial for enterprise success.</p>
+                
+                <p><strong>Open Source Success Translates to Commercial Value:</strong> By improving the open source experience first, we created a stronger foundation for enterprise offerings, resulting in authentic community-driven growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Navigation -->
+    <section class="case-navigation">
+        <div class="container">
+            <div class="nav-grid">
+                <a href="anylyze.html" class="nav-card">
+                    <div class="nav-direction">← Previous Case</div>
+                    <div class="nav-title">Anylyze No-Code Platform</div>
+                </a>
+                
+                <a href="analog-devices.html" class="nav-card">
+                    <div class="nav-direction">Next Case →</div>
+                    <div class="nav-title">Analog Devices Product Suite</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 100) {
+                header.style.background = 'rgba(3, 7, 18, 0.98)';
+                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
+            } else {
+                header.style.background = 'rgba(3, 7, 18, 0.95)';
+                header.style.boxShadow = 'none';
+            }
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Apply fade-in animation to key sections
+        document.querySelectorAll('.metric-card, .challenge, .solution, .timeline-item, .result-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

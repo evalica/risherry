@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anylyze No-Code Platform - Case Study | Ecaterina Moraru</title>
+    <meta name="description" content="Case study: Building a no-code mobile platform for sales optimization data processing with comprehensive design systems.">
+    <meta name="keywords" content="anylyze, case study, no-code platform, mobile design, design systems, sales optimization">
+    
+    <link type="text/css" rel="stylesheet" title="Theme: Dark" href="../dist/css/themes/dark/style.min.css">
+    <link type="image/x-icon" rel="icon" href="../dist/img/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <style>
+        /* Case Study Specific Styles */
+        .case-hero {
+            padding: 140px 0 80px;
+            background: radial-gradient(ellipse at top, rgba(5, 150, 105, 0.15) 0%, rgba(3, 7, 18, 0) 50%);
+        }
+
+        .case-hero-content {
+            text-align: center;
+        }
+
+        .case-meta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .case-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #059669, #10b981);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: white;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .case-period {
+            font-size: 16px;
+            color: var(--text-tertiary);
+            font-weight: 600;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .case-title {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 24px;
+            line-height: 1.1;
+        }
+
+        .case-subtitle {
+            font-size: 22px;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .case-tags {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 48px;
+        }
+
+        .tag {
+            background: var(--accent-primary);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 16px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .tag.design { background: #059669; }
+        .tag.research { background: #dc2626; }
+        .tag.strategy { background: var(--purple-600); }
+
+        /* Content Sections */
+        .content-section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 24px;
+        }
+
+        .section-content {
+            font-size: 18px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+        }
+
+        .section-content p {
+            margin-bottom: 24px;
+        }
+
+        .section-content strong {
+            color: var(--accent-secondary);
+        }
+
+        /* Navigation */
+        .case-navigation {
+            padding: 80px 0 40px;
+            border-top: 1px solid var(--border-primary);
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+
+        .nav-card {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-primary);
+            border-radius: 12px;
+            padding: 24px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        .nav-card:hover {
+            border-color: var(--accent-primary);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .nav-direction {
+            font-size: 14px;
+            color: var(--text-tertiary);
+            margin-bottom: 8px;
+        }
+
+        .nav-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .case-title {
+                font-size: 32px;
+            }
+
+            .container, .narrow-container {
+                padding: 0 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="../" class="logo">
+                <div class="logo-icon"></div>
+                risherry
+            </a>
+            <a href="../#work" class="back-button">
+                <span class="material-icons">arrow_back</span>
+                Back to Portfolio
+            </a>
+        </nav>
+    </header>
+
+    <!-- Case Study Hero -->
+    <section class="case-hero">
+        <div class="narrow-container">
+            <div class="case-hero-content">
+                <div class="case-meta">
+                    <div class="case-icon">
+                        <span class="material-icons">phone_android</span>
+                    </div>
+                    <span class="case-period">2019-2021 • 2 Years</span>
+                </div>
+                
+                <h1 class="case-title">Anylyze No-Code Platform</h1>
+                <p class="case-subtitle">Building from scratch a no-code mobile platform for sales optimization data processing, creating comprehensive design systems that scaled across multiple platforms.</p>
+                
+                <div class="case-tags">
+                    <span class="tag design">Mobile Design</span>
+                    <span class="tag design">Design Systems</span>
+                    <span class="tag strategy">No-Code Platforms</span>
+                    <span class="tag">Sales Optimization</span>
+                    <span class="tag">Data Processing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="content-section">
+        <div class="narrow-container">
+            <h2 class="section-title">Project Overview</h2>
+            <div class="section-content">
+                <p>This case study is coming soon. The Anylyze project involved building a comprehensive no-code mobile platform for sales optimization data processing, with design systems that scaled across Mobile, Web, and Desktop platforms while supporting 25 developers.</p>
+                
+                <p>Key achievements included creating comprehensive design systems that scaled across 4 products (Mobile, Web, Desktop) while supporting 25 developers and consulting for Optymyze.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Navigation -->
+    <section class="case-navigation">
+        <div class="container">
+            <div class="nav-grid">
+                <a href="xwiki.html" class="nav-card">
+                    <div class="nav-direction">← Previous Case</div>
+                    <div class="nav-title">XWiki Enterprise Ecosystem</div>
+                </a>
+                
+                <a href="analog-devices.html" class="nav-card">
+                    <div class="nav-direction">Next Case →</div>
+                    <div class="nav-title">Analog Devices Product Suite</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 100) {
+                header.style.background = 'rgba(3, 7, 18, 0.98)';
+                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
+            } else {
+                header.style.background = 'rgba(3, 7, 18, 0.95)';
+                header.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
