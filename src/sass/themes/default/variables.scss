@@ -10,4 +10,4 @@ $theme-path: 'themes/default/';
 // Themes Custom
 // --------------------------------------------------
 
-@import "../../themes/gwen/variables";
+@use "../../themes/gwen/variables" as gwen-vars;

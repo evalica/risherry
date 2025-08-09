@@ -1,3 +1,5 @@
+@use "variables" as vars;
+
 section {
   ul {
     list-style-type: none;
@@ -19,7 +21,7 @@ section {
   &::after {
     content: '';
     display: block;
-    margin-top: $navigation-height;
+    margin-top: vars.$navigation-height;
   }
 }
 

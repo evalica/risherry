@@ -1,9 +1,11 @@
+@use "variables" as vars;
+
 footer {
   background-color: var(--footer-bg-color);
   color: var(--footer-text-color);
   font-size: .8em;
-  padding-top: $grid-padding;
-  padding-bottom: $grid-padding;
+  padding-top: vars.$grid-padding;
+  padding-bottom: vars.$grid-padding;
   display: flex;
   align-items: center;
   white-space: pre;

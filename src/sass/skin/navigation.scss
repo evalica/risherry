@@ -1,3 +1,5 @@
+@use "variables" as vars;
+
 nav {
   display: flex;
   background-color: var(--navigation-bg-color);
@@ -129,7 +131,7 @@ nav {
 }
 
 /* Tablet */ 
-@media (min-width: $screen-md) {
+@media (min-width: vars.$screen-md) {
   nav .external {
     border-bottom: 0;
   }

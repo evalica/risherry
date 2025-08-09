@@ -1,15 +1,15 @@
 // Core CSS
-@import "reset";
-@import "base";
-@import "utilities";
+@use "reset" as reset;
+@use "base" as base;
+@use "utilities" as utilities;
 
 // Components
-@import "layout";
-@import "navigation";
-@import "section";
-@import "portfolio";
-@import "about";
-@import "work";
-@import "talks";
-@import "footer";
-@import "icons";
+@use "layout" as layout;
+@use "navigation" as navigation;
+@use "section" as section;
+@use "portfolio" as portfolio;
+@use "about" as about;
+@use "work" as work;
+@use "talks" as talks;
+@use "footer" as footer;
+@use "icons" as icons;

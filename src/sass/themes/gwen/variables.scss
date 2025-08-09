@@ -2,6 +2,9 @@
 // Base variables
 // --------------------------------------------------
 
+// Import skin variables
+@use "../../skin/variables" as skin;
+
 // Themes Paths
 // -------------------------
 $theme-path: 'themes/gwen/';
@@ -11,10 +14,10 @@ $theme-path: 'themes/gwen/';
 // --------------------------------------------------
 
 :root {
-  --body-bg-color:                  #{$white};
+  --body-bg-color:                  #{skin.$white};
   --border-color:                   #efeff5;
   --accent-bg-color:                #1b1733;
-  --accent-text-color:              #{$white};
+  --accent-text-color:              #{skin.$white};
 
   --content-text-color:             var(--accent-bg-color);
   --content-secondary-text-color:   #747c83;
@@ -31,7 +34,7 @@ $theme-path: 'themes/gwen/';
   --video-bg-color:                 var(--body-bg-color);
   --video-border-color:             var(--border-color);
 
-  --footer-text-color:              #{$white};
+  --footer-text-color:              #{skin.$white};
 }
 
 section h2 {

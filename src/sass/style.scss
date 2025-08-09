@@ -1,8 +1,8 @@
 // Skin variables
-@import "../../skin/variables";
+@use "../../skin/variables" as skin-vars;
 // Theme variables
-@import "variables";
+@use "variables" as theme-vars;
 // Skin components
-@import "../../skin/skin";
+@use "../../skin/skin" as skin;
 // Theme components
-@import "custom";
+@use "custom" as custom;
