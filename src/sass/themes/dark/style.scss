@@ -1,0 +1,12 @@
+// Dark Theme
+// --------------------------------------------------
+
+// Import skin variables and components
+@use "../../skin/variables" as skin-vars;
+@use "../../skin/skin" as skin;
+
+// Dark theme variables (should override skin variables)
+@use "variables" as vars;
+
+// Dark theme custom styles (should override skin components)
+@use "custom" as custom;

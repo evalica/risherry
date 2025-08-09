@@ -12,7 +12,8 @@ module.exports = function(grunt) {
 
     // themes list -------------------------------------------------------------
     swatch: {
-      default: {}
+      default: {},
+      dark: {}
     },
 
     // concatenate the files ---------------------------------------------------
@@ -75,7 +76,13 @@ module.exports = function(grunt) {
     var destStyle;
     var filesStyle = {};
 
-    srcStyle = 'src/sass/style.scss';
+    // Use theme-specific style.scss if it exists, otherwise use the main one
+    if (theme === 'dark') {
+      srcStyle = 'src/sass/themes/' + theme + '/style.scss';
+    } else {
+      srcStyle = 'src/sass/style.scss';
+    }
+    
     destStyle = 'src/sass/themes/' + theme + '/.style.scss';
     filesStyle = {
       src: srcStyle,

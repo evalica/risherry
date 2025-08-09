@@ -1,0 +1,111 @@
+//
+// Dark Theme Variables
+// --------------------------------------------------
+
+// Typography
+// -------------------------
+$font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-family-headings: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-family-mono: 'JetBrains Mono', monospace;
+
+// Colors - Purple Brand System
+// -------------------------
+$purple-50: #faf5ff;
+$purple-100: #f3e8ff;
+$purple-200: #e9d5ff;
+$purple-300: #d8b4fe;
+$purple-400: #c084fc;
+$purple-500: #a855f7;
+$purple-600: #9333ea;
+$purple-700: #7c3aed;
+$purple-800: #6b21a8;
+$purple-900: #581c87;
+$purple-950: #3b0764;
+
+// Grey System
+$grey-50: #f9fafb;
+$grey-100: #f3f4f6;
+$grey-200: #e5e7eb;
+$grey-300: #d1d5db;
+$grey-400: #9ca3af;
+$grey-500: #6b7280;
+$grey-600: #4b5563;
+$grey-700: #374151;
+$grey-800: #1f2937;
+$grey-900: #111827;
+$grey-950: #030712;
+
+// Dark Theme Backgrounds
+$bg-primary: $grey-950;
+$bg-secondary: $grey-900;
+$bg-tertiary: $grey-800;
+
+// Dark Theme Text
+$text-primary: $grey-100;
+$text-secondary: $grey-400;
+$text-tertiary: $grey-500;
+
+// Brand Colors
+$accent-primary: $purple-500;
+$accent-secondary: $purple-400;
+$accent-tertiary: $purple-600;
+
+// Border Colors
+$border-primary: $grey-800;
+$border-secondary: $grey-700;
+
+// Shadows
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+
+// CSS Variables for Dark Theme
+:root {
+  // Typography
+  --font-family-base: #{$font-family-base};
+  --font-family-headings: #{$font-family-headings};
+  --font-family-mono: #{$font-family-mono};
+  
+  // Background Colors
+  --bg-primary: #{$bg-primary};
+  --bg-secondary: #{$bg-secondary};
+  --bg-tertiary: #{$bg-tertiary};
+  
+  // Text Colors
+  --text-primary: #{$text-primary};
+  --text-secondary: #{$text-secondary};
+  --text-tertiary: #{$text-tertiary};
+  
+  // Brand Colors
+  --accent-primary: #{$accent-primary};
+  --accent-secondary: #{$accent-secondary};
+  --accent-tertiary: #{$accent-tertiary};
+  
+  // Border Colors
+  --border-primary: #{$border-primary};
+  --border-secondary: #{$border-secondary};
+  
+  // Shadows
+  --shadow-sm: #{$shadow-sm};
+  --shadow-md: #{$shadow-md};
+  --shadow-lg: #{$shadow-lg};
+  --shadow-xl: #{$shadow-xl};
+  
+  // Legacy support
+  --body-bg-color: var(--bg-primary);
+  --surface-bg-color: var(--bg-secondary);
+  --card-bg-color: var(--bg-tertiary);
+  --navigation-bg-color: rgba(3, 7, 18, 0.95);
+  --content-text-color: var(--text-primary);
+  --content-secondary-text-color: var(--text-secondary);
+  --content-muted-text-color: var(--text-tertiary);
+  --link-text-color: var(--accent-primary);
+  --link-text-hover-color: var(--accent-secondary);
+  --accent-color: var(--accent-primary);
+  --border-color: var(--border-primary);
+  --border-light-color: var(--border-secondary);
+  --button-bg-color: var(--accent-primary);
+  --button-hover-bg-color: var(--accent-secondary);
+  --button-text-color: white;
+}
