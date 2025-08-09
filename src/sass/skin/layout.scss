@@ -1,44 +1,60 @@
-/* Grid */
-nav,
-section,
-footer {
+// Import math module for floor function
+@use "sass:math";
+
+@import "variables";
+@import "reset";
+@import "utilities";
+@import "icons";
+@import "navigation";
+@import "section";
+@import "footer";
+@import "about";
+@import "work";
+@import "portfolio";
+@import "talks";
+
+// Base layout
+// -------------------------
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $body-color;
+  background-color: $body-bg;
   margin: 0;
-  padding-left: 10%;
-  padding-right: 10%;
-  overflow: hidden;
+  padding: 0;
 }
 
-/* Mobile */
-.about .main, 
-.work .portfolio, 
-.talks .promoted {
-  display: grid;
-  grid-template-columns: repeat($grid-columns, 1fr);
-  grid-gap: $grid-gutter-width;
-}
-
-section,
-footer, 
-h2, 
-.portfolio-item, .promoted .video,
-.about .aside, 
-.about .summary {
-  grid-column: 1 / 11;
-}
-
+// Navigation
+// -------------------------
 nav {
   height: $navigation-height;
-  flex-direction: column-reverse;
-  height: 2 * $navigation-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--navigation-bg-color);
+  color: var(--navigation-text-color);
+
   .external {
-    justify-content: space-between;
+    margin: 0;
     margin-right: -12%;
     margin-left: -12%;
   }
 }
 
 section {
-  padding-top: $navigation-height + (floor($navigation-height / 2) + 1);
+  padding-top: $navigation-height + (math.floor(calc($navigation-height / 2)) + 1);
 }
 
 .work .more, .talks .more {
@@ -85,14 +101,14 @@ section {
   }
 
   .portfolio-item, .promoted .video {
-    grid-column: span floor($grid-columns / 2);
+    grid-column: span math.floor(calc($grid-columns / 2));
   }
 }
 
 /* Tablet */ 
 @media (min-width: $screen-md) {
   .portfolio-item, .promoted .video {
-    grid-column: span floor($grid-columns / 3);
+    grid-column: span math.floor(calc($grid-columns / 3));
   }
 
   .about {
@@ -111,14 +127,14 @@ section {
 /* Desktop */ 
 @media (min-width: $screen-lg) {
   .portfolio-item, .promoted .video {
-    grid-column: span floor($grid-columns / 4);
+    grid-column: span math.floor(calc($grid-columns / 4));
   }
 
   .about {
     .aside {
       /* 1/4
       grid-column-start: 1;
-      grid-column-end: floor($grid-columns / 3);
+      grid-column-end: math.floor(calc($grid-columns / 3));
       */
       grid-column-start: 10;
       grid-column-end: -1;
@@ -126,11 +142,11 @@ section {
 
     .summary {
       /* 4 / -1
-      grid-column-start: floor($grid-columns / 3);
+      grid-column-start: math.floor(calc($grid-columns / 3));
       grid-column-end: -1;
       */
       grid-column-start: 1;
       grid-column-end: 10;
     }
-  }  
+  }
 }

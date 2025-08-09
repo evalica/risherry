@@ -64,14 +64,14 @@ $border-radius:               .5em;
 // -------------------------
 $spacer:                      1rem !default;
 $headings-margin-bottom:      0 !default;
-$paragraph-margin-bottom:     $spacer / 2 !default;
+$paragraph-margin-bottom:     calc($spacer / 2) !default;
 $margin-bottom:               $paragraph-margin-bottom;      
 
 // Grid
 // -------------------------
 $grid-columns:                12 !default;
 $grid-gutter-width:           30px !default;;
-$grid-padding:                floor(($grid-gutter-width / 2));
+$grid-padding:                calc($grid-gutter-width / 2);
 
 // Navigation
 // -------------------------

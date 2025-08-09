@@ -1,6 +1,6 @@
 .about {
   h2 {
-    margin-top: ($navigation-height / 4 ) * 3;
+    margin-top: calc($navigation-height / 4) * 3;
   }
   &:target h2 {
     margin-top: 0;
