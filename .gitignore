@@ -34,9 +34,6 @@ node_modules
 # Themes generated files
 /src/sass/themes/*/.style.scss
 
-# Build output directory
-dist/
-
 # Package lock file (generated from package.json)
 package-lock.json
 
