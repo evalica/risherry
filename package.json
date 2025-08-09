@@ -13,31 +13,18 @@
     "node": ">= 0.12.2"
   },
   "devDependencies": {
-    "grunt": "^1.3.0",
-    "grunt-contrib-concat": "latest",
-    "grunt-contrib-cssmin": "latest",
-    "grunt-contrib-sass": "latest",
-    "grunt-contrib-uglify": "latest",
-    "grunt-contrib-watch": "latest",
-    "hoek": "latest",
-    "cryptiles": ">=4.1.2",
-    "debug": ">=2.6.9",
-    "request": "<=2.81.0",
-    "lodash": ">=4.17.21",
-    "lodash.mergewith": ">=4.6.2",
-    "js-yaml": ">=3.13.1",
-    "tar": ">=5.0.10",
-    "fstream": ">=1.0.12",
-    "underscore.string": ">=3.3.5",
-    "minimist": ">=0.2.1",
-    "websocket-extensions": ">=0.1.4"
+    "grunt": "^1.6.1",
+    "grunt-contrib-concat": "^2.1.0",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "sass": "^1.69.0"
   },
   "scripts": {
-    "test": "grunt swatch"
-  },
-  "dependencies": {
-    "node-sass": "^4.13.1",
-    "npm": "^6.14.13"
+    "test": "grunt swatch",
+    "build": "grunt swatch:default",
+    "watch": "grunt"
   },
   "bugs": {
     "url": "https://github.com/evalica/risherry/issues"
