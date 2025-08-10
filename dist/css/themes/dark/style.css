@@ -1255,7 +1255,7 @@ section {
   --font-family-base: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
   --font-family-headings: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
   --font-family-mono: JetBrains Mono, monospace;
-  --bg-primary: #030712;
+  --bg-primary: rgb(27, 23, 51);
   --bg-secondary: #111827;
   --bg-tertiary: #1f2937;
   --text-primary: #f3f4f6;
