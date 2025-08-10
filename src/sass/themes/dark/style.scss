@@ -10,3 +10,9 @@
 
 // Dark theme custom styles (should override skin components)
 @use "custom" as custom;
+
+// Page-specific styles
+@use "about" as about;
+@use "footer" as footer;
+@use "case-studies" as case-studies;
+@use "password-protection" as password;
