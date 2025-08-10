@@ -107,6 +107,11 @@
                 </div>
                 
                 <aside class="career-sidebar">
+                    <figure class="avatar-container">
+                        <div class="avatar-glow"></div>
+                        <img src="dist/img/avatar-portrait.png" alt="Ecaterina Moraru - Principal Product Designer" class="avatar-image">
+                    </figure>
+                    
                     <div class="sidebar-header">What I do</div>
                     <ul class="sidebar-list">
                         <li class="sidebar-item">
@@ -746,6 +751,34 @@
             padding: 24px;
         }
 
+        /* Avatar Styles */
+        .avatar-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .avatar-glow {
+            position: absolute;
+            inset: 0;
+            border-radius: 24px;
+            background: radial-gradient(80% 80% at 50% 20%, rgba(168, 85, 247, 0.35) 0%, rgba(15, 193, 212, 0.18) 35%, rgba(0, 0, 0, 0) 70%);
+            filter: blur(18px);
+            pointer-events: none;
+        }
+
+        .avatar-image {
+            position: relative;
+            width: 320px;
+            height: 320px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            object-fit: cover;
+            z-index: 1;
+        }
+
         .sidebar-header {
             font-size: 14px;
             color: var(--text-tertiary);
@@ -1101,6 +1134,11 @@
 
             .career-sidebar {
                 padding: 20px;
+            }
+
+            .avatar-image {
+                width: 280px;
+                height: 280px;
             }
 
             .philosophy-grid {
