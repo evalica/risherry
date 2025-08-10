@@ -256,6 +256,12 @@ body {
   padding: 0 24px;
 }
 
+.narrow-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 // Hero Section
 .hero {
   padding: 140px 0 100px;
@@ -883,7 +889,7 @@ body {
     padding: 0 16px;
   }
 
-  .container {
+  .container, .narrow-container {
     padding: 0 16px;
   }
 

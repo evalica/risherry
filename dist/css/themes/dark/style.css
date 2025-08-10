@@ -1157,6 +1157,12 @@ body {
   padding: 0 24px;
 }
 
+.narrow-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 .hero {
   padding: 140px 0 100px;
   background: radial-gradient(ellipse at top, rgba(168, 85, 247, 0.15) 0%, rgba(3, 7, 18, 0) 50%);
@@ -1759,7 +1765,7 @@ body {
   .nav {
     padding: 0 16px;
   }
-  .container {
+  .container, .narrow-container {
     padding: 0 16px;
   }
   .hero {
