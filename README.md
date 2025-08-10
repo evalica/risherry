@@ -9,22 +9,31 @@ Risherry began as a customizable personal website and portfolio build using [Boo
 
 ## Quick Start
 
-If you want to customize locally the sources you will need [Node.js](https://nodejs.org/) and [Grunt](http://gruntjs.com/).
+If you want to customize locally the sources you will need [Node.js](https://nodejs.org/) and [npm](https://npmjs.org/).
 
-It's using Grunt plugins like [watch](https://www.npmjs.com/package/grunt-contrib-watch), [sass](https://www.npmjs.com/package/grunt-contrib-sass), [concat](https://www.npmjs.com/package/grunt-contrib-concat), [cssmin](https://www.npmjs.com/package/grunt-contrib-cssmin), [uglify](https://www.npmjs.com/package/grunt-contrib-uglify). The plugins are installed and managed via [npm](https://npmjs.org/), the Node.js package manager.
+The build system uses [Grunt](http://gruntjs.com/) with plugins like [watch](https://www.npmjs.com/package/grunt-contrib-watch), [sass](https://www.npmjs.com/package/grunt-sass), and [cssmin](https://www.npmjs.com/package/grunt-contrib-cssmin). The plugins are installed and managed via npm.
 
 #### `npm install`
 
-After everything is set up, you can run the `swatch` task that builds all the available themes at once. Themes can be build also one at a time by using `grunt swatch:[theme]`, for example `grunt swatch:rain`.
+Install all dependencies.
 
-#### `grunt swatch`
-#### `npx grunt swatch:default`
+#### `npm run build`
 
-You should run the tasks on the `src/sass` files and commit the results in the `dist` folder.
+Build all themes by compiling SCSS to CSS and minifying the output.
 
-#### `grunt watch`
+#### `npm run sass`
 
-Launching the `watch` task that will start a process that listens to file changes and compiles and minifies the CSS and JavaScript sources.
+Compile SCSS files to CSS only.
+
+#### `npm run cssmin`
+
+Minify CSS files only.
+
+#### `npm run watch`
+
+Launch the watch task that monitors file changes and automatically compiles and minifies the CSS sources.
+
+You should run the build tasks on the `src/sass` files and commit the results in the `dist` folder.
 
 ## Customizing
 

@@ -1,0 +1,24 @@
+{
+  "name": "risherry",
+  "version": "0.5.0",
+  "description": "Ecaterina Moraru's portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "build": "grunt",
+    "watch": "grunt watch",
+    "sass": "grunt sass",
+    "cssmin": "grunt cssmin"
+  },
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-sass": "^3.1.0",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "load-grunt-tasks": "^5.1.0",
+    "sass": "^1.70.0",
+    "grunt-cli": "^1.4.3"
+  },
+  "keywords": ["portfolio", "design", "ux", "product-design"],
+  "author": "Ecaterina Moraru",
+  "license": "MIT"
+}
