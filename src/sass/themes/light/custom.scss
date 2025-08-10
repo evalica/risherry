@@ -105,11 +105,7 @@ table {
   }
 }
 
-// Footer adjustments
-.footer {
-  background: var(--bg-secondary);
-  border-top: 1px solid var(--border-primary);
-}
+// Footer styles moved to shared location: src/sass/skin/footer.scss
 
 // Social icons
 .social-link svg {
