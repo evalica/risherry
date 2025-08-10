@@ -1,0 +1,180 @@
+// Light Theme Custom Styles
+// --------------------------------------------------
+
+// Override base skin styles for light theme
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+// Header adjustments for light theme
+.header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-primary);
+}
+
+// Navigation adjustments
+.nav {
+  .nav-links a {
+    color: var(--text-secondary);
+    
+    &:hover {
+      color: var(--text-primary);
+    }
+    
+    &.active {
+      color: var(--accent-primary);
+    }
+  }
+}
+
+// Logo adjustments
+.logo {
+  color: var(--text-primary);
+}
+
+// Section backgrounds
+.hero {
+  background: linear-gradient(135deg, var(--purple-50) 0%, var(--bg-primary) 100%);
+}
+
+.work {
+  background: var(--bg-secondary);
+}
+
+.talks {
+  background: var(--bg-primary);
+}
+
+// Card adjustments for light theme
+.card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-primary);
+  box-shadow: var(--shadow-sm);
+  
+  &:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-primary);
+  }
+}
+
+// Button adjustments
+.btn {
+  &.primary {
+    background: var(--accent-primary);
+    color: white;
+    border: 1px solid var(--accent-primary);
+    
+    &:hover {
+      background: var(--accent-secondary);
+      border-color: var(--accent-secondary);
+    }
+  }
+  
+  &.secondary {
+    background: transparent;
+    color: var(--text-secondary);
+    border: 1px solid var(--border-primary);
+    
+    &:hover {
+      background: var(--bg-tertiary);
+      color: var(--text-primary);
+      border-color: var(--accent-primary);
+    }
+  }
+}
+
+// Form elements
+input, textarea, select {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-primary);
+  color: var(--text-primary);
+  
+  &:focus {
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+  }
+  
+  &::placeholder {
+    color: var(--text-tertiary);
+  }
+}
+
+// Link adjustments
+a {
+  color: var(--accent-primary);
+  
+  &:hover {
+    color: var(--accent-secondary);
+  }
+}
+
+// Code blocks
+pre, code {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-primary);
+  color: var(--text-primary);
+}
+
+// Table adjustments
+table {
+  th {
+    background: var(--bg-tertiary);
+    border-bottom: 1px solid var(--border-primary);
+  }
+  
+  td {
+    border-bottom: 1px solid var(--border-secondary);
+  }
+}
+
+// Footer adjustments
+.footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-primary);
+}
+
+// Social icons
+.social-link svg {
+  fill: var(--text-secondary);
+  
+  &:hover {
+    fill: var(--accent-primary);
+  }
+}
+
+// Material icons
+.material-icons {
+  color: inherit;
+}
+
+// Scrollbar adjustments for light theme
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-primary);
+  border-radius: 4px;
+  
+  &:hover {
+    background: var(--border-secondary);
+  }
+}
+
+// Selection color
+::selection {
+  background: var(--purple-200);
+  color: var(--text-primary);
+}
+
+::-moz-selection {
+  background: var(--purple-200);
+  color: var(--text-primary);
+}

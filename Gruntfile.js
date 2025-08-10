@@ -24,8 +24,7 @@ module.exports = function(grunt) {
         },
         files: {
           'dist/css/themes/dark/style.css': 'src/sass/themes/dark/style.scss',
-          'dist/css/themes/default/style.css': 'src/sass/themes/default/style.scss',
-          'dist/css/themes/gwen/style.css': 'src/sass/themes/gwen/style.scss'
+          'dist/css/themes/light/style.css': 'src/sass/themes/light/style.scss'
         }
       }
     },
@@ -35,8 +34,7 @@ module.exports = function(grunt) {
       build: {
         files: {
           'dist/css/themes/dark/style.min.css': 'dist/css/themes/dark/style.css',
-          'dist/css/themes/default/style.min.css': 'dist/css/themes/default/style.css',
-          'dist/css/themes/gwen/style.min.css': 'dist/css/themes/gwen/style.css'
+          'dist/css/themes/light/style.min.css': 'dist/css/themes/light/style.css'
         }
       }
     },
@@ -58,7 +56,7 @@ module.exports = function(grunt) {
     const fs = require('fs');
     const path = require('path');
     
-    const themes = ['dark', 'default', 'gwen'];
+    const themes = ['dark', 'light'];
     
     themes.forEach(theme => {
       // Check for both style.scss and .style.scss

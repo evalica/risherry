@@ -1,0 +1,18 @@
+// Light Theme
+// --------------------------------------------------
+
+// Import skin variables and components
+@use "../../skin/variables" as skin-vars;
+@use "../../skin/skin" as skin;
+
+// Light theme variables (should override skin variables)
+@use "variables" as vars;
+
+// Light theme custom styles (should override skin components)
+@use "custom" as custom;
+
+// Page-specific styles
+@use "../dark/about" as about;
+@use "../dark/footer" as footer;
+@use "../dark/case-studies" as case-studies;
+@use "../dark/password-protection" as password;
