@@ -4,6 +4,7 @@
 // Import skin variables and components
 @use "../../skin/variables" as skin-vars;
 @use "../../skin/skin" as skin;
+@use "../../skin/header" as header;
 
 // Light theme variables (should override skin variables)
 @use "variables" as vars;

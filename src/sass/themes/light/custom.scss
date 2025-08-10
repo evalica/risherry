@@ -7,33 +7,8 @@ body {
   color: var(--text-primary);
 }
 
-// Header adjustments for light theme
-.header {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--border-primary);
-}
-
-// Navigation adjustments
-.nav {
-  .nav-links a {
-    color: var(--text-secondary);
-    
-    &:hover {
-      color: var(--text-primary);
-    }
-    
-    &.active {
-      color: var(--accent-primary);
-    }
-  }
-}
-
-// Logo adjustments
-.logo {
-  color: var(--text-primary);
-}
+// Header styles are now in shared location: src/sass/skin/header.scss
+// Light theme specific overrides can be added here if needed
 
 // Section backgrounds
 .hero {
