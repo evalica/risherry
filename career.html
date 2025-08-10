@@ -226,7 +226,7 @@
                     <div class="timeline-marker adi-marker">
                         <span class="material-icons">memory</span>
                     </div>
-                    <div class="timeline-content">
+                    <div class="timeline-left">
                         <div class="timeline-period">2021–Present</div>
                         <h3 class="timeline-title">Analog Devices Product Suite</h3>
                         <p class="timeline-description">Principal Product Designer leading the transformation of Evaluation Studio into a preferred cross‑platform solution for hardware component evaluation. Managing design operations and strengthening collaboration across multiple business units.</p>
@@ -240,6 +240,8 @@
                                 <span class="highlight-label">Total Team Size</span>
                             </div>
                         </div>
+                    </div>
+                    <div class="timeline-right">
                         <div class="timeline-projects">
                             <div class="project-card">
                                 <div class="project-icon">
@@ -274,7 +276,7 @@
                     <div class="timeline-marker anylyze-marker">
                         <span class="material-icons">phone_android</span>
                     </div>
-                    <div class="timeline-content">
+                    <div class="timeline-left">
                         <div class="timeline-period">2019–2021</div>
                         <h3 class="timeline-title">Anylyze No‑Code Platform</h3>
                         <p class="timeline-description">Lead Product Designer at Arezzo Sky, supporting 25 software engineers and designing from scratch the next‑generation, no‑code, mobile‑first platform for data processing.</p>
@@ -288,6 +290,8 @@
                                 <span class="highlight-label">Platform Built</span>
                             </div>
                         </div>
+                    </div>
+                    <div class="timeline-right">
                         <div class="timeline-projects">
                             <div class="project-card">
                                 <div class="project-icon">
@@ -313,7 +317,7 @@
                     <div class="timeline-marker xwiki-marker">
                         <span class="material-icons">hub</span>
                     </div>
-                    <div class="timeline-content">
+                    <div class="timeline-left">
                         <div class="timeline-period">2009–2019</div>
                         <h3 class="timeline-title">XWiki Open Source Platform</h3>
                         <p class="timeline-description">Pioneered open design activities and led UX transformation of knowledge management platform serving 10M+ users. Generated 2x revenue increase through scalable design systems and community engagement.</p>
@@ -327,6 +331,8 @@
                                 <span class="highlight-label">Revenue Growth</span>
                             </div>
                         </div>
+                    </div>
+                    <div class="timeline-right">
                         <div class="timeline-projects">
                             <div class="project-card">
                                 <div class="project-icon">
@@ -361,7 +367,7 @@
                     <div class="timeline-marker education-marker">
                         <span class="material-icons">school</span>
                     </div>
-                    <div class="timeline-content">
+                    <div class="timeline-left">
                         <div class="timeline-period">2003–2009</div>
                         <h3 class="timeline-title">Academic Foundation</h3>
                         <p class="timeline-description">B.Sc. Computer Science (2007) & M.Sc. Software Engineering (2009) from A.I. Cuza University, Iași. Teaching Assistant for Human‑Computer Interaction classes.</p>
@@ -375,6 +381,8 @@
                                 <span class="highlight-label">Degrees Earned</span>
                             </div>
                         </div>
+                    </div>
+                    <div class="timeline-right">
                         <div class="timeline-projects">
                             <div class="project-card">
                                 <div class="project-icon">
@@ -588,17 +596,13 @@
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.classList.add('visible');
                 }
             });
         }, observerOptions);
 
         // Apply fade-in animation to timeline items
         document.querySelectorAll('.timeline-item').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
             observer.observe(el);
         });
     </script>
@@ -964,6 +968,158 @@
             border-color: var(--accent-primary);
         }
 
+        /* Timeline 2-Column Layout */
+        .career-timeline {
+            position: relative;
+        }
+
+        .timeline-line {
+            position: absolute;
+            left: 16px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(var(--accent-secondary), var(--border-primary));
+        }
+
+        .timeline-item {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 32px 0;
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: 16px;
+            top: 4px;
+            transform: translateX(-50%);
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-primary);
+            box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+        }
+
+        .timeline-left,
+        .timeline-right {
+            padding-left: 64px;
+        }
+
+        .timeline-period {
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            font-size: 12px;
+            color: var(--text-tertiary);
+            margin-bottom: 4px;
+        }
+
+        .timeline-title {
+            margin: 4px 0 6px;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .timeline-description {
+            margin: 0 0 10px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .timeline-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .highlight-item {
+            border: 1px solid var(--border-primary);
+            background: var(--bg-tertiary);
+            padding: 8px 10px;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        .highlight-number {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .highlight-label {
+            color: var(--text-secondary);
+            margin-left: 4px;
+        }
+
+        .timeline-projects {
+            display: grid;
+            gap: 8px;
+            margin: 10px 0;
+        }
+
+        .project-card {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid var(--border-primary);
+            background: var(--bg-tertiary);
+        }
+
+        .project-icon {
+            height: 32px;
+            width: 32px;
+            border-radius: 8px;
+            display: grid;
+            place-items: center;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--border-primary);
+            color: var(--accent-secondary);
+            flex-shrink: 0;
+        }
+
+        .project-info h4 {
+            font-weight: 600;
+            margin: 0 0 2px 0;
+            font-size: 14px;
+            color: var(--text-primary);
+        }
+
+        .project-info p {
+            margin: 0;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .timeline-tags {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .timeline-tag {
+            border: 1px solid var(--border-primary);
+            border-radius: 999px;
+            padding: 4px 10px;
+            font-size: 12px;
+            color: var(--text-secondary);
+            background: transparent;
+        }
+
         /* Community Section */
         .community-section {
             padding: 80px 0;
@@ -1158,6 +1314,15 @@
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 16px;
+            }
+
+            .timeline-item {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline-left,
+            .timeline-right {
+                padding-left: 64px;
             }
 
             .community-grid {
