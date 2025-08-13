@@ -13,7 +13,7 @@ dist/
 ├── case-studies/                # Case study pages
 │   ├── xwiki.html
 │   ├── anylyze.html
-│   └── analog-devices-protected.html
+│   └── analogdevices.html
 ├── css/themes/
 │   ├── dark/style.min.css       # Main stylesheet
 │   └── light/style.min.css      # Light theme (optional)

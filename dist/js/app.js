@@ -82,7 +82,7 @@
       period: "2021-2025 • 4+ Years", 
       icon: "memory",
       iconClass: "adi",
-      url: "case-studies/analog-devices-protected.html",
+              url: "case-studies/analogdevices.html",
       highlights: [
         { title: "Team Leadership", value: "8 product designers managed" },
         { title: "Product Portfolio", value: "Desktop, Web, Mobile evaluation tools" },
