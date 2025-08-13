@@ -306,7 +306,7 @@
       const footerInfo = document.querySelector('.footer-info');
       if (footerInfo) {
         footerInfo.innerHTML = `
-        <p>© ${new Date().getFullYear()} ${siteConfig.name}</p>
+        <p><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank" class="footer-link"><span class="svg svg-cc"><span class="sr-only">CC</span></span></a> 2003-2025 ${siteConfig.name}</p>
         <span class="footer-separator">•</span>
         <a href="mailto:${siteConfig.email}" class="footer-link">${siteConfig.email}</a>
         <span class="footer-separator">•</span>
