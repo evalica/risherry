@@ -7,15 +7,46 @@
 }
 
 .case-hero-content {
-  text-align: center;
+  text-align: left;
+}
+
+.case-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.case-hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.case-hero-image {
+  position: relative;
+}
+
+.case-cover-figure {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-primary);
+  background: var(--bg-secondary);
+  margin: 0;
+}
+
+.case-cover-image {
+  width: 100%;
+  height: 256px;
+  object-fit: cover;
+  display: block;
 }
 
 .case-meta {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 0;
 }
 
 .case-icon {
@@ -49,18 +80,15 @@
 .case-subtitle {
   font-size: 22px;
   color: var(--text-secondary);
-  margin-bottom: 40px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 0;
+  max-width: none;
 }
 
 .case-tags {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
-  margin-bottom: 48px;
+  margin-bottom: 0;
 }
 
 .tag {
@@ -390,6 +418,15 @@
 
 // Responsive Styles
 @media (max-width: 768px) {
+  .case-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .case-cover-image {
+    height: 200px;
+  }
+  
   .challenge-solution {
     grid-template-columns: 1fr;
     gap: 32px;
