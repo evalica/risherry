@@ -12,10 +12,204 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
+    <style>
+        /* Password Protection Styles */
+        .password-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #030712 0%, #1a1a2e 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        .password-card {
+            background: rgba(27, 23, 51, 0.95);
+            border: 1px solid #2a2740;
+            border-radius: 16px;
+            padding: 48px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .password-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #a338b5, #7c3aed);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            color: white;
+            font-size: 32px;
+        }
+
+        .password-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 16px;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .password-subtitle {
+            font-size: 16px;
+            color: #9aa0a6;
+            margin-bottom: 32px;
+            line-height: 1.5;
+        }
+
+        .password-form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .password-input {
+            padding: 16px;
+            border: 1px solid #2a2740;
+            border-radius: 8px;
+            background: rgba(27, 23, 51, 0.8);
+            color: #ffffff;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .password-input:focus {
+            outline: none;
+            border-color: #a338b5;
+            box-shadow: 0 0 0 3px rgba(163, 56, 181, 0.1);
+        }
+
+        .password-input::placeholder {
+            color: #6b7280;
+        }
+
+        .password-button {
+            padding: 16px 24px;
+            background: linear-gradient(135deg, #a338b5, #7c3aed);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .password-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(163, 56, 181, 0.3);
+        }
+
+        .password-error {
+            color: #ef4444;
+            font-size: 14px;
+            display: none;
+            margin-top: 8px;
+        }
+
+        .password-hint {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 24px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #9aa0a6;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #a338b5;
+            transform: translateX(-4px);
+        }
+
+        /* Hide case content initially */
+        .case-content {
+            display: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .password-card {
+                padding: 32px 24px;
+            }
+
+            .password-title {
+                font-size: 24px;
+            }
+
+            .password-icon {
+                width: 64px;
+                height: 64px;
+                font-size: 24px;
+            }
+        }
+    </style>
 
 </head>
 <body>
-    <!-- Header -->
+    <!-- Password Protection -->
+    <div class="password-container" id="passwordContainer">
+        <div class="password-card">
+            <div class="password-icon">
+                <span class="material-icons">lock</span>
+            </div>
+            
+            <h1 class="password-title">Protected Case Study</h1>
+            <p class="password-subtitle">This XWiki case study contains sensitive information and requires a password to access.</p>
+            
+            <form class="password-form" id="passwordForm">
+                <input 
+                    type="password" 
+                    class="password-input" 
+                    id="passwordInput"
+                    placeholder="Enter password"
+                    required
+                    autocomplete="current-password"
+                >
+                <button type="submit" class="password-button">
+                    <span class="material-icons" style="font-size: 18px; margin-right: 8px;">login</span>
+                    Access Case Study
+                </button>
+                <div class="password-error" id="passwordError">
+                    Incorrect password. Please try again.
+                </div>
+            </form>
+            
+            <p class="password-hint">
+                Contact Ecaterina for access credentials
+            </p>
+            
+            <a href="../" class="back-link">
+                <span class="material-icons">arrow_back</span>
+                Back to Portfolio
+            </a>
+        </div>
+    </div>
+
+    <!-- Hidden Case Study Content -->
+    <div class="case-content" id="caseContent">
+        <!-- Header -->
     <header class="header">
         <nav class="nav">
             <div class="nav-left">
@@ -469,58 +663,96 @@
             </div>
         </div>
     </section>
+    </div>
 
     <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+        // Password protection logic
+        const CORRECT_PASSWORD = 'XWIKI2025'; // Change this to your desired password
+        const passwordForm = document.getElementById('passwordForm');
+        const passwordInput = document.getElementById('passwordInput');
+        const passwordError = document.getElementById('passwordError');
+        const passwordContainer = document.getElementById('passwordContainer');
+        const caseContent = document.getElementById('caseContent');
 
-        // Header background on scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('.header');
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        // Check if already authenticated
+        if (sessionStorage.getItem('xwikiAuthenticated') === 'true') {
+            showCaseStudy();
+        }
+
+        passwordForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const enteredPassword = passwordInput.value.trim();
             
-            if (scrollTop > 100) {
-                header.style.background = 'rgba(3, 7, 18, 0.98)';
-                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
+            if (enteredPassword === CORRECT_PASSWORD) {
+                sessionStorage.setItem('xwikiAuthenticated', 'true');
+                showCaseStudy();
             } else {
-                header.style.background = 'rgba(3, 7, 18, 0.95)';
-                header.style.boxShadow = 'none';
+                passwordError.style.display = 'block';
+                passwordInput.value = '';
+                passwordInput.focus();
             }
         });
 
-        // Intersection Observer for fade-in animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+        function showCaseStudy() {
+            passwordContainer.style.display = 'none';
+            caseContent.style.display = 'block';
+            
+            // Initialize case study functionality
+            initializeCaseStudy();
+        }
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
+        function initializeCaseStudy() {
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Header background on scroll
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('.header');
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                if (scrollTop > 100) {
+                    header.style.background = 'rgba(3, 7, 18, 0.98)';
+                    header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
+                } else {
+                    header.style.background = 'rgba(3, 7, 18, 0.95)';
+                    header.style.boxShadow = 'none';
                 }
             });
-        }, observerOptions);
 
-        // Apply fade-in animation to key sections
-        document.querySelectorAll('.metric-card, .challenge, .solution, .timeline-item, .result-item').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
-        });
+            // Intersection Observer for fade-in animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Apply fade-in animation to key sections
+            document.querySelectorAll('.metric-card, .challenge, .solution, .timeline-item, .result-item').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+        }
     </script>
 </body>
 </html>
