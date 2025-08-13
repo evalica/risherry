@@ -105,6 +105,13 @@ class PortfolioApp {
   }
 
   renderTalk(talk) {
+    const slidesLink = talk.slidesLink ? `
+      <a href="${talk.slidesLink}" target="_blank" rel="noopener" class="talk-slides-link">
+        <span class="material-icons">slideshow</span>
+        Slides
+      </a>
+    ` : '';
+    
     return `
       <article class="talk-card">
         <div class="talk-video-container">
@@ -120,6 +127,7 @@ class PortfolioApp {
         <div class="talk-content">
           <h3 class="talk-title">${talk.title}</h3>
           <p class="talk-venues">${talk.venue}</p>
+          ${slidesLink}
         </div>
       </article>
     `;

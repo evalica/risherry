@@ -101,21 +101,45 @@
   const talks = [
     {
       id: "talk-1",
-      title: "Icon Themes — Reusable icon variables and mappings for customizable user interfaces",
-      venue: "FOSDEM 2018 • Brussels",
-      youtubeId: "afZMLCgxl_s"
+      title: "UI/UX Tips & Tricks for developers",
+      venue: "ApacheCon Europe 2019 • Berlin",
+      youtubeId: "QND4EQMTGeU",
+      slidesLink: "https://www.slideshare.net/valicac/uiux-tips-tricks-for-developers"
     },
     {
-      id: "talk-2", 
-      title: "Expectations from Open Source Designers",
-      venue: "FOSSASIA 2017 • Singapore",
-      youtubeId: "3M9ptBxFyP4"
+      id: "talk-2",
+      title: "CSS Grid vs. Flexbox (Romanian)",
+      venue: "Iaşi CSS Group • Iaşi",
+      youtubeId: "9g8WqKp4BGI",
+      slidesLink: "https://www.slideshare.net/valicac/css-grid-vs-flexbox"
     },
     {
       id: "talk-3",
-      title: "Panel: Difficulties in having more designers participate in Open Source", 
+      title: "Panel: Difficulties in having more designers participate in Open Source",
       venue: "FOSDEM 2019 • Brussels",
-      youtubeId: "QND4EQMTGeU"
+      youtubeId: "ng9w8jFuzIg",
+      slidesLink: "https://www.slideshare.net/valicac/difficulties-in-having-more-designers-participate-in-open-source"
+    },
+    {
+      id: "talk-4",
+      title: "Icon Themes — Reusable icon variables and mappings for customizable user interfaces",
+      venue: "FOSDEM 2018 • Brussels",
+      youtubeId: "afZMLCgxl_s",
+      slidesLink: "https://www.slideshare.net/valicac/icon-themes"
+    },
+    {
+      id: "talk-5",
+      title: "Expectations from Open Source Designers",
+      venue: "FOSSASIA 2017 • Singapore",
+      youtubeId: "3M9ptBxFyP4",
+      slidesLink: "https://www.slideshare.net/valicac/expectations-from-open-source-designers"
+    },
+    {
+      id: "talk-6",
+      title: "Panel: Design feedback in Open Source",
+      venue: "FOSDEM 2017 • Brussels",
+      youtubeId: "byoYAYBUqAs",
+      slidesLink: "https://www.slideshare.net/valicac/design-feedback-in-open-source"
     }
   ];
 
@@ -225,6 +249,13 @@
     }
 
     renderTalk(talk) {
+      const slidesLink = talk.slidesLink ? `
+      <a href="${talk.slidesLink}" target="_blank" rel="noopener" class="talk-slides-link">
+        <span class="material-icons">slideshow</span>
+        Slides
+      </a>
+    ` : '';
+      
       return `
       <article class="talk-card">
         <div class="talk-video-container">
@@ -240,6 +271,7 @@
         <div class="talk-content">
           <h3 class="talk-title">${talk.title}</h3>
           <p class="talk-venues">${talk.venue}</p>
+          ${slidesLink}
         </div>
       </article>
     `;

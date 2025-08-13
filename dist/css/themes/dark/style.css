@@ -1714,6 +1714,33 @@ body {
   color: var(--text-tertiary);
   font-style: italic;
   font-family: var(--font-family-mono);
+  margin-bottom: 12px;
+}
+
+.talk-slides-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--accent-primary);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: rgba(var(--accent-primary-rgb), 0.1);
+  border: 1px solid rgba(var(--accent-primary-rgb), 0.2);
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.talk-slides-link:hover {
+  background: rgba(var(--accent-primary-rgb), 0.15);
+  border-color: rgba(var(--accent-primary-rgb), 0.3);
+  color: var(--accent-primary);
+  transform: translateY(-1px);
+}
+
+.talk-slides-link .material-icons {
+  font-size: 16px;
 }
 
 .about {
