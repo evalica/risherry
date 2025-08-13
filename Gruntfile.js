@@ -8,6 +8,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-rollup');
 
   // grunt configuration
   grunt.initConfig({
@@ -46,6 +47,25 @@ module.exports = function(grunt) {
           'src/sass/**/*.scss'
         ],
         tasks: ['sass', 'cssmin']
+      },
+      js: {
+        files: [
+          'src/js/**/*.js'
+        ],
+        tasks: ['rollup']
+      }
+    },
+
+    // bundle JavaScript modules
+    rollup: {
+      options: {
+        format: 'iife',
+        sourcemap: false
+      },
+      app: {
+        files: {
+          'dist/js/app.js': 'src/js/app.js'
+        }
       }
     }
   });
@@ -93,7 +113,8 @@ module.exports = function(grunt) {
   });
 
   // register grunt tasks
-  grunt.registerTask('default', ['sass-modern', 'cssmin']);
-  grunt.registerTask('build', ['sass-modern', 'cssmin']);
+  grunt.registerTask('default', ['sass-modern', 'cssmin', 'rollup']);
+  grunt.registerTask('build', ['sass-modern', 'cssmin', 'rollup']);
   grunt.registerTask('sass', ['sass-modern']);
+  grunt.registerTask('js', ['rollup']);
 };

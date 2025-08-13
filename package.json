@@ -11,14 +11,20 @@
   },
   "devDependencies": {
     "grunt": "^1.6.1",
-    "grunt-sass": "^3.1.0",
+    "grunt-cli": "^1.4.3",
     "grunt-contrib-cssmin": "^4.0.0",
     "grunt-contrib-watch": "^1.1.0",
+    "grunt-rollup": "^12.0.0",
+    "grunt-sass": "^3.1.0",
     "load-grunt-tasks": "^5.1.0",
-    "sass": "^1.70.0",
-    "grunt-cli": "^1.4.3"
+    "sass": "^1.70.0"
   },
-  "keywords": ["portfolio", "design", "ux", "product-design"],
+  "keywords": [
+    "portfolio",
+    "design",
+    "ux",
+    "product-design"
+  ],
   "author": "Ecaterina Moraru",
   "license": "MIT"
 }
