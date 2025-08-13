@@ -7,7 +7,7 @@ export const siteConfig = {
   subtitle: "Principal Product Designer transforming complex enterprise platforms into intuitive experiences that scale across communities of engineers, developers, and technical users.",
   motto: "Building enterprise platforms that are driven by engaged communities",
   email: "contact@risherry.ro",
-  cvUrl: "dist/EcaterinaMoraruCV.pdf",
+  cvUrl: "EcaterinaMoraruCV.pdf",
   stats: [
     { number: "16+", label: "Years Experience" },
     { number: "8", label: "Team Members" },
