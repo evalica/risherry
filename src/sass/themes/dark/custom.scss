@@ -934,3 +934,38 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+// Back to Work Link Styles
+.back-to-work-container {
+  margin-bottom: 32px;
+  padding-top: 24px;
+}
+
+.back-to-work-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-primary);
+}
+
+.back-to-work-link:hover {
+  color: var(--accent-primary);
+  background: var(--bg-secondary);
+  border-color: var(--accent-primary);
+  transform: translateX(-4px);
+}
+
+.back-to-work-link svg {
+  transition: transform 0.3s ease;
+}
+
+.back-to-work-link:hover svg {
+  transform: translateX(-2px);
+}
