@@ -1,6 +1,197 @@
 // Case Study Specific Styles
 // --------------------------------------------------
 
+// Context & Problem Section
+.context-problem-section {
+  padding: 80px 0;
+  
+  .context-problem-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+    align-items: start;
+    
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 48px;
+    }
+  }
+  
+  .context-problem-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0;
+      font-family: 'Raleway', sans-serif;
+    }
+    
+    .context-description {
+      font-size: 16px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+    
+    .context-subsection {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      
+      h3 {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--text-primary);
+        margin-bottom: 0;
+      }
+      
+      ul {
+        list-style: disc;
+        padding-left: 20px;
+        margin: 0;
+        
+        li {
+          font-size: 14px;
+          color: var(--text-secondary);
+          line-height: 1.5;
+          margin-bottom: 4px;
+          
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  
+  .context-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+    .context-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-primary);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        
+        .card-item {
+          display: flex;
+          gap: 12px;
+          align-items: flex-start;
+          
+          svg {
+            width: 16px;
+            height: 16px;
+            color: var(--accent-primary);
+            flex-shrink: 0;
+            margin-top: 2px;
+          }
+          
+          .item-content {
+            flex: 1;
+            
+            .item-label {
+              font-size: 14px;
+              font-weight: 600;
+              color: var(--text-primary);
+              margin-bottom: 4px;
+            }
+            
+            .item-value {
+              font-size: 14px;
+              color: var(--text-secondary);
+              line-height: 1.4;
+            }
+          }
+        }
+        
+        .card-section {
+          .section-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+          }
+          
+          ul {
+            list-style: disc;
+            padding-left: 20px;
+            margin: 0;
+            
+            li {
+              font-size: 14px;
+              color: var(--text-secondary);
+              line-height: 1.4;
+              margin-bottom: 4px;
+              
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+        
+        .card-actions {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+          padding-top: 8px;
+          
+          a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            
+            &.primary {
+              background: var(--bg-secondary);
+              color: var(--text-primary);
+              border: 1px solid var(--border-primary);
+              
+              &:hover {
+                background: var(--bg-tertiary);
+                border-color: var(--accent-primary);
+              }
+            }
+            
+            &.secondary {
+              background: transparent;
+              color: var(--text-primary);
+              border: 1px solid var(--border-primary);
+              
+              &:hover {
+                background: var(--bg-secondary);
+                border-color: var(--accent-primary);
+              }
+            }
+            
+            svg {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .case-hero {
   padding: 140px 0 80px;
   background: radial-gradient(ellipse at top, rgba(16, 185, 129, 0.15) 0%, rgba(3, 7, 18, 0) 50%);

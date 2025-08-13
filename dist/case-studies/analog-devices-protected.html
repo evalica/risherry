@@ -183,6 +183,144 @@
             </div>
         </section>
 
+        <!-- Context & Problem -->
+        <section class="context-problem-section">
+            <div class="container">
+                <div class="context-problem-grid">
+                    <section class="context-problem-content">
+                        <h2>Context & Problem</h2>
+                        <p class="context-description">Multiple tools and product lines had diverging interaction models, making evaluation and integration slower and more error-prone. Engineers needed consistent patterns to configure hardware, visualize measurements, and simulate designs across desktop and web.</p>
+                        
+                        <div class="context-subsection">
+                            <h3>Discovery & Research</h3>
+                            <ul>
+                                <li>Interviewed EEs and FAEs to map critical jobs: discovery, setup, configuration, measurement, reporting</li>
+                                <li>Audited desktop + web apps to find duplicative flows and inconsistent idioms</li>
+                                <li>Heuristic evaluations and instrumented task walkthroughs to identify friction</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="context-subsection">
+                            <h3>Strategy</h3>
+                            <ul>
+                                <li>Defined north-star scenarios that spanned Evaluation Studio → Reference Design App → vLab</li>
+                                <li>Aligned roadmaps with a shared set of primitives: device setup, data capture, analysis, export</li>
+                                <li>Introduced contribution model for patterns via InnerSource to scale adoption</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="context-subsection">
+                            <h3>Interaction & Prototyping</h3>
+                            <ul>
+                                <li>Created flow libraries and interaction specs for configuration and measurement tasks</li>
+                                <li>Established visualization standards for charts, traces, ranges, and units</li>
+                                <li>Prototyped critical tasks to validate step reductions with target users</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="context-subsection">
+                            <h3>Design System & Accessibility</h3>
+                            <ul>
+                                <li>Contributed tokens and components to Harmonic DS; documented behaviors and a11y states</li>
+                                <li>Patterns for configuration panels, instrument metaphor components, and data views</li>
+                                <li>Accessibility guidance for keyboard, focus, and high-contrast use in labs</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="context-subsection">
+                            <h3>Delivery & Collaboration</h3>
+                            <ul>
+                                <li>Partnered with engineering to incrementally ship patterns; tracked adoption</li>
+                                <li>Facilitated cross-team design reviews and pattern governance</li>
+                                <li>Maintained a changelog and migration guidance to reduce churn</li>
+                            </ul>
+                        </div>
+                    </section>
+                    
+                    <aside class="context-sidebar">
+                        <div class="context-card">
+                            <div class="card-content">
+                                <div class="card-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
+                                        <path d="m9 12 2 2 4-4"></path>
+                                    </svg>
+                                    <div class="item-content">
+                                        <div class="item-label">Role</div>
+                                        <div class="item-value">Principal Product Designer, Manager</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
+                                        <path d="m9 12 2 2 4-4"></path>
+                                    </svg>
+                                    <div class="item-content">
+                                        <div class="item-label">Team</div>
+                                        <div class="item-value">8 product designers, PMs, Software and Firmware Engineers, Electrical Engineers, Tech Writers</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
+                                        <path d="m9 12 2 2 4-4"></path>
+                                    </svg>
+                                    <div class="item-content">
+                                        <div class="item-label">Audience</div>
+                                        <div class="item-value">Electrical engineers evaluating boards and reference designs; firmware/software developers; field applications engineers</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card-section">
+                                    <div class="section-title">Constraints</div>
+                                    <ul>
+                                        <li>Desktop-first with legacy tech constraints, some offline/air-gapped usage</li>
+                                        <li>High-contrast and accessibility requirements for lab environments</li>
+                                        <li>Complex electrical engineering domain concepts and vocabulary</li>
+                                        <li>Cross-product alignment across independent teams and backlogs</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="card-section">
+                                    <div class="section-title">Responsibilities</div>
+                                    <ul>
+                                        <li>Define platform interaction models and navigation frameworks</li>
+                                        <li>Contribute to and govern Harmonic Design System patterns and tokens</li>
+                                        <li>Qualitative research: interviews, task analyses, moderated usability tests</li>
+                                        <li>Pattern catalog via InnerSource for EE-specific UI components</li>
+                                        <li>Mentor and manage 8 designers; hiring, coaching, and design reviews</li>
+                                        <li>Partner with engineering leadership for delivery and adoption</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="card-actions">
+                                    <a href="https://risherry.ro/dist/EcaterinaMoraruCV.pdf" target="_blank" class="primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                                            <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                                            <path d="M10 9H8"></path>
+                                            <path d="M16 13H8"></path>
+                                            <path d="M16 17H8"></path>
+                                        </svg>
+                                        CV
+                                    </a>
+                                    <a href="https://www.analog.com" target="_blank" rel="noreferrer noopener" class="secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                        Analog Devices
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
         <!-- Overview -->
         <section class="content-section">
             <div class="narrow-container">
