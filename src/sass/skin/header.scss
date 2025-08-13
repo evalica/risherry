@@ -98,6 +98,12 @@
   outline: none;
 }
 
+.nav-links a:focus {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.2);
+}
+
 .nav-links a.active {
   color: var(--accent-secondary);
   background-color: rgba(168, 85, 247, 0.1);
@@ -141,6 +147,16 @@
   transform: translateY(-1px);
 }
 
+.social-nav a:focus {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.2);
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: white;
+  opacity: 1;
+}
+
 .social-nav svg {
   width: 16px;
   height: 16px;
@@ -167,6 +183,12 @@
   background: var(--text-primary);
   border-radius: 1px;
   transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle:focus {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.2);
 }
 
 // Responsive design

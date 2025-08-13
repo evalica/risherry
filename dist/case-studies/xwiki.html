@@ -209,6 +209,8 @@
 
     <!-- Hidden Case Study Content -->
     <div class="case-content" id="caseContent">
+        <!-- Skip Link for Accessibility -->
+        <a href="#main-content" class="skip-link">Skip to main content</a>
         <!-- Header -->
     <header class="header">
         <nav class="nav">
@@ -260,25 +262,25 @@
         </nav>
     </header>
 
-    <!-- Case Study Hero -->
-    <section class="case-hero">
+            <!-- Case Study Hero -->
+        <section class="case-hero" id="main-content">
         <div class="narrow-container">
             <!-- Back to Work Link -->
             <div class="back-to-work-container">
-                <a href="../index.html#work" class="back-to-work-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;">
-                        <path d="m12 19-7-7 7-7"></path>
-                        <path d="M19 12H5"></path>
-                    </svg>
-                    Back to Work
-                </a>
-                <a href="analogdevices.html" class="next-case-link">
-                    Next
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;">
-                        <path d="m12 5 7 7-7 7"></path>
-                        <path d="M19 12H5"></path>
-                    </svg>
-                </a>
+                                    <a href="../index.html#work" class="back-to-work-link" aria-label="Go back to featured work section">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;" aria-hidden="true">
+                            <path d="m12 19-7-7 7-7"></path>
+                            <path d="M19 12H5"></path>
+                        </svg>
+                        Back to Work
+                    </a>
+                    <a href="analogdevices.html" class="next-case-link" aria-label="Go to next case study: Analog Devices Product Suite">
+                        <span aria-hidden="true">Next</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;" aria-hidden="true">
+                            <path d="m12 5 7 7-7 7"></path>
+                            <path d="M19 12H5"></path>
+                        </svg>
+                    </a>
             </div>
             
             <div class="case-hero-content">
@@ -653,22 +655,24 @@
         </div>
     </section>
 
-    <!-- Case Navigation -->
-    <section class="case-navigation">
-        <div class="container">
-            <div class="nav-grid">
-                <a href="anylyze.html" class="nav-card">
-                    <div class="nav-direction">← Previous Case</div>
-                    <div class="nav-title">Anylyze No-Code Platform</div>
-                </a>
-                
-                <a href="analogdevices.html" class="nav-card">
-                    <div class="nav-direction">Next Case →</div>
-                    <div class="nav-title">Analog Devices Product Suite</div>
-                </a>
+            <!-- Case Navigation -->
+        <section class="case-navigation">
+            <div class="container">
+                <nav aria-label="Case study navigation">
+                    <div class="nav-grid">
+                        <a href="anylyze.html" class="nav-card" aria-label="Go to previous case study: Anylyze No-Code Platform">
+                            <div class="nav-direction">← Previous Case</div>
+                            <div class="nav-title">Anylyze No-Code Platform</div>
+                        </a>
+                        
+                        <a href="analogdevices.html" class="nav-card" aria-label="Go to next case study: Analog Devices Product Suite">
+                            <div class="nav-direction">Next Case →</div>
+                            <div class="nav-title">Analog Devices Product Suite</div>
+                        </a>
+                    </div>
+                </nav>
             </div>
-        </div>
-    </section>
+        </section>
     </div>
 
     <script>

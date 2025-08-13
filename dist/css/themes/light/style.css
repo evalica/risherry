@@ -346,6 +346,22 @@ img {
   border: 0;
 }
 
+.skip-link {
+  display: none;
+  background: var(--accent-primary);
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.skip-link:focus {
+  display: inline-block;
+}
+
 .svg {
   display: inline-block;
   background-repeat: no-repeat;
@@ -1155,6 +1171,12 @@ section {
   outline: none;
 }
 
+.nav-links a:focus {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.2);
+}
+
 .nav-links a.active {
   color: var(--accent-secondary);
   background-color: rgba(168, 85, 247, 0.1);
@@ -1196,6 +1218,16 @@ section {
   transform: translateY(-1px);
 }
 
+.social-nav a:focus {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.2);
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: white;
+  opacity: 1;
+}
+
 .social-nav svg {
   width: 16px;
   height: 16px;
@@ -1221,6 +1253,12 @@ section {
   background: var(--text-primary);
   border-radius: 1px;
   transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle:focus {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.2);
 }
 
 @media (max-width: 768px) {
@@ -2198,7 +2236,7 @@ table td {
 }
 
 .case-hero {
-  padding: 140px 0 80px;
+  padding: 80px 0 80px;
   background: radial-gradient(ellipse at top, rgba(16, 185, 129, 0.15) 0%, rgba(3, 7, 18, 0) 50%);
 }
 
@@ -2544,6 +2582,13 @@ table td {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
 }
+.nav-card:focus {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.2);
+  border-color: var(--accent-primary);
+  transform: translateY(-4px);
+}
 
 .nav-direction {
   font-size: 14px;
@@ -2582,6 +2627,13 @@ table td {
   border-color: var(--accent-primary);
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
+}
+.nav-section .nav-card:focus {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.2);
+  border-color: var(--accent-primary);
+  transform: translateY(-4px);
 }
 
 .nav-section .nav-direction {

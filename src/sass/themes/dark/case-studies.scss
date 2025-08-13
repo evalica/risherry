@@ -193,7 +193,7 @@
 }
 
 .case-hero {
-  padding: 140px 0 80px;
+  padding: 80px 0 80px;
   background: radial-gradient(ellipse at top, rgba(16, 185, 129, 0.15) 0%, rgba(3, 7, 18, 0) 50%);
 }
 
@@ -544,6 +544,14 @@
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
   }
+
+  &:focus {
+    outline: 2px solid var(--accent-primary);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.2);
+    border-color: var(--accent-primary);
+    transform: translateY(-4px);
+  }
 }
 
 .nav-direction {
@@ -584,6 +592,14 @@
     border-color: var(--accent-primary);
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
+  }
+
+  &:focus {
+    outline: 2px solid var(--accent-primary);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.2);
+    border-color: var(--accent-primary);
+    transform: translateY(-4px);
   }
 }
 
