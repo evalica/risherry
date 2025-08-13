@@ -178,26 +178,36 @@
             <h1 class="password-title">Protected Case Study</h1>
             <p class="password-subtitle">This Anylyze case study contains sensitive information and requires a password to access.</p>
             
-            <form class="password-form" id="passwordForm">
-                <input 
-                    type="password" 
-                    class="password-input" 
-                    id="passwordInput"
-                    placeholder="Enter password"
-                    required
-                    autocomplete="current-password"
-                >
-                <button type="submit" class="password-button">
+            <form class="password-form" id="passwordForm" novalidate>
+                <div class="form-group">
+                    <label for="passwordInput" class="sr-only">Password</label>
+                    <input 
+                        type="password" 
+                        class="password-input" 
+                        id="passwordInput"
+                        placeholder="Enter password"
+                        required
+                        autocomplete="current-password"
+                        aria-describedby="passwordError passwordHint"
+                        minlength="1"
+                        maxlength="50"
+                    >
+                    <div class="password-error" id="passwordError" role="alert" aria-live="polite">
+                        Incorrect password. Please try again.
+                    </div>
+                </div>
+                <button type="submit" class="password-button" id="submitButton">
                     <span class="material-icons" style="font-size: 18px; margin-right: 8px;">login</span>
                     Access Case Study
                 </button>
-                <div class="password-error" id="passwordError">
-                    Incorrect password. Please try again.
+                <div class="timeout-warning" id="timeoutWarning" role="alert" aria-live="polite" style="display: none;">
+                    <span class="material-icons" style="font-size: 16px; margin-right: 8px;">warning</span>
+                    Session will expire in <span id="timeoutCountdown">5:00</span>. Please complete your action.
                 </div>
             </form>
             
-            <p class="password-hint">
-                Contact Ecaterina for access credentials
+            <p class="password-hint" id="passwordHint">
+                Contact Ecaterina for access credentials. Password is case-sensitive.
             </p>
             
             <a href="../index.html#work" class="back-link">

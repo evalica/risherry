@@ -25,26 +25,36 @@
             <h1 class="password-title">Protected Case Study</h1>
             <p class="password-subtitle">This Analog Devices case study contains sensitive information and requires a password to access.</p>
             
-            <form class="password-form" id="passwordForm">
-                <input 
-                    type="password" 
-                    class="password-input" 
-                    id="passwordInput"
-                    placeholder="Enter password"
-                    required
-                    autocomplete="current-password"
-                >
-                <button type="submit" class="password-button">
+            <form class="password-form" id="passwordForm" novalidate>
+                <div class="form-group">
+                    <label for="passwordInput" class="sr-only">Password</label>
+                    <input 
+                        type="password" 
+                        class="password-input" 
+                        id="passwordInput"
+                        placeholder="Enter password"
+                        required
+                        autocomplete="current-password"
+                        aria-describedby="passwordError passwordHint"
+                        minlength="1"
+                        maxlength="50"
+                    >
+                    <div class="password-error" id="passwordError" role="alert" aria-live="polite">
+                        Incorrect password. Please try again.
+                    </div>
+                </div>
+                <button type="submit" class="password-button" id="submitButton">
                     <span class="material-icons" style="font-size: 18px; margin-right: 8px;">login</span>
                     Access Case Study
                 </button>
-                <div class="password-error" id="passwordError">
-                    Incorrect password. Please try again.
+                <div class="timeout-warning" id="timeoutWarning" role="alert" aria-live="polite" style="display: none;">
+                    <span class="material-icons" style="font-size: 16px; margin-right: 8px;">warning</span>
+                    Session will expire in <span id="timeoutCountdown">5:00</span>. Please complete your action.
                 </div>
             </form>
             
-            <p class="password-hint">
-                Contact Ecaterina for access credentials
+            <p class="password-hint" id="passwordHint">
+                Contact Ecaterina for access credentials. Password is case-sensitive.
             </p>
             
             <a href="../index.html#work" class="back-link">
@@ -564,32 +574,166 @@
 
     <script src="../dist/js/app.js"></script>
     <script>
-        // Password protection logic
-        const CORRECT_PASSWORD = '2025'; // Change this to your desired password
+        // Enhanced password protection logic for WCAG AAA compliance
+        const CORRECT_PASSWORD = '2025';
+        const SESSION_TIMEOUT = 5 * 60 * 1000; // 5 minutes in milliseconds
+        const WARNING_TIME = 4 * 60 * 1000; // Show warning at 4 minutes
+        
         const passwordForm = document.getElementById('passwordForm');
         const passwordInput = document.getElementById('passwordInput');
         const passwordError = document.getElementById('passwordError');
         const passwordContainer = document.getElementById('passwordContainer');
         const caseContent = document.getElementById('caseContent');
+        const timeoutWarning = document.getElementById('timeoutWarning');
+        const timeoutCountdown = document.getElementById('timeoutCountdown');
+        const submitButton = document.getElementById('submitButton');
+
+        let sessionTimer;
+        let warningTimer;
+        let countdownInterval;
 
         // Check if already authenticated
         if (sessionStorage.getItem('adiAuthenticated') === 'true') {
-            showCaseStudy();
+            const sessionStart = parseInt(sessionStorage.getItem('adiSessionStart') || '0');
+            const now = Date.now();
+            
+            if (now - sessionStart < SESSION_TIMEOUT) {
+                showCaseStudy();
+                startSessionTimer();
+            } else {
+                // Session expired
+                sessionStorage.removeItem('adiAuthenticated');
+                sessionStorage.removeItem('adiSessionStart');
+            }
         }
+
+        // Enhanced form validation
+        passwordInput.addEventListener('input', function() {
+            const value = this.value.trim();
+            if (value.length > 0) {
+                passwordError.style.display = 'none';
+                this.setCustomValidity('');
+            }
+        });
+
+        passwordInput.addEventListener('blur', function() {
+            const value = this.value.trim();
+            if (value.length === 0 && this.hasAttribute('required')) {
+                this.setCustomValidity('Password is required');
+            }
+        });
 
         passwordForm.addEventListener('submit', function(e) {
             e.preventDefault();
+            
             const enteredPassword = passwordInput.value.trim();
             
+            // Enhanced validation
+            if (enteredPassword.length === 0) {
+                passwordError.textContent = 'Password is required';
+                passwordError.style.display = 'block';
+                passwordInput.focus();
+                return;
+            }
+            
             if (enteredPassword === CORRECT_PASSWORD) {
+                // Success - start session
+                const now = Date.now();
                 sessionStorage.setItem('adiAuthenticated', 'true');
+                sessionStorage.setItem('adiSessionStart', now.toString());
                 showCaseStudy();
+                startSessionTimer();
             } else {
+                // Enhanced error handling
+                passwordError.textContent = 'Incorrect password. Please check your credentials and try again.';
                 passwordError.style.display = 'block';
                 passwordInput.value = '';
                 passwordInput.focus();
+                
+                // Announce error to screen readers
+                passwordError.setAttribute('aria-live', 'assertive');
+                setTimeout(() => {
+                    passwordError.setAttribute('aria-live', 'polite');
+                }, 1000);
             }
         });
+
+        function startSessionTimer() {
+            // Clear any existing timers
+            if (sessionTimer) clearTimeout(sessionTimer);
+            if (warningTimer) clearTimeout(warningTimer);
+            if (countdownInterval) clearInterval(countdownInterval);
+            
+            const sessionStart = parseInt(sessionStorage.getItem('adiSessionStart') || Date.now().toString());
+            
+            // Set warning timer
+            warningTimer = setTimeout(() => {
+                showTimeoutWarning();
+            }, WARNING_TIME);
+            
+            // Set session timeout
+            sessionTimer = setTimeout(() => {
+                expireSession();
+            }, SESSION_TIMEOUT);
+        }
+
+        function showTimeoutWarning() {
+            timeoutWarning.style.display = 'block';
+            timeoutWarning.focus();
+            
+            // Start countdown
+            let timeLeft = Math.ceil((SESSION_TIMEOUT - WARNING_TIME) / 1000);
+            updateCountdown(timeLeft);
+            
+            countdownInterval = setInterval(() => {
+                timeLeft--;
+                updateCountdown(timeLeft);
+                
+                if (timeLeft <= 0) {
+                    clearInterval(countdownInterval);
+                    expireSession();
+                }
+            }, 1000);
+        }
+
+        function updateCountdown(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = seconds % 60;
+            timeoutCountdown.textContent = `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
+        }
+
+        function expireSession() {
+            sessionStorage.removeItem('adiAuthenticated');
+            sessionStorage.removeItem('adiSessionStart');
+            
+            // Clear timers
+            if (sessionTimer) clearTimeout(sessionTimer);
+            if (warningTimer) clearTimeout(warningTimer);
+            if (countdownInterval) clearInterval(countdownInterval);
+            
+            // Hide case study and show password form
+            caseContent.style.display = 'none';
+            passwordContainer.style.display = 'flex';
+            timeoutWarning.style.display = 'none';
+            
+            // Clear form
+            passwordInput.value = '';
+            passwordError.style.display = 'none';
+            
+            // Focus on password input
+            passwordInput.focus();
+            
+            // Announce session expiration
+            const announcement = document.createElement('div');
+            announcement.setAttribute('aria-live', 'assertive');
+            announcement.className = 'sr-only';
+            announcement.textContent = 'Your session has expired. Please enter your password again to continue.';
+            document.body.appendChild(announcement);
+            
+            setTimeout(() => {
+                document.body.removeChild(announcement);
+            }, 2000);
+        }
 
         function showCaseStudy() {
             passwordContainer.style.display = 'none';
