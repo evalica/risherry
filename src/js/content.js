@@ -23,9 +23,10 @@ export const siteConfig = {
   ],
   social: [
     { name: "Twitter", url: "https://twitter.com/evalica", icon: "icon-twitter" },
+    { name: "StackExchange", url: "http://ux.stackexchange.com/users/1141/risherry", icon: "icon-stackoverflow", class: "stackoverflow" },
+    { name: "Instagram", url: "https://www.instagram.com/valicac", icon: "icon-instagram" },
     { name: "GitHub", url: "https://github.com/evalica/", icon: "icon-github" },
-    { name: "LinkedIn", url: "https://www.linkedin.com/in/ecaterina-moraru/", icon: "icon-linkedin" },
-    { name: "Instagram", url: "https://www.instagram.com/valicac", icon: "icon-instagram" }
+    { name: "LinkedIn", url: "http://ro.linkedin.com/in/evalica", icon: "icon-linkedin" }
   ]
 };
 
