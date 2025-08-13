@@ -935,13 +935,17 @@ body {
   }
 }
 
-// Back to Work Link Styles
+// Case Study Navigation Link Styles
 .back-to-work-container {
   margin-bottom: 32px;
   padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.back-to-work-link {
+// Shared base styles for navigation links
+.case-nav-link {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -953,19 +957,40 @@ body {
   border-radius: 8px;
   background: var(--bg-tertiary);
   border: 1px solid var(--border-primary);
+  
+  svg {
+    transition: transform 0.3s ease;
+  }
+  
+  &:hover {
+    color: var(--accent-primary);
+    background: var(--bg-secondary);
+    border-color: var(--accent-primary);
+  }
 }
 
-.back-to-work-link:hover {
-  color: var(--accent-primary);
-  background: var(--bg-secondary);
-  border-color: var(--accent-primary);
-  transform: translateX(-4px);
+// Back to Work Link - extends base with left direction
+.back-to-work-link {
+  @extend .case-nav-link;
+  
+  &:hover {
+    transform: translateX(-4px);
+  }
+  
+  &:hover svg {
+    transform: translateX(-2px);
+  }
 }
 
-.back-to-work-link svg {
-  transition: transform 0.3s ease;
-}
-
-.back-to-work-link:hover svg {
-  transform: translateX(-2px);
+// Next Case Link - extends base with right direction
+.next-case-link {
+  @extend .case-nav-link;
+  
+  &:hover {
+    transform: translateX(4px);
+  }
+  
+  &:hover svg {
+    transform: translateX(2px);
+  }
 }

@@ -2161,9 +2161,12 @@ body {
 .back-to-work-container {
   margin-bottom: 32px;
   padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.back-to-work-link {
+.case-nav-link, .next-case-link, .back-to-work-link {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -2176,20 +2179,27 @@ body {
   background: var(--bg-tertiary);
   border: 1px solid var(--border-primary);
 }
-
-.back-to-work-link:hover {
+.case-nav-link svg, .next-case-link svg, .back-to-work-link svg {
+  transition: transform 0.3s ease;
+}
+.case-nav-link:hover, .next-case-link:hover, .back-to-work-link:hover {
   color: var(--accent-primary);
   background: var(--bg-secondary);
   border-color: var(--accent-primary);
+}
+
+.back-to-work-link:hover {
   transform: translateX(-4px);
 }
-
-.back-to-work-link svg {
-  transition: transform 0.3s ease;
-}
-
 .back-to-work-link:hover svg {
   transform: translateX(-2px);
+}
+
+.next-case-link:hover {
+  transform: translateX(4px);
+}
+.next-case-link:hover svg {
+  transform: translateX(2px);
 }
 
 .career-hero {
