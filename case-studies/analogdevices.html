@@ -763,6 +763,11 @@
             
             // Initialize case study functionality
             initializeCaseStudy();
+            
+            // Initialize TOC after case study is shown
+            if (typeof initializeMobileTOC === 'function') {
+                initializeMobileTOC();
+            }
         }
 
         function initializeCaseStudy() {

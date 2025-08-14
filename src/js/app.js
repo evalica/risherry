@@ -248,6 +248,9 @@ class PortfolioApp {
   }
 }
 
+// Make TOC function available globally for password-protected case studies
+window.initializeMobileTOC = initializeMobileTOC;
+
 // Initialize the app when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
   new PortfolioApp();
