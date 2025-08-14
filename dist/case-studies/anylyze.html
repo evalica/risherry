@@ -164,6 +164,8 @@
                 font-size: 24px;
             }
         }
+
+
     </style>
 
 </head>
@@ -302,6 +304,27 @@
         </div>
     </section>
 
+    <!-- Mobile Table of Contents -->
+    <nav class="mobile-toc-nav" id="mobileTocNav">
+        <div class="mobile-toc-container">
+            <div class="mobile-toc-header">
+                <h3 class="mobile-toc-title">Table of Contents</h3>
+                <button class="mobile-toc-toggle" id="mobileTocToggle" aria-label="Toggle table of contents">
+                    <span class="material-icons">menu</span>
+                </button>
+            </div>
+            <ul class="mobile-toc-list" id="mobileTocList">
+                <li><a href="#overview" class="mobile-toc-link" data-section="overview">Project Overview</a></li>
+                <li><a href="#context-problem" class="mobile-toc-link" data-section="context-problem">Context & Problem</a></li>
+                <li><a href="#challenge-solution" class="mobile-toc-link" data-section="challenge-solution">Challenge & Solution</a></li>
+                <li><a href="#design-process" class="mobile-toc-link" data-section="design-process">Design Process</a></li>
+                <li><a href="#key-features" class="mobile-toc-link" data-section="key-features">Key Design Innovations</a></li>
+                <li><a href="#results" class="mobile-toc-link" data-section="results">Impact & Results</a></li>
+                <li><a href="#learnings" class="mobile-toc-link" data-section="learnings">Key Learnings</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Key Metrics -->
     <section class="metrics-section">
         <div class="container">
@@ -331,7 +354,7 @@
     </section>
 
     <!-- Overview -->
-    <section class="content-section">
+    <section class="content-section" id="overview">
         <div class="narrow-container">
             <h2 class="section-title">Project Overview</h2>
             <div class="section-content">
@@ -345,7 +368,7 @@
     </section>
 
     <!-- Context & Problem -->
-    <section class="context-problem-section">
+    <section class="context-problem-section" id="context-problem">
         <div class="container">
             <div class="context-problem-grid">
                 <section class="context-problem-content">
@@ -476,7 +499,7 @@
     </section>
 
     <!-- Challenge & Solution -->
-    <section class="content-section">
+    <section class="content-section" id="challenge-solution">
         <div class="container">
             <div class="challenge-solution">
                 <div class="challenge">
@@ -507,7 +530,7 @@
     </section>
 
     <!-- Design Process -->
-    <section class="content-section">
+    <section class="content-section" id="design-process">
         <div class="narrow-container">
             <h2 class="section-title">Design Process</h2>
             
@@ -556,7 +579,7 @@
     </section>
 
     <!-- Key Features -->
-    <section class="content-section">
+    <section class="content-section" id="key-features">
         <div class="narrow-container">
             <h2 class="section-title">Key Design Innovations</h2>
             
@@ -586,7 +609,7 @@
     </section>
 
     <!-- Results -->
-    <section class="content-section">
+    <section class="content-section" id="results">
         <div class="container">
             <div class="results-section">
                 <h2 class="section-title">Impact & Results</h2>
@@ -630,7 +653,7 @@
     </section>
 
     <!-- Learnings -->
-    <section class="content-section">
+    <section class="content-section" id="learnings">
         <div class="narrow-container">
             <h2 class="section-title">Key Learnings</h2>
             <div class="section-content">
@@ -750,6 +773,8 @@
                 observer.observe(el);
             });
         }
+
+
     </script>
 </body>
 </html>
