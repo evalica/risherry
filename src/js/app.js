@@ -1,5 +1,6 @@
 // Main application module for dynamic content rendering
 import { siteConfig, caseStudies, talks, sections } from './content.js';
+import { initializeMobileTOC } from './toc.js';
 
 class PortfolioApp {
   constructor() {
@@ -12,6 +13,7 @@ class PortfolioApp {
     this.renderTalks();
     this.renderSocialLinks();
     this.setupEventListeners();
+    this.initializeTOC();
   }
 
   renderHero() {
@@ -236,6 +238,13 @@ class PortfolioApp {
       el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
       observer.observe(el);
     });
+  }
+
+  initializeTOC() {
+    // Initialize mobile TOC if we're on a case study page
+    if (document.getElementById('mobileTocNav')) {
+      initializeMobileTOC();
+    }
   }
 }
 
