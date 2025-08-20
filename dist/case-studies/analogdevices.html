@@ -12,7 +12,185 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
+    <style>
+        /* Password Protection Styles */
+        .password-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #030712 0%, #1a1a2e 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
 
+        .password-card {
+            background: rgba(27, 23, 51, 0.95);
+            border: 1px solid #2a2740;
+            border-radius: 16px;
+            padding: 48px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .password-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #a338b5, #7c3aed);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            color: white;
+            font-size: 32px;
+        }
+
+        .password-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 16px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .password-subtitle {
+            font-size: 16px;
+            color: #9aa0a6;
+            margin-bottom: 32px;
+            line-height: 1.5;
+        }
+
+        .password-form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .password-input {
+            padding: 16px;
+            border: 1px solid #2a2740;
+            border-radius: 8px;
+            background: rgba(27, 23, 51, 0.8);
+            color: #ffffff;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .password-input:focus {
+            outline: none;
+            border-color: #a338b5;
+            box-shadow: 0 0 0 3px rgba(163, 56, 181, 0.1);
+        }
+
+        .password-input::placeholder {
+            color: #6b7280;
+        }
+
+        .password-button {
+            padding: 16px 24px;
+            background: linear-gradient(135deg, #a338b5, #7c3aed);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .password-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(163, 56, 181, 0.3);
+        }
+
+        .password-error {
+            color: #ef4444;
+            font-size: 14px;
+            display: none;
+            margin-top: 8px;
+        }
+
+        .password-hint {
+            color: #6b7280;
+            font-size: 14px;
+            margin-top: 16px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #9aa0a6;
+            text-decoration: none;
+            font-size: 14px;
+            margin-top: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #ffffff;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .timeout-warning {
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            border-radius: 8px;
+            padding: 12px;
+            color: #f59e0b;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            .password-card {
+                padding: 32px 24px;
+                margin: 20px;
+            }
+            
+            .password-title {
+                font-size: 24px;
+            }
+            
+            .password-icon {
+                width: 64px;
+                height: 64px;
+                font-size: 28px;
+            }
+        }
+    </style>
 
 </head>
 <body>
@@ -66,7 +244,7 @@
     </div>
 
     <!-- Hidden Case Study Content -->
-    <div class="case-content" id="caseContent">
+    <div class="case-content" id="caseContent" style="display: none;">
         <!-- Skip Link for Accessibility -->
         <a href="#main-content" class="skip-link">Skip to main content</a>
         <!-- Header -->
@@ -594,7 +772,7 @@
         </section>
     </div>
 
-    <script src="../dist/js/app.js"></script>
+    <script src="../js/app.js"></script>
     <script>
         // Enhanced password protection logic for WCAG AAA compliance
         const CORRECT_PASSWORD = '2025';
